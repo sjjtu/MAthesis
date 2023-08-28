@@ -1,0 +1,193 @@
+{
+  "main": {
+    "id": "c857047664b274de",
+    "type": "split",
+    "children": [
+      {
+        "id": "ae7ed8bd8ed14011",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9f55d101cdf4f526",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            },
+            "group": "4b9d28f2158af6ed"
+          }
+        ]
+      },
+      {
+        "id": "0077aedeb7c5e32f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3e81f1487f60e575",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Secure Multi party computation (MPC).md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
+              }
+            },
+            "group": "4b9d28f2158af6ed"
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "847e87c2b942219e",
+    "type": "split",
+    "children": [
+      {
+        "id": "e2140e526e123480",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "655e06966fdc7d8c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "986e8d06ca154bf3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "73c1940020431bd7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "84773cda0912401b",
+    "type": "split",
+    "children": [
+      {
+        "id": "998c7727b4bd70b9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e6d7c7dc5b47d2c2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "21f54427e08f5cdc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fe5486f0ff61cd03",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "37db7c66dc73246e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "9f55d101cdf4f526",
+  "lastOpenFiles": [
+    "Secure Multi party computation (MPC).md",
+    "Privacy-preserving computational geometry.md",
+    "Millionaire's problem.md",
+    "Security Proof.md",
+    "Security.md",
+    "Untitled.canvas"
+  ]
+}
