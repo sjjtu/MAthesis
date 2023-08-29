@@ -1,4 +1,5 @@
 {
   "autoPairMarkdown": true,
-  "vimMode": false
+  "vimMode": false,
+  "alwaysUpdateLinks": true
 }
