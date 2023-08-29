@@ -11,52 +11,12 @@
             "id": "9f55d101cdf4f526",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
-            },
-            "group": "4b9d28f2158af6ed"
-          }
-        ]
-      },
-      {
-        "id": "0077aedeb7c5e32f",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "3e81f1487f60e575",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
+              "type": "diff-view",
               "state": {
-                "file": "Secure Multi party computation (MPC).md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1,
-                  "close": true
-                }
+                "file": "Knowledge/.obsidian/graph.json",
+                "staged": false
               }
-            },
-            "group": "4b9d28f2158af6ed"
+            }
           }
         ]
       }
@@ -163,13 +123,21 @@
               "type": "outline",
               "state": {}
             }
+          },
+          {
+            "id": "8fbc11f55847a442",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
