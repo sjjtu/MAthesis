@@ -1,0 +1,28 @@
+{
+  "palette": [
+    {
+      "id": "THJhUyKzkgbe6RslvJffo",
+      "name": "TODO",
+      "value": "#ff6b6b"
+    },
+    {
+      "id": "utNi4DWBNElXh1s3bNtAW",
+      "name": "INTERESTING",
+      "value": "#75d79f"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "Millionaire's problem.md",
+      "color": "THJhUyKzkgbe6RslvJffo"
+    },
+    {
+      "path": "Security Proof.md",
+      "color": "THJhUyKzkgbe6RslvJffo"
+    },
+    {
+      "path": "Split Ways.. Privacy-Preserving Training of Encrypted Data Using Split Learning.md",
+      "color": "utNi4DWBNElXh1s3bNtAW"
+    }
+  ]
+}
