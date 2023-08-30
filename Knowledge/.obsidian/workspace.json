@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "844efcf70dd7e8a5",
+        "id": "27856d4918c533b1",
         "type": "tabs",
         "children": [
           {
-            "id": "4d6fff68791ea1e6",
+            "id": "343f3d820c2ecc3b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Split Ways.. Privacy-Preserving Training of Encrypted Data Using Split Learning.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Split Ways.. Privacy-Preserving Training of Encrypted Data Using Split Learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Split Ways.. Privacy-Preserving Training of Encrypted Data Using Split Learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Split Ways.. Privacy-Preserving Training of Encrypted Data Using Split Learning.md"
-              }
+              "state": {}
             }
           },
           {
@@ -154,17 +146,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4d6fff68791ea1e6",
+  "active": "343f3d820c2ecc3b",
   "lastOpenFiles": [
-    "Split Learning for health.md",
     "Split Ways.. Privacy-Preserving Training of Encrypted Data Using Split Learning.md",
     "Split Learning.md",
-    "Security Proof.md",
-    "Security.md",
-    "Secure Multi party computation (MPC).md",
-    "Privacy-preserving computational geometry.md",
-    "Privacy preserving neural networks.md",
+    "Ideas.md",
     "Pasted image 20230829122410.png",
+    "Privacy preserving neural networks.md",
+    "Differential Privacy.md",
+    "Split Learning for health.md",
+    "Privacy-preserving computational geometry.md",
+    "Robust Deanonymization of large sparse datasets.md",
+    "Secure Multi party computation (MPC).md",
+    "Security.md",
+    "Security Proof.md",
     "Millionaire's problem.md"
   ]
 }
