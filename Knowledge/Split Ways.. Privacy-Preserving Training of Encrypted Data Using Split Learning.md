@@ -1,6 +1,6 @@
 # Source: this [paper](https://arxiv.org/pdf/2301.08778.pdf)
 
-In the paper on [Can we use split learning on 1D CNN models for PP training](https://arxiv.org/pdf/2003.12365.pdf) Abuadbba, Kim et al. showed that data can be reconstructed from activation maps of intermediate split layer.
+In the paper [[Can we use split learning on 1D CNN models for PP training]] by Abuadbba, Kim et al. showed that data can be reconstructed from activation maps of intermediate split layer.
 Possible mitigation e. g. adding new hidden layers or using [[Differential Privacy]] leads to less accuracy #tocheck
 Authors of this paper propose [[Homomorphic Encryption]] to mitigate privacy leakage
 

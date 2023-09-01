@@ -11,8 +11,30 @@
             "id": "343f3d820c2ecc3b",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Can we use split learning on 1D CNN models for PP training.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "f24ce8679ffe4de4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d41ca2b70191e1ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Synthetic Data.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Synthetic Data.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Synthetic Data.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +142,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Synthetic Data.md"
+              }
             }
           },
           {
@@ -146,20 +172,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "343f3d820c2ecc3b",
+  "active": "d41ca2b70191e1ca",
   "lastOpenFiles": [
+    "Can we use split learning on 1D CNN models for PP training.md",
+    "Synthetic Data.md",
     "Split Ways.. Privacy-Preserving Training of Encrypted Data Using Split Learning.md",
-    "Split Learning.md",
-    "Ideas.md",
-    "Pasted image 20230829122410.png",
-    "Privacy preserving neural networks.md",
-    "Differential Privacy.md",
-    "Split Learning for health.md",
     "Privacy-preserving computational geometry.md",
+    "Privacy preserving neural networks.md",
+    "Ideas.md",
+    "Differential Privacy.md",
+    "Security Proof.md",
+    "Millionaire's problem.md",
+    "Split Learning.md",
+    "Pasted image 20230829122410.png",
+    "Split Learning for health.md",
     "Robust Deanonymization of large sparse datasets.md",
     "Secure Multi party computation (MPC).md",
-    "Security.md",
-    "Security Proof.md",
-    "Millionaire's problem.md"
+    "Security.md"
   ]
 }
