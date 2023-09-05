@@ -1,38 +1,64 @@
 {
   "main": {
-    "id": "c857047664b274de",
+    "id": "8da6879f9834d2cc",
     "type": "split",
     "children": [
       {
-        "id": "a1b3de9eca20d4bf",
+        "id": "27856d4918c533b1",
         "type": "tabs",
         "children": [
           {
-            "id": "d78e339ad63d5d49",
+            "id": "343f3d820c2ecc3b",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": "Knowledge/.obsidian/workspace.json",
-                "staged": false
+                "file": "Ideas.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8e03a3d639ebee43",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Surveillance Capitalism.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9e0c7ca4ab81fca9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Boolean Cube.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "847e87c2b942219e",
+    "id": "fc8316cccff17cf3",
     "type": "split",
     "children": [
       {
-        "id": "e2140e526e123480",
+        "id": "424a05907b196704",
         "type": "tabs",
         "children": [
           {
-            "id": "655e06966fdc7d8c",
+            "id": "b64bfa82c42bfb50",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -42,7 +68,7 @@
             }
           },
           {
-            "id": "986e8d06ca154bf3",
+            "id": "7da080afa8c6389d",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -57,7 +83,7 @@
             }
           },
           {
-            "id": "73c1940020431bd7",
+            "id": "9a8fe147e75ddaff",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -71,19 +97,20 @@
     "width": 300
   },
   "right": {
-    "id": "84773cda0912401b",
+    "id": "3aacad5af2a25a80",
     "type": "split",
     "children": [
       {
-        "id": "998c7727b4bd70b9",
+        "id": "489a689d9639a4cc",
         "type": "tabs",
         "children": [
           {
-            "id": "e6d7c7dc5b47d2c2",
+            "id": "b8375d577c0cc7a9",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Boolean Cube.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,18 +122,19 @@
             }
           },
           {
-            "id": "21f54427e08f5cdc",
+            "id": "81ec7151c55466b1",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Boolean Cube.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "fe5486f0ff61cd03",
+            "id": "469da2fffa9ac57b",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -117,27 +145,29 @@
             }
           },
           {
-            "id": "969988925345fc2f",
+            "id": "98be9f845eface17",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Boolean Cube.md"
+              }
+            }
+          },
+          {
+            "id": "702a9455b4ef78bd",
             "type": "leaf",
             "state": {
               "type": "git-view",
               "state": {}
             }
-          },
-          {
-            "id": "37db7c66dc73246e",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 325.5
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -149,24 +179,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d78e339ad63d5d49",
+  "active": "9e0c7ca4ab81fca9",
   "lastOpenFiles": [
-    "Split Ways.. Privacy-Preserving Training of Encrypted Data Using Split Learning.md",
-    "Synthetic Data.md",
-    "Robust Deanonymization of large sparse datasets.md",
+    "Surveillance Capitalism.md",
+    "Boolean Cube.md",
     "Ideas.md",
+    "Synthetic Data.md",
     "Differential Privacy.md",
     "Can we use split learning on 1D CNN models for PP training.md",
-    "Split Learning for health.md",
-    "Split Learning.md",
-    "Security Proof.md",
-    "Security.md",
-    "Secure Multi party computation (MPC).md",
+    "Split Ways.. Privacy-Preserving Training of Encrypted Data Using Split Learning.md",
     "Privacy-preserving computational geometry.md",
     "Privacy preserving neural networks.md",
-    "Pasted image 20230829122410.png",
-    "conflict-files-obsidian-git.md",
+    "Security Proof.md",
     "Millionaire's problem.md",
-    "Untitled.canvas"
+    "Split Learning.md",
+    "Pasted image 20230829122410.png",
+    "Split Learning for health.md",
+    "Robust Deanonymization of large sparse datasets.md",
+    "Secure Multi party computation (MPC).md",
+    "Security.md"
   ]
 }
