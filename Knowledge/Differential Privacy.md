@@ -2,6 +2,6 @@ Formalization of privacy in database. Intuitively, an algorithm is differentiabl
 
 might be good for understanding: [phd thesis](https://www.scss.tcd.ie/Doug.Leith/pubs/Naoise_thesis.pdf) by naoise holohan
 
-review by OG Cynthia Dwork [Form foundation for private data analysis](https://dl.acm.org/doi/pdf/10.1145/1866739.1866758) and here [Algorithmic Foundations of DP](https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf) 
+review by OG Cynthia Dwork [Form foundation for private data analysis](https://www.microsoft.com/en-us/research/wp-content/uploads/2011/01/dwork_cacm.pdf) and here [Algorithmic Foundations of DP](https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf) 
 
 
