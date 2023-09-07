@@ -1,6 +1,7 @@
-- [ ] Book about synthetic data in DL [Link to springer](https://link.springer.com/book/10.1007/978-3-030-75178-4)
+- [ ] Book about [[Synthetic Data]] in DL [Link to springer](https://link.springer.com/book/10.1007/978-3-030-75178-4)
 	- Good intro to DL and Generative AI
 	- Chapter about privacy, especially [[Differential Privacy]]
 - [ ] Article on [[Differential Privacy]] and [[Synthetic Data]], [Link](https://www.math.ucdavis.edu/~strohmer/papers/2022/privatemeasure.pdf)
 	- great maths behind it
 	- tradeoff privacy vs utility
+- [ ] [PATE-GAN](https://openreview.net/pdf?id=S1zk9iRqF7) Generate private synthetic data using GAN
