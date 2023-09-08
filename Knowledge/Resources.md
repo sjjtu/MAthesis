@@ -5,3 +5,5 @@
 	- great maths behind it
 	- tradeoff privacy vs utility
 - [ ] [PATE-GAN](https://openreview.net/pdf?id=S1zk9iRqF7) Generate private synthetic data using GAN
+- [ ] [review](https://arxiv.org/pdf/2206.04621.pdf) on use and misuse of DP
+- [ ] [Expose your epsilons](https://journalprivacyconfidentiality.org/index.php/jpc/article/view/689/685) by OG Dwork
