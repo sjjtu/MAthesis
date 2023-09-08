@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ab59931fbac873a3",
+            "id": "24f78b32355b9dbe",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -21,7 +21,7 @@
             }
           },
           {
-            "id": "715540dc766baff3",
+            "id": "b446abaefbd4ed63",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,8 +32,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "715540dc766baff3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Differential Privacy.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -99,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Resources.md",
+                "file": "Prezz/Ideation 1 (8th September 2023).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Resources.md",
+                "file": "Prezz/Ideation 1 (8th September 2023).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Resources.md"
+                "file": "Prezz/Ideation 1 (8th September 2023).md"
               }
             }
           }
@@ -167,10 +181,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ab59931fbac873a3",
+  "active": "b446abaefbd4ed63",
   "lastOpenFiles": [
-    "Prezz/Ideation 1 (8th September 2023).md",
     "Resources.md",
+    "Differential Privacy.md",
+    "Prezz/Ideation 1 (8th September 2023).md",
     "Synthetic Data.md",
     "Can we use split learning on 1D CNN models for PP training.md",
     "Pasted image 20230907131418.png",
@@ -181,7 +196,6 @@
     "Security.md",
     "Secure Multi party computation (MPC).md",
     "Robust Deanonymization of large sparse datasets.md",
-    "Differential Privacy.md",
     "Boolean Cube.md",
     "Split Ways.. Privacy-Preserving Training of Encrypted Data Using Split Learning.md",
     "Ideas.md",

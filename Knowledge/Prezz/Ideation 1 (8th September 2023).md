@@ -23,9 +23,15 @@
 ---
 ## Syntethic Data (SD)
 
+### Approach 1: Gen AI
+- PATE-GAN (2019): uses relaxed version of DP, but achieves state of the art results
+### Approach 2: Noise
+- Laplacian mechanism: add noise according to laplacian distribution
+- interesting paper (2022): superrandom walk  
 
 ---
 ## Differential Privacy (DP)
+OG definition by Dwork et al (2006)
 
 ---
 ## DP + SD = ???
