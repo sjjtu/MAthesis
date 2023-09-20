@@ -3,3 +3,7 @@ Hybrid approach [[[Split Learning]]] with half [[Homomorphic Encryption]] half s
 
 Optimal way of when to split in [[Split Learning for health]] to preserve accuracy and privacy
 - How to quantify privacy?
+
+DP + SD:
+- Fix requirements on data and model!
+- Paper from Apo
