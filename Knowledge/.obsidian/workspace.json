@@ -1,80 +1,40 @@
 {
   "main": {
-    "id": "8da6879f9834d2cc",
+    "id": "c857047664b274de",
     "type": "split",
     "children": [
       {
-        "id": "27856d4918c533b1",
+        "id": "b0383d073021a127",
         "type": "tabs",
         "children": [
           {
-            "id": "343f3d820c2ecc3b",
+            "id": "24f78b32355b9dbe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ideas.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "16250d210b21f619",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Differential Privacy.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6f4949777e3b43f4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Prezz/Ideation 1 (8th September 2023).md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "730467ea9da9fce5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Resources.md",
+                "file": "Papers/Split Learning for health.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "fc8316cccff17cf3",
+    "id": "847e87c2b942219e",
     "type": "split",
     "children": [
       {
-        "id": "424a05907b196704",
+        "id": "e2140e526e123480",
         "type": "tabs",
         "children": [
           {
-            "id": "b64bfa82c42bfb50",
+            "id": "655e06966fdc7d8c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -84,7 +44,7 @@
             }
           },
           {
-            "id": "7da080afa8c6389d",
+            "id": "986e8d06ca154bf3",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -99,7 +59,7 @@
             }
           },
           {
-            "id": "9a8fe147e75ddaff",
+            "id": "73c1940020431bd7",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -113,20 +73,20 @@
     "width": 300
   },
   "right": {
-    "id": "3aacad5af2a25a80",
+    "id": "84773cda0912401b",
     "type": "split",
     "children": [
       {
-        "id": "489a689d9639a4cc",
+        "id": "998c7727b4bd70b9",
         "type": "tabs",
         "children": [
           {
-            "id": "b8375d577c0cc7a9",
+            "id": "e6d7c7dc5b47d2c2",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Prezz/Ideation 1 (8th September 2023).md",
+                "file": "Papers/Split Learning for health.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,19 +98,19 @@
             }
           },
           {
-            "id": "81ec7151c55466b1",
+            "id": "21f54427e08f5cdc",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Prezz/Ideation 1 (8th September 2023).md",
+                "file": "Papers/Split Learning for health.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "469da2fffa9ac57b",
+            "id": "fe5486f0ff61cd03",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -161,29 +121,28 @@
             }
           },
           {
-            "id": "98be9f845eface17",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Prezz/Ideation 1 (8th September 2023).md"
-              }
-            }
-          },
-          {
-            "id": "702a9455b4ef78bd",
+            "id": "969988925345fc2f",
             "type": "leaf",
             "state": {
               "type": "git-view",
               "state": {}
             }
+          },
+          {
+            "id": "37db7c66dc73246e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Papers/Split Learning for health.md"
+              }
+            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 325.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -192,72 +151,37 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "obsidian-advanced-slides:Show Slide Preview": false
+      "command-palette:Open command palette": false
     }
   },
-  "floating": {
-    "id": "41bed10a41146fd2",
-    "type": "floating",
-    "children": [
-      {
-        "id": "604cf3c9a760bbd2",
-        "type": "window",
-        "children": [
-          {
-            "id": "52520b82de60cc3e",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "396c154c27e6b282",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Prezz/Ideation 1 (8th September 2023).md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 0,
-        "y": 26,
-        "width": 1920,
-        "height": 1054,
-        "maximize": true,
-        "zoom": 3
-      }
-    ]
-  },
-  "active": "6f4949777e3b43f4",
+  "active": "24f78b32355b9dbe",
   "lastOpenFiles": [
-    "Differential Privacy.md",
+    "Papers/Split Ways.. Privacy-Preserving Training of Encrypted Data Using Split Learning.md",
     "Prezz/Ideation 1 (8th September 2023).md",
+    "Images/Pasted image 20230907131418.png",
+    "Images/Pasted image 20230829122410.png",
+    "Images",
+    "Security.md",
+    "Secure Multi party computation (MPC).md",
     "Resources.md",
-    "().md",
-    "Ideas.md",
-    "Synthetic Data.md",
-    "Fundamental Law of Info Reconstruction.md",
-    "Boolean Cube.md",
-    "Prezz",
-    "Pasted image 20230907131418.png",
-    "Surveillance Capitalism.md",
-    "Can we use split learning on 1D CNN models for PP training.md",
-    "Split Ways.. Privacy-Preserving Training of Encrypted Data Using Split Learning.md",
     "Privacy-preserving computational geometry.md",
     "Privacy preserving neural networks.md",
-    "Security Proof.md",
-    "Millionaire's problem.md",
     "Split Learning.md",
-    "Pasted image 20230829122410.png",
-    "Split Learning for health.md",
-    "Robust Deanonymization of large sparse datasets.md",
-    "Secure Multi party computation (MPC).md",
-    "Security.md"
+    "Security Proof.md",
+    "Differential Privacy.md",
+    "Papers/Split Learning for health.md",
+    "Ideas.md",
+    "Boolean Cube.md",
+    "Papers/Robust Deanonymization of large sparse datasets.md",
+    "Papers/Can we use split learning on 1D CNN models for PP training.md",
+    "().md",
+    "Papers",
+    "Fundamental Law of Info Reconstruction.md",
+    "Synthetic Data.md",
+    "Prezz",
+    "Surveillance Capitalism.md",
+    "conflict-files-obsidian-git.md",
+    "Millionaire's problem.md",
+    "Untitled.canvas"
   ]
 }

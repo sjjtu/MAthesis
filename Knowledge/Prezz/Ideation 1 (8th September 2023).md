@@ -16,7 +16,7 @@
 
 --- 
 
-![[Pasted image 20230907131418.png  ]]
+![[Images/Pasted image 20230907131418.png  ]]
 
 ---
 ## Synthetic Data (SD)

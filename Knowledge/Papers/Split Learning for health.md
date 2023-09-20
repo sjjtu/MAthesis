@@ -4,8 +4,9 @@ Authors are proposing different configurations for split learning for various he
 - **Simple vanilla configuration for SL**
 - **U-shaped configuration without label sharing**
 - **Vertical partitioned data for SL**
-![[Pasted image 20230829122410.png]]
+![[Images/Pasted image 20230829122410.png]]
 
 ## Results
 Comparision between [[Split Learning]]and [[Federated Learning]] and [[synchronous SGD]]:
 - SL gets higher accuracies while using less computational resources and bandwidth
+[[]]
