@@ -23,6 +23,8 @@ Local overfitting is detected using equation 2: a high score would indicate loca
 
 ## Experiment
 - use California housing data set
-- 
+- Use TVAE from [this paper](https://arxiv.org/pdf/1907.00503v2.pdf) which is some kind of GAN + VAE to generate data
+- run MIA against the synthetic generated data
 ## Misc
 - good paragraph on mathematical formulation for MIA!
+- ![[Pasted image 20230921102532.png]]
