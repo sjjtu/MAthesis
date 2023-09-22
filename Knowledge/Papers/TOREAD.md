@@ -1,2 +1,3 @@
 - [ ] https://arxiv.org/abs/1802.08232v3  - - - [[The Secret Sharer- Evaluating and Testing Unintended Memorization in Neural Networks]]
-- [ ] 
+- [ ] A. Narayanan and V. Shmatikov. Robust deanonymization of large sparse datasets: a decade later. https://www.cs.princeton.edu/~arvindn/publications/de-anonymization-retrospective.pdf, 2019.
+- [ ] L. Sweeney. k-anonymity: A model for protecting privacy. IJUFKS, 2002.
