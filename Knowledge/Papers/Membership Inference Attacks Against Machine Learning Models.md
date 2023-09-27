@@ -22,4 +22,5 @@ inference attacks based solely on the model, which includes the attacks describe
 ## Misc
 - OG paper in MIA in ML, cited over 3000 times
 - MIA is not inverse problem see 
-- good ref for MLAAS ![[Pasted image 20230921121014.png]]
+- good ref for MLAAS 
+![[Pasted image 20230921121014.png]]
