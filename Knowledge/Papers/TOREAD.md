@@ -8,5 +8,6 @@
 	- [ ] DP and attacks: Larry Wasserman and Shuheng Zhou. A statistical framework for differential privacy. Journal of the American Statistical Association, 105(489): 375–389, 2010
 - [ ] SD:
 	- [ ] accurate SD is NP: Jonathan Ullman and Salil Vadhan. Pcps and the hardness of generating private synthetic data. In Theory of Cryptography Conference, pages 400–416. Springer, 2011.
+	- [ ] SD is promising solution for privacy: https://law.stanford.edu/wp-content/uploads/2019/01/Bellovin_20190129.pdf
 - [ ] Evaluating privacy:
 	- [ ] leakage estimation: Giovanni Cherubin, Konstantinos Chatzikokolakis, and Catuscia Palamidessi. F-bleau: [[fast black-box leakage estimation]]. In 2019 IEEE Symposium on Security and Privacy (SP), pages 835–852. IEEE, 2019
