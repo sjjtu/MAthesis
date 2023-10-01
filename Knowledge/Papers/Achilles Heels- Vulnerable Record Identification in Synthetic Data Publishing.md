@@ -1,4 +1,14 @@
-#mia #sd 
+---
+Use@: 
+Technical topic: 
+Overall topic: 
+tags: 
+- mia
+- sd
+authors: 
+source:
+---
+
 
 ## Summary
 - propose principled vulnerable record identification for synthetic data

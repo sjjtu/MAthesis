@@ -1,3 +1,11 @@
+---
+Use@: 
+Technical topic: 
+Overall topic: 
+tags: mia mlaas
+authors: 
+source:
+---
 #mia #mlaas
 ## Summary
 - MIA in black box setting for classification problems

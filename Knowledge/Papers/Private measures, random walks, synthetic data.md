@@ -1,4 +1,15 @@
-by March Boedihardjo, Thomas Strohmer, Roman Vershynin, see [here](https://arxiv.org/abs/2204.09167)
+---
+Use@: 
+Technical topic: 
+Overall topic: 
+tags: 
+authors: 
+- March Boedihardjo
+- Thomas Strohmer
+- Roman Vershynin
+source: https://arxiv.org/abs/2204.09167
+---
+
 
 #sd #intro #dp #mp
 ## Summary

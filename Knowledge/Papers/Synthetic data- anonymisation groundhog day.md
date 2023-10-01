@@ -1,6 +1,19 @@
-paper by Theresa Stadler, Bristena Oprisanu, Carmela Troncoso, see [here](https://arxiv.org/abs/2011.07018)
+---
+Use@: 
+Technical topic: 
+Overall topic: 
+tags:
+  - mia
+  - sd
+  - genai
+  - sanitisation
+authors:
+  - Theresa Stadler
+  - Bristena Oprisanu
+  - Carmela Troncoso
+source: https://arxiv.org/abs/2011.07018
+---
 
-#mia #sd #genai #sanitisation
 ## Summary
 - open source framework for evaluating privacy gain of SD and compare to anonymisation techniques
 - empirically shows that SD does not retain data utility or privacy

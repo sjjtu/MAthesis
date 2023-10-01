@@ -1,4 +1,16 @@
-paper by Breugel, van der Schaar, Sun, Qian , see paper [here](https://arxiv.org/abs/2302.12580)
+---
+Use@: 
+Technical topic: 
+Overall topic: 
+tags: 
+authors: 
+- Boris van Breugel
+- Mihaela van der Schaar
+- Hao Sun
+- ZhaozhiQian
+source: https://arxiv.org/abs/2302.12580
+---
+
 
 #mia #genai
 ## Summary

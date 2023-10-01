@@ -1,4 +1,12 @@
-## Source: this [paper](https://arxiv.org/pdf/2003.12365.pdf)
+---
+Use@: 
+Technical topic: 
+Overall topic: 
+- health
+tags: splitLearning
+authors: 
+source: https://arxiv.org/pdf/2003.12365.pdf
+---
 
 ### Summary
 Authors design a 1D CNN for sequential heartbeat data to detect heart rhythm diseases. They use [[Split Learning]] and found some privacy issues that they try to mitigate using i) more hidden layers and ii) apply a [[Differential Privacy]] mechanism to add noise to data.
