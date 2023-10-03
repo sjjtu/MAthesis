@@ -1,7 +1,13 @@
 ---
-Use@: 
-Technical topic: 
-Overall topic: 
+Use@:
+  - sota
+  - methods
+Technical topic:
+  - sd
+  - privacy
+Overall topic:
+  - review
+  - framework
 tags:
   - mia
   - sd
@@ -46,3 +52,4 @@ measure privacy gain by difference between adversary's advantage when given synt
 ### Results:
 - for gen ai models: privacy gain is hard to predict
 - for DP models: provide higher privacy gain, but need to carefully check theoretical assumptions in order to achieve theoretical results, but comes at cost of utility
+- ![[Pasted image 20231003134157.png]]

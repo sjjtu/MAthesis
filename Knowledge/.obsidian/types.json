@@ -3,8 +3,8 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
+    "Technical topic": "multitext",
     "Use@": "multitext",
-    "Overall topic": "multitext",
-    "authors": "multitext"
+    "source": "text"
   }
 }
