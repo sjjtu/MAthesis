@@ -7,3 +7,7 @@ review by OG Cynthia Dwork [Form foundation for private data analysis](https://w
 Privacy requires randomization proof: https://www.youtube.com/watch?v=HoCasrGCKs4
 
 used by Apple, Google, US Census data
+
+good resource for basic theorems and understandable proofs: 
+- http://www.gautamkamath.com/CS860notes/lec4.pdf
+- https://cs-people.bu.edu/gaboardi/teaching/cse711Spring2016/Lecture1.pdf
