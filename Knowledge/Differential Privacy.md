@@ -11,3 +11,6 @@ used by Apple, Google, US Census data
 good resource for basic theorems and understandable proofs: 
 - http://www.gautamkamath.com/CS860notes/lec4.pdf
 - https://cs-people.bu.edu/gaboardi/teaching/cse711Spring2016/Lecture1.pdf
+
+good resource easy to understand example for randomized reponse:
+- [ ] https://accuracyandprivacy.substack.com/p/differential-privacy-an-easy-case

@@ -1,0 +1,109 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+%\usepackage{csquotes}
+\usepackage{graphicx}
+\graphicspath{ {pictures/} }
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage[english, ngerman]{babel}
+\usepackage{amsthm,etoolbox, amsmath, amssymb}
+\usepackage{enumitem}   
+\usepackage[nottoc]{tocbibind}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{color} 
+\usepackage{algorithm}
+\usepackage{algpseudocodex}
+\usepackage{aligned-overset}
+\usepackage [autostyle, german = quotes]{csquotes}
+\usepackage{tikz}
+\usepackage{pgffor}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\MakeOuterQuote{"}
+
+\AddToHook{cmd/section/before}{\clearpage}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Korollar}
+
+\theoremstyle{definition}
+\newtheorem{definition}[thm]{Definition}
+\newtheorem{ex}[thm]{Beispiel}
+
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Bemerkung}
+
+\makeatletter
+\@addtoreset{thm}{section}% Reset theorem counter with every section
+\@addtoreset{thm}{subsection}
+\@addtoreset{thm}{subsubsection}
+\newcommand{\theoremprefix}{}
+\let\thetheoremsaved\thethm
+\renewcommand{\thethm}{\theoremprefix\thetheoremsaved}
+\let\sectionsaved\section
+\patchcmd{\@startsection}{\par}{\renewcommand{\theoremprefix}{\csname the#1\endcsname.}}{}{}
+\makeatother
+
+\setlength{\jot}{10pt}
+\setlength{\headheight}{15pt}
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{%
+            \node[shape=circle,fill=blue!20,draw,inner sep=2pt] (char) {#1};}}
+
+\usepackage[style=alphabetic, firstinits=true, backend=biber, sorting=nyt, doi=false, isbn=false, url=true, maxbibnames=99]{biblatex}
+\DeclareNameAlias{default}{family-given}
+\addbibresource{references.bib}
+
+\title{Thesis Title}
+\author{Author Name}
+\date{Day Month Year}
+
+\setlength\parindent{0pt}
+
+\begin{document}
+	\input{titlepage}
+	\input{abstract.tex}
+	\input{eides_erkl.tex}
+	\tableofcontents
+	\thispagestyle{empty}
+	% \addtocontents{toc}{\protect\thispagestyle{empty}}
+	\setcounter{page}{0}
+
+	\input{notation.tex}
+	\addcontentsline{toc}{section}{Notation}
+
+	\listoffigures
+
+	\pagestyle{fancy}
+	\fancyhf{}
+	\fancyhead[L]{\leftmark}
+	\fancyfoot[R]{\thepage}
+
+
+	\section{Mathematische Grundlagen}
+	\input{chapters/chapter0}
+	
+	\section[Numerischer Wertebereich und numerischer Radius]{Numerischer Wertebereich und \\numerischer Radius}
+	\input{chapters/chapter1}
+
+	\section[Lax-Wendroff-Verfahren ]{Lax-Wendroff-Verfahren}
+	\input{chapters/chapter2.tex}
+
+	\clearpage
+
+	\fancyhead[L]{ANHANG}
+	\section*{Anhang}
+	\addcontentsline{toc}{section}{Anhang}
+	\input{chapters/9appendix.tex}
+	\clearpage
+
+	\pagestyle{fancy}
+	\fancyhead[L]{LITERATURVERZEICHNIS}
+	\fancyfoot[R]{\thepage}
+	\printbibliography[heading=bibintoc, title=Literaturverzeichnis]
+\end{document}

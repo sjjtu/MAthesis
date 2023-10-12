@@ -1,0 +1,137 @@
+Der numerische Wertebereich und Radius werden in einem Hilbertraum-Setting für lineare und beschränkte Operatoren definiert. Daher werden in diesem Abschnitt die grundlegenden Ergebnisse und Definitionen aus der Theorie der Hilberträumen in kompakter Weise erläutert, aber ohne Beweis aufgeführt. Details können den Standardwerken zur Funktionalanalysis entnommen werden, siehe \parencite[][Kapitel 5, 6]{werner2006funktionalanalysis} oder auch \parencite[][Kapitel 1,2, 6, 7]{conway2019course}.
+
+\subsection{Hilberträume}
+
+Sei $\mathbb{K}$ ein Körper. Im Kontext dieser Arbeit wird $\mathbb{K}$ meistens der Körper der komplexen Zahlen $\mathbb{C}$ sein, seltener auch der Körper der reellen Zahlen $\mathbb{R}$. Üblicherwei\-se wird die Notation $\mathbb{K} \in \{\mathbb{C}, \mathbb{R}\}$ eingeführt. Auf einem Vektorraum $X$ über $\mathbb{K}$ definieren wir das Skalarprodukt als eine Abbildung, die zwei Elemente aus dem Vektorraum auf ein Element des zugrundeliegenden Körpers wie folgt abbildet:
+
+\begin{definition}[Skalarprodukt]
+    Sei X ein Vektorraum über $\mathbb{K}$. Dann ist ein Skalarprodukt auf X eine Abbildung
+    \begin{align*}
+        \left<\cdot ,\cdot \right> : X \times X \longrightarrow \mathbb{K} \; ,
+    \end{align*}
+    welche folgende Eigenschaften für alle $ x,y,z \in X$ und $a, b \in \mathbb{K}$ erfüllt: \begin{enumerate}[label=(\roman*)]
+        \item Linearität im ersten Argument: \begin{align*}
+            \left< a x + b y, z \right> = a \left< x , z \right> +b \left< y, z \right>
+        \end{align*}
+        \item konjugierte Symmetrie: \begin{align*}
+            \left< x,y \right> = \overline{\left< y,x \right>}
+        \end{align*}
+        \item  positive Definitheit: \begin{align*}
+            \left< x,x \right> \ge 0 \\
+            \left< x,x \right> = 0 \iff x = 0
+        \end{align*}
+    \end{enumerate}
+\end{definition}
+
+Einen Vektorraum ausgestattet mit einem Skalarprodukt nennt man auch einen Prä\-hilbert\-raum. Ein Hilbertraum ist dann ein voll\-ständiger Prä\-hilbert\-raum, wobei als Norm die vom Skalarprodukt induzierte Norm betrachtet wird (man mache sich bewusst, dass es sich dabei wirklich um eine Norm handelt!).
+
+\begin{definition}[Hilbertraum]
+    Sei $X$ ein Prähilbertraum mit Skalarprodukt $\left<\cdot, \cdot \right>$ und induzierter Norm $\| \cdot \| = \sqrt{\left<\cdot, \cdot \right>}$. Dann ist $X$ ein Hilbertraum, falls $X$ vollständig bezüglich $\| \cdot \|$ ist.
+\end{definition}
+
+\begin{ex} \label{ex:standard_skp}
+    Das Standardskalarprodukt auf $\mathcal{H}=\mathbb{C}^n$ ist wie folgt definiert: Für Vektoren \begin{align*}
+        x = \begin{pmatrix}
+            x_1 \\ \vdots \\ x_n
+        \end{pmatrix} \; , \;
+        y = \begin{pmatrix}
+            y_1 \\ \vdots \\ y_n
+        \end{pmatrix}
+    \end{align*}
+    aus $\mathcal{H}$
+    ist \begin{align*}
+        \left<x,y \right> = \sum_{k=1}^n {x_k \overline{y_k}} \;\; .
+    \end{align*} 
+    $\mathbb{C}^n$ mit dem so definierten Skalarprodukt ist ein Hilbertraum.
+\end{ex}
+
+Nun können lineare, beschränkte Operatoren auf einem Hilbertraum definiert werden.
+
+\begin{definition}[linearer, beschränkter Operator]
+    Sei $T: \mathcal{H} \longrightarrow \mathcal{H}$ eine Abbildung auf einem Hilbertraum $\mathcal{H}$. Dann ist $T$ \begin{enumerate}[label=(\roman*)]
+        \item linear, falls für alle $x,y \in \mathcal{H}$ und $a ,b \in \mathbb{K}$ gilt: \begin{align*}
+            T(a x + b y) = a Tx + b Ty
+        \end{align*}
+        \item beschränkt, falls ein $M > 0 $ existiert, sodass für alle $x \in \mathcal{H}$ gilt: \begin{align*}
+            \| Tx \| \le Mx
+        \end{align*}
+    \end{enumerate}
+    Der Raum aller linearen, beschränkten Operatoren auf $\mathcal{H}$ wird mit $\mathcal{L}(\mathcal{H})$ bezeichnet. Ausgestattet mit der Operatornorm $\|T\| = \sup_{\|x\|=1} \|Tx\| $ ist $\mathcal{L}(\mathcal{H})$ sogar ein Banachraum, solange $\mathcal{H}$ ein Hilbertraum ist. 
+\end{definition}
+
+Falls $\mathcal{H}$ endlichdimensional ist, kann jeder lineare, beschränkte Operator mit einer Matrix identifiziert werden. Das Konzept der adjungierten Matrix kann auch für unendlichdimensionale Hilberträume verallgemeinert werden und führt auf den Begriff des adjungierten Operators.
+
+\begin{definition}[adjungierter Operator]
+    Für $T\in \mathcal{L}(\mathcal{H})$ heißt der eindeutige Operator $T^*\in \mathcal{L}(\mathcal{H})$ mit $\left< Tx,y \right> = \left< x,T^*y \right>$ für alle $x, y \in \mathcal{H}$ der zu $T$ adjungierte Operator.  
+\end{definition}
+
+Es ist nützlich, bestimmte Klassen von Operatoren in Hilberträumen näher zu betrachten, daher werden nun unitäre, normale und selbst-adjungierte Operatoren definiert.
+
+\begin{definition}[selbst-adjungierte, normale, unitäre Operatoren]
+    Ein linear, beschränkter Operator $T \in \mathcal{L}(\mathcal{H})$ heißt
+    \begin{itemize}
+        \item selbst-adjungiert, falls $T=T^*$
+        \item normal, falls $T$ und $T^*$ kommutieren, das heißt $TT^*=T^*T$
+        \item unitär, falls $T$ invertierbar und $T^{-1}=T^*$
+    \end{itemize}
+\end{definition}
+
+Manchmal ist es auch hilfreich, Projektionen von einem Hilbertraum auf einen Unterraum $V$ zu betrachten. Insbesondere werden wir die sogenannte orthogonale Projektion benötigen, um ein Theorem über die Konvexitätseigenschaft des numerischen Wertebereichs zu beweisen. Die orthogonale Projektion bildet ein beliebiges Element $x$ aus dem Hilbertraum auf das eindeutige Element im Unterraum $V$ ab, sodass der Abstand zwischen diesen beiden Elementen genau dem Abstand zwischen $x$ und $V$ entspricht. 
+
+\begin{thm}[Orthogonale Projektion] \label{thm_orth_proj}
+    Sei $\mathcal{H}$ ein Hilbertraum und $V \subseteq \mathcal{H}$ ein abgeschlossener, nicht-leerer, linearer Unterraum. Dann existiert zu jedem $x \in \mathcal{H}$ ein eindeutiges Element $Px \in V$, sodass $\|x-Px\|=d(x, V)= \inf_{v\in V} \|x-v\|$. Die Abbildung \begin{align*}
+        P: \mathcal{H} \longrightarrow \mathcal{H} \; \; , \; x \mapsto Px
+    \end{align*}
+    heißt die orthogonale Projektion von $\mathcal{H}$ auf $V$. Außerdem ist $P \in \mathcal{L}(\mathcal{H})$ und selbst-adjungiert. 
+\end{thm}
+
+\subsection{Spektraltheorie}
+
+Das Konzept von Eigenwerten und -vektoren aus der linearen Algebra kann auch auf unendlichdimensionale Vektorräume verallgemeinert werden. Dafür werden folgende Mengen definiert:
+
+\begin{definition}
+    Sei $\mathcal{H}$ ein komplexer Hilbertraum und $T\in \mathcal{L}(\mathcal{H})$. Dann definiert man: \begin{itemize}
+        \item die Resolventenmenge von $T$ \begin{align*}
+            \rho(T) := \left\{ \lambda \in \mathbb{C}: \lambda -T \text{ ist bijektiv} \right\}
+        \end{align*}
+        \item das Spektrum von $T$
+        \begin{align*}
+            \sigma(T)=\mathbb{C} \setminus \rho(T)
+        \end{align*}
+        
+        \item das Punktspektrum von $T$ 
+        \begin{align*}
+            \sigma_{p}(T) := \left\{ \lambda \in \mathbb{C}: \lambda -T \text{ ist nicht injektiv} \right\}
+        \end{align*}
+        \item das approximative Punktspektrum von $T$ 
+        \begin{align*}
+            \sigma_{app}(T)=\{ \lambda \in \mathbb{C}: \exists \{x_n\}_n \in \mathcal{H} \text{ sd. } \|x_n\|=1  \text{ für alle $n\in\mathbb{N}$ und } \\ 
+            \|(T-\lambda)x_n \| \rightarrow 0 \text{ für } n \rightarrow \infty \}
+        \end{align*}
+        \item den Spektralradius von $T$ \begin{align*}
+            r(T)=\sup_{\lambda \in \sigma(T)} |\lambda|
+        \end{align*}
+    \end{itemize}
+\end{definition}
+
+Dabei gilt folgende wichtige Inklusion \parencite[][Problem 78]{halmos2012hilbert}.
+
+\begin{lem} \label{lem:point_approx_spec}
+    Der Rand vom Spektrum ist enthalten im approximativen Punktspektrum, das heißt $\partial \sigma(T) \subseteq \sigma_{app}(T)$
+\end{lem}
+
+
+\subsection{Schurzerlegung}
+
+Es ist bekannt, dass das Spektrum eines Operators invariant unter Ähnlich\-keits\-trans\-for\-ma\-tionen ist. Eine schwächere Aussage gilt auch für den numerischen Wertebereich - nämlich nur noch für unitäre Ähnlichkeitstransformationen. Diese Eigenschaft werden wir später in Proposition \ref{prop:properties_numran} zeigen. Daher ist es im Endlichdimensionalen sinnvoll, die sogenannte Schur-Zerlegung von Matrizen zu betrachten; diese erlaubt es, jede Matrix als eine unitär ähnliche obere Dreiecksmatrix darzustellen. Sie wurde 1909 von Issai Schur entdeckt und bewiesen in \parencite{schur1909charakteristischen}.
+
+\begin{thm}[Schur-Zerlegung]
+    Sei $A \in Mat_{n,n}(\mathbb{C})$. Dann existiert eine unitäre Matrix $U\in Mat_{n,n}(\mathbb{C})$ sodass 
+    \begin{align*}
+        U^*AU = R
+    \end{align*}
+    wobei $R$ eine obere Dreiecksmatrix ist.
+\end{thm}
+
+Findet man also so eine Zerlegung einer Matrix, dann lassen sich die Eigenwerte direkt von der Diagonalen von $R$ ablesen.
+
