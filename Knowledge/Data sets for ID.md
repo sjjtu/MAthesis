@@ -1,0 +1,3 @@
+- [KDD Cup 1999](http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html)
+	- refined version here: https://www.kaggle.com/datasets/hassan06/nslkdd
+- [Military network intrusion detection data from kaggle](https://www.kaggle.com/datasets/sampadab17/network-intrusion-detection)
