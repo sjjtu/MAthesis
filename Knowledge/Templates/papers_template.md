@@ -3,10 +3,10 @@ Use@:
 Technical topic: 
 Overall topic: 
 tags: 
-- 
-authors: 
-- 
-source:
+authors:
+  - 
+source: 
+year:
 ---
 
 
