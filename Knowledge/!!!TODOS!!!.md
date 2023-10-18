@@ -2,7 +2,7 @@ todo for Friday October 13:
 - [ ] read on DP merf
 	- [x] read connected SoC from Apo
 - [x] continue writing down on DP
-- [ ] look for data sets
+- [x] look for data sets
 
 
 
