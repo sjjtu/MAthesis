@@ -6,16 +6,13 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
-\usepackage[english, ngerman]{babel}
+\usepackage[english]{babel}
 \usepackage{amsthm,etoolbox, amsmath, amssymb}
 \usepackage{enumitem}   
 \usepackage[nottoc]{tocbibind}
 \usepackage{hyperref}
 \usepackage{wrapfig}
 \usepackage{color} 
-\usepackage{algorithm}
-\usepackage{algpseudocodex}
-\usepackage{aligned-overset}
 \usepackage [autostyle, german = quotes]{csquotes}
 \usepackage{tikz}
 \usepackage{pgffor}
@@ -29,14 +26,18 @@
 \newtheorem{thm}{Theorem}
 \newtheorem{lem}[thm]{Lemma}
 \newtheorem{prop}[thm]{Proposition}
-\newtheorem{cor}[thm]{Korollar}
+\newtheorem{cor}[thm]{Corollary}
 
 \theoremstyle{definition}
 \newtheorem{definition}[thm]{Definition}
-\newtheorem{ex}[thm]{Beispiel}
+\newtheorem{ex}[thm]{Example}
+\AtBeginEnvironment{ex}{
+  \pushQED{\qed}\renewcommand{\qedsymbol}{\par\noindent\rule{0.33\textwidth}{0.2pt}}
+}
+\AtEndEnvironment{ex}{\popQED\endexample}
 
 \theoremstyle{remark}
-\newtheorem{rem}[thm]{Bemerkung}
+\newtheorem{rem}[thm]{Remark}
 
 \makeatletter
 \@addtoreset{thm}{section}% Reset theorem counter with every section
@@ -66,15 +67,15 @@
 \setlength\parindent{0pt}
 
 \begin{document}
-	\input{titlepage}
-	\input{abstract.tex}
-	\input{eides_erkl.tex}
+	\input{chapters/titlepage}
+	\input{chapters/abstract}
+	\input{chapters/eides_erkl}
 	\tableofcontents
 	\thispagestyle{empty}
 	% \addtocontents{toc}{\protect\thispagestyle{empty}}
 	\setcounter{page}{0}
 
-	\input{notation.tex}
+	\input{chapters/notation}
 	\addcontentsline{toc}{section}{Notation}
 
 	\listoffigures
@@ -85,25 +86,22 @@
 	\fancyfoot[R]{\thepage}
 
 
-	\section{Mathematische Grundlagen}
 	\input{chapters/chapter0}
 	
-	\section[Numerischer Wertebereich und numerischer Radius]{Numerischer Wertebereich und \\numerischer Radius}
 	\input{chapters/chapter1}
 
-	\section[Lax-Wendroff-Verfahren ]{Lax-Wendroff-Verfahren}
 	\input{chapters/chapter2.tex}
 
 	\clearpage
 
-	\fancyhead[L]{ANHANG}
-	\section*{Anhang}
-	\addcontentsline{toc}{section}{Anhang}
+	\fancyhead[L]{APPENDIX}
+	\section*{Appendix}
+	\addcontentsline{toc}{section}{Appendix}
 	\input{chapters/9appendix.tex}
 	\clearpage
 
 	\pagestyle{fancy}
-	\fancyhead[L]{LITERATURVERZEICHNIS}
+	\fancyhead[L]{REFERENCES}
 	\fancyfoot[R]{\thepage}
-	\printbibliography[heading=bibintoc, title=Literaturverzeichnis]
+	\printbibliography[heading=bibintoc, title=References]
 \end{document}
