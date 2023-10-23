@@ -5,6 +5,7 @@
     "tags": "tags",
     "Technical topic": "multitext",
     "Use@": "multitext",
-    "source": "text"
+    "source": "text",
+    "authors": "multitext"
   }
 }
