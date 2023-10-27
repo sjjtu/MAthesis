@@ -111,7 +111,6 @@
             "hashes": [
                 "sha256:fe939df4583692f0512161ec1c880e0a10e71e6a232da045ab8edd3756fbadf0"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==0.2.2"
         },
         "google-pasta": {
@@ -227,6 +226,7 @@
                 "sha256:67daf93e5b52456cd8eea87a8b59405d2bb80ae411864a1ea206c3631d8179af"
             ],
             "index": "pypi",
+            "markers": "python_version >= '3.7'",
             "version": "==6.16.2"
         },
         "ipython": {
@@ -506,6 +506,7 @@
                 "sha256:f814504e459c68118bf2246a530ed953ebd18213dc20e3da524174d84ed010b2"
             ],
             "index": "pypi",
+            "markers": "python_version >= '3.7'",
             "version": "==3.5.3"
         },
         "matplotlib-inline": {
@@ -559,6 +560,7 @@
                 "sha256:fdffbfb6832cd0b300995a2b08b8f6fa9f6e856d562800fea9182316d99c4e8e"
             ],
             "index": "pypi",
+            "markers": "python_version < '3.11' and python_version >= '3.7'",
             "version": "==1.21.6"
         },
         "opt-einsum": {
@@ -606,6 +608,7 @@
                 "sha256:fe95bae4e2d579812865db2212bb733144e34d0c6785c0685329e5b60fcb85dd"
             ],
             "index": "pypi",
+            "markers": "python_full_version >= '3.7.1'",
             "version": "==1.3.5"
         },
         "parso": {
@@ -737,6 +740,7 @@
                 "sha256:f4c42102bc82a51108e449cbb32b19b180022941c727bac0cfd50170341f16ee"
             ],
             "index": "pypi",
+            "markers": "python_version >= '3.7'",
             "version": "==3.20.3"
         },
         "psutil": {
@@ -934,6 +938,7 @@
                 "sha256:ff746a69ff2ef25f62b36338c615dd15954ddc3ab8e73530237dd73235e76d62"
             ],
             "index": "pypi",
+            "markers": "python_version >= '3.7'",
             "version": "==1.0.2"
         },
         "scipy": {
@@ -1016,7 +1021,6 @@
             "hashes": [
                 "sha256:8853bfb7c3c96fbdc80b3d66c37a10af6ccbcd235dc87474764270c02a0f86b9"
             ],
-            "markers": "python_version >= '3.7'",
             "version": "==1.15.1"
         },
         "termcolor": {
@@ -1058,6 +1062,7 @@
                 "sha256:d88e651f9db8d8551a62556d3cff9e3034274ca5d66e93197cf2490e2dcb69c7"
             ],
             "index": "pypi",
+            "markers": "python_version >= '3.7'",
             "version": "==4.66.1"
         },
         "traitlets": {
