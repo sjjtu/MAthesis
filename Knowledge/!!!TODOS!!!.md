@@ -9,7 +9,7 @@ todo for Friday October 13:
 next todo 
 - [ ] read on renyi dp
 - [x] read on moments accountant from goodfellow paper
-- [ ] noisy max from DP notes
+- [x] noisy max from DP notes
 
 next todo 27th October:
 - [ ] understand moments accound and privacy accountant by sherry
