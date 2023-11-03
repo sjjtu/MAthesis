@@ -8,3 +8,5 @@
 - [CICIDS 2017](https://www.unb.ca/cic/datasets/ids-2017.html) 
 - [UNSW-NB15](https://research.unsw.edu.au/projects/unsw-nb15-dataset)
 - [CSE-CICIDS2018](https://www.unb.ca/cic/datasets/ids-2018.html)
+- [Numenta anomaly benchmark](https://ieeexplore.ieee.org/abstract/document/7424283)
+- MIT BIH Arrhythmia database
