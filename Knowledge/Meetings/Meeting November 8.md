@@ -1,0 +1,6 @@
+- stick to unsupervised anomaly detection approach
+- maybe try out DP-MERF with time series just to see
+- if utility is bad with DP:
+	- weaken DP by training in adversarial manner, fix the adversary beforehand and train generator according to this 
+- DP with time series might require a different DP variant
+	- other variants of DP
