@@ -1,3 +1,6 @@
 [submodule "code/TimeGAN"]
 	path = code/TimeGAN
 	url = https://github.com/jsyoon0823/TimeGAN.git
+[submodule "code/ECG-Heartbeat-Classification-seq2seq-model"]
+	path = code/ECG-Heartbeat-Classification-seq2seq-model
+	url = https://github.com/MousaviSajad/ECG-Heartbeat-Classification-seq2seq-model.git
