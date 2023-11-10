@@ -1,0 +1,13 @@
+- [KDD Cup 1999](http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html)
+	- refined version here: https://www.kaggle.com/datasets/hassan06/nslkdd
+- [Military network intrusion detection data from kaggle](https://www.kaggle.com/datasets/sampadab17/network-intrusion-detection)
+- [CAIDA 2007 DDos Attack data](https://www.caida.org/catalog/datasets/ddos-20070804_dataset/)  not really usable as we need software to read pcap/tcpdump files
+- [ICSX 2012](https://www.unb.ca/cic/datasets/ids.html)
+	- scientific paper see [[Papers/Toward developing a systematic approach to generate benchmark datasets for intrusion detection]]
+- [ADFA-LD and ADFA-WD](https://research.unsw.edu.au/projects/adfa-ids-datasets) 
+- [CICIDS 2017](https://www.unb.ca/cic/datasets/ids-2017.html) 
+- [UNSW-NB15](https://research.unsw.edu.au/projects/unsw-nb15-dataset)
+- [CSE-CICIDS2018](https://www.unb.ca/cic/datasets/ids-2018.html)
+- [Numenta anomaly benchmark](https://ieeexplore.ieee.org/abstract/document/7424283)
+- MIT BIH Arrhythmia database
+	- cite this package if used: https://physionet.org/content/wfdb/10.7.0/ or this https://physionet.org/content/wfdb-matlab/0.10.0/

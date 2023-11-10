@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Papers/Inter- and intra- patient ECG heartbeat classification for arrhythmia detection - a sequence to sequence deep learning approach.md",
+                "file": "Data sets for anomaly detection.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Papers/Inter- and intra- patient ECG heartbeat classification for arrhythmia detection - a sequence to sequence deep learning approach.md",
+                "file": "Data sets for anomaly detection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Papers/Inter- and intra- patient ECG heartbeat classification for arrhythmia detection - a sequence to sequence deep learning approach.md",
+                "file": "Data sets for anomaly detection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Papers/Inter- and intra- patient ECG heartbeat classification for arrhythmia detection - a sequence to sequence deep learning approach.md"
+                "file": "Data sets for anomaly detection.md"
               }
             }
           },
@@ -181,7 +181,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Papers/Inter- and intra- patient ECG heartbeat classification for arrhythmia detection - a sequence to sequence deep learning approach.md"
+                "file": "Data sets for anomaly detection.md"
               }
             }
           }
@@ -204,12 +204,12 @@
   },
   "active": "e33c82176380ef43",
   "lastOpenFiles": [
-    "Meetings/Meeting November 8.md",
     "Papers/Inter- and intra- patient ECG heartbeat classification for arrhythmia detection - a sequence to sequence deep learning approach.md",
+    "Meetings/Meeting November 8.md",
     "Meetings/Meeting November 1.md",
     "Papers/SoK.. Privacy-Preserving Data Synthesis.md",
     "Papers/On the Privacy Properties of GAN-generated Samples.md",
-    "Data sets for ID.md",
+    "Data sets for anomaly detection.md",
     "Anomaly detection.md",
     "Boolean Cube.md",
     "Papers/DEEP LEARNING FOR ANOMALY DETECTION - A SURVEY.md",
