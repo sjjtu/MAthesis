@@ -18,3 +18,6 @@ good resource easy to understand example for randomized reponse:
 
 Pytorch implementation of DP:
 - https://opacus.ai/
+
+Auditing of DP:
+- https://www.floriantramer.com/publications/

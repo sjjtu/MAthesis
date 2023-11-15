@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Differential Privacy.md",
+                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Differential Privacy.md",
+                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Differential Privacy.md",
+                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Differential Privacy.md"
+                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md"
               }
             }
           },
@@ -194,7 +194,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Differential Privacy.md"
+                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md"
               }
             }
           }
@@ -215,8 +215,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c5a5f284138c4bf1",
+  "active": "b64bfa82c42bfb50",
   "lastOpenFiles": [
+    "Differential Privacy.md",
     "Papers/On the Privacy Properties of GAN-generated Samples.md",
     "Papers/The Impact of the MIT-BIH Arrhythmia Database.md",
     "Data sets for anomaly detection.md",
@@ -239,7 +240,6 @@
     "Synthetic data generators.md",
     "Papers/Survey of intrusion detection systems -techniques, datasets and challenges.md",
     "Papers/Network intrusion detection system - A systematic study ofmachine learning and deep learning approaches.md",
-    "Differential Privacy.md",
     "Privacy preserving neural networks.md",
     "Papers/Collarborative learning from distributed data with differentially private synthetic twin data.md",
     "Papers/Synthetic data - what, why and how?.md",
