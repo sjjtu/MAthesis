@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Papers/The Impact of the MIT-BIH Arrhythmia Database.md",
+                "file": "Differential Privacy.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -89,7 +89,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "giulia",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Papers/The Impact of the MIT-BIH Arrhythmia Database.md",
+                "file": "Differential Privacy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Papers/The Impact of the MIT-BIH Arrhythmia Database.md",
+                "file": "Differential Privacy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Papers/The Impact of the MIT-BIH Arrhythmia Database.md"
+                "file": "Differential Privacy.md"
               }
             }
           },
@@ -194,7 +194,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Papers/The Impact of the MIT-BIH Arrhythmia Database.md"
+                "file": "Differential Privacy.md"
               }
             }
           }
@@ -217,13 +217,13 @@
   },
   "active": "c5a5f284138c4bf1",
   "lastOpenFiles": [
-    "Data sets for anomaly detection.md",
+    "Papers/On the Privacy Properties of GAN-generated Samples.md",
     "Papers/The Impact of the MIT-BIH Arrhythmia Database.md",
+    "Data sets for anomaly detection.md",
     "Papers/Inter- and intra- patient ECG heartbeat classification for arrhythmia detection - a sequence to sequence deep learning approach.md",
     "Meetings/Meeting November 8.md",
     "Meetings/Meeting November 1.md",
     "Papers/SoK.. Privacy-Preserving Data Synthesis.md",
-    "Papers/On the Privacy Properties of GAN-generated Samples.md",
     "Anomaly detection.md",
     "Boolean Cube.md",
     "Papers/DEEP LEARNING FOR ANOMALY DETECTION - A SURVEY.md",

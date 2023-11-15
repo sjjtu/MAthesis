@@ -15,3 +15,6 @@ good resource for basic theorems and understandable proofs:
 
 good resource easy to understand example for randomized reponse:
 - [ ] https://accuracyandprivacy.substack.com/p/differential-privacy-an-easy-case
+
+Pytorch implementation of DP:
+- https://opacus.ai/
