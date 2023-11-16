@@ -29,7 +29,7 @@ class Encoder(nn.Module):
     x, (_, _) = self.rnn1(x)
     x, (hidden_n, _) = self.rnn2(x)
 
-    return hidden_n.reshape((self.n_features, self.embedding_dim))
+    return hidden_n.reshape((self.embedding_dim, self.n_features))
 
 class Decoder(nn.Module):
 
