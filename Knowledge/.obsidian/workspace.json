@@ -21,25 +21,12 @@
             }
           },
           {
-            "id": "e33c82176380ef43",
+            "id": "39d5d4a88e14b345",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data sets for anomaly detection.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c5a5f284138c4bf1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md",
+                "file": "ChapterNotes/Experiment.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -60,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -89,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "giulia",
+                "query": "mitbih",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -126,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md",
+                "file": "ChapterNotes/Experiment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md",
+                "file": "ChapterNotes/Experiment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md"
+                "file": "ChapterNotes/Experiment.md"
               }
             }
           },
@@ -194,7 +181,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md"
+                "file": "ChapterNotes/Experiment.md"
               }
             }
           }
@@ -215,20 +202,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b64bfa82c42bfb50",
+  "active": "39d5d4a88e14b345",
   "lastOpenFiles": [
+    "Papers/Heartbeat classification fusing temporal and morphologicalinformation of ECGs via ensemble of classifiers.md",
+    "Papers/Arrhythmia Classification using CGAN-augmented ECG Signals.md",
+    "Papers/Synthetic ECG Signal Generation using Probabilistic Diffusion Models.md",
+    "Papers/Inter- and intra- patient ECG heartbeat classification for arrhythmia detection - a sequence to sequence deep learning approach.md",
+    "ChapterNotes/Experiment.md",
+    "MIT BIH Arrhythmia database.md",
+    "ChapterNotes",
+    "Papers/DEEP LEARNING FOR ANOMALY DETECTION - A SURVEY.md",
+    "Papers/Anomaly Detection in Time Series - A Comprehensive Evaluation.md",
+    "Data sets for anomaly detection.md",
+    "!!!TODOS!!!.md",
+    "Meetings/Meeting November 1.md",
     "Differential Privacy.md",
     "Papers/On the Privacy Properties of GAN-generated Samples.md",
     "Papers/The Impact of the MIT-BIH Arrhythmia Database.md",
-    "Data sets for anomaly detection.md",
-    "Papers/Inter- and intra- patient ECG heartbeat classification for arrhythmia detection - a sequence to sequence deep learning approach.md",
     "Meetings/Meeting November 8.md",
-    "Meetings/Meeting November 1.md",
     "Papers/SoK.. Privacy-Preserving Data Synthesis.md",
     "Anomaly detection.md",
     "Boolean Cube.md",
-    "Papers/DEEP LEARNING FOR ANOMALY DETECTION - A SURVEY.md",
-    "!!!TODOS!!!.md",
     "Meetings",
     "Papers/TimeGAN.md",
     "Papers/Deep Learning with Differential Privacy.md",
@@ -238,12 +232,6 @@
     "Papers/Can we use split learning on 1D CNN models for PP training.md",
     "Papers/Achilles Heels- Vulnerable Record Identification in Synthetic Data Publishing.md",
     "Synthetic data generators.md",
-    "Papers/Survey of intrusion detection systems -techniques, datasets and challenges.md",
-    "Papers/Network intrusion detection system - A systematic study ofmachine learning and deep learning approaches.md",
-    "Privacy preserving neural networks.md",
-    "Papers/Collarborative learning from distributed data with differentially private synthetic twin data.md",
-    "Papers/Synthetic data - what, why and how?.md",
-    "Papers/Synthetic data- anonymisation groundhog day.md",
     "Images/Pasted image 20231003134157.png",
     "Images/Pasted image 20231003112105.png",
     "Images/Pasted image 20231003111408.png",
@@ -261,7 +249,6 @@
     "Images/Pasted image 20230926120121.png",
     "Images/Pasted image 20230925154935.png",
     "Images/Pasted image 20230925154425.png",
-    "Papers",
-    "Images"
+    "Papers"
   ]
 }
