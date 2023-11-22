@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ChapterNotes/Experiment.md",
+                "file": "MIT BIH Arrhythmia database.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ChapterNotes/Experiment.md",
+                "file": "MIT BIH Arrhythmia database.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ChapterNotes/Experiment.md",
+                "file": "MIT BIH Arrhythmia database.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ChapterNotes/Experiment.md"
+                "file": "MIT BIH Arrhythmia database.md"
               }
             }
           },
@@ -181,16 +181,15 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "ChapterNotes/Experiment.md"
+                "file": "MIT BIH Arrhythmia database.md"
               }
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 350.5
+    "width": 375.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -204,15 +203,15 @@
   },
   "active": "39d5d4a88e14b345",
   "lastOpenFiles": [
+    "Papers/Anomaly Detection in Time Series - A Comprehensive Evaluation.md",
+    "MIT BIH Arrhythmia database.md",
+    "ChapterNotes/Experiment.md",
     "Papers/Heartbeat classification fusing temporal and morphologicalinformation of ECGs via ensemble of classifiers.md",
     "Papers/Arrhythmia Classification using CGAN-augmented ECG Signals.md",
     "Papers/Synthetic ECG Signal Generation using Probabilistic Diffusion Models.md",
     "Papers/Inter- and intra- patient ECG heartbeat classification for arrhythmia detection - a sequence to sequence deep learning approach.md",
-    "ChapterNotes/Experiment.md",
-    "MIT BIH Arrhythmia database.md",
     "ChapterNotes",
     "Papers/DEEP LEARNING FOR ANOMALY DETECTION - A SURVEY.md",
-    "Papers/Anomaly Detection in Time Series - A Comprehensive Evaluation.md",
     "Data sets for anomaly detection.md",
     "!!!TODOS!!!.md",
     "Meetings/Meeting November 1.md",
