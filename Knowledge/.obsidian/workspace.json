@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MIT BIH Arrhythmia database.md",
+                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -76,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mitbih",
+                "query": "dp merf",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +93,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -113,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MIT BIH Arrhythmia database.md",
+                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MIT BIH Arrhythmia database.md",
+                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MIT BIH Arrhythmia database.md"
+                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md"
               }
             }
           },
@@ -181,7 +182,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "MIT BIH Arrhythmia database.md"
+                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md"
               }
             }
           }
@@ -203,8 +204,8 @@
   },
   "active": "39d5d4a88e14b345",
   "lastOpenFiles": [
-    "Papers/Anomaly Detection in Time Series - A Comprehensive Evaluation.md",
     "MIT BIH Arrhythmia database.md",
+    "Papers/Anomaly Detection in Time Series - A Comprehensive Evaluation.md",
     "ChapterNotes/Experiment.md",
     "Papers/Heartbeat classification fusing temporal and morphologicalinformation of ECGs via ensemble of classifiers.md",
     "Papers/Arrhythmia Classification using CGAN-augmented ECG Signals.md",
