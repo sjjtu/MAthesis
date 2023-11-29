@@ -62,7 +62,7 @@ class Decoder(nn.Module):
     x, (hidden_n, cell_n) = self.rnn1(x)
     x, (hidden_n, cell_n) = self.rnn2(x)
     x = x.reshape((-1, self.seq_len, self.hidden_dim))
-
+    
     return self.output_layer(x)
 
 
@@ -77,5 +77,4 @@ class RecurrentAutoencoder(nn.Module):
   def forward(self, x):
     x = self.encoder(x)
     x = self.decoder(x)
-
     return x
