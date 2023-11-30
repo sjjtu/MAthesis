@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md",
+                "file": "MIT BIH Arrhythmia database.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -93,8 +93,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -114,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md",
+                "file": "MIT BIH Arrhythmia database.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md",
+                "file": "MIT BIH Arrhythmia database.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md"
+                "file": "MIT BIH Arrhythmia database.md"
               }
             }
           },
@@ -182,7 +181,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md"
+                "file": "MIT BIH Arrhythmia database.md"
               }
             }
           }
@@ -204,6 +203,7 @@
   },
   "active": "39d5d4a88e14b345",
   "lastOpenFiles": [
+    "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md",
     "MIT BIH Arrhythmia database.md",
     "Papers/Anomaly Detection in Time Series - A Comprehensive Evaluation.md",
     "ChapterNotes/Experiment.md",
@@ -227,7 +227,6 @@
     "Papers/TimeGAN.md",
     "Papers/Deep Learning with Differential Privacy.md",
     "Ideas.md",
-    "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md",
     "Papers/Measuring quality of synthetic data for use in competitions.md",
     "Papers/Can we use split learning on 1D CNN models for PP training.md",
     "Papers/Achilles Heels- Vulnerable Record Identification in Synthetic Data Publishing.md",
