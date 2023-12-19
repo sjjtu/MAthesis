@@ -4,3 +4,6 @@
 [submodule "code/ECG-Heartbeat-Classification-seq2seq-model"]
 	path = code/ECG-Heartbeat-Classification-seq2seq-model
 	url = https://github.com/MousaviSajad/ECG-Heartbeat-Classification-seq2seq-model.git
+[submodule "DP-MERF"]
+	path = DP-MERF
+	url = https://github.com/ParkLabML/DP-MERF.git
