@@ -31,11 +31,10 @@
 \theoremstyle{definition}
 \newtheorem{definition}[thm]{Definition}
 \newtheorem{ex}[thm]{Example}
-\AtBeginEnvironment{ex}{
-  \pushQED{\qed}\renewcommand{\qedsymbol}{\par\noindent\rule{0.33\textwidth}{0.2pt}}
-}
-\AtEndEnvironment{ex}{\popQED\endexample}
-
+% \AtBeginEnvironment{ex}{
+%   \pushQED{\qed}\renewcommand{\qedsymbol}{\par\noindent\rule{0.33\textwidth}{0.2pt}}
+% }
+% \AtEndEnvironment{ex}{\popQED\endexample}
 \theoremstyle{remark}
 \newtheorem{rem}[thm]{Remark}
 
@@ -91,6 +90,8 @@
 	\input{chapters/chapter1}
 
 	\input{chapters/chapter2.tex}
+
+	\input{chapters/chapter3.tex}
 
 	\clearpage
 

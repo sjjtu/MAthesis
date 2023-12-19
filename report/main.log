@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.10.23)  23 OCT 2023 12:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.10.23)  19 DEC 2023 17:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -818,24 +818,24 @@ Package csquotes Info: ... found 'babel' package.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count458
@@ -896,15 +896,16 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 69.
+Package hyperref Info: Link coloring OFF on input line 68.
+(./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-Package csquotes Info: Making character " active on input line 69.
+Package csquotes Info: Making character " active on input line 68.
 \c@lstlisting=\count464
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-(/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+ (/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -913,13 +914,12 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
-
-No file main.bbl.
-Package biblatex Info: Reference section=0 on input line 69.
-Package biblatex Info: Reference segment=0 on input line 69.
-(./chapters/titlepage.tex
-<pictures/KTH_Royal_Institute_of_Technology_logo.svg.png, id=7, 1204.5pt x 1204.5pt>
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
+Package biblatex Info: Reference section=0 on input line 68.
+Package biblatex Info: Reference segment=0 on input line 68.
+ (./chapters/titlepage.tex
+<pictures/KTH_Royal_Institute_of_Technology_logo.svg.png, id=67, 1204.5pt x 1204.5pt>
 File: pictures/KTH_Royal_Institute_of_Technology_logo.svg.png Graphic file (type png)
 <use pictures/KTH_Royal_Institute_of_Technology_logo.svg.png>
 Package pdftex.def Info: pictures/KTH_Royal_Institute_of_Technology_logo.svg.png  used on input line 4.
@@ -932,30 +932,23 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.2 \section
             *{STATUTORY DECLARATION} [1])
-Underfull \hbox (badness 10000) in paragraph at lines 3--73
+Underfull \hbox (badness 10000) in paragraph at lines 3--72
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--73
+Underfull \hbox (badness 10000) in paragraph at lines 3--72
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--73
+Underfull \hbox (badness 10000) in paragraph at lines 3--72
 
  []
 
 [2
 
-]
-No file main.toc.
-\tf@toc=\write6
-\openout6 = `main.toc'.
-
-(./chapters/notation.tex [0
-
-]
+] (./main.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -964,18 +957,23 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+ (./chapters/notation.tex [0
+
+])
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.81 	\listoffigures
+l.80 	\listoffigures
                      [1
 
-]
-No file main.lof.
+] (./main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
-(./chapters/chapter0.tex
+ (./chapters/chapter0.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -984,100 +982,38 @@ l.1 \section
 
 ]) (./chapters/chapter1.tex [3
 
-]
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 6.
- (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <12> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 6.
+] [4
+
+] [5]) (./chapters/chapter2.tex [6]) (./chapters/chapter3.tex [7
+
+] [8]) [9
+
+] (./chapters/9appendix.tex) [10
 
 
-LaTeX Warning: Citation '' on page 4 undefined on input line 6.
-
-./chapters/chapter1.tex:24: Undefined control sequence.
-\__hook_toplevel env/ex/end ->\popQED \endexample 
-                                                  
-l.24 \end{ex}
-             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[4
-
-]
-./chapters/chapter1.tex:72: Undefined control sequence.
-\__hook_toplevel env/ex/end ->\popQED \endexample 
-                                                  
-l.72 \end{ex}
-             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[5]) (./chapters/chapter2.tex) [6] (./chapters/9appendix.tex) [7
+] [11
 
 
-]
-
-LaTeX Warning: Empty bibliography on input line 106.
-
-
-/home/asd/Projekte/MAthesis/report/main.tex:107: LaTeX Error: \begin{definition} on input line 38 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.107 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-(./main.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  AA943446327B12BB09AA2DEA22AABC59;1447.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
+] (./main.aux)
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 7A087BE718FCE5B0673F951B7DBBCEA6;2330.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 38 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 33087 strings out of 477473
- 615049 string characters out of 5829991
- 1865388 words of memory out of 5000000
- 52909 multiletter control sequences out of 15000+600000
- 520367 words of font info for 61 fonts, out of 8000000 for 9000
+ 33147 strings out of 477473
+ 615991 string characters out of 5829991
+ 1866388 words of memory out of 5000000
+ 52939 multiletter control sequences out of 15000+600000
+ 520816 words of font info for 63 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 84i,12n,89p,757b,2005s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (11 pages, 248949 bytes).
+ 84i,14n,89p,757b,1862s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/asd/.texlive/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (15 pages, 278300 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 125 compressed objects within 2 object streams
- 44 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 284 PDF objects out of 1000 (max. 8388607)
+ 231 compressed objects within 3 object streams
+ 62 named destinations out of 1000 (max. 500000)
+ 138 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -3,7 +3,7 @@
 In this chapter we briefly describe and derive the most important results from Cynthia Dwork's work on differential privacy that was first introduced in ??. This summary heavily relies on her writings in her as well as lecture notes from ????.
 
 \subsection{Defining differential privacy}
-Differential privacy (DP) should be understood as an agreement between the data holder and the data subject: the latter should not be "affected, adversely or otherwise, by allowing [her] data to be used in any study or analysis, no matter what other studies, data sets or information sources are available" \cite{}. This addresses the paradox of learning something useful about a population while learning nothing about the individuals
+Differential privacy (DP) should be understood as an agreement between the data holder and the data subject: the latter should not be "affected, adversely or otherwise, by allowing [her] data to be used in any study or analysis, no matter what other studies, data sets or information sources are available". This addresses the paradox of learning something useful about a population while learning nothing about the individuals
 
 
 \begin{ex}[Randomised response]
@@ -31,17 +31,18 @@ Differential privacy (DP) should be understood as an agreement between the data 
     \end{align}
 \end{definition}
 
-\begin{definition}(Randomised Algorithm)
+\begin{definition}[Randomised Algorithm]
     A randomized algorithm $\mathcal{M}$ with domain $A$ and discrete range $B$ is associated with a mapping $M: A \rightarrow \Delta(B)$. On input $a\in A$ algorithm $\mathcal{M}$ outputs $\mathcal{M}(a)=b$ with probability $(M(a))_b$
 \end{definition}
 
 \begin{definition}[Histogram representation of a data base]
- Given a set $\mathcal{X}$, the universe of all possible records", the histrogram representation of a database $x$ is the vector
- \begin{align}
-     x \in \mathbb{N}^{|\mathcal{X}|}
- \end{align}
-in which each entry $x_i$ represents the number of elements in database $x$ of type $i\in \mathcal{X}$.
+        Given a set $\mathcal{X}$, the universe of all possible records, the histrogram representation of a database $x$ is the vector
+        \begin{align}
+            x \in \mathbb{N}^{|\mathcal{X}|}
+        \end{align}
+       in which each entry $x_i$ represents the number of elements in database $x$ of type $i\in \mathcal{X}$.
 \end{definition}
+
 
 \begin{definition}[$l_1$-norm of a database in histogram representation]
     The $l_1$-norm of a database is a measure of the size of the database and defined as:

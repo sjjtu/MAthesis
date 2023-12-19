@@ -6,4 +6,11 @@
 \contentsline {subsection}{\numberline {2.1}Defining differential privacy}{4}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Important results for Differential Privacy}{5}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Example of DP-mechanism: Laplace mechanism}{6}{subsection.2.3}%
-\contentsline {section}{Appendix}{7}{section*.6}%
+\contentsline {section}{\numberline {3}(Time Series) Data generation}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Overview}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}DP-MERF}{7}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Maximum Mean Discrepancy}{7}{subsubsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.3}GAN based}{8}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Experiment}{9}{section.4}%
+\contentsline {section}{Appendix}{10}{section*.6}%
+\contentsline {section}{References}{11}{section*.7}%

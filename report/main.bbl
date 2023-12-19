@@ -1,0 +1,141 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{dpmerf}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ec0844f3a200fcbbc4cd2ab97785287c}{%
+           family={Harder},
+           familyi={H\bibinitperiod},
+           given={Frederik},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f93496456a0f09614ea4601eb8c47548}{%
+           family={Adamczewski},
+           familyi={A\bibinitperiod},
+           given={Kamil},
+           giveni={K\bibinitperiod}}}%
+        {{hash=2cfbd59c3c75389f751ae698d54549e1}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Mijung},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f4e8e227cbd20233bdea0d3da1bcd0d}
+      \strng{fullhash}{1f4e8e227cbd20233bdea0d3da1bcd0d}
+      \strng{bibnamehash}{1f4e8e227cbd20233bdea0d3da1bcd0d}
+      \strng{authorbibnamehash}{1f4e8e227cbd20233bdea0d3da1bcd0d}
+      \strng{authornamehash}{1f4e8e227cbd20233bdea0d3da1bcd0d}
+      \strng{authorfullhash}{1f4e8e227cbd20233bdea0d3da1bcd0d}
+      \field{labelalpha}{HAP20}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Differentially Private Mean Embeddings with Random Features {(DP-MERF)} for Simple {\&} Practical Synthetic Data Generation}
+      \field{volume}{abs/2002.11603}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2002.11603
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2002.11603
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2002.11603
+      \endverb
+    \endentry
+    \entry{hu2023sok}{misc}{}
+      \name{author}{10}{}{%
+        {{hash=90787043797def3cac788eb849e1ac2e}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Yuzheng},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=86756d7b8cb7311613b1c58712b999b3}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=582e932f98dd11b49923797f043c8f30}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Qinbin},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=dc6a1a1745c8495ec4ec44b2f7f66f02}{%
+           family={Long},
+           familyi={L\bibinitperiod},
+           given={Yunhui},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=04c2e8a7b2e05ea2984418a83d090cba}{%
+           family={Garrido},
+           familyi={G\bibinitperiod},
+           given={Gonzalo\bibnamedelima Munilla},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a00dcaaf3026893fb6cab9f233048bdb}{%
+           family={Ge},
+           familyi={G\bibinitperiod},
+           given={Chang},
+           giveni={C\bibinitperiod}}}%
+        {{hash=a4189394f9ccf96207d091dd64e3fd2d}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Bolin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=751a9393d43438966f829203de48f8d4}{%
+           family={Forsyth},
+           familyi={F\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a9c8728e355996d027a7e56b60820a18}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d458d5f9b64652055bd81d57e4777b22}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Dawn},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{88fbc4bc3af5d25c8cd3541eeb1bd50e}
+      \strng{fullhash}{86aed5bbf2f33284b04f5258e4af5594}
+      \strng{bibnamehash}{86aed5bbf2f33284b04f5258e4af5594}
+      \strng{authorbibnamehash}{86aed5bbf2f33284b04f5258e4af5594}
+      \strng{authornamehash}{88fbc4bc3af5d25c8cd3541eeb1bd50e}
+      \strng{authorfullhash}{86aed5bbf2f33284b04f5258e4af5594}
+      \field{labelalpha}{Hu+23}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CR}
+      \field{eprinttype}{arXiv}
+      \field{title}{SoK: Privacy-Preserving Data Synthesis}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2307.02106
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

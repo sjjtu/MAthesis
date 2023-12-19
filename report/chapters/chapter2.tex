@@ -1,0 +1,46 @@
+\section[(Time Series) Data generation]{Time Series data generation}
+\subsection{Overview}
+\subsection{DP-MERF}
+
+DP-MERF \parencite{dpmerf} is an efficient all purpose data generation algorithm that is based on minimising the so-called Maximum Mean Discrepancy between the real and the synthetic data distributions. The authors mainly verfied their results using tabular data like ????, but also image data, notably the MNIST ???CITE data set. It has not been used for time series data, but we will consider this data generation for generating time series data in this thesis, because accorrding to a recent survey \parencite{hu2023sok}, DP-MERF delivers the best all purpose data generation performance.
+
+\subsubsection{Maximum Mean Discrepancy}
+There are different ways to measure the "distance" between two distributions $P$ and $Q$. On popular metric is the Maximum Mean Discrepancy (MMD) between $P$ and $Q$, where the random variables are projected into another feature space and the expected values are compared to each other in this space.
+
+\begin{definition}[MMD]
+    Let $\phi: \mathcal{X} \rightarrow \mathcal{H}$, where $\mathcal{H}$ is a reproducing kernel hilbert space (RKHS) and $P$ and $Q$ some distributions over $\mathcal{X}$ and random variables $X \sim P$, $Y \sim Q$ given. Then the Maximum mean Discrepancy is defines as:
+    \begin{align}
+        MMD(P,Q)=|| \mathbb{E}[\phi(X)] - \mathbb{E}[\phi(Y)] ||_\mathcal{H}
+    \end{align}
+\end{definition}
+
+Some "easy" features maps $\phi$ are for example:
+\begin{ex}
+    Let $P$ and $Q$ some distributions over $\mathcal{X}$ and random variables $X \sim P$, $Y \sim Q$ given.
+    \begin{itemize}
+        \item \textbf{Identity kernel}: $\mathcal{X}=\mathcal{H}=\mathbb{R}^d$ and $\phi(x)=x$, then we have:
+        \begin{align}
+            MMD(P,Q) &= || \mathbb{E}[\phi(X)] - \mathbb{E}[\phi(Y)] ||_\mathcal{H} \nonumber \\
+            &= || \mathbb{E}[X] - \mathbb{E}[Y] ||_{\mathbb{R}^d}
+        \end{align}
+        So we only compare the two distributions in terms of their means. 
+
+        \item \textbf{Quadratic kernel}: $\mathcal{X}=\mathbb{R}$ $\mathcal{H}=\mathbb{R}^2$ and $\phi(x)=(x, x^2)$, then we have:
+        \begin{align}
+            MMD(P,Q) &= || \mathbb{E}[\phi(X)] - \mathbb{E}[\phi(Y)] ||_\mathcal{H} \nonumber \\
+            &= || \mathbb{E}[(X, X^2)] - \mathbb{E}[(Y, Y^2)] ||_\mathcal{H} \nonumber \\
+            &= || \begin{pmatrix}
+                \mathbb{E}[X] \\ \mathbb{E}[X^2]
+            \end{pmatrix} - \begin{pmatrix}
+                \mathbb{E}[Y] \\ \mathbb{E}[Y^2]
+            \end{pmatrix} ||_{\mathbb{R}^2} \nonumber \\
+            &= \sqrt{(\mathbb{E}[X] - \mathbb{E}[Y])^2 - (\mathbb{E}[X^2] - \mathbb{E}[Y^2])^2}
+        \end{align}
+        So here we compare the two distributions in terms of their means and their variance (or first and second moments respectively).
+        \item \textbf{Gaussian kernel} ????
+    \end{itemize}
+\end{ex}
+
+Now instead of computing a possibly high or even infinite dimensional transformation $\phi$ one can use the well-known kernel trick ????REF. 
+
+\subsection{GAN based} 
