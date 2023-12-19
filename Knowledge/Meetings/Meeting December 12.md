@@ -1,0 +1,5 @@
+- think about FL / CL later
+- motivate privacy for specific data set
+	- e. g. compare 47 patiens and see how similar they are (only normal data)
+	- train classification model to classify each data set to an individual
+- focus on heartbeat data vs focus more general -> Decide!
