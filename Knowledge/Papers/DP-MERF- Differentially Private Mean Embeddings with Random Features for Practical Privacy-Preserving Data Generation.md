@@ -29,3 +29,4 @@ year: 2021
 
 ## Misc
 - github: https://github.com/ParkLabML/DP-MERF/tree/master/code_tab
+- more on RFF: https://gregorygundersen.com/blog/2019/12/23/random-fourier-features/
