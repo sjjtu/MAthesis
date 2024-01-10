@@ -46,12 +46,10 @@ class Generative_Model_homogeneous_data(nn.Module):
 
 class DPMERFGenerator():
     def __init__(self, is_priv=False, 
-                 path_2_data="data/normal_training_encoded.csv",
                  n_feat=2000, 
                  input_size=10) -> None:
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.is_priv = is_priv
-        self.data = pd.read_csv(path_2_data, index_col=0).astype(np.float32).to_numpy()
         self.n_feat = n_feat
         self.model = None
         self.input_size = input_size
@@ -121,8 +119,8 @@ class DPMERFGenerator():
         return Z
     
     # taken from DPMERF with modifications
-    def train_generator(self, n_iter=1, mini_batch_size=0.1, n_epochs=2000, lr=1e-2):
-        n, input_dim = self.data.shape
+    def train_generator(self, data, mini_batch_size=0.1, n_epochs=2000, lr=1e-2):
+        n, input_dim = data.shape
         # model specifics
         mini_batch_size = np.int(np.round(mini_batch_size * n))
         print("minibatch: ", mini_batch_size)
@@ -133,17 +131,12 @@ class DPMERFGenerator():
 
         self.model = Generative_Model_homogeneous_data(input_size=input_size, hidden_size_1=hidden_size_1,
                                                           hidden_size_2=hidden_size_2,
-                                                          output_size=output_size, dataset=self.data).to(self.device)
+                                                          output_size=output_size, dataset=data).to(self.device)
 
 
-        # define details for training
-        optimizer = optim.Adam(self.model.parameters(), lr=lr)
-        how_many_epochs = n_epochs
-        how_many_iter = np.int(n / mini_batch_size)
-        training_loss_per_epoch = np.zeros(how_many_epochs)
+        
 
-        n = self.data.shape[0]
-        print('total number of datapoints in the training data is', n)
+        
 
         # random Fourier features
         n_features = self.n_feat
@@ -154,7 +147,11 @@ class DPMERFGenerator():
         idx_rp = np.random.permutation(n)
         idx_to_discard = idx_rp[0:num_data_pt_to_discard]
         idx_to_keep = idx_rp[num_data_pt_to_discard:]
-        med = self.meddistance(self.data[idx_to_discard, ])
+        med = self.meddistance(data[idx_to_discard, ])
+        
+        data = data[idx_to_keep,:]
+        n = data.shape[0]
+        print('total number of datapoints in the training data is', n)
         sigma2 = med ** 2
         W_freq = np.random.randn(draws, input_dim) / np.sqrt(sigma2)
         print(f"random freq {W_freq.shape}")
@@ -165,7 +162,7 @@ class DPMERFGenerator():
 
         """ computing mean embedding of subsampled true data """
 
-        emb1_input_features = self.RFF_Gauss(n_features, torch.Tensor(self.data), W_freq)
+        emb1_input_features = self.RFF_Gauss(n_features, torch.Tensor(data), W_freq)
         outer_emb1 = torch.einsum('ki->ki', [emb1_input_features])
         mean_emb1 = torch.mean(outer_emb1, 0)
 
@@ -194,6 +191,11 @@ class DPMERFGenerator():
 
             mean_emb1 = rescaled_mean_emb # rescaling back\
 
+        # define details for training
+        optimizer = optim.Adam(self.model.parameters(), lr=lr)
+        how_many_epochs = n_epochs
+        how_many_iter = np.int(n / mini_batch_size)
+        training_loss_per_epoch = np.zeros(how_many_epochs)
         print('Starting Training')
 
         for epoch in range(how_many_epochs):  # loop over the dataset multiple times
@@ -233,8 +235,7 @@ class DPMERFGenerator():
                 print('epoch # and running loss are ', [epoch, running_loss])
                 training_loss_per_epoch[epoch] = running_loss
 
-    def generate(self, fname="enc_generated_private.csv"):
-        n, _ = self.data.shape
+    def generate(self, n, fname="enc_generated_private.csv"):
         feature_input = torch.randn((n, self.input_size)).to(self.device)
         input_to_model = feature_input
         outputs = self.model(input_to_model)
@@ -243,6 +244,7 @@ class DPMERFGenerator():
 
         generated_input_features_final = samp_input_features.cpu().detach().numpy()
         pd.DataFrame(generated_input_features_final).to_csv(f"data/generated/"+fname)
+        print(f"generating and saving latent data in data/generated/{fname}")
         return generated_input_features_final
         
 

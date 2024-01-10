@@ -83,10 +83,12 @@ class AutoEncTrainRoutine:
     
     def save_model(self, name):
         torch.save(self.model.state_dict(), f"models/{name}")
+        print(f"saving AE model from models/{name}")
     
     def load_model(self, name):
         self.model.load_state_dict(torch.load(f"models/{name}", 
                                               map_location=torch.device('cpu')))
+        print(f"loading AE model from models/{name}")
   
     def encode_train_data(self, fname="data/normal_training_encoded.csv"):
         encoded = []
@@ -95,11 +97,13 @@ class AutoEncTrainRoutine:
             with torch.no_grad():
                 X = X.to(self.device)
                 encoded.append(self.model.encoder(X).squeeze().cpu().numpy())
-        pd.DataFrame(encoded).to_csv(fname)
+        enc_df = pd.DataFrame(encoded)
+        enc_df.to_csv(fname)
+        print(f"saving encoded training data in {fname}")
+        return enc_df.astype(np.float32).to_numpy()
 
-    def decode_data(self, path_encoded_data):
-        encoded = pd.read_csv(path_encoded_data, index_col=0)
-        encoded_tensor = torch.Tensor(encoded.to_numpy()).unsqueeze(-1)
+    def decode_data(self, encoded: pd.DataFrame):
+        encoded_tensor = torch.Tensor(encoded).unsqueeze(-1)
         self.model.to(self.device)
         decoded = []
         for (X) in encoded_tensor:
