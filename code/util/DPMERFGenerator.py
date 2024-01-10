@@ -243,5 +243,6 @@ class DPMERFGenerator():
 
         generated_input_features_final = samp_input_features.cpu().detach().numpy()
         pd.DataFrame(generated_input_features_final).to_csv(f"data/generated/"+fname)
+        return generated_input_features_final
         
 

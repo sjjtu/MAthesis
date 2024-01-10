@@ -1,15 +1,9 @@
 [submodule "code/TimeGAN"]
 	path = code/TimeGAN
 	url = https://github.com/jsyoon0823/TimeGAN.git
-[submodule "code/ECG-Heartbeat-Classification-seq2seq-model"]
-	path = code/ECG-Heartbeat-Classification-seq2seq-model
-	url = https://github.com/MousaviSajad/ECG-Heartbeat-Classification-seq2seq-model.git
 [submodule "DP-MERF"]
 	path = DP-MERF
 	url = https://github.com/ParkLabML/DP-MERF.git
-[submodule "COSCI-GAN"]
-	path = COSCI-GAN
-	url = https://github.com/aliseyfi75/COSCI-GAN.git
 [submodule "RTSGAN"]
 	path = RTSGAN
 	url = https://github.com/acphile/RTSGAN.git
