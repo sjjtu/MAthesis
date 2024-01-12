@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.11)  11 JAN 2024 18:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.2)  12 JAN 2024 17:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/user1-asd-arch/Projects/Thesis/report/main.tex
-(/home/user1-asd-arch/Projects/Thesis/report/main.tex
+**/home/asd/Projekte/MAthesis/report/main.tex
+(/home/asd/Projekte/MAthesis/report/main.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -89,7 +89,7 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 Package: babel 2023/02/13 3.86 The Babel package
 \babel@savecnt=\count266
 \U@D=\dimen159
-\l@unhyphenated=\language3
+\l@unhyphenated=\language26
  (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count267
@@ -642,7 +642,7 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \bibhang=\skip74
 \blx@bcfin=\read4
 \blx@bcfout=\write4
-\blx@langwohyphens=\language4
+\blx@langwohyphens=\language27
 \c@mincomprange=\count375
 \c@maxcomprange=\count376
 \c@mincompwidth=\count377
@@ -652,7 +652,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'alphabetic.dbx' not found.
+Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count378
@@ -760,10 +760,10 @@ File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
 \biburllcskip=\muskip21
 \c@smartand=\count454
 )
-Package biblatex Info: Trying to load bibliography style 'alphabetic'...
-Package biblatex Info: ... file 'alphabetic.bbx' found.
- (/usr/share/texmf-dist/tex/latex/biblatex/bbx/alphabetic.bbx
-File: alphabetic.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
@@ -771,15 +771,16 @@ File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count455
 \c@bbx:relatedtotal=\count456
 ))
-Package biblatex Info: Trying to load citation style 'alphabetic'...
-Package biblatex Info: ... file 'alphabetic.cbx' found.
- (/usr/share/texmf-dist/tex/latex/biblatex/cbx/alphabetic.cbx
-File: alphabetic.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
 Package biblatex Info: Redefining '\cites'.
@@ -927,26 +928,31 @@ Package pdftex.def Info: pictures/KTH_Royal_Institute_of_Technology_logo.svg.png
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./pictures/KTH_Royal_Institute_of_Technology_logo.svg.png>]) (./chapters/abstract.tex) (./chapters/eides_erkl.tex
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.2 \section
             *{STATUTORY DECLARATION} [1])
-Underfull \hbox (badness 10000) in paragraph at lines 3--72
+Underfull \hbox (badness 10000) in paragraph at lines 3--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--72
+Underfull \hbox (badness 10000) in paragraph at lines 3--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--72
+Underfull \hbox (badness 10000) in paragraph at lines 3--73
 
  []
 
-[2
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.73 	\tableofcontents
+                       [2
 
 ] (./main.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
@@ -960,31 +966,29 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- (./chapters/notation.tex [0
 
-])
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.80 	\listoffigures
-                     [1
+l.75 	\clearpage
+                 [3
+
+] (./chapters/notation.tex) [1
+
 
 ] (./main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- (./chapters/chapter1-intro.tex
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \section
-            {Introduction} [2
+ [2
 
-]) (./chapters/chapter2-thDP.tex [3
 
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [4
+] (./chapters/chapter1-intro.tex [1
 
-] [5]) (./chapters/chapter3.tex [6] [7
+
+]) (./chapters/chapter2-thDP.tex [2] [3
+
+] [4]) (./chapters/chapter3.tex [5] [6
 
 ]
 Overfull \hbox (4.47127pt too wide) in paragraph at lines 50--51
@@ -996,40 +1000,50 @@ Overfull \hbox (28.15288pt too wide) detected at line 57
 []
  []
 
-) (./chapters/chapter4-models.tex [8]) (./chapters/chapter5-exp.tex [9
+) (./chapters/chapter4-models.tex [7]) (./chapters/chapter5-exp.tex [8
 
-]) (./chapters/chapter6-dis.tex [10
+]) (./chapters/chapter6-dis.tex [9
 
-]) (./chapters/chapter7-outro.tex [11
+]) (./chapters/chapter7-outro.tex [10
 
-]) [12
+]) [11
 
-] (./chapters/9appendix.tex) [13
-
-
-] [14
+] (./chapters/9appendix.tex) [1
 
 
-] (./main.aux)
+]
+Overfull \hbox (29.509pt too wide) in paragraph at lines 114--114
+\OT1/cmr/m/n/12 Care". In: \OT1/cmr/m/it/12 JAMA \OT1/cmr/m/n/12 319.13 (Apr. 2018), pp. 1317{1318. eprint: []$\OT1/cmtt/m/n/12 https : / / jamanetwork .
+ []
+
+
+Overfull \hbox (0.11674pt too wide) in paragraph at lines 114--114
+\OT1/cmr/m/n/12 database". In: \OT1/cmr/m/it/12 IEEE en-gi-neer-ing in medicine and bi-ol-ogy mag-a-zine \OT1/cmr/m/n/12 20.3 (2001),
+ []
+
+[2
+
+
+] [3] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A4D3D0F65E4C848F65DFED38B2C0087E;3711.
+(rerunfilecheck)             Checksum: BABDD14F240EBF7390059CB7A66FA7F3;3727.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33205 strings out of 477985
- 617138 string characters out of 5840058
+ 33279 strings out of 477473
+ 619375 string characters out of 5829993
  1868388 words of memory out of 5000000
- 52817 multiletter control sequences out of 15000+600000
- 520816 words of font info for 63 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 84i,14n,89p,775b,1862s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (18 pages, 296435 bytes).
+ 53022 multiletter control sequences out of 15000+600000
+ 521909 words of font info for 69 fonts, out of 8000000 for 9000
+ 264 hyphenation exceptions out of 8191
+ 84i,14n,89p,1620b,1862s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/asd/.texlive/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (20 pages, 327656 bytes).
 PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
- 312 compressed objects within 4 object streams
- 81 named destinations out of 1000 (max. 500000)
+ 433 PDF objects out of 1000 (max. 8388607)
+ 370 compressed objects within 4 object streams
+ 100 named destinations out of 1000 (max. 500000)
  234 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -45,7 +45,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>labelalpha</bcf:key>
-      <bcf:value>1</bcf:value>
+      <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="multivalued">
       <bcf:key>labelnamespec</bcf:key>
@@ -288,7 +288,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>labelalpha</bcf:key>
-      <bcf:value>1</bcf:value>
+      <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="multivalued">
       <bcf:key>labelnamespec</bcf:key>
@@ -2361,10 +2361,24 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">dpmerf</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">hu2023sok</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">dpmerf</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">rff</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">ai_and_med</bcf:citekey>
+    <bcf:citekey order="1" intorder="2">aimed2</bcf:citekey>
+    <bcf:citekey order="1" intorder="3">aimed3</bcf:citekey>
+    <bcf:citekey order="1" intorder="4">aimed4</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">arr_rev</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">4531148</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">heartb_auth</bcf:citekey>
+    <bcf:citekey order="4" intorder="2">hegde2011heartbeat</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">jordon2022synthetic</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">ang2023tsgbench</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">stadler2022synthetic</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">10.1145/1866739.1866758</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">moody2001impact</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">stadler2022synthetic</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">dpmerf</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">hu2023sok</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">dpmerf</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">rff</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

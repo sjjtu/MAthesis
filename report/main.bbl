@@ -19,6 +19,216 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{ang2023tsgbench}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=052a6060918baa435d61e7059c334532}{%
+           family={Ang},
+           familyi={A\bibinitperiod},
+           given={Yihao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=637489fac60df5e69370e7df161796d7}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Qiang},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=7089753008a5b4300c56c820f968546c}{%
+           family={Bao},
+           familyi={B\bibinitperiod},
+           given={Yifan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=98ac66f1c10437d65d2861997ac65f44}{%
+           family={Tung},
+           familyi={T\bibinitperiod},
+           given={Anthony\bibnamedelimb K.\bibnamedelimi H.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=f5b854e7c880baccf99abbc79856d3c7}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Zhiyong},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{45acec68f46230f30384d84c0f6adf80}
+      \strng{fullhash}{87c2553879c77ee2d7adc7b63d38adb9}
+      \strng{bibnamehash}{87c2553879c77ee2d7adc7b63d38adb9}
+      \strng{authorbibnamehash}{87c2553879c77ee2d7adc7b63d38adb9}
+      \strng{authornamehash}{45acec68f46230f30384d84c0f6adf80}
+      \strng{authorfullhash}{87c2553879c77ee2d7adc7b63d38adb9}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{TSGBench: Time Series Generation Benchmark}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2309.03755
+      \endverb
+    \endentry
+    \entry{arr_rev}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=cc07ff853ae25f65e34822b2ab07a747}{%
+           family={Apandi},
+           familyi={A\bibinitperiod},
+           given={Ziti\bibnamedelimb Fariha\bibnamedelima Mohd},
+           giveni={Z\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ed98376212a4dc43d0f354fb27b86f23}{%
+           family={Ikeura},
+           familyi={I\bibinitperiod},
+           given={Ryojun},
+           giveni={R\bibinitperiod}}}%
+        {{hash=0a99863767e15d083b02a28297841e82}{%
+           family={Hayakawa},
+           familyi={H\bibinitperiod},
+           given={Soichiro},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{0711283fbaba1071ba1b6e21c5c4f64a}
+      \strng{fullhash}{0711283fbaba1071ba1b6e21c5c4f64a}
+      \strng{bibnamehash}{0711283fbaba1071ba1b6e21c5c4f64a}
+      \strng{authorbibnamehash}{0711283fbaba1071ba1b6e21c5c4f64a}
+      \strng{authornamehash}{0711283fbaba1071ba1b6e21c5c4f64a}
+      \strng{authorfullhash}{0711283fbaba1071ba1b6e21c5c4f64a}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 International Conference on Computational Approach in Smart Systems Design and Applications (ICASSDA)}
+      \field{title}{Arrhythmia Detection Using MIT-BIH Dataset: A Review}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 5}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/ICASSDA.2018.8477620
+      \endverb
+    \endentry
+    \entry{ai_and_med}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3333cfe95922b8f5d8bac7127e304455}{%
+           family={Beam},
+           familyi={B\bibinitperiod},
+           given={Andrew\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=7d569ca862abfbea5bb908a4fd1990f5}{%
+           family={Kohane},
+           familyi={K\bibinitperiod},
+           given={Isaac\bibnamedelima S.},
+           giveni={I\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9fc2d8c6d7e24e121c03920f8994f4bf}
+      \strng{fullhash}{9fc2d8c6d7e24e121c03920f8994f4bf}
+      \strng{bibnamehash}{9fc2d8c6d7e24e121c03920f8994f4bf}
+      \strng{authorbibnamehash}{9fc2d8c6d7e24e121c03920f8994f4bf}
+      \strng{authornamehash}{9fc2d8c6d7e24e121c03920f8994f4bf}
+      \strng{authorfullhash}{9fc2d8c6d7e24e121c03920f8994f4bf}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0098-7484}
+      \field{journaltitle}{JAMA}
+      \field{month}{04}
+      \field{number}{13}
+      \field{title}{{Big Data and Machine Learning in Health Care}}
+      \field{volume}{319}
+      \field{year}{2018}
+      \field{pages}{1317\bibrangedash 1318}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1001/jama.2017.18391
+      \endverb
+      \verb{eprint}
+      \verb https://jamanetwork.com/journals/jama/articlepdf/2675024/jama\_beam\_2018\_vp\_170174.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1001/jama.2017.18391
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1001/jama.2017.18391
+      \endverb
+    \endentry
+    \entry{aimed2}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=721965dcf83ae3e44274e3367e58056a}{%
+           family={Bhardwaj},
+           familyi={B\bibinitperiod},
+           given={Rohan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=00c5b7fc66d080dd9c21fd51cb5f886b}{%
+           family={Nambiar},
+           familyi={N\bibinitperiod},
+           given={Ankita\bibnamedelima R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=358a7b1892719dd5cdfb8fc392f5a3b9}{%
+           family={Dutta},
+           familyi={D\bibinitperiod},
+           given={Debojyoti},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{0b4fe393896b72e258eacd527aa373ed}
+      \strng{fullhash}{0b4fe393896b72e258eacd527aa373ed}
+      \strng{bibnamehash}{0b4fe393896b72e258eacd527aa373ed}
+      \strng{authorbibnamehash}{0b4fe393896b72e258eacd527aa373ed}
+      \strng{authornamehash}{0b4fe393896b72e258eacd527aa373ed}
+      \strng{authorfullhash}{0b4fe393896b72e258eacd527aa373ed}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 IEEE 41st Annual Computer Software and Applications Conference (COMPSAC)}
+      \field{title}{A Study of Machine Learning in Healthcare}
+      \field{volume}{2}
+      \field{year}{2017}
+      \field{pages}{236\bibrangedash 241}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/COMPSAC.2017.164
+      \endverb
+    \endentry
+    \entry{10.1145/1866739.1866758}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c6d8866083f4c03af5e37e032df87089}{%
+           family={Dwork},
+           familyi={D\bibinitperiod},
+           given={Cynthia},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{fullhash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{bibnamehash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{authorbibnamehash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{authornamehash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{authorfullhash}{c6d8866083f4c03af5e37e032df87089}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{What does it mean to preserve privacy?}
+      \field{issn}{0001-0782}
+      \field{journaltitle}{Commun. ACM}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{A Firm Foundation for Private Data Analysis}
+      \field{volume}{54}
+      \field{year}{2011}
+      \field{pages}{86\bibrangedash 95}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/1866739.1866758
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/1866739.1866758
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/1866739.1866758
+      \endverb
+    \endentry
     \entry{dpmerf}{article}{}
       \name{author}{3}{}{%
         {{hash=ec0844f3a200fcbbc4cd2ab97785287c}{%
@@ -43,7 +253,6 @@
       \strng{authorbibnamehash}{1f4e8e227cbd20233bdea0d3da1bcd0d}
       \strng{authornamehash}{1f4e8e227cbd20233bdea0d3da1bcd0d}
       \strng{authorfullhash}{1f4e8e227cbd20233bdea0d3da1bcd0d}
-      \field{labelalpha}{HAP20}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{labelnamesource}{author}
@@ -62,6 +271,59 @@
       \verb{url}
       \verb https://arxiv.org/abs/2002.11603
       \endverb
+    \endentry
+    \entry{hegde2011heartbeat}{article}{}
+      \name{author}{6}{}{%
+        {{hash=14db17cf2175f89a703c7aa3a540225c}{%
+           family={Hegde},
+           familyi={H\bibinitperiod},
+           given={Chetana},
+           giveni={C\bibinitperiod}}}%
+        {{hash=39acee7f0e57c1925cb1f603e443ab19}{%
+           family={Prabhu},
+           familyi={P\bibinitperiod},
+           given={H\bibnamedelima Rahul},
+           giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=68931403e678ef30e49afc9815bd90e4}{%
+           family={Sagar},
+           familyi={S\bibinitperiod},
+           given={DS},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4a26c4093165278f1fefa27cf5664b79}{%
+           family={Shenoy},
+           familyi={S\bibinitperiod},
+           given={P\bibnamedelima Deepa},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=709580465a630f197be241170ad6c009}{%
+           family={Venugopal},
+           familyi={V\bibinitperiod},
+           given={KR},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3d34ed405561148597beba461bcb31ef}{%
+           family={Patnaik},
+           familyi={P\bibinitperiod},
+           given={Lalit\bibnamedelima M},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{8779f0a5d6c1dba515d5764fca6ba877}
+      \strng{fullhash}{51495d6d5cc21b1f83d445f6c98afb03}
+      \strng{bibnamehash}{51495d6d5cc21b1f83d445f6c98afb03}
+      \strng{authorbibnamehash}{51495d6d5cc21b1f83d445f6c98afb03}
+      \strng{authornamehash}{8779f0a5d6c1dba515d5764fca6ba877}
+      \strng{authorfullhash}{51495d6d5cc21b1f83d445f6c98afb03}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Signal, Image and Video Processing}
+      \field{title}{Heartbeat biometrics for human authentication}
+      \field{volume}{5}
+      \field{year}{2011}
+      \field{pages}{485\bibrangedash 493}
+      \range{pages}{9}
     \endentry
     \entry{hu2023sok}{misc}{}
       \name{author}{10}{}{%
@@ -122,7 +384,6 @@
       \strng{authorbibnamehash}{86aed5bbf2f33284b04f5258e4af5594}
       \strng{authornamehash}{88fbc4bc3af5d25c8cd3541eeb1bd50e}
       \strng{authorfullhash}{86aed5bbf2f33284b04f5258e4af5594}
-      \field{labelalpha}{Hu+23}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{labelnamesource}{author}
@@ -133,6 +394,133 @@
       \field{year}{2023}
       \verb{eprint}
       \verb 2307.02106
+      \endverb
+    \endentry
+    \entry{jordon2022synthetic}{misc}{}
+      \name{author}{8}{}{%
+        {{hash=dc1b699df1b7fc62600a7ab386ec0982}{%
+           family={Jordon},
+           familyi={J\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d4cb86f230880e1f375e4e5bcde1dc7e}{%
+           family={Szpruch},
+           familyi={S\bibinitperiod},
+           given={Lukasz},
+           giveni={L\bibinitperiod}}}%
+        {{hash=0b080296db459d657acca55f9654c17e}{%
+           family={Houssiau},
+           familyi={H\bibinitperiod},
+           given={Florimond},
+           giveni={F\bibinitperiod}}}%
+        {{hash=206e68a3e8f32f91c8d61d009402c0a7}{%
+           family={Bottarelli},
+           familyi={B\bibinitperiod},
+           given={Mirko},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bae81377eed53618c4de75b94c99e7a1}{%
+           family={Cherubin},
+           familyi={C\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b15539905d7616794f836f57aa0297d0}{%
+           family={Maple},
+           familyi={M\bibinitperiod},
+           given={Carsten},
+           giveni={C\bibinitperiod}}}%
+        {{hash=3c4060ba927c4eb16381c99ce915cf84}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={Samuel\bibnamedelima N.},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=89be134d6b955c508c4267860047bdd9}{%
+           family={Weller},
+           familyi={W\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{c4a6ffa76955f8f18b2ff55f67fa4642}
+      \strng{fullhash}{8531aa18cf19fa5a3f07b4ec80656145}
+      \strng{bibnamehash}{8531aa18cf19fa5a3f07b4ec80656145}
+      \strng{authorbibnamehash}{8531aa18cf19fa5a3f07b4ec80656145}
+      \strng{authornamehash}{c4a6ffa76955f8f18b2ff55f67fa4642}
+      \strng{authorfullhash}{8531aa18cf19fa5a3f07b4ec80656145}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Synthetic Data -- what, why and how?}
+      \field{year}{2022}
+      \verb{eprint}
+      \verb 2205.03257
+      \endverb
+    \endentry
+    \entry{moody2001impact}{article}{}
+      \name{author}{2}{}{%
+        {{hash=71ab5dbee9c717c687e1b2c142bce563}{%
+           family={Moody},
+           familyi={M\bibinitperiod},
+           given={George\bibnamedelima B},
+           giveni={G\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=2193bac90baddb616fc4dcd2f366de81}{%
+           family={Mark},
+           familyi={M\bibinitperiod},
+           given={Roger\bibnamedelima G},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{c4df7241023127cc650d6cb0e52f20da}
+      \strng{fullhash}{c4df7241023127cc650d6cb0e52f20da}
+      \strng{bibnamehash}{c4df7241023127cc650d6cb0e52f20da}
+      \strng{authorbibnamehash}{c4df7241023127cc650d6cb0e52f20da}
+      \strng{authornamehash}{c4df7241023127cc650d6cb0e52f20da}
+      \strng{authorfullhash}{c4df7241023127cc650d6cb0e52f20da}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE engineering in medicine and biology magazine}
+      \field{number}{3}
+      \field{title}{The impact of the MIT-BIH arrhythmia database}
+      \field{volume}{20}
+      \field{year}{2001}
+      \field{pages}{45\bibrangedash 50}
+      \range{pages}{6}
+    \endentry
+    \entry{4531148}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=95dc795a2be14c50fb6a924acc135ff8}{%
+           family={Narayanan},
+           familyi={N\bibinitperiod},
+           given={Arvind},
+           giveni={A\bibinitperiod}}}%
+        {{hash=29abef6d5f9ba10547dab2eee5bceb2e}{%
+           family={Shmatikov},
+           familyi={S\bibinitperiod},
+           given={Vitaly},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{fdb313773cc7bea2d723b5efc4c92af9}
+      \strng{fullhash}{fdb313773cc7bea2d723b5efc4c92af9}
+      \strng{bibnamehash}{fdb313773cc7bea2d723b5efc4c92af9}
+      \strng{authorbibnamehash}{fdb313773cc7bea2d723b5efc4c92af9}
+      \strng{authornamehash}{fdb313773cc7bea2d723b5efc4c92af9}
+      \strng{authorfullhash}{fdb313773cc7bea2d723b5efc4c92af9}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2008 IEEE Symposium on Security and Privacy (sp 2008)}
+      \field{title}{Robust De-anonymization of Large Sparse Datasets}
+      \field{year}{2008}
+      \field{pages}{111\bibrangedash 125}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/SP.2008.33
       \endverb
     \endentry
     \entry{rff}{inproceedings}{}
@@ -182,7 +570,6 @@
       \strng{editorbibnamehash}{4108c3f67d0ea47e418b33b93d03233e}
       \strng{editornamehash}{5246c71ebe304e32befb42f3a15eb060}
       \strng{editorfullhash}{4108c3f67d0ea47e418b33b93d03233e}
-      \field{labelalpha}{RR07}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{labelnamesource}{author}
@@ -197,6 +584,185 @@
       \verb{url}
       \verb https://proceedings.neurips.cc/paper_files/paper/2007/file/013a006f03dbc5392effeb8f18fda755-Paper.pdf
       \endverb
+    \endentry
+    \entry{aimed3}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=bc286b8b5c84390be3ec146b9070a808}{%
+           family={Shailaja},
+           familyi={S\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e0080622d575aa64b22530e6c8c6d725}{%
+           family={Seetharamulu},
+           familyi={S\bibinitperiod},
+           given={Banoth},
+           giveni={B\bibinitperiod}}}%
+        {{hash=34b8a81b5540a0851f1a90a62c76bc45}{%
+           family={Jabbar},
+           familyi={J\bibinitperiod},
+           given={MA},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{23af6f499b46815187a27035bb70c066}
+      \strng{fullhash}{23af6f499b46815187a27035bb70c066}
+      \strng{bibnamehash}{23af6f499b46815187a27035bb70c066}
+      \strng{authorbibnamehash}{23af6f499b46815187a27035bb70c066}
+      \strng{authornamehash}{23af6f499b46815187a27035bb70c066}
+      \strng{authorfullhash}{23af6f499b46815187a27035bb70c066}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 Second international conference on electronics, communication and aerospace technology (ICECA)}
+      \field{title}{Machine learning in healthcare: A review}
+      \field{year}{2018}
+      \field{pages}{910\bibrangedash 914}
+      \range{pages}{5}
+    \endentry
+    \entry{stadler2022synthetic}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=797b80dd0c240841f357ac89370682a8}{%
+           family={Stadler},
+           familyi={S\bibinitperiod},
+           given={Theresa},
+           giveni={T\bibinitperiod}}}%
+        {{hash=72241cad750efbe69f1312d7695b41b3}{%
+           family={Oprisanu},
+           familyi={O\bibinitperiod},
+           given={Bristena},
+           giveni={B\bibinitperiod}}}%
+        {{hash=5c1489fa5bc4972de90b493e3c520030}{%
+           family={Troncoso},
+           familyi={T\bibinitperiod},
+           given={Carmela},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed786b4b750749a40a4fe47e4975f5cd}
+      \strng{fullhash}{ed786b4b750749a40a4fe47e4975f5cd}
+      \strng{bibnamehash}{ed786b4b750749a40a4fe47e4975f5cd}
+      \strng{authorbibnamehash}{ed786b4b750749a40a4fe47e4975f5cd}
+      \strng{authornamehash}{ed786b4b750749a40a4fe47e4975f5cd}
+      \strng{authorfullhash}{ed786b4b750749a40a4fe47e4975f5cd}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Synthetic Data -- Anonymisation Groundhog Day}
+      \field{year}{2022}
+      \verb{eprint}
+      \verb 2011.07018
+      \endverb
+    \endentry
+    \entry{heartb_auth}{article}{}
+      \name{author}{7}{}{%
+        {{hash=1f647bb6da8304b7be380ec58eb6373a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=38a73718b75faf73d89adc705a97ee12}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Kang},
+           giveni={K\bibinitperiod}}}%
+        {{hash=7c3359ab31848716f805a5f1b8eff299}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Ke},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f27ec46ccd272a021fd78bdac92dd490}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=a3886b04efdb896048d63a8a15493ddd}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={Chen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d9501bb096bed7e71af1f43d9ee08d98}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=a79d20a9b0056f69a39b223081048ad8}{%
+           family={Gu},
+           familyi={G\bibinitperiod},
+           given={Qing},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{10814f16ce9673476ec6de14dc6cea6e}
+      \strng{fullhash}{25c6d3bce5d1f037f482513ef671c9d1}
+      \strng{bibnamehash}{25c6d3bce5d1f037f482513ef671c9d1}
+      \strng{authorbibnamehash}{25c6d3bce5d1f037f482513ef671c9d1}
+      \strng{authornamehash}{10814f16ce9673476ec6de14dc6cea6e}
+      \strng{authorfullhash}{25c6d3bce5d1f037f482513ef671c9d1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we propose to use the vibration of the chest in response to the heartbeat as a biometric feature to authenticate the user on mobile devices. We use the built-in accelerometer to capture the heartbeat signals on commercial mobile phones. The user only needs to press the phone on his/her chest, and the system can identify the user within a few heartbeats. To reliably extract heartbeat features, we design a two-step alignment scheme that can handle the natural variability in human heart rates. We further use an adaptive template selection scheme to authenticate the user under different body postures and body states. Based on heartbeat signals collected on twenty users, the experimental results show that our method can achieve an authentication accuracy of 96.49\% and the heartbeat features are stable over a period of three months.}
+      \field{journaltitle}{Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.}
+      \field{month}{9}
+      \field{number}{3}
+      \field{title}{Unlock with Your Heart: Heartbeat-Based Authentication on Commercial Mobile Phones}
+      \field{volume}{2}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1145/3264950
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3264950
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3264950
+      \endverb
+      \keyw{Biometrics-based Authentication,Mobile System}
+    \endentry
+    \entry{aimed4}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cb8509d588fc0fc5f051b14ffed83827}{%
+           family={Wiens},
+           familyi={W\bibinitperiod},
+           given={Jenna},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d3052ca105d2b74e256a5dcc6cfe42bc}{%
+           family={Shenoy},
+           familyi={S\bibinitperiod},
+           given={Erica\bibnamedelima S},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press US}%
+      }
+      \strng{namehash}{82c88795f87420c2576facf41831fad1}
+      \strng{fullhash}{82c88795f87420c2576facf41831fad1}
+      \strng{bibnamehash}{82c88795f87420c2576facf41831fad1}
+      \strng{authorbibnamehash}{82c88795f87420c2576facf41831fad1}
+      \strng{authornamehash}{82c88795f87420c2576facf41831fad1}
+      \strng{authorfullhash}{82c88795f87420c2576facf41831fad1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Clinical infectious diseases}
+      \field{number}{1}
+      \field{title}{Machine learning for healthcare: on the verge of a major shift in healthcare epidemiology}
+      \field{volume}{66}
+      \field{year}{2018}
+      \field{pages}{149\bibrangedash 153}
+      \range{pages}{5}
     \endentry
   \enddatalist
 \endrefsection

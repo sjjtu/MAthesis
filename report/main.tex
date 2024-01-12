@@ -55,7 +55,7 @@
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{%
             \node[shape=circle,fill=blue!20,draw,inner sep=2pt] (char) {#1};}}
 
-\usepackage[style=alphabetic, firstinits=true, backend=biber, sorting=nyt, doi=false, isbn=false, url=true, maxbibnames=99]{biblatex}
+\usepackage[style=numeric, firstinits=true, backend=biber, sorting=nyt, doi=false, isbn=false, url=true, maxbibnames=99]{biblatex}
 \DeclareNameAlias{default}{family-given}
 \addbibresource{references.bib}
 
@@ -66,25 +66,28 @@
 \setlength\parindent{0pt}
 
 \begin{document}
+	\pagenumbering{gobble}
 	\input{chapters/titlepage}
 	\input{chapters/abstract}
 	\input{chapters/eides_erkl}
 	\tableofcontents
-	\thispagestyle{empty}
-	% \addtocontents{toc}{\protect\thispagestyle{empty}}
-	\setcounter{page}{0}
-
+	
+	\clearpage
+	\pagenumbering{roman}
+	\setcounter{page}{1}
 	\input{chapters/notation}
 	\addcontentsline{toc}{section}{Notation}
 
+	\clearpage
 	\listoffigures
-
+	\clearpage
 	\pagestyle{fancy}
 	\fancyhf{}
 	\fancyhead[L]{\leftmark}
 	\fancyfoot[R]{\thepage}
 
-
+	\pagenumbering{arabic}
+	\setcounter{page}{1}
 	\input{chapters/chapter1-intro.tex}
 	
 	\input{chapters/chapter2-thDP.tex}
@@ -101,14 +104,13 @@
 
 	\clearpage
 
-	\fancyhead[L]{APPENDIX}
-	\section*{Appendix}
-	\addcontentsline{toc}{section}{Appendix}
+	\pagestyle{plain}
+	\pagenumbering{Roman}
+	\setcounter{page}{1}
 	\input{chapters/9appendix.tex}
+	\addcontentsline{toc}{section}{Appendix}
 	\clearpage
 
-	\pagestyle{fancy}
-	\fancyhead[L]{REFERENCES}
-	\fancyfoot[R]{\thepage}
 	\printbibliography[heading=bibintoc, title=References]
+	\clearpage
 \end{document}
