@@ -2375,10 +2375,13 @@
     <bcf:citekey order="8" intorder="1">10.1145/1866739.1866758</bcf:citekey>
     <bcf:citekey order="9" intorder="1">moody2001impact</bcf:citekey>
     <bcf:citekey order="10" intorder="1">stadler2022synthetic</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">dpmerf</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">hu2023sok</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">dpmerf</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">rff</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">kim2021survey</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">surv_dp2021</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">Abadi_2016</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">dpmerf</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">hu2023sok</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">dpmerf</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">rff</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

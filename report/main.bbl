@@ -19,6 +19,72 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{Abadi_2016}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=f39ffee58f8a71d84d8b13c05804b2cc}{%
+           family={Abadi},
+           familyi={A\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=25446ff761c3633df18431097f7205ca}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5d2585c11210cf1d4512e6e0a03ec315}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=707fa44f08f047ab822f84fe38c69dfb}{%
+           family={McMahan},
+           familyi={M\bibinitperiod},
+           given={H.\bibnamedelimi Brendan},
+           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=2eea0075441c4e9acfc378c1345323f2}{%
+           family={Mironov},
+           familyi={M\bibinitperiod},
+           given={Ilya},
+           giveni={I\bibinitperiod}}}%
+        {{hash=1754a40f9d600dea756c1dd1047ce170}{%
+           family={Talwar},
+           familyi={T\bibinitperiod},
+           given={Kunal},
+           giveni={K\bibinitperiod}}}%
+        {{hash=32a08717e0d6dcde59bc98b96800ed6c}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{1cf6f3c19f4fd018f06a8f6a49bc4394}
+      \strng{fullhash}{6789995b8049ab2d061a5a6e71e0d100}
+      \strng{bibnamehash}{6789995b8049ab2d061a5a6e71e0d100}
+      \strng{authorbibnamehash}{6789995b8049ab2d061a5a6e71e0d100}
+      \strng{authornamehash}{1cf6f3c19f4fd018f06a8f6a49bc4394}
+      \strng{authorfullhash}{6789995b8049ab2d061a5a6e71e0d100}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security}
+      \field{month}{10}
+      \field{series}{CCS’16}
+      \field{title}{Deep Learning with Differential Privacy}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1145/2976749.2978318
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1145/2976749.2978318
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1145/2976749.2978318
+      \endverb
+    \endentry
     \entry{ang2023tsgbench}{misc}{}
       \name{author}{5}{}{%
         {{hash=052a6060918baa435d61e7059c334532}{%
@@ -227,6 +293,55 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1145/1866739.1866758
+      \endverb
+    \endentry
+    \entry{surv_dp2021}{article}{}
+      \name{author}{5}{}{%
+        {{hash=af3306d0262e3a4ca0709d6e154b4890}{%
+           family={Gong},
+           familyi={G\bibinitperiod},
+           given={Maoguo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=153176ff7963589ce0e40105874a1d1a}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0a3f8b3ebe253af5b610cd5a66c0e7dd}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Ke},
+           giveni={K\bibinitperiod}}}%
+        {{hash=333c816e0b973575597ac02fd3bb942e}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Kaiyuan},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e847e96e155767e9e6b6183e616e95d3}{%
+           family={Qin},
+           familyi={Q\bibinitperiod},
+           given={A.K.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd64f9ff596fa9dd8ec4dceb98b07468}
+      \strng{fullhash}{d1a3f5abf9b2dc9ff73eba5877652e3a}
+      \strng{bibnamehash}{d1a3f5abf9b2dc9ff73eba5877652e3a}
+      \strng{authorbibnamehash}{d1a3f5abf9b2dc9ff73eba5877652e3a}
+      \strng{authornamehash}{fd64f9ff596fa9dd8ec4dceb98b07468}
+      \strng{authorfullhash}{d1a3f5abf9b2dc9ff73eba5877652e3a}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Computational Intelligence Magazine}
+      \field{number}{2}
+      \field{title}{A Survey on Differentially Private Machine Learning [Review Article]}
+      \field{volume}{15}
+      \field{year}{2020}
+      \field{pages}{49\bibrangedash 64}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1109/MCI.2020.2976185
       \endverb
     \endentry
     \entry{dpmerf}{article}{}
@@ -456,6 +571,54 @@
       \verb{eprint}
       \verb 2205.03257
       \endverb
+    \endentry
+    \entry{kim2021survey}{article}{}
+      \name{author}{5}{}{%
+        {{hash=37a96525bc70870f8509160f7eccf4b7}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Jong\bibnamedelima Wook},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=1dadbb0ca05303dc0a5a8c4beeb14926}{%
+           family={Edemacu},
+           familyi={E\bibinitperiod},
+           given={Kennedy},
+           giveni={K\bibinitperiod}}}%
+        {{hash=33e10538a89eb9cac8925909ff89ad2d}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Jong\bibnamedelima Seon},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=9223f97df82fa3128331073814a3005f}{%
+           family={Chung},
+           familyi={C\bibinitperiod},
+           given={Yon\bibnamedelima Dohn},
+           giveni={Y\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=87432519ea3aba721e5e429a5c8f1243}{%
+           family={Jang},
+           familyi={J\bibinitperiod},
+           given={Beakcheol},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{43525b4c3883fdacb4ea552ba89e276a}
+      \strng{fullhash}{67084f20259d8ea14b30793afec5f67b}
+      \strng{bibnamehash}{67084f20259d8ea14b30793afec5f67b}
+      \strng{authorbibnamehash}{67084f20259d8ea14b30793afec5f67b}
+      \strng{authornamehash}{43525b4c3883fdacb4ea552ba89e276a}
+      \strng{authorfullhash}{67084f20259d8ea14b30793afec5f67b}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers \& Security}
+      \field{title}{A survey of differential privacy-based techniques and their applicability to location-based services}
+      \field{volume}{111}
+      \field{year}{2021}
+      \field{pages}{102464}
+      \range{pages}{1}
     \endentry
     \entry{moody2001impact}{article}{}
       \name{author}{2}{}{%
