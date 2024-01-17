@@ -27,5 +27,5 @@
 \contentsline {section}{\numberline {7}Outro}{12}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Future Works}{12}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Conclusion}{12}{subsection.7.2}%
-\contentsline {section}{Appendix}{I}{section*.10}%
-\contentsline {section}{References}{II}{section*.11}%
+\contentsline {section}{Appendix}{I}{section*.11}%
+\contentsline {section}{References}{II}{section*.12}%
