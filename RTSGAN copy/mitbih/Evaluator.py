@@ -72,6 +72,11 @@ class Evaluator:
         return predictions_normal, predictions_anomaly
 
     def evaluate(self, pred_normal, pred_anomaly):
+        print(f"TP: {pred_normal.count('N')}")
+        print(f"FN: {pred_normal.count('A')}")
+        print(f"FP: {pred_anomaly.count('N')}")
+        print(f"TN: {pred_anomaly.count('A')}")
+        
         print(f"Acc: {metrics.accuracy_score(['N']*len(pred_normal)+['A']*len(pred_anomaly), pred_normal+pred_anomaly)}")
         print(f"Precision: {metrics.precision_score(['N']*len(pred_normal)+['A']*len(pred_anomaly), pred_normal+pred_anomaly, pos_label='N')}")
         print(f"Recall: {metrics.recall_score(['N']*len(pred_normal)+['A']*len(pred_anomaly), pred_normal+pred_anomaly, pos_label='N')}")
