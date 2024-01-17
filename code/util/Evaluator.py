@@ -9,12 +9,14 @@ import torch
 import numpy as np
 from sklearn import metrics
 
+from util.ECGDataset import ECGDataset
+
 
 class Evaluator:
-    def __init__(self, test_normal_ds, test_anomaly_ds, model) -> None:
+    def __init__(self, test_normal_path, test_anomaly_path, test_anomaly_label_path, model) -> None:
         self.model = model
-        self.test_normal_ds = test_normal_ds
-        self.test_anomaly_ds = test_anomaly_ds
+        self.test_normal_ds = ECGDataset(test_normal_path)
+        self.test_anomaly_ds = ECGDataset(test_anomaly_path, test_anomaly_label_path)
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
         self.pred_normal, self.loss_normal = self._reconstruct(self.test_normal_ds)

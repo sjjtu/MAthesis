@@ -13,16 +13,8 @@ from util.ECGDataset import ECGDataset
 from util.lstmae import RecurrentAutoencoder
 
 class AutoEncTrainRoutine:
-    def __init__(self, seq_len=180, n_feat=1, emb_dim=32, training_data_path="data/normal_train_180.csv", window_size=180):
+    def __init__(self, seq_len=180, n_feat=1, emb_dim=32):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        self.train_ds= ECGDataset(training_data_path, 
-                                  f"data/train_labels_{window_size}.csv")
-        self.test_normal_ds = ECGDataset(f"data/normal_test{window_size}.csv", 
-                                         f"data/normal_labels_{window_size}.csv")
-        self.test_anomalie_ds = ECGDataset(f"data/anomalie_test{window_size}.csv", 
-                                           f"data/anomalie_labels_{window_size}.csv")
-        self.val_ds = ECGDataset(f"data/normal_val_{window_size}.csv", 
-                                 f"data/val_labels_{window_size}.csv")
         self.model = RecurrentAutoencoder(seq_len, n_feat, self.device, emb_dim)
 
         print("------------------------------")
@@ -31,7 +23,9 @@ class AutoEncTrainRoutine:
         print(f"Training on {self.device}")
         print("------------------------------")
         
-    def train_model(self, n_epochs=20, lr=5e-4, batch_size=1):
+    def train_model(self, train_ds_path: str, val_ds_path, n_epochs=20, lr=5e-4, batch_size=1):
+        train_ds = ECGDataset(train_ds_path)
+        val_ds = ECGDataset(val_ds_path)
         optimizer = torch.optim.Adam(self.model.parameters(), lr=lr)
         criterion = torch.nn.L1Loss(reduction='sum').to(self.device)
         history = dict(train=[], val=[])
@@ -42,8 +36,8 @@ class AutoEncTrainRoutine:
             train_losses = []
             val_losses = []
 
-            train_dl = torch.utils.data.DataLoader(self.train_ds, batch_size=batch_size, shuffle=True)
-            val_dl = torch.utils.data.DataLoader(self.val_ds)
+            train_dl = torch.utils.data.DataLoader(train_ds, batch_size=batch_size, shuffle=True)
+            val_dl = torch.utils.data.DataLoader(val_ds)
 
             size = len(train_dl.dataset)
             for batch, (X,y) in enumerate(train_dl):
@@ -90,9 +84,10 @@ class AutoEncTrainRoutine:
                                               map_location=torch.device('cpu')))
         print(f"loading AE model from models/{name}")
   
-    def encode_train_data(self, fname="data/normal_training_encoded.csv"):
+    def encode_train_data(self, train_ds_path, fname="data/normal_training_encoded.csv"):
+        train_ds = ECGDataset(train_ds_path)
         encoded = []
-        for (X,y) in self.train_ds:
+        for (X,y) in train_ds:
             self.model.eval()
             with torch.no_grad():
                 X = X.to(self.device)
