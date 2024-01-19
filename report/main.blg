@@ -1,18 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
-[0] Config.pm:310> INFO - Logfile is 'main.blg'
-[105] biber:340> INFO - === Wed Jan 17, 2024, 14:56:27
-[127] Biber.pm:419> INFO - Reading 'main.bcf'
-[227] Biber.pm:979> INFO - Found 23 citekeys in bib section 0
-[251] Biber.pm:4419> INFO - Processing section 0
-[266] Biber.pm:4610> INFO - Looking for bibtex file 'references.bib' for section 0
-[268] bibtex.pm:1713> INFO - LaTeX decoding ...
-[310] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[710] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[710] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[711] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[711] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[761] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[784] bbl.pm:763> INFO - Output to main.bbl
-[784] Biber.pm:131> WARN - legacy month field 'sep' in entry 'heartb_auth' is not an integer - this will probably not sort properly.
-[784] Biber.pm:131> WARN - legacy month field 'jan' in entry '10.1145/1866739.1866758' is not an integer - this will probably not sort properly.
-[784] Biber.pm:133> INFO - WARNINGS: 2
+[1] Config.pm:310> INFO - Logfile is 'main.blg'
+[125] biber:340> INFO - === Fri Jan 19, 2024, 15:23:29
+[147] Biber.pm:419> INFO - Reading 'main.bcf'
+[249] Biber.pm:979> INFO - Found 35 citekeys in bib section 0
+[275] Biber.pm:4419> INFO - Processing section 0
+[290] Biber.pm:4610> INFO - Looking for bibtex file 'references.bib' for section 0
+[292] bibtex.pm:1713> INFO - LaTeX decoding ...
+[347] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[915] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[916] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[916] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[916] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[981] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1009] bbl.pm:763> INFO - Output to main.bbl
+[1010] Biber.pm:131> WARN - legacy month field 'sep' in entry 'heartb_auth' is not an integer - this will probably not sort properly.
+[1010] Biber.pm:131> WARN - legacy month field 'jan' in entry '10.1145/1866739.1866758' is not an integer - this will probably not sort properly.
+[1010] Biber.pm:133> INFO - WARNINGS: 2

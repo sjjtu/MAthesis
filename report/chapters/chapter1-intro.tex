@@ -20,7 +20,7 @@ This thesis aims to examine how to generate private time series data for heartbe
 
 Firstly, we want to design a time series generator (TSG) that can model the true probability distribution $p(\mathcal{N})$ of the normal heartbeats. Here, we only consider normal heartbeats since for the subsequent task of arrhythmia detection we will follow an anomaly detection approach explained next. The aim of the TSG is to generate a synthetic data set $\widehat{\mathcal{N}}$ with distribution $p(\widehat{\mathcal{N}})$ that is "close" to the original data $p(\mathcal{N})$.
 
-Secondly, the utility of the generated data is assessed in the downstream task of detecting anomalous heartbeats (heartbeat arrhythmia detection). We treat this task as an anomaly detection task based on reconstruction error ??REF, i. e. we want to train a model only on normal heartbeats that can reconstruct those samples with low error, but give high reconstruction error when inputting an anomalous sample. Alternatively, one could treat this as a binary classification task, that classifies a given heartbeat sample as either normal or anomalous. Since the ratio of those two classes are heavily imbalanced due to the nature of arrhythmias, we will favor the first approach ??REF.
+Secondly, the utility of the generated data is assessed in the downstream task of detecting anomalous heartbeats (heartbeat arrhythmia detection). We treat this task as an anomaly detection task based on reconstruction error ??REF, i. e. we want to train a model only on normal heartbeats that can reconstruct those samples with low error, but give high reconstruction error when inputting an anomalous sample. Alternatively, one could treat this as a binary classification task, that classifies a given heartbeat sample as either normal or anomalous. Since the ratio of those two classes are heavily imbalanced due to the nature of arrhythmias, we will favour the first approach ??REF.
 
 Lastly, we will embed the generation procedure in a differential privacy setting. This will provide a theoretical framework to assess privacy.
 
@@ -44,15 +44,26 @@ Several notions of privacy have been proposed in the last decade, among which Di
     \item DP provides a notion of privacy budget, which can be adapted to the specific use case to balance privacy and utility.
 \end{enumerate}
 
-We will revisit the definition and most important results in Chapter \ref{ch2} of this thesis. The basic idea is to add calibrated, random noise either the data or during model training.
+We will revisit the definition and most important results in Chapter \ref{ch2} of this thesis. The basic idea is to add calibrated, random noise either the data or during model training. Broadly speaking, differential private noise can be injected in three different stages of the modelling pipeline: input, hidden or output layer \parencite[cf.][]{zhao2019differential}. 
 
-Recently, a lot of popular neural network architectures have been ``privatised'' by adding DP noise, most notably there is a differential private version of stochastic gradient descent (SGD) called DP-SGD developed by Abadi et al \parencite{Abadi_2016} in 2016. Broadly speaking, differential private noise can be injected in three different stages of the modelling pipeline: input, hidden or output layer \parencite[cf.][]{zhao2019differential}. 
+???IMGAE ACC TO \parencite{wang2023differential}
 
-Applying some DP mechanism at the input stage can be seen as preprocessing step to either hide sensitive attributes in the data or generating new synthetic dataset, which will be the focus of this thesis. Hence, it will not be discussed in this chapter. 
+Applying some DP mechanism at the input stage can be seen as preprocessing step to either hide sensitive attributes in the data or generating new synthetic dataset. Some earlier works include random perturbation methods described for instance in \parencite{input_levelDP,erm_dp_input}. According to \parencite{wang2023differential} this approach is not utilised frequently because extra prior knowledge about the subsequent task is required to calibrate the right amount of noise. More recent methods focus exclusively on generating data samples by deep learning methods, that in turn employ a DP mechanism at gradient or output level. This will be the focus of the next chapter and hence not be discussed here.
 
-- hidden layer
+Adding privacy in the hidden layer is sometimes referred to as gradient-level DP. Due to the iterative nature of most training algorithms, extra care needs to be taken to track the privacy loss caused by each iteration. Most notably there is a differential private version of stochastic gradient descent (SGD) called DP-SGD developed by Abadi et al \parencite{Abadi_2016} where the authors have designed a mechanism to track the privacy loss incurred while training. Differential privacy is achieved by clipping the gradient and then adding gaussian noise to the gradient. The clipping step is necessary to ensure that the gradient is bounded. Based on a more relaxed definition of DP, the authors in \parencite{bu2020deep} propose an improved version of DP-SGD called NoisySGD. 
 
-- output layer
+At the output level there are several ways to implement DP. One highly cited approach called the ``Functional Mechanism'' followed by the authors in \parencite{zhang2012functional} perturbs the objective function, so it is independent of the number of training steps. A further refinement of this approach was researched in \parencite{adlm2017}, where Phan et al. developed an algorithm that puts adaptive noise on the features based on its contribution to the output.
+
+Other interesting approaches to incorporating differential privacy into deep learning include the PATE learning method by Papernot et al. \parencite{papernot2017semisupervised}. The idea behind this model is to train ``teacher models'' that will not be published, which in turn are used in a random manner to then train private ``student'' models. 
+
+In a distributed setting approaches like federated learning \parencite{konečný2015federated,Mo2019EfficientAP} have been proposed. Their privacy further analysed in \parencite{mcmahan2018learning} for learning language models.
+
+\vspace*{1em}
+For more in-depth review see e. g. \parencite{surrve_ppml,surv_ppml_2,wang2023differential}
 
 
 \subsubsection*{Data generation and Privacy}
+
+good ref https://dl.acm.org/doi/pdf/10.1145/3436755 p. 20
+
+\subsubsection*{Heartbeat arrhythmia detection}

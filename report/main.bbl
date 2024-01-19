@@ -303,6 +303,50 @@
       \verb 10.1109/COMPSAC.2017.164
       \endverb
     \endentry
+    \entry{bu2020deep}{article}{}
+      \name{author}{4}{}{%
+        {{hash=18e10a899c932dc9266a87c7aefde8a0}{%
+           family={Bu},
+           familyi={B\bibinitperiod},
+           given={Zhiqi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=359770e50fa5b6848ef22b3e1c50038f}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Jinshuo},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e6845a6257e44a30d9df2a428e1c68f9}{%
+           family={Long},
+           familyi={L\bibinitperiod},
+           given={Qi},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=87ddac44623b8bb57fc24211977df985}{%
+           family={Su},
+           familyi={S\bibinitperiod},
+           given={Weijie\bibnamedelima J},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {NIH Public Access}%
+      }
+      \strng{namehash}{bb1a0e48d9cf3a6bd97e9a13e41b55fa}
+      \strng{fullhash}{186460f87652f83d7a5691beb6d5b60a}
+      \strng{bibnamehash}{186460f87652f83d7a5691beb6d5b60a}
+      \strng{authorbibnamehash}{186460f87652f83d7a5691beb6d5b60a}
+      \strng{authornamehash}{bb1a0e48d9cf3a6bd97e9a13e41b55fa}
+      \strng{authorfullhash}{186460f87652f83d7a5691beb6d5b60a}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Harvard data science review}
+      \field{number}{23}
+      \field{title}{Deep learning with Gaussian differential privacy}
+      \field{volume}{2020}
+      \field{year}{2020}
+      \field{pages}{10\bibrangedash 1162}
+      \range{pages}{1153}
+    \endentry
     \entry{10.1145/1866739.1866758}{article}{}
       \name{author}{1}{}{%
         {{hash=c6d8866083f4c03af5e37e032df87089}{%
@@ -381,6 +425,72 @@
       \field{volume}{9}
       \field{year}{2019}
     \endentry
+    \entry{erm_dp_input}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=c0d5638625d6ee45809ca8616d81ede1}{%
+           family={Fukuchi},
+           familyi={F\bibinitperiod},
+           given={Kazuto},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e551a70e424ac12896f6f8534d7fb636}{%
+           family={Tran},
+           familyi={T\bibinitperiod},
+           given={Quang\bibnamedelima Khai},
+           giveni={Q\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=e50997be633aa84a225f937f2e76437e}{%
+           family={Sakuma},
+           familyi={S\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=74908804a51911bbd336cf27b46b948e}{%
+           family={Yamamoto},
+           familyi={Y\bibinitperiod},
+           given={Akihiro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5dde11008b8579c765214acc3e2393cc}{%
+           family={Kida},
+           familyi={K\bibinitperiod},
+           given={Takuya},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a5f2f68581b1d10333ac66efeec94265}{%
+           family={Uno},
+           familyi={U\bibinitperiod},
+           given={Takeaki},
+           giveni={T\bibinitperiod}}}%
+        {{hash=83dec7bd1bdd421511eef7c0dbf88c01}{%
+           family={Kuboyama},
+           familyi={K\bibinitperiod},
+           given={Tetsuji},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{328512ff10845914fe497cdbdff50b88}
+      \strng{fullhash}{328512ff10845914fe497cdbdff50b88}
+      \strng{bibnamehash}{328512ff10845914fe497cdbdff50b88}
+      \strng{authorbibnamehash}{328512ff10845914fe497cdbdff50b88}
+      \strng{authornamehash}{328512ff10845914fe497cdbdff50b88}
+      \strng{authorfullhash}{328512ff10845914fe497cdbdff50b88}
+      \strng{editorbibnamehash}{69385cf833dd48ea947a216845163d8d}
+      \strng{editornamehash}{5b181959d406d775c56ee6e825f63ada}
+      \strng{editorfullhash}{69385cf833dd48ea947a216845163d8d}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Discovery Science}
+      \field{isbn}{978-3-319-67786-6}
+      \field{title}{Differentially Private Empirical Risk Minimization with Input Perturbation}
+      \field{year}{2017}
+      \field{pages}{82\bibrangedash 90}
+      \range{pages}{9}
+    \endentry
     \entry{surv_dp2021}{article}{}
       \name{author}{5}{}{%
         {{hash=af3306d0262e3a4ca0709d6e154b4890}{%
@@ -428,6 +538,53 @@
       \range{pages}{16}
       \verb{doi}
       \verb 10.1109/MCI.2020.2976185
+      \endverb
+    \endentry
+    \entry{surrve_ppml}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=07e653897d45e95915e0705da91c77d3}{%
+           family={Ha},
+           familyi={H\bibinitperiod},
+           given={Trung},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0b6c43bda0c71cdc72ff0e6745aaec29}{%
+           family={Dang},
+           familyi={D\bibinitperiod},
+           given={Tran\bibnamedelima Khanh},
+           giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=b207ab340558bd94492732b07549e6d7}{%
+           family={Dang},
+           familyi={D\bibinitperiod},
+           given={Tran\bibnamedelima Tri},
+           giveni={T\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=9dff29ec7f2ff04d5fff2a9920cae38f}{%
+           family={Truong},
+           familyi={T\bibinitperiod},
+           given={Tuan\bibnamedelima Anh},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=9a6b1fecbb4b314838b323acd569e142}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Manh\bibnamedelima Tuan},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3b8c1666c91371cdc5994955d63bbe9}
+      \strng{fullhash}{a82f98c087e0bee2541cb4de068aef0e}
+      \strng{bibnamehash}{a82f98c087e0bee2541cb4de068aef0e}
+      \strng{authorbibnamehash}{a82f98c087e0bee2541cb4de068aef0e}
+      \strng{authornamehash}{d3b8c1666c91371cdc5994955d63bbe9}
+      \strng{authorfullhash}{a82f98c087e0bee2541cb4de068aef0e}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2019 International Conference on Advanced Computing and Applications (ACOMP)}
+      \field{title}{Differential Privacy in Deep Learning: An Overview}
+      \field{year}{2019}
+      \field{pages}{97\bibrangedash 102}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ACOMP.2019.00022
       \endverb
     \endentry
     \entry{dpmerf}{article}{}
@@ -706,6 +863,169 @@
       \field{pages}{102464}
       \range{pages}{1}
     \endentry
+    \entry{konečný2015federated}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=56660736d75eaca4a2482417345d1863}{%
+           family={Konečný},
+           familyi={K\bibinitperiod},
+           given={Jakub},
+           giveni={J\bibinitperiod}}}%
+        {{hash=be349ac63090285fa87303a55d511957}{%
+           family={McMahan},
+           familyi={M\bibinitperiod},
+           given={Brendan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=86066638fba5b4dc33bcee0bcba473cf}{%
+           family={Ramage},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{5b09d2a56e17c4cd2ba4b2b74ccd3ab1}
+      \strng{fullhash}{5b09d2a56e17c4cd2ba4b2b74ccd3ab1}
+      \strng{bibnamehash}{5b09d2a56e17c4cd2ba4b2b74ccd3ab1}
+      \strng{authorbibnamehash}{5b09d2a56e17c4cd2ba4b2b74ccd3ab1}
+      \strng{authornamehash}{5b09d2a56e17c4cd2ba4b2b74ccd3ab1}
+      \strng{authorfullhash}{5b09d2a56e17c4cd2ba4b2b74ccd3ab1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Federated Optimization:Distributed Optimization Beyond the Datacenter}
+      \field{year}{2015}
+      \verb{eprint}
+      \verb 1511.03575
+      \endverb
+    \endentry
+    \entry{input_levelDP}{article}{}
+      \name{author}{6}{}{%
+        {{hash=28c2f8feae8557397170c998fd2e3b47}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Chuan},
+           giveni={C\bibinitperiod}}}%
+        {{hash=506931cf32501a4ff45e70aec9cfa809}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Long},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d34cb88f7754ce70bceff9d27d7b9a3d}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=46a3f0b5c048254bc7f6910cd7e8cd63}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod}}}%
+        {{hash=baed63a73da27d5f28fde421d21054ac}{%
+           family={Bhaskar},
+           familyi={B\bibinitperiod},
+           given={Raghav},
+           giveni={R\bibinitperiod}}}%
+        {{hash=bc20e54573d2db853852f86802ab83de}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{52c14eeb461eaa82dfedba4be46df2dc}
+      \strng{fullhash}{c4663651e70d2efec0435fd51043ddc9}
+      \strng{bibnamehash}{c4663651e70d2efec0435fd51043ddc9}
+      \strng{authorbibnamehash}{c4663651e70d2efec0435fd51043ddc9}
+      \strng{authornamehash}{52c14eeb461eaa82dfedba4be46df2dc}
+      \strng{authorfullhash}{c4663651e70d2efec0435fd51043ddc9}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Knowledge and Data Engineering}
+      \field{number}{4}
+      \field{title}{Data Level Privacy Preserving: A Stochastic Perturbation Approach Based on Differential Privacy}
+      \field{volume}{35}
+      \field{year}{2023}
+      \field{pages}{3619\bibrangedash 3631}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/TKDE.2021.3137047
+      \endverb
+    \endentry
+    \entry{mcmahan2018learning}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=707fa44f08f047ab822f84fe38c69dfb}{%
+           family={McMahan},
+           familyi={M\bibinitperiod},
+           given={H.\bibnamedelimi Brendan},
+           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=86066638fba5b4dc33bcee0bcba473cf}{%
+           family={Ramage},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1754a40f9d600dea756c1dd1047ce170}{%
+           family={Talwar},
+           familyi={T\bibinitperiod},
+           given={Kunal},
+           giveni={K\bibinitperiod}}}%
+        {{hash=32a08717e0d6dcde59bc98b96800ed6c}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{a1451f4ba9f1025b922d26afb2931f2f}
+      \strng{fullhash}{8e993edac734ffdcdffcb122ed88535a}
+      \strng{bibnamehash}{8e993edac734ffdcdffcb122ed88535a}
+      \strng{authorbibnamehash}{8e993edac734ffdcdffcb122ed88535a}
+      \strng{authornamehash}{a1451f4ba9f1025b922d26afb2931f2f}
+      \strng{authorfullhash}{8e993edac734ffdcdffcb122ed88535a}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Learning Differentially Private Recurrent Language Models}
+      \field{year}{2018}
+      \verb{eprint}
+      \verb 1710.06963
+      \endverb
+    \endentry
+    \entry{Mo2019EfficientAP}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=b9a922f24beb44b89e33498e1f7941fc}{%
+           family={Mo},
+           familyi={M\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f59fc2039011605ac9f98abf29fd7731}{%
+           family={Haddadi},
+           familyi={H\bibinitperiod},
+           given={Hamed},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{ac0ad1b2ac2c39b5742c8a1eca11cc07}
+      \strng{fullhash}{ac0ad1b2ac2c39b5742c8a1eca11cc07}
+      \strng{bibnamehash}{ac0ad1b2ac2c39b5742c8a1eca11cc07}
+      \strng{authorbibnamehash}{ac0ad1b2ac2c39b5742c8a1eca11cc07}
+      \strng{authornamehash}{ac0ad1b2ac2c39b5742c8a1eca11cc07}
+      \strng{authorfullhash}{ac0ad1b2ac2c39b5742c8a1eca11cc07}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Efficient and Private Federated Learning using TEE}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:211627925
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:211627925
+      \endverb
+    \endentry
     \entry{moody2001impact}{article}{}
       \name{author}{2}{}{%
         {{hash=71ab5dbee9c717c687e1b2c142bce563}{%
@@ -770,6 +1090,94 @@
       \range{pages}{15}
       \verb{doi}
       \verb 10.1109/SP.2008.33
+      \endverb
+    \endentry
+    \entry{papernot2017semisupervised}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=58ca864d11bbe53214716bb8177beab9}{%
+           family={Papernot},
+           familyi={P\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9a04ae935da573a7aa9c83afdf2fd845}{%
+           family={Abadi},
+           familyi={A\bibinitperiod},
+           given={Martín},
+           giveni={M\bibinitperiod}}}%
+        {{hash=36009ff19905955cdcf3b38361a28a94}{%
+           family={Erlingsson},
+           familyi={E\bibinitperiod},
+           given={Úlfar},
+           giveni={Ú\bibinitperiod}}}%
+        {{hash=5d2585c11210cf1d4512e6e0a03ec315}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=1754a40f9d600dea756c1dd1047ce170}{%
+           family={Talwar},
+           familyi={T\bibinitperiod},
+           given={Kunal},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{9085ed4e8c2d74ca7918f23e1db31d8c}
+      \strng{fullhash}{89d113aea53ae5b9faa345ad74038333}
+      \strng{bibnamehash}{89d113aea53ae5b9faa345ad74038333}
+      \strng{authorbibnamehash}{89d113aea53ae5b9faa345ad74038333}
+      \strng{authornamehash}{9085ed4e8c2d74ca7918f23e1db31d8c}
+      \strng{authorfullhash}{89d113aea53ae5b9faa345ad74038333}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{stat.ML}
+      \field{eprinttype}{arXiv}
+      \field{title}{Semi-supervised Knowledge Transfer for Deep Learning from Private Training Data}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1610.05755
+      \endverb
+    \endentry
+    \entry{adlm2017}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=2bb74b89420231d4231f7240bb40c075}{%
+           family={Phan},
+           familyi={P\bibinitperiod},
+           given={NhatHai},
+           giveni={N\bibinitperiod}}}%
+        {{hash=dca0bccd0e95c0a62555e0a71e4d4c45}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Xintao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=f19295c2c8bee05248e05cdbfd48b247}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Han},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ece50b88ec2cd445d40b4195c8f69610}{%
+           family={Dou},
+           familyi={D\bibinitperiod},
+           given={Dejing},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{3a78276d9edd81a21df53098d14ba24f}
+      \strng{fullhash}{e3141d1ec182a37f97241d6b774b4ea0}
+      \strng{bibnamehash}{e3141d1ec182a37f97241d6b774b4ea0}
+      \strng{authorbibnamehash}{e3141d1ec182a37f97241d6b774b4ea0}
+      \strng{authornamehash}{3a78276d9edd81a21df53098d14ba24f}
+      \strng{authorfullhash}{e3141d1ec182a37f97241d6b774b4ea0}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 IEEE International Conference on Data Mining (ICDM)}
+      \field{title}{Adaptive Laplace Mechanism: Differential Privacy Preservation in Deep Learning}
+      \field{year}{2017}
+      \field{pages}{385\bibrangedash 394}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ICDM.2017.48
       \endverb
     \endentry
     \entry{rff}{inproceedings}{}
@@ -998,6 +1406,7 @@
       \strng{authorbibnamehash}{25c6d3bce5d1f037f482513ef671c9d1}
       \strng{authornamehash}{10814f16ce9673476ec6de14dc6cea6e}
       \strng{authorfullhash}{25c6d3bce5d1f037f482513ef671c9d1}
+      \field{extraname}{1}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
@@ -1019,6 +1428,47 @@
       \verb https://doi.org/10.1145/3264950
       \endverb
       \keyw{Biometrics-based Authentication,Mobile System}
+    \endentry
+    \entry{wang2023differential}{article}{}
+      \name{author}{4}{}{%
+        {{hash=13d56781dd2ac84fabb06028ad649970}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yanling},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b05219a6acab0132847dc1d15a7fc0ef}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Qian},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=4d7f3b119e4843fb4bf8a5c459a523cf}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Lingchen},
+           giveni={L\bibinitperiod}}}%
+        {{hash=03ebb954658194d4f7fe4cd6f9a1c295}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Cong},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{7c07f51812ff1fd0ca0dba896d3d5a35}
+      \strng{fullhash}{8ff002e7ec195dd353da1fcc73d92451}
+      \strng{bibnamehash}{8ff002e7ec195dd353da1fcc73d92451}
+      \strng{authorbibnamehash}{8ff002e7ec195dd353da1fcc73d92451}
+      \strng{authornamehash}{7c07f51812ff1fd0ca0dba896d3d5a35}
+      \strng{authorfullhash}{8ff002e7ec195dd353da1fcc73d92451}
+      \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Future Generation Computer Systems}
+      \field{title}{Differential privacy in deep learning: Privacy and beyond}
+      \field{year}{2023}
     \endentry
     \entry{aimed4}{article}{}
       \name{author}{2}{}{%
@@ -1054,6 +1504,91 @@
       \field{pages}{149\bibrangedash 153}
       \range{pages}{5}
     \endentry
+    \entry{zhang2012functional}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=c085572f860d99d03a37c331ee13ff68}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d459c2d567402c6bd9e793b0b2f77747}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhenjie},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=4614aa4acfd10384ea5e632b61a2f2cf}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Xiaokui},
+           giveni={X\bibinitperiod}}}%
+        {{hash=dc9616dbd138c8816662e7a1bf22bc60}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Yin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=adc6ad663db1e5b1483d9ef14a2ae0be}{%
+           family={Winslett},
+           familyi={W\bibinitperiod},
+           given={Marianne},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{0b0c09338544428d12fdc85ecf878d26}
+      \strng{fullhash}{760e7839211c7b5a81bea4d45ee441e7}
+      \strng{bibnamehash}{760e7839211c7b5a81bea4d45ee441e7}
+      \strng{authorbibnamehash}{760e7839211c7b5a81bea4d45ee441e7}
+      \strng{authornamehash}{0b0c09338544428d12fdc85ecf878d26}
+      \strng{authorfullhash}{760e7839211c7b5a81bea4d45ee441e7}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.DB}
+      \field{eprinttype}{arXiv}
+      \field{title}{Functional Mechanism: Regression Analysis under Differential Privacy}
+      \field{year}{2012}
+      \verb{eprint}
+      \verb 1208.0219
+      \endverb
+    \endentry
+    \entry{surv_ppml_2}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b8d4828bb2cddd3ed080ced7cc81aaba}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Jingwen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fd956a5eeb6fc751572a9f1d8cee9883}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yunfang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=25bbf4047d900f3760c65b01ee899dba}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{420b4eb497f7c132a3dbb1d83cc74ff0}
+      \strng{fullhash}{420b4eb497f7c132a3dbb1d83cc74ff0}
+      \strng{bibnamehash}{420b4eb497f7c132a3dbb1d83cc74ff0}
+      \strng{authorbibnamehash}{420b4eb497f7c132a3dbb1d83cc74ff0}
+      \strng{authornamehash}{420b4eb497f7c132a3dbb1d83cc74ff0}
+      \strng{authorfullhash}{420b4eb497f7c132a3dbb1d83cc74ff0}
+      \field{extraname}{1}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Differential Privacy Preservation in Deep Learning: Challenges, Opportunities and Solutions}
+      \field{volume}{7}
+      \field{year}{2019}
+      \field{pages}{48901\bibrangedash 48911}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2019.2909559
+      \endverb
+    \endentry
     \entry{zhao2019differential}{article}{}
       \name{author}{3}{}{%
         {{hash=b8d4828bb2cddd3ed080ced7cc81aaba}{%
@@ -1081,6 +1616,7 @@
       \strng{authorbibnamehash}{420b4eb497f7c132a3dbb1d83cc74ff0}
       \strng{authornamehash}{420b4eb497f7c132a3dbb1d83cc74ff0}
       \strng{authorfullhash}{420b4eb497f7c132a3dbb1d83cc74ff0}
+      \field{extraname}{2}
       \field{sortinit}{Z}
       \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
       \field{labelnamesource}{author}
