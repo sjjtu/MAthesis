@@ -4,7 +4,7 @@
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
-from basic import PositionwiseFeedForward
+from util.basic import PositionwiseFeedForward
 
 class Generator(nn.Module):
     def __init__(self, input_dim, hidden_dim, layers):
@@ -18,17 +18,21 @@ class Generator(nn.Module):
 
         self.block_0 = block(input_dim, input_dim)
         self.block_1 = block(input_dim, input_dim)
-        self.block_2 = block(input_dim, input_dim)
-        self.block_4 = nn.Linear(input_dim, hidden_dim*(layers+1))
-        self.final = nn.LeakyReLU(0.2)
-        self.block_3 = block(input_dim, input_dim)
+        self.block_2 = block(input_dim, hidden_dim)
+        self.block_2_1 = block(hidden_dim, hidden_dim)
+        #self.block_3 = block(input_dim, hidden_dim*layers)
+        #self.block_3_1 = nn.Linear(hidden_dim*layers, hidden_dim*layers)
+        self.final =nn.LeakyReLU(0.2)
 
     def forward(self, x):
-        x1 = self.block_0(x) + x
-        x1 = self.block_1(x1) + x1
-        x1 = self.block_2(x1) + x1
-        x1 = self.block_3(x1) + x1
-        return self.final(self.block_4(x1))
+        x = self.block_0(x) + x
+        x = self.block_1(x) + x
+        x1 = self.block_2(x)
+        x1 = self.block_2_1(x1)
+        
+        #x2 = self.block_3(x)
+        #x2 = self.block_3_1(x2)
+        return self.final(x1)
 
 class Discriminator(nn.Module):
     def __init__(self, input_dim):
@@ -43,6 +47,5 @@ class Discriminator(nn.Module):
 
     def forward(self, x):
         return self.model(x)
-
 
 

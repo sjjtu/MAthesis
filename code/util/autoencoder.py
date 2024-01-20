@@ -5,7 +5,7 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 from fastNLP import seq_len_to_mask
-from basic import PositionwiseFeedForward
+from util.basic import PositionwiseFeedForward
 import random
 
 def mean_pooling(tensor, seq_len, dim=1):

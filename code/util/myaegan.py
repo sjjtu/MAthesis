@@ -13,10 +13,10 @@ import random
 from torch import autograd
 import time
 
-from autoencoder import Autoencoder
-from gan import Generator, Discriminator
-from TrainRoutine import AutoEncTrainRoutine
-from ECGDataset import ECGDataset
+from util.autoencoder import Autoencoder
+from util.gan import Generator, Discriminator
+from util.TrainRoutine import AutoEncTrainRoutine
+from util.ECGDataset import ECGDataset
     
 class AeGAN:
     def __init__(self, params):
@@ -121,7 +121,7 @@ class AeGAN:
     def train_ae(self, train_ds_path, val_ds_path, n_epochs=20, lr=5e-4, batch_size=1):
         return self.ae.train_model(train_ds_path=train_ds_path, val_ds_path=val_ds_path, n_epochs=n_epochs, lr=lr, batch_size=batch_size)
     
-    def train_gan(self, train_ds_path, iterations=15000, d_update=5):
+    def train_gan(self, train_ds_path, iterations=15000, d_update=5, eps=None):
         self.discriminator.train()
         self.generator.train()
         self.ae.model.train()
@@ -129,6 +129,7 @@ class AeGAN:
         min_loss = 1e15
         train_ds = ECGDataset(train_ds_path)
         train_dl = torch.utils.data.DataLoader(train_ds, batch_size=batch_size, shuffle=True)
+
         for iteration in range(iterations):
             avg_d_loss = 0
             t1 = time.time()
