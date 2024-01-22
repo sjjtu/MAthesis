@@ -175,8 +175,8 @@ class DPMERFGenerator():
             epsilon = 1.0
             delta = 1e-5
             # k = n_classes + 1   # this dp analysis has been updated
-            k = 2
-            privacy_param = privacy_calibrator.gaussian_mech(epsilon, delta, k=k)
+            #k = 2
+            privacy_param = privacy_calibrator.gaussian_mech(epsilon, delta)
             sensitivity = 2 / n
             noise_std_for_privacy = privacy_param['sigma'] * sensitivity
 

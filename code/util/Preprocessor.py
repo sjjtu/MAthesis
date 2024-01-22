@@ -8,6 +8,9 @@ Utility class to handle all preprocessing steps:
 - save as csv
 """
 
+import os
+from pathlib import Path
+
 import pandas as pd 
 import numpy as np
 from matplotlib import pyplot as plt
@@ -42,6 +45,11 @@ class Preprocessor:
         self.label_df = None
     
     def _load_data(self):
+
+        Path(data).mkdir(parents=True, exist_ok=True) # create dir if necessary
+
+        if len(os.listdir(data))==0: # download data if not in folder
+            wfdb.dl_database("mitdb", "data/mit-bih", annotators='all')
         
         def find_ann(peak, d1, d2, ann_list, ann_sym):
             if ((ann_list>int(peak - d1/2)) &  (ann_list<int(peak + d2/2))).sum() != 1:
@@ -116,9 +124,10 @@ class Preprocessor:
         pd.DataFrame(anomalie_test).to_csv(f"data/anomalie_test{window_size}.csv")
         pd.DataFrame(anomalie_test_lables).to_csv(f"data/anomalie_labels_{window_size}.csv")
             
-    def preprocess(self):
+    def preprocess(self, val_ratio=.1, test_ratio=.1):
         self._load_data()
-        self._train_test_val_split()
+        self._train_test_val_split(val_ratio, test_ratio)
+        return self.seq_df
         
         
 if __name__ == "__main__":

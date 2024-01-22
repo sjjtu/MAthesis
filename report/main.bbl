@@ -137,6 +137,48 @@
       \field{title}{Census topdown: Differentially private data, incremental schemas, and consistency with public knowledge}
       \field{year}{2019}
     \endentry
+    \entry{vae}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=a25f89829d5ffebac8cf63b8612d034e}{%
+           family={Acs},
+           familyi={A\bibinitperiod},
+           given={Gergely},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5cc90e3164264c34ee923b1dd4954023}{%
+           family={Melis},
+           familyi={M\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+        {{hash=a974433309a9239775bca1e450ef4278}{%
+           family={Castelluccia},
+           familyi={C\bibinitperiod},
+           given={Claude},
+           giveni={C\bibinitperiod}}}%
+        {{hash=033c5fb9769ba7ff367dd1dea6a86845}{%
+           family={De\bibnamedelima Cristofaro},
+           familyi={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Emiliano},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{3dbb09ec4c974f2fa9ec651a299c0b56}
+      \strng{fullhash}{5da4b1bf58dfdb2b0329dddeb0af3643}
+      \strng{bibnamehash}{5da4b1bf58dfdb2b0329dddeb0af3643}
+      \strng{authorbibnamehash}{5da4b1bf58dfdb2b0329dddeb0af3643}
+      \strng{authornamehash}{3dbb09ec4c974f2fa9ec651a299c0b56}
+      \strng{authorfullhash}{5da4b1bf58dfdb2b0329dddeb0af3643}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 IEEE International Conference on Data Mining (ICDM)}
+      \field{title}{Differentially Private Mixture of Generative Neural Networks}
+      \field{year}{2017}
+      \field{pages}{715\bibrangedash 720}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICDM.2017.81
+      \endverb
+    \endentry
     \entry{ang2023tsgbench}{misc}{}
       \name{author}{5}{}{%
         {{hash=052a6060918baa435d61e7059c334532}{%
@@ -346,6 +388,99 @@
       \field{year}{2020}
       \field{pages}{10\bibrangedash 1162}
       \range{pages}{1153}
+    \endentry
+    \entry{cao2021dont}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=58e8cb6616a4e677a535aba6d02db5f3}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Tianshi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=bae5e3d061c127802e0916df5ff4ce65}{%
+           family={Bie},
+           familyi={B\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8ab451e588b5801ee443d98c7d9f1094}{%
+           family={Vahdat},
+           familyi={V\bibinitperiod},
+           given={Arash},
+           giveni={A\bibinitperiod}}}%
+        {{hash=132467c4a712be4725c988c89c68a30e}{%
+           family={Fidler},
+           familyi={F\bibinitperiod},
+           given={Sanja},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1385d3fa16f20884c6f1879595666f6c}{%
+           family={Kreis},
+           familyi={K\bibinitperiod},
+           given={Karsten},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{81a8fc9de9081cc1b0c52dc8c541029b}
+      \strng{fullhash}{f8e17e1464d813359ce5c9f9e7ec48e2}
+      \strng{bibnamehash}{f8e17e1464d813359ce5c9f9e7ec48e2}
+      \strng{authorbibnamehash}{f8e17e1464d813359ce5c9f9e7ec48e2}
+      \strng{authornamehash}{81a8fc9de9081cc1b0c52dc8c541029b}
+      \strng{authorfullhash}{f8e17e1464d813359ce5c9f9e7ec48e2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Don't Generate Me: Training Differentially Private Generative Models with Sinkhorn Divergence}
+      \field{year}{2021}
+      \verb{eprint}
+      \verb 2111.01177
+      \endverb
+    \endentry
+    \entry{dpgen}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=68b0310a3bd1d51e9f87506e5924aff3}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jia-Wei},
+           giveni={J\bibinithyphendelim W\bibinitperiod}}}%
+        {{hash=a55d08aea0d6d7e7b0cf344f4309896c}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Chia-Mu},
+           giveni={C\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=a3d9fab0b17d17f49dbef7c67b2f78f4}{%
+           family={Kao},
+           familyi={K\bibinitperiod},
+           given={Ching-Chia},
+           giveni={C\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=5af173decfa31e2a74598ac272c6547e}{%
+           family={Pang},
+           familyi={P\bibinitperiod},
+           given={Tzai-Wei},
+           giveni={T\bibinithyphendelim W\bibinitperiod}}}%
+        {{hash=5ee3c5711aa93004bb6fa697147adc09}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Chun-Shien},
+           giveni={C\bibinithyphendelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{6950e32267b676a08839543af733fcc8}
+      \strng{fullhash}{6d240f14c6dda629098c6a493852563a}
+      \strng{bibnamehash}{6d240f14c6dda629098c6a493852563a}
+      \strng{authorbibnamehash}{6d240f14c6dda629098c6a493852563a}
+      \strng{authornamehash}{6950e32267b676a08839543af733fcc8}
+      \strng{authorfullhash}{6d240f14c6dda629098c6a493852563a}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{DPGEN: Differentially Private Generative Energy-Guided Network for Natural Image Synthesis}
+      \field{year}{2022}
+      \field{pages}{8377\bibrangedash 8386}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/CVPR52688.2022.00820
+      \endverb
     \endentry
     \entry{10.1145/1866739.1866758}{article}{}
       \name{author}{1}{}{%

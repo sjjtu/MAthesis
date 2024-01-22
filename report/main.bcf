@@ -2397,10 +2397,14 @@
     <bcf:citekey order="27" intorder="1">surrve_ppml</bcf:citekey>
     <bcf:citekey order="27" intorder="2">surv_ppml_2</bcf:citekey>
     <bcf:citekey order="27" intorder="3">wang2023differential</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">dpmerf</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">hu2023sok</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">dpmerf</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">rff</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">hu2023sok</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">vae</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">cao2021dont</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">dpgen</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">dpmerf</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">hu2023sok</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">dpmerf</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">rff</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

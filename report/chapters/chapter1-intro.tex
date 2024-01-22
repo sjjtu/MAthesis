@@ -59,11 +59,20 @@ Other interesting approaches to incorporating differential privacy into deep lea
 In a distributed setting approaches like federated learning \parencite{konečný2015federated,Mo2019EfficientAP} have been proposed. Their privacy further analysed in \parencite{mcmahan2018learning} for learning language models.
 
 \vspace*{1em}
-For more in-depth review see e. g. \parencite{surrve_ppml,surv_ppml_2,wang2023differential}
+For a more in-depth review see e. g. \parencite{surrve_ppml,surv_ppml_2,wang2023differential}
 
 
 \subsubsection*{Data generation and Privacy}
 
-good ref https://dl.acm.org/doi/pdf/10.1145/3436755 p. 20
+As we have mentioned earlier, ensuring privacy in machine learning applications is crucial when working with sensitive data. While we have outlined several techniques from the state of the art to ensure privacy, most of the methods are tailored for a specific model architecture or use case. On the other hand, synthetic data that has been generated with privacy guarantees can be used in any downstream task without privacy breach. To this end, several deep learning based architectures have been proposed. Following \parencite{hu2023sok}, one can broadly categorise them as follows:
+\begin{itemize}
+    \item GAN-based
+    \item Feature-based
+    \item Autoencoder based {\tiny \Parencite[see e. g.][for a generator based on a variational autoencoder that is trained with DP-SGD]{vae}}
+    \item Optimal transport based {\tiny \Parencite[see e. g.][for generator based on the so-called Sinkhorn divergence]{cao2021dont}}
+    \item Stochastic simulation based {\tiny \Parencite[see e. g.][for a differentially-private diffusion model]{dpgen}}
+\end{itemize}
+
+We will present the first two approaches in more detail in chapter \ref{chapter3}.
 
 \subsubsection*{Heartbeat arrhythmia detection}

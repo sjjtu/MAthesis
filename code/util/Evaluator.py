@@ -37,8 +37,7 @@ class Evaluator:
                 losses.append(loss.item())
         return predictions, losses
 
-    def find_threshold(self):
-        threshold_list = np.linspace(0,5,21)
+    def find_threshold(self, threshold_list = np.linspace(0,5,21)):
         corr_normal = []
         corr_anomaly = []
         for th in threshold_list:

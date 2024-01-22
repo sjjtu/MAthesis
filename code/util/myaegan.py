@@ -12,6 +12,8 @@ from sklearn.preprocessing import MinMaxScaler, OneHotEncoder, LabelBinarizer
 import random
 from torch import autograd
 import time
+from autodp import privacy_calibrator
+
 
 from util.autoencoder import Autoencoder
 from util.gan import Generator, Discriminator
@@ -65,11 +67,8 @@ class AeGAN:
         self.ae.load_model(path)
         return self.ae.model
 
-    def load_generator(self, pretrained_dir=None):
-        if pretrained_dir is not None:
-            path = pretrained_dir
-        else:
-            path = '{}/generator.dat'.format(self.params["root_dir"])
+    def load_generator(self, pretrained_path=None):
+        path = pretrained_path
         self.logger.info("load: "+path)
         self.generator.load_state_dict(torch.load(path, map_location=self.device))
 
@@ -129,6 +128,7 @@ class AeGAN:
         min_loss = 1e15
         train_ds = ECGDataset(train_ds_path)
         train_dl = torch.utils.data.DataLoader(train_ds, batch_size=batch_size, shuffle=True)
+        history = dict(d_loss=[], g_loss=[])
 
         for iteration in range(iterations):
             avg_d_loss = 0
@@ -147,6 +147,16 @@ class AeGAN:
                     sta = None
                     dyn = batch_x.to(self.device)
                     real_rep = self.ae.model.encoder(dyn).squeeze()
+
+                    if eps!=None:
+                        delta=1e-5
+                        privacy_param = privacy_calibrator.gaussian_mech(eps, delta)
+                        sensitivity = 2 / batch_size
+                        noise_std_for_privacy = privacy_param['sigma'] * sensitivity
+                        noise = noise_std_for_privacy * torch.randn(real_rep.shape)
+                        noise = noise.to(self.device)
+                        real_rep = real_rep + noise
+
                     d_real = self.discriminator(real_rep)
                     dloss_real = -d_real.mean()
                     #y = d_real.new_full(size=d_real.size(), fill_value=1)
@@ -202,11 +212,16 @@ class AeGAN:
             g_loss.backward()
             self.generator_optm.step()
 
+            history["d_loss"].append(avg_d_loss)
+            history["g_loss"].append(g_loss.item())
+
             if iteration % 100 == 0:
                 self.logger.info('[Iteration %d/%d] [%f] [D loss: %f] [G loss: %f] [%f]' % (
                     iteration, iterations, time.time()-t1, avg_d_loss, g_loss.item(), reg.item()
                 ))
-        torch.save(self.generator.state_dict(), '{}/generator.dat'.format(self.params["root_dir"]))              
+        torch.save(self.generator.state_dict(), '{}/generator.dat'.format(self.params["root_dir"]))    
+
+        return history          
     
     def synthesize(self, n, seq_len=24, batch_size=500):
         self.ae.model.decoder.eval()
