@@ -1,19 +1,19 @@
 \section{Theoretical background on Differential Privacy} \label{ch2}
 
-In this chapter we briefly describe and derive the most important results from Cynthia Dwork's work on differential privacy that was first introduced in ??. This summary heavily relies on her writings in her as well as lecture notes from ????.
+In this chapter we briefly describe and derive the most important results from Cynthia Dwork's work on differential privacy that was first introduced in 2006 \parencite{dwork2006differential}. This summary heavily relies on her writings in \parencite{dwork2019differential} as well as lecture notes from \parencite{lecture_CSE711}.
 
 \subsection{Defining differential privacy}
 Differential privacy (DP) should be understood as an agreement between the data holder and the data subject: the latter should not be "affected, adversely or otherwise, by allowing [her] data to be used in any study or analysis, no matter what other studies, data sets or information sources are available". This addresses the paradox of learning something useful about a population while learning nothing about the individuals
 
 
 \begin{ex}[Randomised response]
-    \colorbox{red}{citation needed} ??? proposes the following random answering procedure: In a study where participants are asked to answer with "Yes" or "No" whether they have engaged in an illegal or embarrassing activity $A$, they should:
+    In 1965 Warner \parencite{stan65rr} proposes the following random answering procedure: In a study where participants are asked to answer with ``Yes'' or ``No'' whether they have engaged in an illegal or embarrassing activity $A$, they should:
     \begin{enumerate}
         \item Flip a coin
         \item If the coin shows tails, then the participant should respond truthfully.
         \item If the coin shows head, then the participant should flip the coin a second time and answer "Yes" if the second coin shows head and "no" otherwise.
     \end{enumerate}
-    This procedure ensures participants' privacy by "plausible deniability"; each participant's answer has non-zero probability of being truthful or not. By understanding the probabilities of the noise generation process, the data analyst can estimate the true number of "yes" and "no" answers. To this end, let $p$ b the true percentage of "yes" answers, $N$ the total number of participants, $n_{true}$ the true number of "yes" responses and $\hat{n}_{obs}$ the observed number of "yes" responses. We assume a fair coin with equal probability of showing heads or tails. Then the expected number of "yes" answers after applying the described procedure is:
+    This procedure ensures participants' privacy by ``plausible deniability''; each participant's answer has non-zero probability of being truthful or not. By understanding the probabilities of the noise generation process, the data analyst can estimate the true number of "yes" and "no" answers. To this end, let $p$ be the true percentage of "yes" answers, $N$ the total number of participants, $n_{true}$ the true number of "yes" responses and $\hat{n}_{obs}$ the observed number of "yes" responses. We assume a fair coin with equal probability of showing heads or tails. Then the expected number of "yes" answers after applying the described procedure is:
     \begin{align}
         \mathbb{E}("Yes") = \frac{1}{4} n_{true} + \frac{1}{4} (N-n_{true}) + \frac{1}{2} n_{true} = \frac{1}{4} N + \frac{n_{true}}{2}
     \end{align}
@@ -43,6 +43,12 @@ Differential privacy (DP) should be understood as an agreement between the data 
        in which each entry $x_i$ represents the number of elements in database $x$ of type $i\in \mathcal{X}$.
 \end{definition}
 
+The previous definition of a database might sound cryptic at first, hence we will illustrate it with the following example:
+\begin{ex}[Database of patients]
+    Let $\mathcal{X}=\{P_1, ..., P_N\}$ be the set of $N$ distinct patients in a study. Then $x_1 = (1,0,...,0) \in \mathbb{N}^N$ would correspond to patient $P_1$, $x_2 = (0,1,0...,0) \in \mathbb{N}^N$ to patient $P_2$ and so on.
+\end{ex}
+
+Equipped with this definition of a database one can now naturally define a way to measure ``how much databases differ'', i. e. in how many entries they differ.
 
 \begin{definition}[$l_1$-norm of a database in histogram representation]
     The $l_1$-norm of a database is a measure of the size of the database and defined as:
@@ -74,7 +80,7 @@ Now we are ready to give the general definition of differential privacy:
 
 \subsection{Important results for Differential Privacy}
 
-\begin{thm}[DP requires randomisation]
+\begin{thm}[DP requires randomisation] \label{thm:dp_random}
     Any non-trivial DP-mechanism requires randomisation.
 \end{thm}
 \begin{proof}
@@ -118,4 +124,27 @@ Now we are ready to give the general definition of differential privacy:
     TBA
 \end{proof}
 
-\subsection{Example of DP-mechanism: Laplace mechanism}
+\subsection{Example of DP-mechanism: Gaussian Mechanism}
+
+Let $f:\mathbb{N}^{|\mathcal{X}|} \longrightarrow \mathbb{R}^d$ an arbitrary function mapping to a $d$-dimensional real space. $f$ can represent numerous models, e. g. a neural network, an SVM-classifier etc. We have seen from theorem \ref*{thm:dp_random} that in order to ``privatise'' the output of $f$, we need to add randomness to its output. One way to achieve this is to add gaussian noise, which is calibrated to mask the influence of a specific input. Because differential privacy aims to hide the influence of the input to the output, a natural quantity to consider when calibrating the noise is to look at how much $f$ will change, when using different inputs. This leads the following definition:
+
+\begin{definition}[$l_2$-sensitivity]
+    Let $f:\mathbb{N}^{|\mathcal{X}|} \longrightarrow \mathbb{R}^d$ an arbitrary function, then its $l_2$-sensitivity is defined as:
+    \begin{align}
+        \Delta f = \max_{\substack{x,y \in \mathbb{N}^{|\mathcal{X}|} \\ ||x-y||_1\le 1}} ||f(x)-f(y)||_2 
+    \end{align}
+\end{definition}
+
+Now we can calibrate the noise according to its sensitivity which we can prove to satisfy differential privacy:
+\begin{definition}[Gaussian Mechanism]\label{def:gm}
+    For a given function  $f:\mathbb{N}^{|\mathcal{X}|} \longrightarrow \mathbb{R}^d$, privacy parameters $\epsilon \in (0,1)$ and $\delta>0$ define the gaussian mechanism $F(x)$ as follows:
+    \begin{align}
+        F(x) = f(x) + \mathcal{N}(0, \sigma^2)
+    \end{align}
+    where the variance is calibrated by the sensitivity of $f$ and the given privacy level, s. t. $\sigma \ge \frac{2 \Delta f}{\epsilon}\ln(\frac{1.25}{\delta})$
+\end{definition}
+
+\begin{thm}[Gaussian Mechanism satisfies DP]
+    The gaussian mechanism defined in definition \ref{def:gm} satisfies $(\epsilon, \delta)$-DP.
+\end{thm}
+The proof is rather lengthy and the curious reader is referred to read through \parencite[][Appendix A]{dwork2014algorithmic}

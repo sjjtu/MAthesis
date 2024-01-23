@@ -307,6 +307,44 @@
       \verb https://doi.org/10.1001/jama.2017.18391
       \endverb
     \endentry
+    \entry{bellovin2019privacy}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c646cd758268cebf702ca74e3e6d3b91}{%
+           family={Bellovin},
+           familyi={B\bibinitperiod},
+           given={Steven\bibnamedelima M},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e761bf0fa1f82d5a5af0a92bf9b2919e}{%
+           family={Dutta},
+           familyi={D\bibinitperiod},
+           given={Preetam\bibnamedelima K},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=5d8ecb5768116fe713f64cb2f848c2c4}{%
+           family={Reitinger},
+           familyi={R\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {HeinOnline}%
+      }
+      \strng{namehash}{641e1b8cd6d985cff823488d99c4f7ae}
+      \strng{fullhash}{641e1b8cd6d985cff823488d99c4f7ae}
+      \strng{bibnamehash}{641e1b8cd6d985cff823488d99c4f7ae}
+      \strng{authorbibnamehash}{641e1b8cd6d985cff823488d99c4f7ae}
+      \strng{authornamehash}{641e1b8cd6d985cff823488d99c4f7ae}
+      \strng{authorfullhash}{641e1b8cd6d985cff823488d99c4f7ae}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Stan. Tech. L. Rev.}
+      \field{title}{Privacy and synthetic datasets}
+      \field{volume}{22}
+      \field{year}{2019}
+      \field{pages}{1}
+      \range{pages}{1}
+    \endentry
     \entry{aimed2}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=721965dcf83ae3e44274e3367e58056a}{%
@@ -482,7 +520,7 @@
       \verb 10.1109/CVPR52688.2022.00820
       \endverb
     \endentry
-    \entry{10.1145/1866739.1866758}{article}{}
+    \entry{dwork2006differential}{inproceedings}{}
       \name{author}{1}{}{%
         {{hash=c6d8866083f4c03af5e37e032df87089}{%
            family={Dwork},
@@ -490,11 +528,8 @@
            given={Cynthia},
            giveni={C\bibinitperiod}}}%
       }
-      \list{location}{1}{%
-        {New York, NY, USA}%
-      }
-      \list{publisher}{1}{%
-        {Association for Computing Machinery}%
+      \list{organization}{1}{%
+        {Springer}%
       }
       \strng{namehash}{c6d8866083f4c03af5e37e032df87089}
       \strng{fullhash}{c6d8866083f4c03af5e37e032df87089}
@@ -506,25 +541,11 @@
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{What does it mean to preserve privacy?}
-      \field{issn}{0001-0782}
-      \field{journaltitle}{Commun. ACM}
-      \field{month}{1}
-      \field{number}{1}
-      \field{title}{A Firm Foundation for Private Data Analysis}
-      \field{volume}{54}
-      \field{year}{2011}
-      \field{pages}{86\bibrangedash 95}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1145/1866739.1866758
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1145/1866739.1866758
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1145/1866739.1866758
-      \endverb
+      \field{booktitle}{International colloquium on automata, languages, and programming}
+      \field{title}{Differential privacy}
+      \field{year}{2006}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
     \endentry
     \entry{dwork2019differential}{article}{}
       \name{author}{3}{}{%
@@ -559,6 +580,42 @@
       \field{title}{Differential privacy in practice: Expose your epsilons!}
       \field{volume}{9}
       \field{year}{2019}
+    \endentry
+    \entry{dwork2014algorithmic}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=c6d8866083f4c03af5e37e032df87089}{%
+           family={Dwork},
+           familyi={D\bibinitperiod},
+           given={Cynthia},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9bb323b3c3d2af68def0dcbde8e6795d}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Now Publishers, Inc.}%
+      }
+      \strng{namehash}{12ee3318aed395c0582ff9bfd3ff4fa4}
+      \strng{fullhash}{12ee3318aed395c0582ff9bfd3ff4fa4}
+      \strng{bibnamehash}{12ee3318aed395c0582ff9bfd3ff4fa4}
+      \strng{authorbibnamehash}{12ee3318aed395c0582ff9bfd3ff4fa4}
+      \strng{authornamehash}{12ee3318aed395c0582ff9bfd3ff4fa4}
+      \strng{authorfullhash}{12ee3318aed395c0582ff9bfd3ff4fa4}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Foundations and Trends{®} in Theoretical Computer Science}
+      \field{number}{3--4}
+      \field{title}{The algorithmic foundations of differential privacy}
+      \field{volume}{9}
+      \field{year}{2014}
+      \field{pages}{211\bibrangedash 407}
+      \range{pages}{197}
     \endentry
     \entry{erm_dp_input}{inproceedings}{}
       \name{author}{3}{}{%
@@ -625,6 +682,28 @@
       \field{year}{2017}
       \field{pages}{82\bibrangedash 90}
       \range{pages}{9}
+    \endentry
+    \entry{lecture_CSE711}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2236e238d6bdc3c54b604fb209e4f6d2}{%
+           family={Gaboardi},
+           familyi={G\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2236e238d6bdc3c54b604fb209e4f6d2}
+      \strng{fullhash}{2236e238d6bdc3c54b604fb209e4f6d2}
+      \strng{bibnamehash}{2236e238d6bdc3c54b604fb209e4f6d2}
+      \strng{authorbibnamehash}{2236e238d6bdc3c54b604fb209e4f6d2}
+      \strng{authornamehash}{2236e238d6bdc3c54b604fb209e4f6d2}
+      \strng{authorfullhash}{2236e238d6bdc3c54b604fb209e4f6d2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Lecture Notes}
+      \field{title}{CSE711: Topics in Differential Privacy}
+      \field{year}{2016}
     \endentry
     \entry{surv_dp2021}{article}{}
       \name{author}{5}{}{%
@@ -1034,6 +1113,43 @@
       \verb 1511.03575
       \endverb
     \endentry
+    \entry{lin2021privacy}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=81d13adf51117354c12f13029c37e418}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Zinan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=34ad4080185ac636279aca77d791b8cc}{%
+           family={Sekar},
+           familyi={S\bibinitperiod},
+           given={Vyas},
+           giveni={V\bibinitperiod}}}%
+        {{hash=2bcd51293dfb8e027c8e47a1b95e042a}{%
+           family={Fanti},
+           familyi={F\bibinitperiod},
+           given={Giulia},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{e1bf8de1eca63f0e01228116ab7db332}
+      \strng{fullhash}{e1bf8de1eca63f0e01228116ab7db332}
+      \strng{bibnamehash}{e1bf8de1eca63f0e01228116ab7db332}
+      \strng{authorbibnamehash}{e1bf8de1eca63f0e01228116ab7db332}
+      \strng{authornamehash}{e1bf8de1eca63f0e01228116ab7db332}
+      \strng{authorfullhash}{e1bf8de1eca63f0e01228116ab7db332}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Artificial Intelligence and Statistics}
+      \field{title}{On the privacy properties of gan-generated samples}
+      \field{year}{2021}
+      \field{pages}{1522\bibrangedash 1530}
+      \range{pages}{9}
+    \endentry
     \entry{input_levelDP}{article}{}
       \name{author}{6}{}{%
         {{hash=28c2f8feae8557397170c998fd2e3b47}{%
@@ -1377,6 +1493,45 @@
       \verb https://proceedings.neurips.cc/paper_files/paper/2007/file/013a006f03dbc5392effeb8f18fda755-Paper.pdf
       \endverb
     \endentry
+    \entry{schmidl2022anomaly}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4a742bada01b9a54aa361c425bdc817d}{%
+           family={Schmidl},
+           familyi={S\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=57c098baaa906cd941d31b83350f2fe5}{%
+           family={Wenig},
+           familyi={W\bibinitperiod},
+           given={Phillip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=7a50a572ebbc65b289cc3df3ee2cba96}{%
+           family={Papenbrock},
+           familyi={P\bibinitperiod},
+           given={Thorsten},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {VLDB Endowment}%
+      }
+      \strng{namehash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
+      \strng{fullhash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
+      \strng{bibnamehash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
+      \strng{authorbibnamehash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
+      \strng{authornamehash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
+      \strng{authorfullhash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the VLDB Endowment}
+      \field{number}{9}
+      \field{title}{Anomaly detection in time series: a comprehensive evaluation}
+      \field{volume}{15}
+      \field{year}{2022}
+      \field{pages}{1779\bibrangedash 1797}
+      \range{pages}{19}
+    \endentry
     \entry{aimed3}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=bc286b8b5c84390be3ec146b9070a808}{%
@@ -1604,6 +1759,39 @@
       \field{journaltitle}{Future Generation Computer Systems}
       \field{title}{Differential privacy in deep learning: Privacy and beyond}
       \field{year}{2023}
+    \endentry
+    \entry{stan65rr}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b61323e37aff70e9f6cdddd2ab8426a2}{%
+           family={Warner},
+           familyi={W\bibinitperiod},
+           given={Stanley\bibnamedelima L.},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor & Francis}%
+      }
+      \strng{namehash}{b61323e37aff70e9f6cdddd2ab8426a2}
+      \strng{fullhash}{b61323e37aff70e9f6cdddd2ab8426a2}
+      \strng{bibnamehash}{b61323e37aff70e9f6cdddd2ab8426a2}
+      \strng{authorbibnamehash}{b61323e37aff70e9f6cdddd2ab8426a2}
+      \strng{authornamehash}{b61323e37aff70e9f6cdddd2ab8426a2}
+      \strng{authorfullhash}{b61323e37aff70e9f6cdddd2ab8426a2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{note}{PMID: 12261830}
+      \field{number}{309}
+      \field{title}{Randomized Response: A Survey Technique for Eliminating Evasive Answer Bias}
+      \field{volume}{60}
+      \field{year}{1965}
+      \field{pages}{63\bibrangedash 69}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1080/01621459.1965.10480775
+      \endverb
     \endentry
     \entry{aimed4}{article}{}
       \name{author}{2}{}{%

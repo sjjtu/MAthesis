@@ -2372,7 +2372,7 @@
     <bcf:citekey order="5" intorder="1">jordon2022synthetic</bcf:citekey>
     <bcf:citekey order="6" intorder="1">ang2023tsgbench</bcf:citekey>
     <bcf:citekey order="7" intorder="1">stadler2022synthetic</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">10.1145/1866739.1866758</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">dwork2006differential</bcf:citekey>
     <bcf:citekey order="9" intorder="1">moody2001impact</bcf:citekey>
     <bcf:citekey order="10" intorder="1">stadler2022synthetic</bcf:citekey>
     <bcf:citekey order="11" intorder="1">dwork2019differential</bcf:citekey>
@@ -2397,14 +2397,25 @@
     <bcf:citekey order="27" intorder="1">surrve_ppml</bcf:citekey>
     <bcf:citekey order="27" intorder="2">surv_ppml_2</bcf:citekey>
     <bcf:citekey order="27" intorder="3">wang2023differential</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">hu2023sok</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">vae</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">cao2021dont</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">dpgen</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">dpmerf</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">hu2023sok</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">dpmerf</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">rff</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">lin2021privacy</bcf:citekey>
+    <bcf:citekey order="28" intorder="2">stadler2022synthetic</bcf:citekey>
+    <bcf:citekey order="28" intorder="3">jordon2022synthetic</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">bellovin2019privacy</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">hu2023sok</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">vae</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">cao2021dont</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">dpgen</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">moody2001impact</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">schmidl2022anomaly</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">dwork2006differential</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">dwork2019differential</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">lecture_CSE711</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">stan65rr</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">dwork2014algorithmic</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">dpmerf</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">hu2023sok</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">dpmerf</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">rff</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
