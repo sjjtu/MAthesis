@@ -13,6 +13,7 @@ import random
 from torch import autograd
 import time
 from autodp import privacy_calibrator
+from opacus import PrivacyEngine
 
 
 from util.autoencoder import Autoencoder
@@ -121,16 +122,29 @@ class AeGAN:
         return self.ae.train_model(train_ds_path=train_ds_path, val_ds_path=val_ds_path, n_epochs=n_epochs, lr=lr, batch_size=batch_size)
     
     def train_gan(self, train_ds_path, iterations=15000, d_update=5, eps=None):
+        batch_size = self.params["gan_batch_size"]
+        
+        train_ds = ECGDataset(train_ds_path)
+        train_dl = torch.utils.data.DataLoader(train_ds, batch_size=batch_size, shuffle=True) # will reshuffle at every epoch
+        # if eps!=None:
+        #     privacy_engine = PrivacyEngine()
+        #     self.discriminator, self.discriminator_optm, train_dl = privacy_engine.make_private(
+        #                                         module=self.discriminator,
+        #                                         optimizer=self.discriminator_optm,
+        #                                         data_loader=train_dl,
+        #                                         noise_multiplier=1.1,
+        #                                         max_grad_norm=1,
+                                                
+        #                                     )
         self.discriminator.train()
         self.generator.train()
         self.ae.model.train()
-        batch_size = self.params["gan_batch_size"]
-        min_loss = 1e15
-        train_ds = ECGDataset(train_ds_path)
-        train_dl = torch.utils.data.DataLoader(train_ds, batch_size=batch_size, shuffle=True)
+        
+        
         history = dict(d_loss=[], g_loss=[])
 
         for iteration in range(iterations):
+            
             avg_d_loss = 0
             t1 = time.time()
 
@@ -147,14 +161,12 @@ class AeGAN:
                     sta = None
                     dyn = batch_x.to(self.device)
                     real_rep = self.ae.model.encoder(dyn).squeeze()
-
                     if eps!=None:
                         delta=1e-5
                         privacy_param = privacy_calibrator.gaussian_mech(eps, delta)
                         sensitivity = 2 / batch_size
                         noise_std_for_privacy = privacy_param['sigma'] * sensitivity
-                        noise = noise_std_for_privacy * torch.randn(real_rep.shape)
-                        noise = noise.to(self.device)
+                        noise = noise_std_for_privacy * torch.randn(real_rep.shape).to(self.device)
                         real_rep = real_rep + noise
 
                     d_real = self.discriminator(real_rep)
@@ -219,7 +231,7 @@ class AeGAN:
                 self.logger.info('[Iteration %d/%d] [%f] [D loss: %f] [G loss: %f] [%f]' % (
                     iteration, iterations, time.time()-t1, avg_d_loss, g_loss.item(), reg.item()
                 ))
-        torch.save(self.generator.state_dict(), '{}/generator.dat'.format(self.params["root_dir"]))    
+        #torch.save(self.generator.state_dict(), '{}/generator.dat'.format(self.params["root_dir"]))    
 
         return history          
     
