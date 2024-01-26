@@ -174,8 +174,6 @@ class DPMERFGenerator():
             # desired privacy level
             epsilon = 1.0
             delta = 1e-5
-            # k = n_classes + 1   # this dp analysis has been updated
-            #k = 2
             privacy_param = privacy_calibrator.gaussian_mech(epsilon, delta)
             sensitivity = 2 / n
             noise_std_for_privacy = privacy_param['sigma'] * sensitivity
@@ -187,9 +185,7 @@ class DPMERFGenerator():
             noise = noise_std_for_privacy * torch.randn(mean_emb1.size())
             noise = noise.to(self.device)
 
-            rescaled_mean_emb = mean_emb1 + noise
-
-            mean_emb1 = rescaled_mean_emb # rescaling back\
+            mean_emb1 = mean_emb1 + noise
 
         # define details for training
         optimizer = optim.Adam(self.model.parameters(), lr=lr)
