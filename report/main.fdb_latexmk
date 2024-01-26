@@ -1,13 +1,12 @@
 # Fdb version 4
-["biber main"] 1706021416 "main.bcf" "main.bbl" "main" 1706021418 0
+["biber main"] 1706268625 "main.bcf" "main.bbl" "main" 1706268629 0
   "./references.bib" 1706021416 17075 4628e58bd69fb147db5cf77cbf2f43ad ""
-  "main.bcf" 1706021223 111552 cdf9edc6ad277fd988b087389a9ac3a9 "pdflatex"
-  "references.bib" 1706021416 17075 4628e58bd69fb147db5cf77cbf2f43ad ""
+  "main.bcf" 1706268629 111552 cdf9edc6ad277fd988b087389a9ac3a9 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1706021220 "/home/asd/Projekte/MAthesis/report/main.tex" "main.pdf" "main" 1706021418 0
+["pdflatex"] 1706268626 "/home/asd/Projekte/MAthesis/report/main.tex" "main.pdf" "main" 1706268629 0
   "/home/asd/.texlive/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk" 1702990838 14040 2b6b9a13b4a733b34b5a381631f15e15 ""
   "/home/asd/.texlive/texmf-var/fonts/pk/ljfour/jknappen/ec/tcti1200.600pk" 1706012109 17148 f1e2d1e695d4964f8b5f4a5870c15f3c ""
   "/home/asd/Projekte/MAthesis/report/main.tex" 1705071104 2930 5bebec6d7790982ecd8ca4fd6d475381 ""
@@ -223,13 +222,13 @@
   "chapters/eides_erkl.tex" 1705070469 360 57ebeb8056d86a4c0d0d1ae6a42b531f ""
   "chapters/notation.tex" 1706011059 798 6bab454971a589a031d886c5bdefbb04 ""
   "chapters/titlepage.tex" 1705072158 535 2b3c763ac1800d7ff39d426a4845eac9 ""
-  "main.aux" 1706021223 11545 6fe031b54e07b461374ad0a6c89ad4ec "pdflatex"
-  "main.bbl" 1706021418 77821 247f9fae3d787d105f69e8917fafc0e0 "biber main"
-  "main.lof" 1706021223 30 283c90c47f0e16887e96cec4ba110f76 "pdflatex"
-  "main.out" 1706021223 3733 1ba246a4aa6691dce6f13cdc2efe9e24 "pdflatex"
-  "main.run.xml" 1706021223 2305 52095dfad395b381e9a32937e764a41c "pdflatex"
+  "main.aux" 1706268629 11545 6fe031b54e07b461374ad0a6c89ad4ec "pdflatex"
+  "main.bbl" 1706268626 77821 247f9fae3d787d105f69e8917fafc0e0 "biber main"
+  "main.lof" 1706268629 30 283c90c47f0e16887e96cec4ba110f76 "pdflatex"
+  "main.out" 1706268629 3733 1ba246a4aa6691dce6f13cdc2efe9e24 "pdflatex"
+  "main.run.xml" 1706268629 2305 52095dfad395b381e9a32937e764a41c "pdflatex"
   "main.tex" 1705071104 2930 5bebec6d7790982ecd8ca4fd6d475381 ""
-  "main.toc" 1706021223 2250 9539ffc71a2ae9ff321fac267e19dc04 "pdflatex"
+  "main.toc" 1706268629 2250 9539ffc71a2ae9ff321fac267e19dc04 "pdflatex"
   "pictures/KTH_Royal_Institute_of_Technology_logo.svg.png" 1698048272 82662 5be601439497e03bff7ba13a23a68e47 ""
   (generated)
   "main.aux"
