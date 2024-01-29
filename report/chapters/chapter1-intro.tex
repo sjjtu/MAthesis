@@ -7,6 +7,10 @@ Data-driven technology and especially machine learning have gained a lot of mome
 \paragraph{}
 When working with those sensitive data, privacy plays a major role in general acceptance of those models. Now governmental institutions like the European Union have established a right to privacy manifested in the General Data Protection Regulation laws \footnote[1]{see https://gdpr-info.eu/}. Previous simple anonymisation attempts that simply removed some identifying attributes (e. g. name, birthday etc.) have been proven to be ineffective. For example, user profiles from the anonymised dataset used in the infamous Netflix prize have been reconstructed with the help of publicly available data from IMDB \cite{4531148}. This is why technological advances in the area of privacy-preserving machine learning have increased in the past few years, with the development of various machine learning models that aim to preserve the privacy of individual data records. Protecting privacy becomes crucial for heartbeat data because it can be used to identify patients, thus heavily impacting the patient's privacy \parencite[see heartbeat biometrics][]{heartb_auth,hegde2011heartbeat}.
 
+need to add this as ref for memorisation in ml
+https://arxiv.org/abs/1802.08232
+https://arxiv.org/abs/1906.05271
+
 \paragraph{}
 One promising solution \parencite[see][]{jordon2022synthetic} is to replace the original, possibly sensitive data set with a synthetic data set that resembles the original raw data in some statistical properties. Much research has been done to generate tabular or image data ???REF, whereas dedicated time series data generation is still a \textit{"burgeoning"} area of research according to a recent benchmark \parencite[][]{ang2023tsgbench}. Regardless of the data type, data generators with no formal privacy guarantees have been shown to still be susceptible to privacy leaks~\cite{stadler2022synthetic}. 
 
