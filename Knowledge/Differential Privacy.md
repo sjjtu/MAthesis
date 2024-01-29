@@ -18,6 +18,7 @@ good resource easy to understand example for randomized reponse:
 
 Pytorch implementation of DP:
 - https://opacus.ai/
+- good read: https://medium.com/pytorch/differential-privacy-series-part-1-dp-sgd-algorithm-explained-12512c3959a3
 
 Auditing of DP:
 - https://www.floriantramer.com/publications/

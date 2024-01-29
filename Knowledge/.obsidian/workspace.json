@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meetings/Meeting November 1.md",
+                "file": "Papers/Synthetic data- anonymisation groundhog day.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,25 +21,12 @@
             }
           },
           {
-            "id": "39d5d4a88e14b345",
+            "id": "9a9f2b4473e9a9ff",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e202817d330d2494",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "!!!TODOS!!!.md",
+                "file": "Differential Privacy.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -76,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dp merf",
+                "query": "dp",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +80,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -113,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md",
+                "file": "Differential Privacy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md",
+                "file": "Differential Privacy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md"
+                "file": "Differential Privacy.md"
               }
             }
           },
@@ -171,7 +159,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           },
@@ -181,7 +171,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md"
+                "file": "Differential Privacy.md"
               }
             }
           }
@@ -201,36 +191,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "39d5d4a88e14b345",
+  "active": "9a9f2b4473e9a9ff",
   "lastOpenFiles": [
+    "Papers/Synthetic data- anonymisation groundhog day.md",
+    "Synthetic Data.md",
     "Papers/SoK.. Privacy-Preserving Data Synthesis.md",
-    "MIT BIH Arrhythmia database.md",
     "Papers/DP-MERF- Differentially Private Mean Embeddings with Random Features for Practical Privacy-Preserving Data Generation.md",
-    "Papers/Anomaly Detection in Time Series - A Comprehensive Evaluation.md",
-    "ChapterNotes/Experiment.md",
+    "Papers/On the Privacy Properties of GAN-generated Samples.md",
+    "Papers/MIA against SD through Overfitting Detection.md",
+    "Papers/Membership Inference Attacks Against Machine Learning Models.md",
+    "Papers/Inter- and intra- patient ECG heartbeat classification for arrhythmia detection - a sequence to sequence deep learning approach.md",
     "Papers/Heartbeat classification fusing temporal and morphologicalinformation of ECGs via ensemble of classifiers.md",
+    "Papers/Deep Learning with Differential Privacy.md",
+    "Papers/Anomaly Detection in Time Series - A Comprehensive Evaluation.md",
+    "Papers/Private measures, random walks, synthetic data.md",
+    "MIT BIH Arrhythmia database.md",
+    "ChapterNotes/Experiment.md",
     "Papers/Arrhythmia Classification using CGAN-augmented ECG Signals.md",
     "Papers/Synthetic ECG Signal Generation using Probabilistic Diffusion Models.md",
-    "Papers/Inter- and intra- patient ECG heartbeat classification for arrhythmia detection - a sequence to sequence deep learning approach.md",
     "ChapterNotes",
     "Papers/DEEP LEARNING FOR ANOMALY DETECTION - A SURVEY.md",
     "Data sets for anomaly detection.md",
     "!!!TODOS!!!.md",
     "Meetings/Meeting November 1.md",
     "Differential Privacy.md",
-    "Papers/On the Privacy Properties of GAN-generated Samples.md",
     "Papers/The Impact of the MIT-BIH Arrhythmia Database.md",
     "Meetings/Meeting November 8.md",
     "Anomaly detection.md",
     "Boolean Cube.md",
     "Meetings",
     "Papers/TimeGAN.md",
-    "Papers/Deep Learning with Differential Privacy.md",
-    "Ideas.md",
-    "Papers/Measuring quality of synthetic data for use in competitions.md",
-    "Papers/Can we use split learning on 1D CNN models for PP training.md",
-    "Papers/Achilles Heels- Vulnerable Record Identification in Synthetic Data Publishing.md",
-    "Synthetic data generators.md",
     "Images/Pasted image 20231003134157.png",
     "Images/Pasted image 20231003112105.png",
     "Images/Pasted image 20231003111408.png",
