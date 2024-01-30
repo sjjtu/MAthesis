@@ -104,19 +104,29 @@ class Preprocessor:
                                                                     test_size=val_ratio, 
                                                                     random_state=1)
         
-        anomalie_test = self.seq_df[self.label_df.label!='N']
-        anomalie_test_lables = self.label_df[self.label_df.label!='N']
+
+
+        anomalie_test, anomalie_val, anomalie_test_lables, anomalie_val_labels = train_test_split(self.seq_df[self.label_df.label!='N'],
+                                                                                                  self.label_df[self.label_df.label!='N'],
+                                                                                                  test_size=0.05,
+                                                                                                  random_state=1)
+
+
         
         print(f"train set (only normal): {len(normal_train)}")
         print(f"val set (only normal): {len(normal_val)}")
+        print(f"val set (only anomaly): {len(anomalie_val)}")
         print(f"test set (normal): {len(normal_test)}")
-        print(f"test set (anomaly): {len(self.seq_df[self.label_df.label!='N'])}")
+        print(f"test set (anomaly): {len(anomalie_test)}")
     
         pd.DataFrame(normal_train).to_csv(f"data/normal_train_{window_size}.csv")
         pd.DataFrame(y_train).to_csv(f"data/train_labels_{window_size}.csv")
 
         pd.DataFrame(normal_val).to_csv(f"data/normal_val_{window_size}.csv")
         pd.DataFrame(y_val).to_csv(f"data/val_labels_{window_size}.csv")
+
+        pd.DataFrame(anomalie_val).to_csv(f"data/anomaly_val_{window_size}.csv")
+        pd.DataFrame(anomalie_test_lables).to_csv(f"data/anomaly_val_labels_{window_size}.csv")
 
         pd.DataFrame(normal_test).to_csv(f"data/normal_test{window_size}.csv")
         pd.DataFrame(y_test).to_csv(f"data/normal_labels_{window_size}.csv")

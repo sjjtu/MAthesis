@@ -13,11 +13,17 @@ from util.ECGDataset import ECGDataset
 
 
 class Evaluator:
-    def __init__(self, test_normal_path, test_anomaly_path, test_anomaly_label_path, model) -> None:
+    def __init__(self,val_normal_path, val_anomaly_path, val_anomaly_label_path, test_normal_path, test_anomaly_path, test_anomaly_label_path, model) -> None:
         self.model = model
+        self.val_normal_ds = ECGDataset(val_normal_path)
+        self.val_anomaly_ds = ECGDataset(val_anomaly_path, val_anomaly_label_path)
         self.test_normal_ds = ECGDataset(test_normal_path)
         self.test_anomaly_ds = ECGDataset(test_anomaly_path, test_anomaly_label_path)
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+
+        self.pred_val_normal, self.loss_val_normal = self._reconstruct(self.val_normal_ds)
+        self.pred_val_anomaly, self.loss_val_anomaly = self._reconstruct(self.val_anomaly_ds)
 
         self.pred_normal, self.loss_normal = self._reconstruct(self.test_normal_ds)
         self.pred_anomaly, self.loss_anomaly = self._reconstruct(self.test_anomaly_ds)
@@ -41,8 +47,8 @@ class Evaluator:
         corr_normal = []
         corr_anomaly = []
         for th in threshold_list:
-            corr_normal.append(sum(l <= th for l in self.loss_normal)/len(self.loss_normal))
-            corr_anomaly.append(sum(l > th for l in self.loss_anomaly)/len(self.loss_anomaly))
+            corr_normal.append(sum(l <= th for l in self.loss_val_normal)/len(self.loss_val_normal))
+            corr_anomaly.append(sum(l > th for l in self.loss_val_anomaly)/len(self.loss_val_anomaly))
         return corr_normal, corr_anomaly
 
     def predict_class(self, threshold):
