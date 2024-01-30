@@ -127,6 +127,7 @@ class AeGAN:
         train_ds = ECGDataset(train_ds_path)
         train_dl = torch.utils.data.DataLoader(train_ds, batch_size=batch_size, shuffle=True) # will reshuffle at every epoch
         if eps!=None:
+             print("adding DP noise")
              privacy_engine = PrivacyEngine()
              self.discriminator, self.discriminator_optm, train_dl = privacy_engine.make_private(
                                                  module=self.discriminator,
@@ -175,6 +176,7 @@ class AeGAN:
                     #y = d_real.new_full(size=d_real.size(), fill_value=1)
                     #dloss_real = F.binary_cross_entropy_with_logits(d_real, y)
                     dloss_real.backward()
+                    #self.discriminator_optm.step()
                     
                     """
                     dloss_real.backward(retain_graph=True)
@@ -204,11 +206,8 @@ class AeGAN:
                     #reg.backward()
                     if eps!=None: self.discriminator.enable_hooks()
 
-                    # Clip weights of discriminator ## taken from githubt issue
-                    for p in self.discriminator.parameters():
-                        p.data.clamp_(-10, 10)
 
-                    #self.discriminator_optm.step()
+                    self.discriminator_optm.step()
                     d_loss = dloss_fake + dloss_real
                     avg_d_loss += d_loss.item()
                     break
