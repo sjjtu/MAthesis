@@ -121,7 +121,7 @@ class AeGAN:
     def train_ae(self, train_ds_path, val_ds_path, n_epochs=20, lr=5e-4, batch_size=1):
         return self.ae.train_model(train_ds_path=train_ds_path, val_ds_path=val_ds_path, n_epochs=n_epochs, lr=lr, batch_size=batch_size)
     
-    def train_gan(self, train_ds_path, iterations=15000, d_update=5, eps=None):
+    def train_gan(self, train_ds_path, iterations=15000, d_update=5, eps=None, delt=1e-5, max_grad_norm=100):
         batch_size = self.params["gan_batch_size"]
         
         train_ds = ECGDataset(train_ds_path)
@@ -134,7 +134,10 @@ class AeGAN:
                                                  optimizer=self.discriminator_optm,
                                                  data_loader=train_dl,
                                                  noise_multiplier=8.0,
-                                                 max_grad_norm=2.0,
+                                                 #target_epsilon=eps,
+                                                 #target_delta=delt,
+                                                 #epochs=iterations,
+                                                 max_grad_norm=max_grad_norm,
                                                  poisson_sampling=False
                                                 
                                              )
@@ -185,6 +188,7 @@ class AeGAN:
                     """
 
                     # On fake data
+                    if eps!=None: self.discriminator.disable_hooks()
                     with torch.no_grad():
                         x_fake = self.generator(z)
 
@@ -201,7 +205,7 @@ class AeGAN:
                     reg = 10 * compute_grad2(d_fake, x_fake).mean()
                     reg.backward()
                     """
-                    if eps!=None: self.discriminator.disable_hooks()
+                    
                     reg = 10 * self.wgan_gp_reg(real_rep, x_fake)
                     #reg.backward()
                     if eps!=None: self.discriminator.enable_hooks()
@@ -240,7 +244,7 @@ class AeGAN:
                     iteration, iterations, time.time()-t1, avg_d_loss, g_loss.item(), reg.item()
                 ))
         #torch.save(self.generator.state_dict(), '{}/generator.dat'.format(self.params["root_dir"]))    
-
+        if eps!=None: print(f"privacy budget: {privacy_engine.get_epsilon(delt)}")
         return history          
     
     def synthesize(self, n, seq_len=24, batch_size=500):
