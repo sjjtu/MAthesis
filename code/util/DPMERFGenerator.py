@@ -119,7 +119,7 @@ class DPMERFGenerator():
         return Z
     
     # taken from DPMERF with modifications
-    def train_generator(self, data, mini_batch_size=0.1, n_epochs=2000, lr=1e-2):
+    def train_generator(self, data, mini_batch_size=0.1, n_epochs=2000, lr=1e-2, eps=1, delt=1e-5):
         n, input_dim = data.shape
         # model specifics
         mini_batch_size = np.int(np.round(mini_batch_size * n))
@@ -172,8 +172,8 @@ class DPMERFGenerator():
         if self.is_priv:
             print("adding DP noise")
             # desired privacy level
-            epsilon = 1.0
-            delta = 1e-5
+            epsilon = eps
+            delta = delt
             privacy_param = privacy_calibrator.gaussian_mech(epsilon, delta)
             sensitivity = 2 / n
             noise_std_for_privacy = privacy_param['sigma'] * sensitivity

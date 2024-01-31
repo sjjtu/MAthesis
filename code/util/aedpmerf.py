@@ -25,8 +25,8 @@ class AEDPMERF:
     def encode_train_data(self, train_ds_path, fname):
         return self.ae.encode_train_data(train_ds_path=train_ds_path, fname=fname)
     
-    def train_gen(self, data, mini_batch_size=0.1, n_epochs=2000, lr=1e-2):
-        self.dpmerfgen.train_generator(data=data, mini_batch_size=mini_batch_size, n_epochs=n_epochs, lr=lr)
+    def train_gen(self, data, mini_batch_size=0.1, n_epochs=2000, lr=1e-2, eps=1, delt=1e-5):
+        self.dpmerfgen.train_generator(data=data, mini_batch_size=mini_batch_size, n_epochs=n_epochs, lr=lr, eps=eps, delt=delt)
 
     def generate(self, n_gen_samples, fname):
         gen_enc = self.dpmerfgen.generate(n_gen_samples, fname=fname)
