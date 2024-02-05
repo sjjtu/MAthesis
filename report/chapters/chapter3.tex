@@ -1,4 +1,4 @@
-\section[(Time Series) Data generation]{(Time Series) Data generation} \label{chapter3}
+\section[(Time Series) Data generation]{(Time Series) Data generation}\label{chapter3}
 \subsection{Overview}
     \begin{itemize}
         \item Data generation in general
@@ -6,6 +6,11 @@
         \item what about Privacy
         \item choice of models
     \end{itemize}
+
+Time series data are sequences of data points in which there is a notion of time or ordering. Unlike tabular data, where each column corresponds to one feature, but it does not matter in which order one treats the different features. Time series are ubiqitous, common examples include weather data, financial transactions, energy consumption over time, stock prices etc.
+
+We have chosen two architectures from the state of the art, that we will adapt to work on time series data.
+
 \subsection{DP-MERF}
 
 DP-MERF \parencite{dpmerf} is an efficient all purpose data generation algorithm that is based on minimising the so-called Maximum Mean Discrepancy between the real and the synthetic data distributions. The authors mainly verfied their results using tabular data like ????, but also image data, notably the MNIST ???CITE data set. It has not been used for time series data, but we will consider this data generation for generating time series data in this thesis, because accorrding to a recent survey \parencite{hu2023sok}, DP-MERF delivers the best all purpose data generation performance.
@@ -14,7 +19,7 @@ DP-MERF \parencite{dpmerf} is an efficient all purpose data generation algorithm
 There are different ways to measure the "distance" between two distributions $P$ and $Q$. On popular metric is the Maximum Mean Discrepancy (MMD) between $P$ and $Q$, where the random variables are projected into another feature space and the expected values are compared to each other in this space.
 
 \begin{definition}[MMD]
-    Let $\phi: \mathcal{X} \rightarrow \mathcal{H}$, where $\mathcal{H}$ is a reproducing kernel hilbert space (RKHS) and $P$ and $Q$ some distributions over $\mathcal{X}$ and random variables $X \sim P$, $Y \sim Q$ given. Then the Maximum mean Discrepancy is defines as:
+    Let $\phi: \mathcal{X} \rightarrow \mathcal{H}$, where $\mathcal{H}$ is a reproducing kernel hilbert space (RKHS) and $P$ and $Q$ some distributions over $\mathcal{X}$ and random variables $X \sim P$, $Y \sim Q$ given. Then the Maximum mean Discrepancy is defined as:
     \begin{align}
         MMD(P,Q)=|| \mathbb{E}[\phi(X)] - \mathbb{E}[\phi(Y)] ||_\mathcal{H}
     \end{align}
@@ -58,16 +63,22 @@ Now instead of computing a possibly high or even infinite dimensional transforma
 
 Where we introduced independent random variables $X,X' \sim P$, $Y,Y' \sim Q$.
 
+\subsubsection{Random Fourier Features}
+
 Now given a training data set $X_m = \{x_i\}_{i=1}^m \sim P$ and a synthetic data set $X'_m = \{x_i\}_{i=1}^m \sim Q$ we can estimate their $MMD^2$ by estimating the expected value with a mean estimate:
 
 \begin{align}
     \widehat{MMD}^2(X_m, X'_m) = \frac{1}{m^2} \sum_{i,j=1}^m k(x_i,x_j) + \frac{1}{m^2} \sum_{i,j=1}^m k(x'_i,x'_j) - \frac{2}{m^2} \sum_{i,j=1}^m k(x_i,x'_j)
 \end{align}
-Unfortunately, this will require $\mathcal{O}(m^2)$ computations which grows quadratically in the number of samples. This will be too big for a large training data set. As a remedy, the authors of \parencite{dpmerf} propose to use Random Fourier Features based on a paper from 2007 \parencite[see][]{rff}, to approximate the kernel $k$ using its fourier transform and Monte-Carlo-Simulation. Thus,
+Unfortunately, this will require $\mathcal{O}(m^2)$ computations which grows quadratically in the number of samples. This will be too big for a large training data set. As a remedy, the authors of \parencite{dpmerf} propose to use Random Fourier Features based on a paper from 2007 \parencite[see][]{rff}, to approximate the kernel $k$ using its fourier transform and Monte-Carlo-Simulation.
 
 \begin{align}
     k(x,y) \approx \hat{\Phi}(x)^T \hat{\Phi}(x')
 \end{align}
 where $\hat{\Phi}(x) \in \mathbb{R}^D$ and $\hat{\Phi}_j(x) = \sqrt{\frac{2}{D}} cos (\omega_j^T x)$.
+
+If we sample $w_j \sim \mathcal{N}$ from the Gaussian distribution, we are approximating the gaussian kernel.
+
+more stuff: https://gregorygundersen.com/blog/2019/12/23/random-fourier-features/
 
 \subsection{GAN based} 

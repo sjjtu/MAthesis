@@ -121,19 +121,19 @@ class AeGAN:
     def train_ae(self, train_ds_path, val_ds_path, n_epochs=20, lr=5e-4, batch_size=1):
         return self.ae.train_model(train_ds_path=train_ds_path, val_ds_path=val_ds_path, n_epochs=n_epochs, lr=lr, batch_size=batch_size)
     
-    def train_gan(self, train_ds_path, iterations=15000, d_update=5, eps=None, delt=1e-5, max_grad_norm=100):
+    def train_gan(self, train_ds_path, iterations=15000, d_update=5, noise_mult=None, delt=1e-5, max_grad_norm=100):
         batch_size = self.params["gan_batch_size"]
         
         train_ds = ECGDataset(train_ds_path)
         train_dl = torch.utils.data.DataLoader(train_ds, batch_size=batch_size, shuffle=True) # will reshuffle at every epoch
-        if eps!=None:
+        if noise_mult!=None:
              print("adding DP noise")
              privacy_engine = PrivacyEngine(accountant = "rdp")
              self.discriminator, self.discriminator_optm, train_dl = privacy_engine.make_private(
                                                  module=self.discriminator,
                                                  optimizer=self.discriminator_optm,
                                                  data_loader=train_dl,
-                                                 noise_multiplier=0.5,
+                                                 noise_multiplier=noise_mult,
                                                  #target_epsilon=eps,
                                                  #target_delta=delt,
                                                  #epochs=iterations,
@@ -167,13 +167,12 @@ class AeGAN:
                     dyn = batch_x.to(self.device)
                     real_rep = self.ae.model.encoder(dyn).squeeze()
                     # if eps!=None:
-                    #     delta=1e-5
-                    #     privacy_param = privacy_calibrator.gaussian_mech(eps, delta)
+                    #     privacy_param = privacy_calibrator.gaussian_mech(eps, delt)
                     #     sensitivity = 2 / batch_size
                     #     noise_std_for_privacy = privacy_param['sigma'] * sensitivity
                     #     noise = noise_std_for_privacy * torch.randn(real_rep.shape).to(self.device)
                     #     real_rep = real_rep + noise
-
+                        #del noise, privacy_param, noise_std_for_privacy, sensitivity
                     d_real = self.discriminator(real_rep)
                     dloss_real = -d_real.mean()
                     #y = d_real.new_full(size=d_real.size(), fill_value=1)
@@ -188,7 +187,7 @@ class AeGAN:
                     """
 
                     # On fake data
-                    if eps!=None: self.discriminator.disable_hooks()
+                    #if eps!=None: self.discriminator.disable_hooks()
                     with torch.no_grad():
                         x_fake = self.generator(z)
 
@@ -201,28 +200,36 @@ class AeGAN:
                     """
                     dloss_fake.backward()
                     # Clip weights of discriminator
-                    if eps!=None:
-                        for p in self.discriminator.parameters():
-                            p.grad.clamp_(-max_grad_norm, max_grad_norm)
+                    #if eps!=None:
+                    #    for p in self.discriminator.parameters():
+                    #        p.grad.clamp_(-max_grad_norm, max_grad_norm)
                     """
                     dloss_fake.backward(retain_graph=True)
                     reg = 10 * compute_grad2(d_fake, x_fake).mean()
                     reg.backward()
                     """
+                    reg=torch.Tensor([1])
+                    # if noise_mult==None: #only add penalty when not with DP
+                    #     reg = 10 * self.wgan_gp_reg(real_rep, x_fake)
+                    #     reg.backward()
                     
-                    reg = 10 * self.wgan_gp_reg(real_rep, x_fake)
-                    reg.backward()
-                    # Clip weights of discriminator
-                    if eps!=None:
-                        for p in self.discriminator.parameters():
-                            p.grad.clamp_(-max_grad_norm, max_grad_norm)
 
-                    if eps!=None: self.discriminator.enable_hooks()
-
-                    print(max([torch.max(torch.abs(p.grad)) for p in self.discriminator.parameters()]))
+                    #if eps!=None: self.discriminator.enable_hooks()
+  
+                    #print(max([torch.max(torch.abs(p.grad)) for p in self.discriminator.parameters()]))
                     self.discriminator_optm.step()
+
+                    # Clip weights of discriminator instead of posing a gradient penalty because its not working with opacus
+                    #if noise_mult!=None:
+                    for p in self.discriminator.parameters():
+                        p.data.clamp_(-1, 1)
+
                     d_loss = dloss_fake + dloss_real
                     avg_d_loss += d_loss.item()
+
+                    del real_rep, x_fake, z, dloss_real, dloss_fake
+                    torch.cuda.empty_cache()
+
                     break
      
             avg_d_loss/=d_update
@@ -234,7 +241,7 @@ class AeGAN:
             self.generator_optm.zero_grad()
             z = torch.randn(batch_size, self.params['noise_dim']).to(self.device)
             fake = self.generator(z)
-            if eps!=None: self.discriminator.disable_hooks() ## taken from https://github.com/pytorch/opacus/issues/31
+            if noise_mult!=None: self.discriminator.disable_hooks() ## taken from https://github.com/pytorch/opacus/issues/31
             g_loss = -torch.mean(self.discriminator(fake))
             """
             d_fake = self.discriminator(fake)
@@ -242,7 +249,7 @@ class AeGAN:
             g_loss = F.binary_cross_entropy_with_logits(d_fake, y)
             """
             g_loss.backward()
-            if eps!=None: self.discriminator.enable_hooks() ## see above
+            if noise_mult!=None: self.discriminator.enable_hooks() ## see above
             self.generator_optm.step()
 
             history["d_loss"].append(avg_d_loss)
@@ -252,9 +259,9 @@ class AeGAN:
                 self.logger.info('[Iteration %d/%d] [%f] [D loss: %f] [G loss: %f] [%f]' % (
                     iteration, iterations, time.time()-t1, avg_d_loss, g_loss.item(), reg.item()
                 ))
-                if eps!=None: print(f"privacy budget: {privacy_engine.get_epsilon(delt)}")
+                #if eps!=None: print(f"privacy budget: {privacy_engine.get_epsilon(delt)}")
         #torch.save(self.generator.state_dict(), '{}/generator.dat'.format(self.params["root_dir"]))    
-        #if eps!=None: print(f"privacy budget: {privacy_engine.get_epsilon(delt)}")
+        if noise_mult!=None: print(f"privacy budget: {privacy_engine.get_epsilon(delt)}")
         return history          
     
     def synthesize(self, n, seq_len=24, batch_size=500):

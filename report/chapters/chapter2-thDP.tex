@@ -1,4 +1,4 @@
-\section{Theoretical background on Differential Privacy} \label{ch2}
+\section{Theoretical background on Differential Privacy}\label{ch2}
 
 In this chapter we briefly describe and derive the most important results from Cynthia Dwork's work on differential privacy that was first introduced in 2006 \parencite{dwork2006differential}. This summary heavily relies on her writings in \parencite{dwork2019differential} as well as lecture notes from \parencite{lecture_CSE711}.
 
@@ -13,9 +13,9 @@ Differential privacy (DP) should be understood as an agreement between the data 
         \item If the coin shows tails, then the participant should respond truthfully.
         \item If the coin shows head, then the participant should flip the coin a second time and answer "Yes" if the second coin shows head and "no" otherwise.
     \end{enumerate}
-    This procedure ensures participants' privacy by ``plausible deniability''; each participant's answer has non-zero probability of being truthful or not. By understanding the probabilities of the noise generation process, the data analyst can estimate the true number of "yes" and "no" answers. To this end, let $p$ be the true percentage of "yes" answers, $N$ the total number of participants, $n_{true}$ the true number of "yes" responses and $\hat{n}_{obs}$ the observed number of "yes" responses. We assume a fair coin with equal probability of showing heads or tails. Then the expected number of "yes" answers after applying the described procedure is:
+    This procedure ensures participants' privacy by ``plausible deniability''; each participant's answer has non-zero probability of being truthful or not. By understanding the probabilities of the noise generation process, the data analyst can estimate the true number of ``yes'' and ``no'' answers. To this end, let $p$ be the true percentage of ``yes'' answers, $N$ the total number of participants, $n_{true}$ the true number of ``yes'' responses and $\hat{n}_{obs}$ the observed number of ``yes'' responses. We assume a fair coin with equal probability of showing heads or tails. Then the expected number of ``yes'' answers after applying the described procedure is:
     \begin{align}
-        \mathbb{E}("Yes") = \frac{1}{4} n_{true} + \frac{1}{4} (N-n_{true}) + \frac{1}{2} n_{true} = \frac{1}{4} N + \frac{n_{true}}{2}
+        \mathbb{E}(``Yes'') = \frac{1}{4} n_{true} + \frac{1}{4} (N-n_{true}) + \frac{1}{2} n_{true} = \frac{1}{4} N + \frac{n_{true}}{2}
     \end{align}
     We can estimate this using the $\hat{n}_{obs} \approx \mathbb{E}("Yes") = \frac{1}{4} N + \frac{n_{true}}{2}$ and finally solving for $n_{true}$ yields the estimate:
     \begin{align}
