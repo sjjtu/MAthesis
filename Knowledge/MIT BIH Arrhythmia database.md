@@ -10,5 +10,9 @@ Classification following AAMI recommentation
 https://github.com/mondejar/ecg-classification###aami-recomendation-for-mit
 https://www.researchgate.net/figure/Mapping-the-MIT-BIH-Arrhythmia-types-to-the-AAMI-Classes_tbl1_267411759
 
+use this source: Testing and Reporting Performance Results of Cardiac Rhythm and ST
+Segment Measurement Algorithms, Association for the Advancement of
+Medical Instrumentation, 1998
+
 Preprocessing here:
 https://github.com/gaofujie1997/ECG-ADGAN/blob/master/data/data_process.py

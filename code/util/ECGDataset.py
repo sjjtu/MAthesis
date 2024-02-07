@@ -4,10 +4,10 @@ from torch.utils.data import Dataset
 import torch
 
 class ECGDataset(Dataset):
-    def __init__(self, path, path_y=None) -> None:
+    def __init__(self, path, hb_type="A") -> None:
         super().__init__()
         self.df = pd.read_csv(path, index_col=0).astype(np.float32).to_numpy().tolist()
-        self.y = pd.read_csv(path_y, index_col=0).to_numpy().tolist() if path_y!=None else ['N']*len(self.df) # if none then just label everything as normal
+        self.y = ['A']*len(self.df) if type=="A" else ['N']*len(self.df) # if none then just label everything as normal
 
     def __len__(self):
         return len(self.df)

@@ -13,12 +13,12 @@ from util.ECGDataset import ECGDataset
 
 
 class Evaluator:
-    def __init__(self,val_normal_path, val_anomaly_path, val_anomaly_label_path, test_normal_path, test_anomaly_path, test_anomaly_label_path, model) -> None:
+    def __init__(self,val_normal_path, val_anomaly_path, test_normal_path, test_anomaly_path, model) -> None:
         self.model = model
-        self.val_normal_ds = ECGDataset(val_normal_path)
-        self.val_anomaly_ds = ECGDataset(val_anomaly_path, val_anomaly_label_path)
-        self.test_normal_ds = ECGDataset(test_normal_path)
-        self.test_anomaly_ds = ECGDataset(test_anomaly_path, test_anomaly_label_path)
+        self.val_normal_ds = ECGDataset(val_normal_path, hb_type="N")
+        self.val_anomaly_ds = ECGDataset(val_anomaly_path, hb_type="A")
+        self.test_normal_ds = ECGDataset(test_normal_path, hb_type="N")
+        self.test_anomaly_ds = ECGDataset(test_anomaly_path, hb_type="A")
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
