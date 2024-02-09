@@ -2,3 +2,4 @@ code/data
 code/__pycache__
 .obsidian/workspace.json
 
+code/loss_history

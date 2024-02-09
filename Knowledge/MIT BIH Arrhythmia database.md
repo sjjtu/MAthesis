@@ -14,5 +14,8 @@ use this source: Testing and Reporting Performance Results of Cardiac Rhythm and
 Segment Measurement Algorithms, Association for the Advancement of
 Medical Instrumentation, 1998
 
+prevalence: 1.5 to 5 %
+source: https://www.ncbi.nlm.nih.gov/books/NBK558923/
+
 Preprocessing here:
 https://github.com/gaofujie1997/ECG-ADGAN/blob/master/data/data_process.py
