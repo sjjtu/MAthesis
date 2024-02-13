@@ -267,6 +267,43 @@
       \verb 10.1109/ICASSDA.2018.8477620
       \endverb
     \endentry
+    \entry{arjovsky2017wasserstein}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=ab4a5e058dea2d852ff02aa4e10045c3}{%
+           family={Arjovsky},
+           familyi={A\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8ef51a0906e47d2b4472c4e714ed598f}{%
+           family={Chintala},
+           familyi={C\bibinitperiod},
+           given={Soumith},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ac762f2592005edf6bad58f566967c6c}{%
+           family={Bottou},
+           familyi={B\bibinitperiod},
+           given={Léon},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{f587dda04e83e5dc90f2168faf0f4796}
+      \strng{fullhash}{f587dda04e83e5dc90f2168faf0f4796}
+      \strng{bibnamehash}{f587dda04e83e5dc90f2168faf0f4796}
+      \strng{authorbibnamehash}{f587dda04e83e5dc90f2168faf0f4796}
+      \strng{authornamehash}{f587dda04e83e5dc90f2168faf0f4796}
+      \strng{authorfullhash}{f587dda04e83e5dc90f2168faf0f4796}
+      \field{labelalpha}{ACB17}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{stat.ML}
+      \field{eprinttype}{arXiv}
+      \field{title}{Wasserstein GAN}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1701.07875
+      \endverb
+    \endentry
     \entry{ai_and_med}{article}{}
       \name{author}{2}{}{%
         {{hash=3333cfe95922b8f5d8bac7127e304455}{%
@@ -929,6 +966,151 @@
       \verb 10.1109/MCI.2020.2976185
       \endverb
     \endentry
+    \entry{gan_og}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{hash=5d2585c11210cf1d4512e6e0a03ec315}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=a341d25f80a8118cdbb90b272adc8b4f}{%
+           family={Pouget-Abadie},
+           familyi={P\bibinithyphendelim A\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9e80f4779b032f68a6106e1424345450}{%
+           family={Mirza},
+           familyi={M\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=743dd6cdaa6639320289d219d351d7b7}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Bing},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e8151f1b8f85a048cacb34f374ec922b}{%
+           family={Warde-Farley},
+           familyi={W\bibinithyphendelim F\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9ca00ffd7cc35f7cfb8f698aa9239c76}{%
+           family={Ozair},
+           familyi={O\bibinitperiod},
+           given={Sherjil},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ccec1ccd2e1aa86960eb2e872c6b7020}{%
+           family={Courville},
+           familyi={C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \name{editor}{5}{}{%
+        {{hash=b8fd0c0f416ef8a8bbb50286418e9df8}{%
+           family={Ghahramani},
+           familyi={G\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=064d84a432787740019dc765d9115718}{%
+           family={Welling},
+           familyi={W\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c294bbcb0687bdb5113cc4c4cd6ebad3}{%
+           family={Cortes},
+           familyi={C\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5fa5574879f8e77bee73db4442b005f7}{%
+           family={Lawrence},
+           familyi={L\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=ad5ed31dbb8d37755c6cb48bedfdfe1d}{%
+           family={Weinberger},
+           familyi={W\bibinitperiod},
+           given={K.Q.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{fullhash}{fa2b4fb373e75fcf07b4b987e4507545}
+      \strng{bibnamehash}{fa2b4fb373e75fcf07b4b987e4507545}
+      \strng{authorbibnamehash}{fa2b4fb373e75fcf07b4b987e4507545}
+      \strng{authornamehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{authorfullhash}{fa2b4fb373e75fcf07b4b987e4507545}
+      \strng{editorbibnamehash}{b2f067643f7898bb0a30922a39443e6d}
+      \strng{editornamehash}{65b7e9a4aa080eb7f3776176b707f81c}
+      \strng{editorfullhash}{b2f067643f7898bb0a30922a39443e6d}
+      \field{labelalpha}{Goo+14}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems}
+      \field{title}{Generative Adversarial Nets}
+      \field{volume}{27}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2014/file/5ca3e9b122f61f8f06494c97b1afccf3-Paper.pdf
+      \endverb
+      \verb{url}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2014/file/5ca3e9b122f61f8f06494c97b1afccf3-Paper.pdf
+      \endverb
+    \endentry
+    \entry{gui2020review}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=e371ee547beacd7deb406af3598160a5}{%
+           family={Gui},
+           familyi={G\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2eedab9d633e73625f45d8c367d30401}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Zhenan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=39087d50c8e12fffe07830bb9607b00c}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Yonggang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=f15b34a2bc944a9f055fd6e2e3a7c460}{%
+           family={Tao},
+           familyi={T\bibinitperiod},
+           given={Dacheng},
+           giveni={D\bibinitperiod}}}%
+        {{hash=45f8892411700a9b1d4fcd3acaeeefd0}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Jieping},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{8d55524d3a68fcd868832b5a64b2e1f7}
+      \strng{fullhash}{c80ab8c291573ca781593c1b0e8a9e2c}
+      \strng{bibnamehash}{c80ab8c291573ca781593c1b0e8a9e2c}
+      \strng{authorbibnamehash}{c80ab8c291573ca781593c1b0e8a9e2c}
+      \strng{authornamehash}{8d55524d3a68fcd868832b5a64b2e1f7}
+      \strng{authorfullhash}{c80ab8c291573ca781593c1b0e8a9e2c}
+      \field{labelalpha}{Gui+20}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{A Review on Generative Adversarial Networks: Algorithms, Theory, and Applications}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2001.06937
+      \endverb
+    \endentry
     \entry{surrve_ppml}{inproceedings}{}
       \name{author}{5}{}{%
         {{hash=07e653897d45e95915e0705da91c77d3}{%
@@ -1145,6 +1327,43 @@
       \field{year}{2023}
       \verb{eprint}
       \verb 2307.02106
+      \endverb
+    \endentry
+    \entry{jabbar2020survey}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=9a9cfd9815a27eaeb51f848ff05e025b}{%
+           family={Jabbar},
+           familyi={J\bibinitperiod},
+           given={Abdul},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1a1f520c1123587494e9d4c74ae07269}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=253ced921375ac249fbd9d3adc45d501}{%
+           family={Omar},
+           familyi={O\bibinitperiod},
+           given={Bourahla},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{7a26d8ff403bd5eafae83b305bce6d5b}
+      \strng{fullhash}{7a26d8ff403bd5eafae83b305bce6d5b}
+      \strng{bibnamehash}{7a26d8ff403bd5eafae83b305bce6d5b}
+      \strng{authorbibnamehash}{7a26d8ff403bd5eafae83b305bce6d5b}
+      \strng{authornamehash}{7a26d8ff403bd5eafae83b305bce6d5b}
+      \strng{authorfullhash}{7a26d8ff403bd5eafae83b305bce6d5b}
+      \field{labelalpha}{JLO20}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{A Survey on Generative Adversarial Networks: Variants, Applications, and Training}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2006.05132
       \endverb
     \endentry
     \entry{jordon2022synthetic}{misc}{}
@@ -1613,6 +1832,59 @@
       \verb{eprint}
       \verb 1610.05755
       \endverb
+    \endentry
+    \entry{pei2021towards}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=53284706aaf201d4614e867b66d2ad23}{%
+           family={Pei},
+           familyi={P\bibinitperiod},
+           given={Hengzhi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e60df921d205387a6a076dca1c8f329b}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Kan},
+           giveni={K\bibinitperiod}}}%
+        {{hash=36c0b9306bc41c62b571a0e5e59e4e2c}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Yuqing},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=9d9ac6815e27331ba6620def723e357f}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Chang},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5588f729660dbe4dbf5af3850f858ae3}{%
+           family={Qin},
+           familyi={Q\bibinitperiod},
+           given={Tao},
+           giveni={T\bibinitperiod}}}%
+        {{hash=84c131e5fa26619bcd28796cffa3bd0e}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Dongsheng},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{24d82978399adc08d2ee27f18043fd6d}
+      \strng{fullhash}{fd411dce7234ac53303efe61841f0c7f}
+      \strng{bibnamehash}{fd411dce7234ac53303efe61841f0c7f}
+      \strng{authorbibnamehash}{fd411dce7234ac53303efe61841f0c7f}
+      \strng{authornamehash}{24d82978399adc08d2ee27f18043fd6d}
+      \strng{authorfullhash}{fd411dce7234ac53303efe61841f0c7f}
+      \field{labelalpha}{Pei+21}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2021 IEEE International Conference on Data Mining (ICDM)}
+      \field{title}{Towards generating real-world time series data}
+      \field{year}{2021}
+      \field{pages}{469\bibrangedash 478}
+      \range{pages}{10}
     \endentry
     \entry{adlm2017}{inproceedings}{}
       \name{author}{4}{}{%
@@ -2101,6 +2373,53 @@
       \field{year}{2018}
       \field{pages}{149\bibrangedash 153}
       \range{pages}{5}
+    \endentry
+    \entry{xie2018differentially}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=13a902f7b2ad1b21ac2ec69bc1d97eec}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Liyang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1ffd47a7b35d1cd27bf71f7d817ef987}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Kaixiang},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4914ed000e76ff5797f091ad4da80f08}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Shu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=60af9bc009f709103e587bb92cee1cda}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Fei},
+           giveni={F\bibinitperiod}}}%
+        {{hash=dc052a305aff8c80b5b2c417f269f10d}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Jiayu},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e3937e9312553aee7d48f36f42c22e2c}
+      \strng{fullhash}{4c4c075c4128a232e6c560b7a4455cbc}
+      \strng{bibnamehash}{4c4c075c4128a232e6c560b7a4455cbc}
+      \strng{authorbibnamehash}{4c4c075c4128a232e6c560b7a4455cbc}
+      \strng{authornamehash}{e3937e9312553aee7d48f36f42c22e2c}
+      \strng{authorfullhash}{4c4c075c4128a232e6c560b7a4455cbc}
+      \field{labelalpha}{Xie+18}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Differentially Private Generative Adversarial Network}
+      \field{year}{2018}
+      \verb{eprint}
+      \verb 1802.06739
+      \endverb
     \endentry
     \entry{zhang2012functional}{misc}{}
       \name{author}{5}{}{%
