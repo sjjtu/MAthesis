@@ -2425,6 +2425,14 @@
     <bcf:citekey order="49" intorder="1">dpmerf</bcf:citekey>
     <bcf:citekey order="50" intorder="1">rff</bcf:citekey>
     <bcf:citekey order="51" intorder="1">dpmerf</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">gan_og</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">gui2020review</bcf:citekey>
+    <bcf:citekey order="53" intorder="2">jabbar2020survey</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">arjovsky2017wasserstein</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">lin2021privacy</bcf:citekey>
+    <bcf:citekey order="55" intorder="2">stadler2022synthetic</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">xie2018differentially</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">pei2021towards</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

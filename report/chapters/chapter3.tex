@@ -114,4 +114,28 @@ We choose $\sigma$ according to definition \ref{def:gm}. For a given privacy lev
 where in the second equality we assumed without loss of generality that $X_m$ and $X_m'$ differ only in their last element, so that the other summands cancel each out and in the last inequality we are using the fact that $||\hat{\Phi}(\cdot)||_2 \leq 1$.
 
 
-\subsection{GAN based} 
+\subsection{RTSGAN} 
+
+\subsubsection{Review: GANs}
+Generative adversarial networks (GAN) were first introduced in 2014 by Goodfellow et. al in \parencite{gan_og} as an unsupervised learning algorithm for generative modelling. Since then it has been used extensively in image generation, where it excels at generating high-resolution images. The original paper proposes a joint training of two machine learning models to output $\hat{p}_{model}$, usually neural networks, to implicitly model the unknown data distribution $p_{data}$ of a given training set. 
+
+Therefore, the first network denoted by $G$, commonly referred to as the generator, is able to sample from $\hat{p}_{model}$ by finding a mapping from some random noise $z$ and maps it to a sample $G(z; \theta_G)$ following $\hat{p}_{model}$. $G$ is parametrised by a set of weights $\theta_G$. The second model denoted by $D$, commonly referred to as the discriminator, aims to distinguish generated samples $\hat{x}= G(z,\theta_G)$ from real samples $x$, which can be treated as a binary classification model. The output $D(x; \theta_D)$ then is an estimate whether $x$ is a real sample, i. e. sampled from $p_{data}$ or fake, i. e. sampled from $\hat{p}_{model}$ respectively. Similarly, $D$ is parametrised by $\theta_D$.
+
+During training the weights $\theta_D$ and $\theta_G$ are adjusted in order to minimise or maximise a certain loss:
+\begin{itemize}
+    \item $D$ is trained to maximise the probability of correctly classifying real and generated samples.
+    \item $G$ is trained to minimise the probability that $D$ identifies the generated samples.
+\end{itemize}
+
+This leads to the following minmax loss:
+\begin{align} \label{eq:gan_loss}
+    \min_G \max_D \mathbb{E}_x[\log D(x)] + \mathbb{E}_z[1-D(G(z))]
+\end{align}
+The training is done sequentially, i. e. in every epoch we first update the discriminator's weights using a some type of gradient descent that maximises equation \ref{eq:gan_loss}. Then the generator's weights are adjusted so that it minimises equation \ref{eq:gan_loss}. This optimisation can be regarded as a zero-sum game from game theory. 
+
+ALthough theoretical results for convergence where obtained in the original paper by Goodfellow et al., in practise GANs suffer from stability issues coming from exploding or vanishing gradients and mode-collapse \parencite[see][for in-depth review]{gui2020review,jabbar2020survey}. Thus, modifications tot he loss function and training process that aim to stabilise training where developed, e. g. WGAN using the Wasserstein loss \parencite{arjovsky2017wasserstein}.
+
+In light of privacy concerns, standard GAN architectures without any formal privacy guarantees do not preserve any meaningful privacy of the training data. This negative results has been confirmed in \parencite{lin2021privacy,stadler2022synthetic}. Hence, a dedicated privacy mechanism has to be used. In particular, we will ``privatise'' the GAN architecture by using a DP-SGD when training the discriminator, similar to \parencite{xie2018differentially}.
+
+\subsubsection{Time series Generation with RTSGAN}
+The authors in \parencite{pei2021towards} propose a hybrid approach that employs a similar idea to our proposed AE-(DP)MERF algorithm; it combines an autoencoder architecture to learn a latent space and generates data within that space with a GAN network.
