@@ -1175,6 +1175,15 @@ INPUT ./chapters/chapter4-models.tex
 INPUT chapters/chapter4-models.tex
 INPUT ./chapters/chapter4-models.tex
 INPUT chapters/chapter4-models.tex
+INPUT ../images/placeholder.png
+INPUT ../images/placeholder.png
+INPUT ../images/placeholder.png
+INPUT ../images/placeholder.png
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
+INPUT ../images/placeholder.png
+INPUT ../images/placeholder.png
+INPUT ../images/placeholder.png
+INPUT ../images/placeholder.png
 INPUT ./chapters/chapter5-exp.tex
 INPUT chapters/chapter5-exp.tex
 INPUT ./chapters/chapter5-exp.tex
@@ -1192,7 +1201,6 @@ INPUT chapters/9appendix.tex
 INPUT ./chapters/9appendix.tex
 INPUT chapters/9appendix.tex
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcti1200.tfm
 INPUT main.aux
 INPUT ./main.out

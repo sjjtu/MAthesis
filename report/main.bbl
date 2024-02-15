@@ -1159,6 +1159,49 @@
       \verb 10.1109/ACOMP.2019.00022
       \endverb
     \endentry
+    \entry{gan_softtext}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=bbb224188165b4e6497cd11bf95dd182}{%
+           family={Haidar},
+           familyi={H\bibinitperiod},
+           given={Md.\bibnamedelimi Akmal},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=3b80b114c6fe57acfe2b7f69f662ad15}{%
+           family={Rezagholizadeh},
+           familyi={R\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a60ec36083a8e5ee791fd1c1bbffa7fb}{%
+           family={Omri},
+           familyi={O\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4d6d98c61dc2c4f0cf7533907efa8935}{%
+           family={Rashid},
+           familyi={R\bibinitperiod},
+           given={Ahmad},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{62f7033130560789d5ae1b9c4f0921da}
+      \strng{fullhash}{0da0a8e97d4cf9764ed932f490e27fe4}
+      \strng{bibnamehash}{0da0a8e97d4cf9764ed932f490e27fe4}
+      \strng{authorbibnamehash}{0da0a8e97d4cf9764ed932f490e27fe4}
+      \strng{authornamehash}{62f7033130560789d5ae1b9c4f0921da}
+      \strng{authorfullhash}{0da0a8e97d4cf9764ed932f490e27fe4}
+      \field{labelalpha}{Hai+19}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Latent Code and Text-based Generative Adversarial Networks for Soft-text Generation}
+      \field{year}{2019}
+      \field{pages}{2248\bibrangedash 2258}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.18653/v1/N19-1234
+      \endverb
+    \endentry
     \entry{dpmerf}{article}{}
       \name{author}{3}{}{%
         {{hash=ec0844f3a200fcbbc4cd2ab97785287c}{%
@@ -1641,6 +1684,40 @@
       \range{pages}{13}
       \verb{doi}
       \verb 10.1109/TKDE.2021.3137047
+      \endverb
+    \endentry
+    \entry{vandermaaten2020tradeoffs}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=47fbe2837893a84fb516e9e85ba7aa36}{%
+           family={Maaten},
+           familyi={M\bibinitperiod},
+           given={Laurens},
+           giveni={L\bibinitperiod},
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=b0b92970ca8a68ab09fa412b36dbf6f3}{%
+           family={Hannun},
+           familyi={H\bibinitperiod},
+           given={Awni},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9b085259f457ba17a8614a680947c1b5}
+      \strng{fullhash}{9b085259f457ba17a8614a680947c1b5}
+      \strng{bibnamehash}{9b085259f457ba17a8614a680947c1b5}
+      \strng{authorbibnamehash}{9b085259f457ba17a8614a680947c1b5}
+      \strng{authornamehash}{9b085259f457ba17a8614a680947c1b5}
+      \strng{authorfullhash}{9b085259f457ba17a8614a680947c1b5}
+      \field{labelalpha}{MH20}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{The Trade-Offs of Private Prediction}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2007.05089
       \endverb
     \endentry
     \entry{mcmahan2018learning}{misc}{}

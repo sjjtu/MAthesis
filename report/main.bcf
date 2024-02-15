@@ -2436,6 +2436,9 @@
     <bcf:citekey order="58" intorder="1">pei2021towards</bcf:citekey>
     <bcf:citekey order="59" intorder="1">pei2021towards</bcf:citekey>
     <bcf:citekey order="60" intorder="1">arjovsky2017wasserstein</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">gan_softtext</bcf:citekey>
+    <bcf:citekey order="62" intorder="1">vandermaaten2020tradeoffs</bcf:citekey>
+    <bcf:citekey order="63" intorder="1">arjovsky2017wasserstein</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
