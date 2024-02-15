@@ -9,7 +9,10 @@
 
 Time series data are sequences of data points in which there is a notion of time or ordering. Unlike tabular data, where each column corresponds to one feature, but it does not matter in which order one treats the different features. Time series are ubiquitous, common examples include weather data, financial transactions, energy consumption over time, stock prices etc.
 
-We have chosen two architectures from the state of the art, that we will adapt to work on time series data. The first model is an example of a feature-based method, where a simple generative model is trained to map from a noise distribution to the data distribution. This is done by comparing the features of the synthetic data (or a suitable transformation thereof) with those of the original data. One particular instance of this class, DP-MERF \parencite{dpmerf}, has shown to give efficient and accurate results. The second model follows a GAN-based approach. GANs introduced by Goodfellow et. al ???REF have been studied extensively in recent works as they have shown promising results in the field of image generation ??REF. They consist of two networks, a generator and a discriminator, where those two networks play a zero-sum game: the generator aims to generate authentic data whereas the discriminator aims to distinguish between fake and real data.
+We have chosen two architectures from the state of the art, that we will adapt to work on time series data. The first model is an example of a feature-based method, where a simple generative model is trained to map from a noise distribution to the data distribution. This is done by comparing the features of the synthetic data (or a suitable transformation thereof) with those of the original data. One particular instance of this class, DP-MERF \parencite{dpmerf}, has shown to give efficient and accurate results. Making this algorithm differentially private is straight-forward, since the loss function here can be separated into a term that is dependent on the original data and one that is not. So one only needs to introduce differential private noise to the data-dependent term once.
+
+
+The second model follows a GAN-based approach. GANs introduced by Goodfellow et. al ???REF have been studied extensively in recent works as they have shown promising results in the field of image generation ??REF. They consist of two networks, a generator and a discriminator, where those two networks play a zero-sum game: the generator aims to generate authentic data whereas the discriminator aims to distinguish between generated and real data.
 
 
 \subsection{DP-MERF}
@@ -68,7 +71,7 @@ Where we introduced independent random variables $X,X' \sim P$, $Y,Y' \sim Q$.
 
 Now given a training data set $X_m = \{x_i\}_{i=1}^m \sim P$ and a synthetic data set $X'_m = \{x_i\}_{i=1}^m \sim Q$ we can estimate their $MMD^2$ by estimating the expected value with a mean estimate:
 
-\begin{align}
+\begin{align} \label{eq:mmd}
     \widehat{MMD}^2(X_m, X'_m) = \frac{1}{m^2} \sum_{i,j=1}^m k(x_i,x_j) + \frac{1}{m^2} \sum_{i,j=1}^m k(x'_i,x'_j) - \frac{2}{m^2} \sum_{i,j=1}^m k(x_i,x'_j)
 \end{align}
 Unfortunately, this will require $\mathcal{O}(m^2)$ computations which grows quadratically in the number of samples. This will be too big for a large training data set. As a remedy, the authors of \parencite{dpmerf} propose to use Random Fourier Features based on a paper from 2007 \parencite[see][]{rff}, to approximate the kernel $k$ using its fourier transform and Monte-Carlo-Simulation.
@@ -80,6 +83,35 @@ where $\hat{\Phi}(x) \in \mathbb{R}^D$ and $\hat{\Phi}_j(x) = \sqrt{\frac{2}{D}}
 
 If we sample $w_j \sim \mathcal{N}$ from the Gaussian distribution, we are approximating the gaussian kernel.
 
+Now we can approximate equation \ref{eq:mmd} using those random fourier features:
+
+\begin{align} \label{eq:rff}
+    \widehat{MMD}^2_{RFF}(X_m, X'_m) &\approx \frac{1}{m^2} \sum_{i,j=1}^m \hat{\Phi}(x_i)^T \hat{\Phi}(x_j') + \frac{1}{m^2} \sum_{i,j=1}^m \hat{\Phi}(x_i)^T \hat{\Phi}(x_j') - \frac{2}{m^2} \sum_{i,j=1}^m \hat{\Phi}(x_i)^T \hat{\Phi}(x_j') \nonumber \\
+    &= || \frac{1}{m} \sum_{i=1}^m \hat{\Phi}(x_i) - \frac{1}{m} \sum_{j=1}^m \hat{\Phi}(x_j') ||_\mathcal{H}^2
+\end{align}
+
 more stuff: https://gregorygundersen.com/blog/2019/12/23/random-fourier-features/
+
+\subsubsection{Vanilla DP-MERF}
+We can now introduce the version of DP-MERF presented in \parencite{dpmerf}. Let $G_\theta$ denote a generative neural network with parameters $\theta$, i.\ e.\ given input $z \sim p(z)$ from some known probability distribution $p(z)$ we obtain a synthetic sample through $x' = G_\theta(z)$. We denote the distribution of the synthetic data samples by $Q$. Further, let $X_m = \{x_i\}_{i=1}^m \sim P$ be our training data with true distribution $P$. By minimising 
+\begin{align}
+    \widehat{\theta} &= \argmin_\theta \widehat{MMD}^2_{RFF}(P, Q) \nonumber \\
+    &\overset{\ref{eq:rff}}{=} \argmin_\theta || \frac{1}{m} \sum_{i=1}^m \hat{\Phi}(x_i) - \frac{1}{m} \sum_{j=1}^m \hat{\Phi}(x_j') ||_2^2 \nonumber \\
+    &= \argmin_\theta || \hat{\mu}_P - \hat{\mu}_Q ||_2^2
+\end{align}
+
+where we introduced notation $\hat{\mu}_P = \frac{1}{m} \sum_{i=1}^m \hat{\Phi}(x_i)$ and $\hat{\mu}_Q = \frac{1}{m} \sum_{i=1}^m \hat{\Phi}(x'_i)$. The DP version is obtained by observing that the original data set is entering the equation only through $\hat{mu}_P$ so we have to introduce noise only in this term by adding gaussian noise:
+\begin{align}
+    \tilde{\mu}_p = \hat{\mu}_P + \mathcal{N}(0, \sigma^2 I)
+\end{align}
+We choose $\sigma$ according to definition \ref{def:gm}. For a given privacy level $(\epsilon, \delta)$ we need to compute the sensitivity $\Delta_{\hat{\mu}_P}$. There is an upper bound since we have by definition:
+\begin{align}
+    \Delta_{\hat{\mu}_P} &= \max_{\substack{X_m,X_m' \\ ||X_m-X_m'||_1=1}} || \frac{1}{m} \sum_{i=1}^m \hat{\Phi}(x_i) - \frac{1}{m} \sum_{j=1}^m \hat{\Phi}(x_j') ||_2 \nonumber \\
+    &= \frac{1}{m} \max_{x_m \neq x'_m} || \hat{\Phi}(x_m) - \hat{\Phi}(x'_m)||_2 \nonumber \\
+    &\overset{\Delta \neq}{\leq} \frac{1}{m} \max_{x_m \neq x'_m} || \hat{\Phi}(x_m) ||_2 + ||\hat{\Phi}(x'_m)||_2 \nonumber \\
+    &\leq \frac{2}{m} 
+\end{align}
+where in the second equality we assumed without loss of generality that $X_m$ and $X_m'$ differ only in their last element, so that the other summands cancel each out and in the last inequality we are using the fact that $||\hat{\Phi}(\cdot)||_2 \leq 1$.
+
 
 \subsection{GAN based} 

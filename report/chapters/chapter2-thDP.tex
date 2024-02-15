@@ -136,7 +136,7 @@ Let $f:\mathbb{N}^{|\mathcal{X}|} \longrightarrow \mathbb{R}^d$ an arbitrary fun
 \end{definition}
 
 Now we can calibrate the noise according to its sensitivity which we can prove to satisfy differential privacy:
-\begin{definition}[Gaussian Mechanism]\label{def:gm}
+\begin{definition}[Gaussian Mechanism]\label{def:gm} \label{def:gm}
     For a given function  $f:\mathbb{N}^{|\mathcal{X}|} \longrightarrow \mathbb{R}^d$, privacy parameters $\epsilon \in (0,1)$ and $\delta>0$ define the gaussian mechanism $F(x)$ as follows:
     \begin{align}
         F(x) = f(x) + \mathcal{N}(0, \sigma^2)
