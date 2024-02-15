@@ -133,9 +133,25 @@ This leads to the following minmax loss:
 \end{align}
 The training is done sequentially, i. e. in every epoch we first update the discriminator's weights using a some type of gradient descent that maximises equation \ref{eq:gan_loss}. Then the generator's weights are adjusted so that it minimises equation \ref{eq:gan_loss}. This optimisation can be regarded as a zero-sum game from game theory. 
 
-ALthough theoretical results for convergence where obtained in the original paper by Goodfellow et al., in practise GANs suffer from stability issues coming from exploding or vanishing gradients and mode-collapse \parencite[see][for in-depth review]{gui2020review,jabbar2020survey}. Thus, modifications tot he loss function and training process that aim to stabilise training where developed, e. g. WGAN using the Wasserstein loss \parencite{arjovsky2017wasserstein}.
+Although theoretical results for convergence where obtained in the original paper by Goodfellow et al., in practise GANs suffer from stability issues coming from exploding or vanishing gradients and mode-collapse \parencite[see][for in-depth review]{gui2020review,jabbar2020survey}. Thus, modifications to the loss function and training process that aim to stabilise training where developed, e. g. WGAN using the Wasserstein loss \parencite{arjovsky2017wasserstein}.
 
 In light of privacy concerns, standard GAN architectures without any formal privacy guarantees do not preserve any meaningful privacy of the training data. This negative results has been confirmed in \parencite{lin2021privacy,stadler2022synthetic}. Hence, a dedicated privacy mechanism has to be used. In particular, we will ``privatise'' the GAN architecture by using a DP-SGD when training the discriminator, similar to \parencite{xie2018differentially}.
 
 \subsubsection{Time series Generation with RTSGAN}
-The authors in \parencite{pei2021towards} propose a hybrid approach that employs a similar idea to our proposed AE-(DP)MERF algorithm; it combines an autoencoder architecture to learn a latent space and generates data within that space with a GAN network.
+The authors in \parencite{pei2021towards} propose a hybrid approach that employs a similar idea to our proposed AE-(DP)MERF algorithm; it combines an autoencoder architecture to learn a latent space and generates data within that space with a WGAN network.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{../images/placeholder.png}
+    \caption[]{Architecture of RTSGAN from \parencite{pei2021towards}}
+\end{figure}
+
+The authors also implement a mechanism to handle missing values, but we will not concern about this issue for the scope of this thesis.
+\begin{itemize}
+    \item \underline{Autoencoder component:} A gated recurrent unit (GRU) is used for both the encoder and the decoder. The encoder transforms the time series into a vector of fixed size in the latent space. This latent representation is then fed into the decoder which aims to reconstruct the time series from the latent space.
+    \item \underline{Generator component} The generator is based on the WGAN architecture. The main differences to a regular GAN lie in the loss function which is based on the so-called Wasserstein-1 distance and penalty term. Further, a Lipschitz-constraint is imposed on the discriminator through this penalty term.
+    \begin{align} \label{eq:wgan_loss}
+        \min_G \max_{D \in \mathcal{D}} \mathbb{E}_x[\log D(x)] - \mathbb{E}_z[D(G(z))] + \lambda \mathbb{E}_z [ (||\nabla_z D(G(z))||_2 - 1)^2]
+    \end{align}
+    where $\mathcal{D}$ denotes the set of 1-Lipschitz functions \footnote[1]{a differentiable function is 1-Lipschitz if and only if its derivative is bounded in norm by 1}). To impose this constraint, the authors chose to impose a penalty on the gradients as suggested in \parencite{arjovsky2017wasserstein}.
+\end{itemize}

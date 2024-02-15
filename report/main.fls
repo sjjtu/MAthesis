@@ -1166,6 +1166,11 @@ INPUT ./chapters/chapter3.tex
 INPUT chapters/chapter3.tex
 INPUT ./chapters/chapter3.tex
 INPUT chapters/chapter3.tex
+INPUT ../images/placeholder.png
+INPUT ../images/placeholder.png
+INPUT ../images/placeholder.png
+INPUT ../images/placeholder.png
+INPUT ../images/placeholder.png
 INPUT ./chapters/chapter4-models.tex
 INPUT chapters/chapter4-models.tex
 INPUT ./chapters/chapter4-models.tex
