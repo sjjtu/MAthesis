@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.16)  18 FEB 2024 17:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.16)  18 FEB 2024 20:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -975,7 +975,7 @@ Package biblatex Info: ... file 'main.bbl' found.
 Package biblatex Info: Reference section=0 on input line 76.
 Package biblatex Info: Reference segment=0 on input line 76.
  (./chapters/titlepage.tex
-<pictures/KTH_Royal_Institute_of_Technology_logo.svg.png, id=147, 1204.5pt x 1204.5pt>
+<pictures/KTH_Royal_Institute_of_Technology_logo.svg.png, id=151, 1204.5pt x 1204.5pt>
 File: pictures/KTH_Royal_Institute_of_Technology_logo.svg.png Graphic file (type png)
 <use pictures/KTH_Royal_Institute_of_Technology_logo.svg.png>
 Package pdftex.def Info: pictures/KTH_Royal_Institute_of_Technology_logo.svg.png  used on input line 4.
@@ -1021,7 +1021,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.36 ...ine {7.1}Future Works}{30}{subsection.7.1}
+l.39 ...tion}{\numberline {7}Outro}{31}{section.7}
                                                   % [3
 
 ])
@@ -1071,7 +1071,7 @@ Overfull \hbox (11.8055pt too wide) in paragraph at lines 96--97
  []
 
 [15] [16]
-<../images/placeholder.png, id=512, 401.5pt x 401.5pt>
+<../images/placeholder.png, id=520, 401.5pt x 401.5pt>
 File: ../images/placeholder.png Graphic file (type png)
 <use ../images/placeholder.png>
 Package pdftex.def Info: ../images/placeholder.png  used on input line 149.
@@ -1112,7 +1112,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [22
 
 ] [23]
-<../images//placeholder.png, id=569, 401.5pt x 401.5pt>
+<../images//placeholder.png, id=577, 401.5pt x 401.5pt>
 File: ../images//placeholder.png Graphic file (type png)
 <use ../images//placeholder.png>
 Package pdftex.def Info: ../images//placeholder.png  used on input line 57.
@@ -1160,9 +1160,9 @@ Package pdftex.def Info: ../images//placeholder.png  used on input line 103.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26]) (./chapters/chapter6-dis.tex [27] [28]) (./chapters/chapter7-outro.tex [29
+[26] [27]) (./chapters/chapter6-dis.tex [28] [29]) (./chapters/chapter7-outro.tex [30
 
-]) [30
+]) [31
 
 ] (./chapters/9appendix.tex) [1
 
@@ -1220,16 +1220,16 @@ Overfull \hbox (5.11375pt too wide) in paragraph at lines 127--127
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6B33EA7F9223B49666055CDD6783B1BF;5202.
+(rerunfilecheck)             Checksum: AB8896EEF51F837EFF3CD9BA013CB1F5;5361.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35929 strings out of 477473
- 678389 string characters out of 5829992
+ 35943 strings out of 477473
+ 678546 string characters out of 5829992
  1867388 words of memory out of 5000000
- 55531 multiletter control sequences out of 15000+600000
+ 55534 multiletter control sequences out of 15000+600000
  522286 words of font info for 70 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  84i,15n,89p,1795b,2972s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1246,10 +1246,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (44 pages, 498119 bytes).
+Output written on main.pdf (45 pages, 500654 bytes).
 PDF statistics:
- 822 PDF objects out of 1000 (max. 8388607)
- 722 compressed objects within 8 object streams
- 213 named destinations out of 1000 (max. 500000)
- 308 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 847 PDF objects out of 1000 (max. 8388607)
+ 746 compressed objects within 8 object streams
+ 224 named destinations out of 1000 (max. 500000)
+ 316 words of extra memory for PDF output out of 10000 (max. 10000000)
 
