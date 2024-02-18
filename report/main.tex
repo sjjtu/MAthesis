@@ -13,6 +13,7 @@
 \usepackage{enumitem}   
 \usepackage[nottoc]{tocbibind}
 \usepackage{hyperref}
+\usepackage[nameinlink]{cleveref}
 \usepackage{wrapfig}
 \usepackage{color} 
 \usepackage [autostyle, german = quotes]{csquotes}
@@ -86,7 +87,12 @@
 	\addcontentsline{toc}{section}{Notation}
 
 	\clearpage
+	%\listoffigures
+	{
+	\let\oldnumberline\numberline
+	\renewcommand{\numberline}{\figurename~\oldnumberline}git s
 	\listoffigures
+	}
 	\clearpage
 	\pagestyle{fancy}
 	\fancyhf{}

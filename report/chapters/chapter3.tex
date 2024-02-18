@@ -86,7 +86,7 @@ where $\hat{\Phi}(x) \in \mathbb{R}^D$ and $\hat{\Phi}_j(x) = \sqrt{\frac{2}{D}}
 
 If we sample $w_j \sim \mathcal{N}$ from the Gaussian distribution, we are approximating the gaussian kernel.
 
-Now we can approximate equation \ref{eq:mmd} using those random fourier features:
+Now we can approximate \cref{eq:mmd} using those random fourier features:
 
 \begin{align} \label{eq:rff}
     \widehat{MMD}^2_{RFF}(X_m, X'_m) &\approx \frac{1}{m^2} \sum_{i,j=1}^m \hat{\Phi}(x_i)^T \hat{\Phi}(x_j') + \frac{1}{m^2} \sum_{i,j=1}^m \hat{\Phi}(x_i)^T \hat{\Phi}(x_j') - \frac{2}{m^2} \sum_{i,j=1}^m \hat{\Phi}(x_i)^T \hat{\Phi}(x_j') \nonumber \\
@@ -99,7 +99,7 @@ more stuff: https://gregorygundersen.com/blog/2019/12/23/random-fourier-features
 We can now introduce the version of DP-MERF presented in \parencite{dpmerf}. Let $G_\theta$ denote a generative neural network with parameters $\theta$, i.\ e.\ given input $z \sim p(z)$ from some known probability distribution $p(z)$ we obtain a synthetic sample through $x' = G_\theta(z)$. We denote the distribution of the synthetic data samples by $Q$. Further, let $X_m = \{x_i\}_{i=1}^m \sim P$ be our training data with true distribution $P$. By minimising 
 \begin{align}
     \widehat{\theta} &= \argmin_\theta \widehat{MMD}^2_{RFF}(P, Q) \nonumber \\
-    &\overset{\ref{eq:rff}}{=} \argmin_\theta || \frac{1}{m} \sum_{i=1}^m \hat{\Phi}(x_i) - \frac{1}{m} \sum_{j=1}^m \hat{\Phi}(x_j') ||_2^2 \nonumber \\
+    &\overset{\cref{eq:rff}}{=} \argmin_\theta || \frac{1}{m} \sum_{i=1}^m \hat{\Phi}(x_i) - \frac{1}{m} \sum_{j=1}^m \hat{\Phi}(x_j') ||_2^2 \nonumber \\
     &= \argmin_\theta || \hat{\mu}_P - \hat{\mu}_Q ||_2^2
 \end{align}
 
@@ -107,7 +107,7 @@ where we introduced notation $\hat{\mu}_P = \frac{1}{m} \sum_{i=1}^m \hat{\Phi}(
 \begin{align}
     \tilde{\mu}_p = \hat{\mu}_P + \mathcal{N}(0, \sigma^2 I)
 \end{align}
-We choose $\sigma$ according to definition \ref{def:gm}. For a given privacy level $(\epsilon, \delta)$ we need to compute the sensitivity $\Delta_{\hat{\mu}_P}$. There is an upper bound since we have by definition:
+We choose $\sigma$ according to \cref{def:gm}. For a given privacy level $(\epsilon, \delta)$ we need to compute the sensitivity $\Delta_{\hat{\mu}_P}$. There is an upper bound since we have by definition:
 \begin{align}
     \Delta_{\hat{\mu}_P} &= \max_{\substack{X_m,X_m' \\ ||X_m-X_m'||_1=1}} || \frac{1}{m} \sum_{i=1}^m \hat{\Phi}(x_i) - \frac{1}{m} \sum_{j=1}^m \hat{\Phi}(x_j') ||_2 \nonumber \\
     &= \frac{1}{m} \max_{x_m \neq x'_m} || \hat{\Phi}(x_m) - \hat{\Phi}(x'_m)||_2 \nonumber \\
@@ -135,7 +135,7 @@ This leads to the following minmax loss:
 \begin{align} \label{eq:gan_loss}
     \min_G \max_D \mathbb{E}_x[\log D(x)] + \mathbb{E}_z[1-D(G(z))]
 \end{align}
-The training is done sequentially, i. e. in every epoch we first update the discriminator's weights using a some type of gradient descent that maximises equation \ref{eq:gan_loss}. Then the generator's weights are adjusted so that it minimises equation \ref{eq:gan_loss}. This optimisation can be regarded as a zero-sum game from game theory. 
+The training is done sequentially, i. e. in every epoch we first update the discriminator's weights using a some type of gradient descent that maximises  \cref{eq:gan_loss}. Then the generator's weights are adjusted so that it minimises \cref{eq:gan_loss}. This optimisation can be regarded as a zero-sum game from game theory. 
 
 Although theoretical results for convergence where obtained in the original paper by Goodfellow et al., in practise GANs suffer from stability issues coming from exploding or vanishing gradients and mode-collapse \parencite[see][for in-depth review]{gui2020review,jabbar2020survey}. Thus, modifications to the loss function and training process that aim to stabilise training where developed, e. g. WGAN using the Wasserstein loss \parencite{arjovsky2017wasserstein}.
 
@@ -147,7 +147,8 @@ The authors in \parencite{pei2021towards} propose a hybrid approach that employs
 \begin{figure}[h]
     \centering
     \includegraphics[scale=0.5]{../images/placeholder.png}
-    \caption[]{Architecture of RTSGAN from \parencite{pei2021towards}}
+    \caption{Architecture of RTSGAN from \parencite{pei2021towards}}
+    \label{fig:rtsgan_arch}
 \end{figure}
 
 The authors also implement a mechanism to handle missing values, but we will not concern about this issue for the scope of this thesis.

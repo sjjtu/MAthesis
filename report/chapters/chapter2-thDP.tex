@@ -126,7 +126,7 @@ Now we are ready to give the general definition of differential privacy:
 
 \subsection{Example of DP-mechanism: Gaussian Mechanism}
 
-Let $f:\mathbb{N}^{|\mathcal{X}|} \longrightarrow \mathbb{R}^d$ an arbitrary function mapping to a $d$-dimensional real space. $f$ can represent numerous models, e. g. a neural network, an SVM-classifier etc. We have seen from theorem \ref*{thm:dp_random} that in order to ``privatise'' the output of $f$, we need to add randomness to its output. One way to achieve this is to add gaussian noise, which is calibrated to mask the influence of a specific input. Because differential privacy aims to hide the influence of the input to the output, a natural quantity to consider when calibrating the noise is to look at how much $f$ will change, when using different inputs. This leads the following definition:
+Let $f:\mathbb{N}^{|\mathcal{X}|} \longrightarrow \mathbb{R}^d$ an arbitrary function mapping to a $d$-dimensional real space. $f$ can represent numerous models, e. g. a neural network, an SVM-classifier etc. We have seen from theorem \cref*{thm:dp_random} that in order to ``privatise'' the output of $f$, we need to add randomness to its output. One way to achieve this is to add gaussian noise, which is calibrated to mask the influence of a specific input. Because differential privacy aims to hide the influence of the input to the output, a natural quantity to consider when calibrating the noise is to look at how much $f$ will change, when using different inputs. This leads the following definition:
 
 \begin{definition}[$l_2$-sensitivity]
     Let $f:\mathbb{N}^{|\mathcal{X}|} \longrightarrow \mathbb{R}^d$ an arbitrary function, then its $l_2$-sensitivity is defined as:
@@ -145,6 +145,6 @@ Now we can calibrate the noise according to its sensitivity which we can prove t
 \end{definition}
 
 \begin{thm}[Gaussian Mechanism satisfies DP]
-    The gaussian mechanism defined in definition \ref{def:gm} satisfies $(\epsilon, \delta)$-DP.
+    The gaussian mechanism defined in \cref{def:gm} satisfies $(\epsilon, \delta)$-DP.
 \end{thm}
 The proof is rather lengthy and the curious reader is referred to read through \parencite[][Appendix A]{dwork2014algorithmic}

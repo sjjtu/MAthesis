@@ -11,10 +11,11 @@ Out of the box, DP-MERF does not work well to generate time series data. We hypo
 \begin{figure}[h]
     \centering
     \includegraphics[scale=0.5]{../images/placeholder.png}
-    \caption[]{AE-(dp)MERF architecture}
+    \caption{AE-(dp)MERF architecture}
+    \label{fig:aedpmerf_arch}
 \end{figure}
 
-We will proceed to train the two components separately, i. e. we will first train the autoencoder and then the generator component. The autoencoder will learn a latent representation of the original ECG time series. The DP-MERF generator is trained to generate data in the latent space which will then be transformed back to a ECG time series sample using the decoder. For DP version of this model just employs the same DP techniques from the original DP-MERF algorithm. The post-processing theorem for DP \ref{thm:postpro} ensures (differential) privacy for the generated ECG time series samples after being passed to the decoder.
+We will proceed to train the two components separately, i. e. we will first train the autoencoder and then the generator component. The autoencoder will learn a latent representation of the original ECG time series. The DP-MERF generator is trained to generate data in the latent space which will then be transformed back to a ECG time series sample using the decoder. For DP version of this model just employs the same DP techniques from the original DP-MERF algorithm. The post-processing theorem for DP \cref{thm:postpro} ensures (differential) privacy for the generated ECG time series samples after being passed to the decoder.
 
 \subsection{AE-(dp)WGAN}
 We are making some small modification to the original architecture of RTSGAN. Firstly, we swap the GRU-based autoencoder with the same LSTM-based one from AE-(dp)MERF. This is to make sure, that both models are compared in the same latent space.
@@ -22,7 +23,7 @@ We are making some small modification to the original architecture of RTSGAN. Fi
 
 To implement a (differential) private GAN there are different ways:
 \begin{itemize}
-    \item \underline{Input perturbation:} One could add differential private noise to the input data set before training. (Differential) Privacy is again preserved under the post-processing theorem \ref{thm:postpro}. \colorbox{red}{TBA more info}
+    \item \underline{Input perturbation:} One could add differential private noise to the input data set before training. (Differential) Privacy is again preserved under the post-processing \cref{thm:postpro}. \colorbox{red}{TBA more info}
     \item \underline{Output perturbation:} Similarly, one could add noise to the output of the model, once it is done training. 
     \item \underline{Gradient perturbation:} During training, adding a small amount of calibrated noise can also ensure (differential) privacy. This is implemented in the DP-SGD algorithm. The privacy level depends on the number iterations. 
 \end{itemize}
@@ -31,5 +32,5 @@ Although the latter approach deteriorates privacy at each training iteration, it
 \begin{figure}[h]
     \centering
     \includegraphics[scale=0.5]{../images/placeholder.png}
-    \caption[short]{Architecture of AE-(dp)WGAN}
+    \caption{Architecture of AE-(dp)WGAN}
 \end{figure}
