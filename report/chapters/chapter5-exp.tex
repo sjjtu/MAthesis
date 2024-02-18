@@ -20,9 +20,18 @@ The MIT-BIH is a commonly used benchmark data set for arrhythmia detection. It c
     \caption{heart beat samples}
 \end{figure}
 
-Before we proceed with the training, we need to preprocess the data. Firstly, since the information contained in both channels are identical, one channel is discarded. We are roughly following the steps from \colorbox{red}{???REF}. This involves normalising the data and extracting single heartbeats from the sequence. To this end, we employ the commonly used QRS detector \colorbox{red}{REF} that can detect the R peaks. This is already implemented in the \texttt{wfdb} package for \texttt{python}. Then, from every peak we consider 90 time steps before and after that peak. This gives one heartbeat with sequence length 180. The associated beat type can then be extracted from the labelled data set. In total this gives \colorbox{red}{???} single heartbeats each of length 180. 
+Before we proceed with the training, we need to preprocess the data. Firstly, since the information contained in both channels are identical, one channel is discarded. We are roughly following the steps from \colorbox{red}{???REF}. This involves normalising the data and extracting single heartbeats from the sequence. To this end, we employ the commonly used QRS detector \colorbox{red}{REF} that can detect the R peaks. This is already implemented in the \texttt{wfdb} package for \texttt{python}. Then, from every peak we consider 90 time steps before and after that peak. This gives one heartbeat with sequence length 180. The associated beat type can then be extracted from the labelled data set. In total this gives \colorbox{red}{???} single heartbeats each of length 180. We will refer to those samples as private data samples, of which we aim to protect the privacy. In contrast, the generated synthetic data samples will be called public data samples, that we can publish for public use with some associated privacy measure (the privacy is measured by the privacy budget given by the \(\epsilon\)) parameter from \cref{def:dp}.
 
-\begin{table}[h]
+To ensure consistency of results and subsequent comparison of the different model, we split the original data into:
+\begin{itemize}
+    \item a private training set that consists only of regular samples
+    \item a private validation set that consists of roughly equal parts regular and anomalous samples
+    \item a private test set that consists of roughly equal parts regular and anomalous samples
+\end{itemize}
+
+Therefore, we use the following proportions:
+
+\begin{table}[H]
     \centering
     \begin{tabular}{c|c}
         & \\ 
@@ -87,9 +96,7 @@ So visually, we can already verify that the baseline model seems to be able to d
     \caption{Distribution of reconstruction error for regular and anomalous samples in the validation set.}
     \label{fig:distr_err_baseline}
 \end{figure}
-Clearly, the average error is much lower for regular heartbeats. We can find the optimal threshold by computing the percentage of correctly classified regular samples and correctly classified anomalous samples based on different threshold values. From \cref{fig:thres_baseline} we can see that the percentage of correctly classified regular samples slowly increases, while the percentage of correctly classfied anomalous samples decreases. This is to be expected, since a threshold value of 0 would simply classify all samples as anomalous, giving perfect classification for anomalous samples. Conversely, a very high threshold value (e. g. 20) would tend to classify each samples as regular, yielding perfect classification for regular samples. We need to strike a balance between those two extremes but examining \cref{fig:thres_baseline}.
-
-
+Clearly, the average error is much lower for regular heartbeats. We can find the ``good'' threshold by computing the percentage of correctly classified regular samples and correctly classified anomalous samples based on different threshold values. From \cref{fig:thres_baseline} we can see that the percentage of correctly classified regular samples slowly increases, while the percentage of correctly classfied anomalous samples decreases. This is to be expected, since a threshold value of 0 would simply classify all samples as anomalous, giving perfect classification for anomalous samples. Conversely, a very high threshold value (e. g. 20) would tend to classify each samples as regular, yielding perfect classification for regular samples. We need to strike a balance between those two extremes by examining \cref{fig:thres_baseline}.
 
 \begin{figure}[h]
     \centering
@@ -98,12 +105,24 @@ Clearly, the average error is much lower for regular heartbeats. We can find the
     \label{fig:thres_baseline}
 \end{figure}
 
+There are different ways to find a well-suited threshold depending on whether one want to have better performance on anomalous or regular samples. We choose to not favour any classification over the other, hence the neutral decision strategy for the threshold value is the one where both lines cross. Choosing the threshold here to be \colorbox{red}{TBA}, we can compute different metrics that measure the performance of the arrhythmia detection:
+
+\colorbox{red}{TBA}
 
 
+\subsubsection*{Summary of performance evaluation}
+Since we will reuse the previous performance evaluation procedure for measuring the utility of the generated data, we quickly summarise the process:
+\begin{enumerate}
+    \item Train an autoencoder on the synthetic training data set consisting of only regular samples. This synthetic training data is generated by our two different models.
+    \item Based on the distribution of the reconstruction errors on the private validation set for regular and anomalous samples, we determine a threshold value for classification.
+    \item We evaluate the utility of the generated data based on metrics for anomaly detection.
+\end{enumerate}
+
+This approach commonly referred to as the ``Train on synthetic, test on real'' (TSTR) paradigm \colorbox{red}{ref} that is being used to measure utility of synthetic data.
 
 \subsection{Data generation}
 
-\subsection{Private Data Generation}
+\subsection{Privacy-preserving Data Generation}
 
 \subsection{Polluted Data Set}
 

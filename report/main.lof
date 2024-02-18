@@ -4,9 +4,9 @@
 \contentsline {figure}{\numberline {3}{\ignorespaces Architecture of AE-(dp)WGAN\relax }}{21}{figure.caption.14}%
 \contentsline {figure}{\numberline {4}{\ignorespaces Excerpt from one ECG data sample, where the R peaks are highlighted\relax }}{22}{figure.caption.15}%
 \contentsline {figure}{\numberline {5}{\ignorespaces heart beat samples\relax }}{23}{figure.caption.16}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Architecture of baseline model\relax }}{24}{figure.caption.18}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Architecture of baseline model\relax }}{25}{figure.caption.18}%
 \contentsline {figure}{\numberline {7}{\ignorespaces Loss over epoch for baseline model\relax }}{25}{figure.caption.20}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Regular test sample vs. reconstructed sample\relax }}{25}{figure.caption.21}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Regular test sample vs. reconstructed sample\relax }}{26}{figure.caption.21}%
 \contentsline {figure}{\numberline {9}{\ignorespaces Anomalous test sample vs. reconstructed sample\relax }}{26}{figure.caption.22}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Distribution of reconstruction error for regular and anomalous samples in the validation set.\relax }}{26}{figure.caption.24}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Percentages of correctly classified samples based on different threshold values\relax }}{27}{figure.caption.25}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Distribution of reconstruction error for regular and anomalous samples in the validation set.\relax }}{27}{figure.caption.24}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Percentages of correctly classified samples based on different threshold values\relax }}{28}{figure.caption.25}%

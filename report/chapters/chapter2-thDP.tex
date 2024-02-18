@@ -64,7 +64,7 @@ This immediately gives rise to a notion of distance between two databases $x$ an
 which basically counts the number of different entries.
 
 Now we are ready to give the general definition of differential privacy:
-\begin{definition}[$(\epsilon, \delta)$-DP]
+\begin{definition}[$(\epsilon, \delta)$-DP] \label{def:dp}
     A randomised algorithm $\mathcal{M}$ with domain $\mathbb{N}^{|\mathcal{X}|}$ is $(\epsilon, \delta)$- differentially private if for all outcomes $S \subset ran \mathcal{M}$ and for all databases $x,y \in \mathbb{N}^{|\mathcal{X}|}$, such that $||x-y||_1$ (i. e. they only differ in one element) we have
     \begin{align}
         \mathbb{P}(\mathcal{M}(x) \in S) \le e^\epsilon \cdot \mathbb{P}(\mathcal{M}(y) \in S) + \delta 
