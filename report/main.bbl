@@ -2069,6 +2069,52 @@
       \verb https://proceedings.neurips.cc/paper_files/paper/2007/file/013a006f03dbc5392effeb8f18fda755-Paper.pdf
       \endverb
     \endentry
+    \entry{anom_rev}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4a742bada01b9a54aa361c425bdc817d}{%
+           family={Schmidl},
+           familyi={S\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=57c098baaa906cd941d31b83350f2fe5}{%
+           family={Wenig},
+           familyi={W\bibinitperiod},
+           given={Phillip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=7a50a572ebbc65b289cc3df3ee2cba96}{%
+           family={Papenbrock},
+           familyi={P\bibinitperiod},
+           given={Thorsten},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {VLDB Endowment}%
+      }
+      \strng{namehash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
+      \strng{fullhash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
+      \strng{bibnamehash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
+      \strng{authorbibnamehash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
+      \strng{authornamehash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
+      \strng{authorfullhash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
+      \field{extraname}{1}
+      \field{labelalpha}{SWP22}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proc. VLDB Endow.}
+      \field{month}{5}
+      \field{number}{9}
+      \field{title}{Anomaly detection in time series: a comprehensive evaluation}
+      \field{volume}{15}
+      \field{year}{2022}
+      \field{pages}{1779\bibrangedash 1797}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.14778/3538598.3538602
+      \endverb
+    \endentry
     \entry{schmidl2022anomaly}{article}{}
       \name{author}{3}{}{%
         {{hash=4a742bada01b9a54aa361c425bdc817d}{%
@@ -2096,9 +2142,11 @@
       \strng{authorbibnamehash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
       \strng{authornamehash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
       \strng{authorfullhash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
+      \field{extraname}{2}
       \field{labelalpha}{SWP22}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extraalpha}{2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the VLDB Endowment}
@@ -2224,6 +2272,27 @@
       \field{year}{2022}
       \verb{eprint}
       \verb 2011.07018
+      \endverb
+    \endentry
+    \entry{aami}{inbook}{}
+      \field{labelalpha}{13}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ANSI/AAMI EC57:2012/(R)2020; Testing and reporting performance results of cardiac rhythm and ST segment measurement algorithms}
+      \field{title}{Testing and reporting performance results of cardiac rhythm and ST segment measurement algorithms}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.2345/9781570204784.ch1
+      \endverb
+      \verb{eprint}
+      \verb https://array.aami.org/doi/pdf/10.2345/9781570204784.ch1
+      \endverb
+      \verb{urlraw}
+      \verb https://array.aami.org/doi/abs/10.2345/9781570204784.ch1
+      \endverb
+      \verb{url}
+      \verb https://array.aami.org/doi/abs/10.2345/9781570204784.ch1
       \endverb
     \endentry
     \entry{wang2020accurate}{inproceedings}{}
