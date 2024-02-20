@@ -3,24 +3,18 @@
 This chapter gives a broad overview of different ML-based data generation algorithms. In particular, two algorithms will be explained in more detail that serve as a basis for the subsequent task of ECG time series data generation.
 
 \subsection{Overview}
-    \begin{itemize}
-        \item Data generation in general
-        \item what is special about time series
-        \item what about Privacy
-        \item choice of models
-    \end{itemize}
 
 Time series data are sequences of data points in which there is a notion of time or ordering. Unlike tabular data, where each column corresponds to one feature, but it does not matter in which order one treats the different features. Time series are ubiquitous, common examples include weather data, financial transactions, energy consumption over time, stock prices etc.
 
 We have chosen two architectures from the state of the art, that we will adapt to work on time series data. The first model is an example of a feature-based method, where a simple generative model is trained to map from a noise distribution to the data distribution. This is done by comparing the features of the synthetic data (or a suitable transformation thereof) with those of the original data. One particular instance of this class, DP-MERF \parencite{dpmerf}, has shown to give efficient and accurate results. Making this algorithm differentially private is straight-forward, since the loss function here can be separated into a term that is dependent on the original data and one that is not. So one only needs to introduce differential private noise to the data-dependent term once.
 
 
-The second model follows a GAN-based approach. GANs introduced by Goodfellow et. al ???REF have been studied extensively in recent works as they have shown promising results in the field of image generation ??REF. They consist of two networks, a generator and a discriminator, where those two networks play a zero-sum game: the generator aims to generate authentic data whereas the discriminator aims to distinguish between generated and real data.
+The second model follows a GAN-based approach. GANs introduced by Goodfellow et. al \parencite{gan_og} have been studied extensively in recent works as they have shown promising results in the field of image generation. They consist of two networks, a generator and a discriminator, where those two networks play a zero-sum game: the generator aims to generate authentic data whereas the discriminator aims to distinguish between generated and real data.
 
 
 \subsection{DP-MERF}
 
-DP-MERF \parencite{dpmerf} is an efficient all purpose data generation algorithm that is based on minimising the so-called Maximum Mean Discrepancy (MMD) between the real and the synthetic data distributions. It employs a so-called kernel mean embedding to transform the underlying probability distribution of the original data into a reproducing kernel hilbert space (RKHS). The distance between two distributions in the RKHS is then measured by the MMD. The authors mainly verified their results using tabular data like ????, but also image data, notably the MNIST ???CITE data set. It has not been used for time series data, but we will consider this data generation for generating time series data in this thesis, because according to a recent survey \parencite{hu2023sok}, DP-MERF delivers the best all purpose data generation performance.
+DP-MERF \parencite{dpmerf} is an efficient all purpose data generation algorithm that is based on minimising the so-called Maximum Mean Discrepancy (MMD) between the real and the synthetic data distributions. It employs a so-called kernel mean embedding to transform the underlying probability distribution of the original data into a reproducing kernel hilbert space (RKHS). The distance between two distributions in the RKHS is then measured by the MMD. The authors mainly verified their results using tabular data like the isolet dataset\footnote{see https://archive.ics.uci.edu/dataset/54/isolet} but also image data, notably the MNIST \footnote{see http://yann.lecun.com/exdb/mnist/} data set. It has not been used for time series data, but we will consider this data generation for generating time series data in this thesis, because according to a recent survey \parencite{hu2023sok}, DP-MERF delivers the best all purpose data generation performance.
 
 \subsubsection{Maximum Mean Discrepancy}
 There are different ways to measure the "distance" between two distributions $P$ and $Q$. On popular metric is the Maximum Mean Discrepancy (MMD) between $P$ and $Q$, where the random variables are projected into another feature space and the expected values are compared to each other in this space.
@@ -32,18 +26,18 @@ There are different ways to measure the "distance" between two distributions $P$
     \end{align}
 \end{definition}
 
-Some "easy" features maps $\phi$ are for example:
+Some ``easy'' features maps $\phi$ are for example:
 \begin{ex}
     Let $P$ and $Q$ some distributions over $\mathcal{X}$ and random variables $X \sim P$, $Y \sim Q$ given.
     \begin{itemize}
-        \item \textbf{Identity kernel}: $\mathcal{X}=\mathcal{H}=\mathbb{R}^d$ and $\phi(x)=x$, then we have:
+        \item \textbf{Identity feature}: $\mathcal{X}=\mathcal{H}=\mathbb{R}^d$ and $\phi(x)=x$, then we have:
         \begin{align}
             MMD(P,Q) &= || \mathbb{E}[\phi(X)] - \mathbb{E}[\phi(Y)] ||_\mathcal{H} \nonumber \\
             &= || \mathbb{E}[X] - \mathbb{E}[Y] ||_{\mathbb{R}^d}
         \end{align}
         So we only compare the two distributions in terms of their means. 
 
-        \item \textbf{Quadratic kernel}: $\mathcal{X}=\mathbb{R}$ $\mathcal{H}=\mathbb{R}^2$ and $\phi(x)=(x, x^2)$, then we have:
+        \item \textbf{Quadratic features}: $\mathcal{X}=\mathbb{R}$ $\mathcal{H}=\mathbb{R}^2$ and $\phi(x)=(x, x^2)$, then we have:
         \begin{align}
             MMD(P,Q) &= || \mathbb{E}[\phi(X)] - \mathbb{E}[\phi(Y)] ||_\mathcal{H} \nonumber \\
             &= || \mathbb{E}[(X, X^2)] - \mathbb{E}[(Y, Y^2)] ||_\mathcal{H} \nonumber \\
@@ -55,11 +49,10 @@ Some "easy" features maps $\phi$ are for example:
             &= \sqrt{(\mathbb{E}[X] - \mathbb{E}[Y])^2 - (\mathbb{E}[X^2] - \mathbb{E}[Y^2])^2}
         \end{align}
         So here we compare the two distributions in terms of their means and their variance (or first and second moments respectively).
-        \item \textbf{Gaussian kernel} ????
     \end{itemize}
 \end{ex}
 
-Now instead of computing a possibly high or even infinite dimensional transformation $\phi$ one can use the well-known kernel trick ????REF. Let $k(x,y)=<\phi(x), \phi(y)>_{\mathcal{H}}$ be a kernel with corresponding reproducing kernel hilbert space $\mathcal{H}$, then the computation of the MMD simplifies to:
+Now instead of computing a possibly high or even infinite dimensional transformation $\phi$ one can use the well-known kernel trick \parencite{Scholkopf2001AGR}. Let $k(x,y)=<\phi(x), \phi(y)>_{\mathcal{H}}$ be a kernel with corresponding reproducing kernel hilbert space $\mathcal{H}$, then the computation of the MMD simplifies to:
 
 \begin{align}
     MMD^2(P,Q) &= || \mathbb{E}[\phi(X)] - \mathbb{E}[\phi(Y)] ||^2_\mathcal{H} \nonumber \\
@@ -69,6 +62,13 @@ Now instead of computing a possibly high or even infinite dimensional transforma
 \end{align}
 
 Where we introduced independent random variables $X,X' \sim P$, $Y,Y' \sim Q$.
+
+In particular, this avoids computation in very high or even infinite dimensional spaces. A popular choice for the kernel is the
+
+\begin{ex}[Gaussian Kernel]
+    Let us define $k(x,y)=e^{\frac{||x-y||^2_2}{2}}$. This corresponds to an infinite-dimensional feature space, as can been seen with the following computation:
+    \colorbox{red}{tba}
+\end{ex}
 
 \subsubsection{Random Fourier Features}
 

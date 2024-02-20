@@ -1,13 +1,25 @@
 \babel@toc {english}{}\relax 
 \contentsline {figure}{\numberline {1}{\ignorespaces Different stages to add DP noise according to \blx@tocontentsinit {0}\parencite {wang2023differential}\relax }}{4}{figure.caption.10}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Architecture of RTSGAN from \blx@tocontentsinit {0}\parencite {pei2021towards}\relax }}{19}{figure.caption.16}%
-\contentsline {figure}{\numberline {3}{\ignorespaces AE-(dp)MERF architecture\relax }}{20}{figure.caption.17}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Architecture of AE-(dp)WGAN\relax }}{22}{figure.caption.18}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Excerpt from one ECG data sample, where the R peaks are highlighted\relax }}{23}{figure.caption.19}%
-\contentsline {figure}{\numberline {6}{\ignorespaces heart beat samples\relax }}{24}{figure.caption.20}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Architecture of baseline model\relax }}{26}{figure.caption.22}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Loss over epoch for baseline model\relax }}{26}{figure.caption.24}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Regular test sample vs. reconstructed sample\relax }}{27}{figure.caption.25}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Anomalous test sample vs. reconstructed sample\relax }}{27}{figure.caption.26}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Distribution of reconstruction error for regular and anomalous samples in the validation set.\relax }}{28}{figure.caption.28}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Percentages of correctly classified samples based on different threshold values\relax }}{29}{figure.caption.29}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Architecture of RTSGAN from \blx@tocontentsinit {0}\parencite {pei2021towards}\relax }}{20}{figure.caption.16}%
+\contentsline {figure}{\numberline {3}{\ignorespaces AE-(dp)MERF architecture\relax }}{21}{figure.caption.17}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Architecture of AE-(dp)WGAN\relax }}{23}{figure.caption.18}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Excerpt from one ECG data sample, where the R peaks are highlighted\relax }}{24}{figure.caption.19}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Schemativ represetation of a regular ECG wave, taken from \href {https://en.wikipedia.org/wiki/QRS_complex}{wikipedia}\relax }}{25}{figure.caption.20}%
+\contentsline {figure}{\numberline {7}{\ignorespaces heart beat samples\relax }}{25}{figure.caption.21}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Division of the private data set into training, test and validation set\relax }}{26}{figure.caption.22}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Architecture of baseline model\relax }}{27}{figure.caption.23}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Loss over epoch for baseline model together with loss on validation set\relax }}{28}{figure.caption.25}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Regular test sample vs. reconstructed sample\relax }}{29}{figure.caption.26}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Distribution of reconstruction error for regular and anomalous samples in the validation set.\relax }}{29}{figure.caption.29}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Anomalous test sample vs. reconstructed sample\relax }}{30}{figure.caption.27}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Percentages of correctly classified samples based on different threshold values\relax }}{31}{figure.caption.30}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Generated regular heartbeats by AE-MERF model\relax }}{33}{figure.caption.34}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Loss over epoch for baseline model together with loss on validation set\relax }}{34}{figure.caption.35}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Caption\relax }}{34}{figure.caption.36}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Caption\relax }}{34}{figure.caption.36}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Generated regular heartbeats by AE-WGAN model\relax }}{35}{figure.caption.39}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Loss over epoch for AE-WGAN model together with loss on validation set\relax }}{36}{figure.caption.40}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Caption\relax }}{36}{figure.caption.41}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Caption\relax }}{36}{figure.caption.41}%
+\contentsline {figure}{\numberline {23}{\ignorespaces AE-DPMERF generated samples with different $\epsilon $, the lower the value the higher the privacy guarantees\relax }}{38}{figure.caption.43}%
+\contentsline {figure}{\numberline {24}{\ignorespaces AE-DPWGAN generated samples with different $\epsilon $, the lower the value the higher the privacy guarantees\relax }}{39}{figure.caption.45}%

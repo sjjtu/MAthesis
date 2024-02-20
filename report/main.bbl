@@ -662,6 +662,37 @@
       \verb https://api.semanticscholar.org/CorpusID:202712887
       \endverb
     \endentry
+    \entry{desai2022arrhythmias}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=5edeea257993a84e8daa5af72c709708}{%
+           family={Desai},
+           familyi={D\bibinitperiod},
+           given={Dhaval\bibnamedelima S},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=6d59ad3c835891ed4e71fbecfb4f4cf2}{%
+           family={Hajouli},
+           familyi={H\bibinitperiod},
+           given={Said},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {StatPearls Publishing}%
+      }
+      \strng{namehash}{3793538f54db5347b16575e22e2cc671}
+      \strng{fullhash}{3793538f54db5347b16575e22e2cc671}
+      \strng{bibnamehash}{3793538f54db5347b16575e22e2cc671}
+      \strng{authorbibnamehash}{3793538f54db5347b16575e22e2cc671}
+      \strng{authornamehash}{3793538f54db5347b16575e22e2cc671}
+      \strng{authorfullhash}{3793538f54db5347b16575e22e2cc671}
+      \field{labelalpha}{DH22}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{StatPearls [Internet]}
+      \field{title}{Arrhythmias}
+      \field{year}{2022}
+    \endentry
     \entry{du2019robust}{misc}{}
       \name{author}{3}{}{%
         {{hash=6989be56341f6cbc885766e0dd067a4b}{%
@@ -798,6 +829,43 @@
       \field{year}{2014}
       \field{pages}{211\bibrangedash 407}
       \range{pages}{197}
+    \endentry
+    \entry{esteban2017realvalued}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=517370b327f079c29c38bdc28b81b441}{%
+           family={Esteban},
+           familyi={E\bibinitperiod},
+           given={Cristóbal},
+           giveni={C\bibinitperiod}}}%
+        {{hash=adab195ca432a1aea9dc8ef9e5339fc5}{%
+           family={Hyland},
+           familyi={H\bibinitperiod},
+           given={Stephanie\bibnamedelima L.},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=ca596a0a9d87ca9f7999db4d71c7e577}{%
+           family={Rätsch},
+           familyi={R\bibinitperiod},
+           given={Gunnar},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{c364be3164dbae773df3b5d9de39e025}
+      \strng{fullhash}{c364be3164dbae773df3b5d9de39e025}
+      \strng{bibnamehash}{c364be3164dbae773df3b5d9de39e025}
+      \strng{authorbibnamehash}{c364be3164dbae773df3b5d9de39e025}
+      \strng{authornamehash}{c364be3164dbae773df3b5d9de39e025}
+      \strng{authorfullhash}{c364be3164dbae773df3b5d9de39e025}
+      \field{labelalpha}{EHR17}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{stat.ML}
+      \field{eprinttype}{arXiv}
+      \field{title}{Real-valued (Medical) Time Series Generation with Recurrent Conditional GANs}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1706.02633
+      \endverb
     \endentry
     \entry{feldman2021does}{misc}{}
       \name{author}{1}{}{%
@@ -1057,12 +1125,6 @@
       \field{title}{Generative Adversarial Nets}
       \field{volume}{27}
       \field{year}{2014}
-      \verb{urlraw}
-      \verb https://proceedings.neurips.cc/paper_files/paper/2014/file/5ca3e9b122f61f8f06494c97b1afccf3-Paper.pdf
-      \endverb
-      \verb{url}
-      \verb https://proceedings.neurips.cc/paper_files/paper/2014/file/5ca3e9b122f61f8f06494c97b1afccf3-Paper.pdf
-      \endverb
     \endentry
     \entry{gui2020review}{misc}{}
       \name{author}{5}{}{%
@@ -2157,6 +2219,45 @@
       \field{pages}{1779\bibrangedash 1797}
       \range{pages}{19}
     \endentry
+    \entry{Scholkopf2001AGR}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=a8ec77afd672acfe7820edd22821493e}{%
+           family={Scholkopf},
+           familyi={S\bibinitperiod},
+           given={Bernhard},
+           giveni={B\bibinitperiod}}}%
+        {{hash=9b0a3696222e14841b39c605ee99e24b}{%
+           family={Herbrich},
+           familyi={H\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a4d2eb3aadfce48c1b00303f0988e905}{%
+           family={Smola},
+           familyi={S\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{b3416e9c9fd088f72a63f0b4ebc04127}
+      \strng{fullhash}{b3416e9c9fd088f72a63f0b4ebc04127}
+      \strng{bibnamehash}{b3416e9c9fd088f72a63f0b4ebc04127}
+      \strng{authorbibnamehash}{b3416e9c9fd088f72a63f0b4ebc04127}
+      \strng{authornamehash}{b3416e9c9fd088f72a63f0b4ebc04127}
+      \strng{authorfullhash}{b3416e9c9fd088f72a63f0b4ebc04127}
+      \field{labelalpha}{SHS01}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{COLT/EuroCOLT}
+      \field{title}{A Generalized Representer Theorem}
+      \field{year}{2001}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:9256459
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:9256459
+      \endverb
+    \endentry
     \entry{aimed3}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=bc286b8b5c84390be3ec146b9070a808}{%
@@ -2279,14 +2380,11 @@
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labeltitlesource}{title}
-      \field{booktitle}{ANSI/AAMI EC57:2012/(R)2020; Testing and reporting performance results of cardiac rhythm and ST segment measurement algorithms}
+      \field{booktitle}{ANSI/AAMI EC57:2012/(R)2020}
       \field{title}{Testing and reporting performance results of cardiac rhythm and ST segment measurement algorithms}
       \field{year}{2013}
       \verb{doi}
       \verb 10.2345/9781570204784.ch1
-      \endverb
-      \verb{eprint}
-      \verb https://array.aami.org/doi/pdf/10.2345/9781570204784.ch1
       \endverb
       \verb{urlraw}
       \verb https://array.aami.org/doi/abs/10.2345/9781570204784.ch1
@@ -2520,6 +2618,64 @@
       \field{pages}{149\bibrangedash 153}
       \range{pages}{5}
     \endentry
+    \entry{wfdb}{software}{}
+      \name{author}{6}{}{%
+        {{hash=924aa3d6922c6acb9622d8b3473d0de8}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=183f7e2352af66254d28591203259aa6}{%
+           family={McCullum},
+           familyi={M\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=e6730bc6d9d28966c86cf301050946e1}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=39a3f4ebf645a00e0a352d9d27652bb1}{%
+           family={Pollard},
+           familyi={P\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f2cfce9bdc95ab532b2267dbf529bc0f}{%
+           family={Gow},
+           familyi={G\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=9668aeff5bf3f6a33cdb9bdd222bba18}{%
+           family={Moody},
+           familyi={M\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{664c9d7f27610f6c6dcd4cc5e4ee9830}
+      \strng{fullhash}{66b97da914bd7e68d238e52d7e41f5dc}
+      \strng{bibnamehash}{66b97da914bd7e68d238e52d7e41f5dc}
+      \strng{authorbibnamehash}{66b97da914bd7e68d238e52d7e41f5dc}
+      \strng{authornamehash}{664c9d7f27610f6c6dcd4cc5e4ee9830}
+      \strng{authorfullhash}{66b97da914bd7e68d238e52d7e41f5dc}
+      \field{extraname}{1}
+      \field{labelalpha}{Xie+23}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{month}{1}
+      \field{title}{Waveform Database Software Package for Python}
+      \field{version}{4.1.0}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://physionet.org/content/wfdb-python/4.1.0/
+      \endverb
+      \verb{url}
+      \verb https://physionet.org/content/wfdb-python/4.1.0/
+      \endverb
+    \endentry
     \entry{xie2018differentially}{misc}{}
       \name{author}{5}{}{%
         {{hash=13a902f7b2ad1b21ac2ec69bc1d97eec}{%
@@ -2554,6 +2710,7 @@
       \strng{authorbibnamehash}{4c4c075c4128a232e6c560b7a4455cbc}
       \strng{authornamehash}{e3937e9312553aee7d48f36f42c22e2c}
       \strng{authorfullhash}{4c4c075c4128a232e6c560b7a4455cbc}
+      \field{extraname}{2}
       \field{labelalpha}{Xie+18}
       \field{sortinit}{X}
       \field{sortinithash}{1965c258adceecf23ce3d67b05113442}

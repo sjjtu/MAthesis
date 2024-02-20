@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.25)  19 FEB 2024 09:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.25)  20 FEB 2024 22:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -626,74 +626,134 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip69
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip70
+\multirow@cntb=\count339
+\multirow@dima=\skip71
+\bigstrutjot=\dimen286
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen287
+\pgfarrowlength=\dimen288
+\pgfarrowwidth=\dimen289
+\pgfarrowlinewidth=\dimen290
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.callouts.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box70
+\pgfnodeparttwobox=\box71
+\pgfnodepartthreebox=\box72
+\pgfnodepartfourbox=\box73
+\pgfnodeparttwentybox=\box74
+\pgfnodepartnineteenbox=\box75
+\pgfnodeparteighteenbox=\box76
+\pgfnodepartseventeenbox=\box77
+\pgfnodepartsixteenbox=\box78
+\pgfnodepartfifteenbox=\box79
+\pgfnodepartfourteenbox=\box80
+\pgfnodepartthirteenbox=\box81
+\pgfnodeparttwelvebox=\box82
+\pgfnodepartelevenbox=\box83
+\pgfnodeparttenbox=\box84
+\pgfnodepartninebox=\box85
+\pgfnodeparteightbox=\box86
+\pgfnodepartsevenbox=\box87
+\pgfnodepartsixbox=\box88
+\pgfnodepartfivebox=\box89
+))) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 Package csquotes Info: Allocating character ".
-\c@thm=\count339
+\c@thm=\count340
  (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
  (/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count340
+\lrq@indent=\count341
  (/usr/share/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count341
-\c@listtotal=\count342
-\c@listcount=\count343
-\c@liststart=\count344
-\c@liststop=\count345
-\c@citecount=\count346
-\c@citetotal=\count347
-\c@multicitecount=\count348
-\c@multicitetotal=\count349
-\c@instcount=\count350
-\c@maxnames=\count351
-\c@minnames=\count352
-\c@maxitems=\count353
-\c@minitems=\count354
-\c@citecounter=\count355
-\c@maxcitecounter=\count356
-\c@savedcitecounter=\count357
-\c@uniquelist=\count358
-\c@uniquename=\count359
-\c@refsection=\count360
-\c@refsegment=\count361
-\c@maxextratitle=\count362
-\c@maxextratitleyear=\count363
-\c@maxextraname=\count364
-\c@maxextradate=\count365
-\c@maxextraalpha=\count366
-\c@abbrvpenalty=\count367
-\c@highnamepenalty=\count368
-\c@lownamepenalty=\count369
-\c@maxparens=\count370
-\c@parenlevel=\count371
-\blx@tempcnta=\count372
-\blx@tempcntb=\count373
-\blx@tempcntc=\count374
-\c@blx@maxsection=\count375
-\blx@maxsegment@0=\count376
-\blx@notetype=\count377
-\blx@parenlevel@text=\count378
-\blx@parenlevel@foot=\count379
-\blx@sectionciteorder@0=\count380
-\blx@sectionciteorderinternal@0=\count381
-\blx@entrysetcounter=\count382
-\blx@biblioinstance=\count383
-\labelnumberwidth=\skip70
-\labelalphawidth=\skip71
-\biblabelsep=\skip72
-\bibitemsep=\skip73
-\bibnamesep=\skip74
-\bibinitsep=\skip75
-\bibparsep=\skip76
-\bibhang=\skip77
+\c@tabx@nest=\count342
+\c@listtotal=\count343
+\c@listcount=\count344
+\c@liststart=\count345
+\c@liststop=\count346
+\c@citecount=\count347
+\c@citetotal=\count348
+\c@multicitecount=\count349
+\c@multicitetotal=\count350
+\c@instcount=\count351
+\c@maxnames=\count352
+\c@minnames=\count353
+\c@maxitems=\count354
+\c@minitems=\count355
+\c@citecounter=\count356
+\c@maxcitecounter=\count357
+\c@savedcitecounter=\count358
+\c@uniquelist=\count359
+\c@uniquename=\count360
+\c@refsection=\count361
+\c@refsegment=\count362
+\c@maxextratitle=\count363
+\c@maxextratitleyear=\count364
+\c@maxextraname=\count365
+\c@maxextradate=\count366
+\c@maxextraalpha=\count367
+\c@abbrvpenalty=\count368
+\c@highnamepenalty=\count369
+\c@lownamepenalty=\count370
+\c@maxparens=\count371
+\c@parenlevel=\count372
+\blx@tempcnta=\count373
+\blx@tempcntb=\count374
+\blx@tempcntc=\count375
+\c@blx@maxsection=\count376
+\blx@maxsegment@0=\count377
+\blx@notetype=\count378
+\blx@parenlevel@text=\count379
+\blx@parenlevel@foot=\count380
+\blx@sectionciteorder@0=\count381
+\blx@sectionciteorderinternal@0=\count382
+\blx@entrysetcounter=\count383
+\blx@biblioinstance=\count384
+\labelnumberwidth=\skip72
+\labelalphawidth=\skip73
+\biblabelsep=\skip74
+\bibitemsep=\skip75
+\bibnamesep=\skip76
+\bibinitsep=\skip77
+\bibparsep=\skip78
+\bibhang=\skip79
 \blx@bcfin=\read4
 \blx@bcfout=\write4
 \blx@langwohyphens=\language4
-\c@mincomprange=\count384
-\c@maxcomprange=\count385
-\c@mincompwidth=\count386
+\c@mincomprange=\count385
+\c@maxcomprange=\count386
+\c@mincompwidth=\count387
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -703,88 +763,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'alphabetic.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count387
-\c@savedafterword=\count388
-\c@annotator=\count389
-\c@savedannotator=\count390
-\c@author=\count391
-\c@savedauthor=\count392
-\c@bookauthor=\count393
-\c@savedbookauthor=\count394
-\c@commentator=\count395
-\c@savedcommentator=\count396
-\c@editor=\count397
-\c@savededitor=\count398
-\c@editora=\count399
-\c@savededitora=\count400
-\c@editorb=\count401
-\c@savededitorb=\count402
-\c@editorc=\count403
-\c@savededitorc=\count404
-\c@foreword=\count405
-\c@savedforeword=\count406
-\c@holder=\count407
-\c@savedholder=\count408
-\c@introduction=\count409
-\c@savedintroduction=\count410
-\c@namea=\count411
-\c@savednamea=\count412
-\c@nameb=\count413
-\c@savednameb=\count414
-\c@namec=\count415
-\c@savednamec=\count416
-\c@translator=\count417
-\c@savedtranslator=\count418
-\c@shortauthor=\count419
-\c@savedshortauthor=\count420
-\c@shorteditor=\count421
-\c@savedshorteditor=\count422
-\c@labelname=\count423
-\c@savedlabelname=\count424
-\c@institution=\count425
-\c@savedinstitution=\count426
-\c@lista=\count427
-\c@savedlista=\count428
-\c@listb=\count429
-\c@savedlistb=\count430
-\c@listc=\count431
-\c@savedlistc=\count432
-\c@listd=\count433
-\c@savedlistd=\count434
-\c@liste=\count435
-\c@savedliste=\count436
-\c@listf=\count437
-\c@savedlistf=\count438
-\c@location=\count439
-\c@savedlocation=\count440
-\c@organization=\count441
-\c@savedorganization=\count442
-\c@origlocation=\count443
-\c@savedoriglocation=\count444
-\c@origpublisher=\count445
-\c@savedorigpublisher=\count446
-\c@publisher=\count447
-\c@savedpublisher=\count448
-\c@language=\count449
-\c@savedlanguage=\count450
-\c@origlanguage=\count451
-\c@savedoriglanguage=\count452
-\c@pageref=\count453
-\c@savedpageref=\count454
-\shorthandwidth=\skip78
-\shortjournalwidth=\skip79
-\shortserieswidth=\skip80
-\shorttitlewidth=\skip81
-\shortauthorwidth=\skip82
-\shorteditorwidth=\skip83
-\locallabelnumberwidth=\skip84
-\locallabelalphawidth=\skip85
-\localshorthandwidth=\skip86
-\localshortjournalwidth=\skip87
-\localshortserieswidth=\skip88
-\localshorttitlewidth=\skip89
-\localshortauthorwidth=\skip90
-\localshorteditorwidth=\skip91
+\c@afterword=\count388
+\c@savedafterword=\count389
+\c@annotator=\count390
+\c@savedannotator=\count391
+\c@author=\count392
+\c@savedauthor=\count393
+\c@bookauthor=\count394
+\c@savedbookauthor=\count395
+\c@commentator=\count396
+\c@savedcommentator=\count397
+\c@editor=\count398
+\c@savededitor=\count399
+\c@editora=\count400
+\c@savededitora=\count401
+\c@editorb=\count402
+\c@savededitorb=\count403
+\c@editorc=\count404
+\c@savededitorc=\count405
+\c@foreword=\count406
+\c@savedforeword=\count407
+\c@holder=\count408
+\c@savedholder=\count409
+\c@introduction=\count410
+\c@savedintroduction=\count411
+\c@namea=\count412
+\c@savednamea=\count413
+\c@nameb=\count414
+\c@savednameb=\count415
+\c@namec=\count416
+\c@savednamec=\count417
+\c@translator=\count418
+\c@savedtranslator=\count419
+\c@shortauthor=\count420
+\c@savedshortauthor=\count421
+\c@shorteditor=\count422
+\c@savedshorteditor=\count423
+\c@labelname=\count424
+\c@savedlabelname=\count425
+\c@institution=\count426
+\c@savedinstitution=\count427
+\c@lista=\count428
+\c@savedlista=\count429
+\c@listb=\count430
+\c@savedlistb=\count431
+\c@listc=\count432
+\c@savedlistc=\count433
+\c@listd=\count434
+\c@savedlistd=\count435
+\c@liste=\count436
+\c@savedliste=\count437
+\c@listf=\count438
+\c@savedlistf=\count439
+\c@location=\count440
+\c@savedlocation=\count441
+\c@organization=\count442
+\c@savedorganization=\count443
+\c@origlocation=\count444
+\c@savedoriglocation=\count445
+\c@origpublisher=\count446
+\c@savedorigpublisher=\count447
+\c@publisher=\count448
+\c@savedpublisher=\count449
+\c@language=\count450
+\c@savedlanguage=\count451
+\c@origlanguage=\count452
+\c@savedoriglanguage=\count453
+\c@pageref=\count454
+\c@savedpageref=\count455
+\shorthandwidth=\skip80
+\shortjournalwidth=\skip81
+\shortserieswidth=\skip82
+\shorttitlewidth=\skip83
+\shortauthorwidth=\skip84
+\shorteditorwidth=\skip85
+\locallabelnumberwidth=\skip86
+\locallabelalphawidth=\skip87
+\localshorthandwidth=\skip88
+\localshortjournalwidth=\skip89
+\localshortserieswidth=\skip90
+\localshorttitlewidth=\skip91
+\localshortauthorwidth=\skip92
+\localshorteditorwidth=\skip93
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
  (/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def
@@ -794,19 +854,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count455
-\c@textcitetotal=\count456
-\c@textcitemaxnames=\count457
-\c@biburlbigbreakpenalty=\count458
-\c@biburlbreakpenalty=\count459
-\c@biburlnumpenalty=\count460
-\c@biburlucpenalty=\count461
-\c@biburllcpenalty=\count462
+\c@textcitecount=\count456
+\c@textcitetotal=\count457
+\c@textcitemaxnames=\count458
+\c@biburlbigbreakpenalty=\count459
+\c@biburlbreakpenalty=\count460
+\c@biburlnumpenalty=\count461
+\c@biburlucpenalty=\count462
+\c@biburllcpenalty=\count463
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count463
+\c@smartand=\count464
 )
 Package biblatex Info: Trying to load bibliography style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.bbx' found.
@@ -816,8 +876,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count464
-\c@bbx:relatedtotal=\count465
+\c@bbx:relatedcount=\count465
+\c@bbx:relatedtotal=\count466
 ))
 Package biblatex Info: Trying to load citation style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.cbx' found.
@@ -849,8 +909,8 @@ Package biblatex Info: Document encoding is UTF8 ....
 Package: expl3 2023-02-22 L3 programming layer (loader) 
  (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count466
-\l__pdf_internal_box=\box70
+\l__color_backend_stack_int=\count467
+\l__pdf_internal_box=\box90
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2023-02-22 L3 programming layer (loader) 
@@ -870,39 +930,75 @@ LaTeX Warning: Label `def:gm' multiply defined.
 
 LaTeX Warning: Label `def:gm@cref' multiply defined.
 
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label@cref' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count467
-\scratchdimen=\dimen286
-\scratchbox=\box71
-\nofMPsegments=\count468
-\nofMParguments=\count469
+\scratchcounter=\count468
+\scratchdimen=\dimen291
+\scratchbox=\box91
+\nofMPsegments=\count469
+\nofMParguments=\count470
 \everyMPshowfont=\toks50
-\MPscratchCnt=\count470
-\MPscratchDim=\dimen287
-\MPnumerator=\count471
-\makeMPintoPDFobject=\count472
+\MPscratchCnt=\count471
+\MPscratchDim=\dimen292
+\MPnumerator=\count472
+\makeMPintoPDFobject=\count473
 \everyMPtoPDFconversion=\toks51
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -952,13 +1048,13 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 76.
+Package hyperref Info: Link coloring OFF on input line 79.
 (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-Package csquotes Info: Making character " active on input line 76.
-\c@lstlisting=\count473
+Package csquotes Info: Making character " active on input line 79.
+\c@lstlisting=\count474
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -972,8 +1068,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 76.
-Package biblatex Info: Reference segment=0 on input line 76.
+Package biblatex Info: Reference section=0 on input line 79.
+Package biblatex Info: Reference segment=0 on input line 79.
  (./chapters/titlepage.tex
 <pictures/KTH_Royal_Institute_of_Technology_logo.svg.png, id=151, 1204.5pt x 1204.5pt>
 File: pictures/KTH_Royal_Institute_of_Technology_logo.svg.png Graphic file (type png)
@@ -988,17 +1084,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
                    \relax 
 l.2 \section
             *{STATUTORY DECLARATION} [1])
-Underfull \hbox (badness 10000) in paragraph at lines 3--81
+Underfull \hbox (badness 10000) in paragraph at lines 3--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--81
+Underfull \hbox (badness 10000) in paragraph at lines 3--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--81
+Underfull \hbox (badness 10000) in paragraph at lines 3--84
 
  []
 
@@ -1006,7 +1102,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--81
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.81 	\tableofcontents
+l.84 	\tableofcontents
                        [2
 
 ] (./main.toc
@@ -1021,7 +1117,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.39 ...tion}{\numberline {7}Outro}{32}{section.7}
+l.39 ...tion}{\numberline {7}Outro}{42}{section.7}
                                                   % [3
 
 ])
@@ -1032,7 +1128,7 @@ l.39 ...tion}{\numberline {7}Outro}{32}{section.7}
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.83 	\clearpage
+l.86 	\clearpage
                  [4] (./chapters/notation.tex) [1
 
 
@@ -1047,26 +1143,26 @@ l.83 	\clearpage
 
 
 ] [2]
-<../images//placeholder.png, id=318, 401.5pt x 401.5pt>
+<../images//placeholder.png, id=348, 401.5pt x 401.5pt>
 File: ../images//placeholder.png Graphic file (type png)
 <use ../images//placeholder.png>
 Package pdftex.def Info: ../images//placeholder.png  used on input line 46.
 (pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
  [3] [4 <../images//placeholder.png>] [5{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [6]) (./chapters/chapter2-thDP.tex [7] [8
 
-] [9] [10] [11]) (./chapters/chapter3.tex [12] [13
+] [9] [10] [11] [12]) (./chapters/chapter3.tex [13] [14
 
-] [14]
-Overfull \hbox (4.47127pt too wide) in paragraph at lines 62--63
-\OT1/cmr/m/n/12 tion $\OML/cmm/m/it/12 ^^^$ \OT1/cmr/m/n/12 one can use the well-known ker-nel trick ????REF. Let $\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y\OT1/cmr/m/n/12 ) =\OML/cmm/m/it/12 < ^^^\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; ^^^\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 >[]$
+] [15]
+Overfull \hbox (0.28471pt too wide) in paragraph at lines 55--56
+\OT1/cmr/m/n/12 tion $\OML/cmm/m/it/12 ^^^$ \OT1/cmr/m/n/12 one can use the well-known ker-nel trick [[]SHS01[]]. Let $\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y\OT1/cmr/m/n/12 ) =\OML/cmm/m/it/12 < ^^^\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; ^^^\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 >[]$
  []
 
 
-Overfull \hbox (28.15288pt too wide) detected at line 69
+Overfull \hbox (28.15288pt too wide) detected at line 62
 []
  []
 
-[15]
+[16]
 Overfull \hbox (37.08943pt too wide) detected at line 94
 []
  []
@@ -1076,22 +1172,18 @@ Overfull \hbox (11.8055pt too wide) in paragraph at lines 96--97
 []\OT1/cmr/m/n/12 more stuff: https://gregorygundersen.com/blog/2019/12/23/random-fourier-features/ 
  []
 
-[16] [17]
-<../images/placeholder.png, id=533, 401.5pt x 401.5pt>
+[17] [18] [19]
+<../images/placeholder.png, id=591, 401.5pt x 401.5pt>
 File: ../images/placeholder.png Graphic file (type png)
 <use ../images/placeholder.png>
 Package pdftex.def Info: ../images/placeholder.png  used on input line 149.
 (pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[18]) (./chapters/chapter4-models.tex [19 <../images/placeholder.png>]
+) (./chapters/chapter4-models.tex [20 <../images/placeholder.png>]
 File: ../images/placeholder.png Graphic file (type png)
 <use ../images/placeholder.png>
 Package pdftex.def Info: ../images/placeholder.png  used on input line 13.
 (pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
- [20
+ [21
 
 ]
 File: ../images/placeholder.png Graphic file (type png)
@@ -1102,72 +1194,176 @@ Package pdftex.def Info: ../images/placeholder.png  used on input line 34.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./chapters/chapter5-exp.tex [21] [22]
+) (./chapters/chapter5-exp.tex [22] [23]
+<../images//excerpt_ecg_rpeaks.png, id=631, 439.4016pt x 328.8285pt>
+File: ../images//excerpt_ecg_rpeaks.png Graphic file (type png)
+<use ../images//excerpt_ecg_rpeaks.png>
+Package pdftex.def Info: ../images//excerpt_ecg_rpeaks.png  used on input line 9.
+(pdftex.def)             Requested size: 307.57901pt x 230.17838pt.
+ [24
+
+ <../images//excerpt_ecg_rpeaks.png>]
+<../images//SinusRhythmLabels.png, id=640, 765.6103pt x 667.74469pt>
+File: ../images//SinusRhythmLabels.png Graphic file (type png)
+<use ../images//SinusRhythmLabels.png>
+Package pdftex.def Info: ../images//SinusRhythmLabels.png  used on input line 17.
+(pdftex.def)             Requested size: 229.68486pt x 200.32495pt.
 File: ../images/placeholder.png Graphic file (type png)
 <use ../images/placeholder.png>
-Package pdftex.def Info: ../images/placeholder.png  used on input line 9.
+Package pdftex.def Info: ../images/placeholder.png  used on input line 24.
 (pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
-File: ../images/placeholder.png Graphic file (type png)
-<use ../images/placeholder.png>
-Package pdftex.def Info: ../images/placeholder.png  used on input line 19.
-(pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[23
-
-] [24]
-File: ../images//placeholder.png Graphic file (type png)
-<use ../images//placeholder.png>
-Package pdftex.def Info: ../images//placeholder.png  used on input line 57.
-(pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: ../images//placeholder.png Graphic file (type png)
-<use ../images//placeholder.png>
-Package pdftex.def Info: ../images//placeholder.png  used on input line 67.
-(pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: ../images//placeholder.png Graphic file (type png)
-<use ../images//placeholder.png>
-Package pdftex.def Info: ../images//placeholder.png  used on input line 76.
-(pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: ../images//placeholder.png Graphic file (type png)
-<use ../images//placeholder.png>
-Package pdftex.def Info: ../images//placeholder.png  used on input line 85.
-(pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[25]
-File: ../images//placeholder.png Graphic file (type png)
-<use ../images//placeholder.png>
-Package pdftex.def Info: ../images//placeholder.png  used on input line 95.
-(pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+ [25 <../images//SinusRhythmLabels.png>]
+Overfull \hbox (3.53693pt too wide) in paragraph at lines 61--61
+ [][]\OT1/cmr/m/n/12 Anomalous: 
+ []
 
 [26]
 File: ../images//placeholder.png Graphic file (type png)
 <use ../images//placeholder.png>
-Package pdftex.def Info: ../images//placeholder.png  used on input line 103.
+Package pdftex.def Info: ../images//placeholder.png  used on input line 83.
 (pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
+ [27]
+<../images//loss_baseline.png, id=660, 409.7709pt x 328.8285pt>
+File: ../images//loss_baseline.png Graphic file (type png)
+<use ../images//loss_baseline.png>
+Package pdftex.def Info: ../images//loss_baseline.png  used on input line 93.
+(pdftex.def)             Requested size: 286.83768pt x 230.17838pt.
+<../images//rec_reguarl_samples_baseline.png, id=661, 455.301pt x 343.2825pt>
+File: ../images//rec_reguarl_samples_baseline.png Graphic file (type png)
+<use ../images//rec_reguarl_samples_baseline.png>
+Package pdftex.def Info: ../images//rec_reguarl_samples_baseline.png  used on input line 102.
+(pdftex.def)             Requested size: 318.70853pt x 240.2961pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27] [28]) (./chapters/chapter6-dis.tex [29] [30]) (./chapters/chapter7-outro.tex [31
+<../images//rec_anom_samples_baseline.png, id=663, 455.301pt x 343.2825pt>
+File: ../images//rec_anom_samples_baseline.png Graphic file (type png)
+<use ../images//rec_anom_samples_baseline.png>
+Package pdftex.def Info: ../images//rec_anom_samples_baseline.png  used on input line 111.
+(pdftex.def)             Requested size: 318.70853pt x 240.2961pt.
 
-]) [32
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[28 <../images//loss_baseline.png>]
+<../images//hist_threshold_baseline.png, id=671, 498.663pt x 328.8285pt>
+File: ../images//hist_threshold_baseline.png Graphic file (type png)
+<use ../images//hist_threshold_baseline.png>
+Package pdftex.def Info: ../images//hist_threshold_baseline.png  used on input line 121.
+(pdftex.def)             Requested size: 349.0617pt x 230.17838pt.
+ [29 <../images//rec_reguarl_samples_baseline.png> <../images//hist_threshold_baseline.png>]
+<../images//thres_plot_baseline.png, id=680, 430.0065pt x 328.8285pt>
+File: ../images//thres_plot_baseline.png Graphic file (type png)
+<use ../images//thres_plot_baseline.png>
+Package pdftex.def Info: ../images//thres_plot_baseline.png  used on input line 128.
+(pdftex.def)             Requested size: 301.00249pt x 230.17838pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30 <../images//rec_anom_samples_baseline.png>] [31 <../images//thres_plot_baseline.png>] [32]
+<../images//gen_aemerf.png, id=714, 455.301pt x 343.2825pt>
+File: ../images//gen_aemerf.png Graphic file (type png)
+<use ../images//gen_aemerf.png>
+Package pdftex.def Info: ../images//gen_aemerf.png  used on input line 196.
+(pdftex.def)             Requested size: 318.70853pt x 240.2961pt.
+<../images//loss_aemerf.png, id=716, 409.7709pt x 328.8285pt>
+File: ../images//loss_aemerf.png Graphic file (type png)
+<use ../images//loss_aemerf.png>
+Package pdftex.def Info: ../images//loss_aemerf.png  used on input line 204.
+(pdftex.def)             Requested size: 286.83768pt x 230.17838pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../images//hist_threshold_aemerf.png, id=717, 492.1587pt x 328.8285pt>
+File: ../images//hist_threshold_aemerf.png Graphic file (type png)
+<use ../images//hist_threshold_aemerf.png>
+Package pdftex.def Info: ../images//hist_threshold_aemerf.png  used on input line 214.
+(pdftex.def)             Requested size: 196.85999pt x 131.52907pt.
+
+Overfull \hbox (4.80519pt too wide) in paragraph at lines 214--215
+ [][] 
+ []
+
+<../images//thres_plot_aemerf.png, id=718, 409.7709pt x 328.8285pt>
+File: ../images//thres_plot_aemerf.png Graphic file (type png)
+<use ../images//thres_plot_aemerf.png>
+Package pdftex.def Info: ../images//thres_plot_aemerf.png  used on input line 220.
+(pdftex.def)             Requested size: 163.90546pt x 131.52907pt.
+[33 <../images//gen_aemerf.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../images//gen_aewgan.png, id=726, 455.301pt x 343.2825pt>
+File: ../images//gen_aewgan.png Graphic file (type png)
+<use ../images//gen_aewgan.png>
+Package pdftex.def Info: ../images//gen_aewgan.png  used on input line 252.
+(pdftex.def)             Requested size: 318.70853pt x 240.2961pt.
+[34 <../images//loss_aemerf.png> <../images//hist_threshold_aemerf.png> <../images//thres_plot_aemerf.png>]
+<../images//loss_aegwan.png, id=735, 400.3758pt x 326.6604pt>
+File: ../images//loss_aegwan.png Graphic file (type png)
+<use ../images//loss_aegwan.png>
+Package pdftex.def Info: ../images//loss_aegwan.png  used on input line 260.
+(pdftex.def)             Requested size: 280.26114pt x 228.6607pt.
+ [35 <../images//gen_aewgan.png>]
+<../images//hist_threshold_aewgan.png, id=742, 489.2679pt x 328.8285pt>
+File: ../images//hist_threshold_aewgan.png Graphic file (type png)
+<use ../images//hist_threshold_aewgan.png>
+Package pdftex.def Info: ../images//hist_threshold_aewgan.png  used on input line 268.
+(pdftex.def)             Requested size: 195.70369pt x 131.52907pt.
+
+Overfull \hbox (3.6489pt too wide) in paragraph at lines 268--269
+ [][] 
+ []
+
+<../images//thres_plot_aewgan.png, id=743, 409.7709pt x 340.3917pt>
+File: ../images//thres_plot_aewgan.png Graphic file (type png)
+<use ../images//thres_plot_aewgan.png>
+Package pdftex.def Info: ../images//thres_plot_aewgan.png  used on input line 274.
+(pdftex.def)             Requested size: 163.90546pt x 136.15425pt.
+[36 <../images//loss_aegwan.png> <../images//hist_threshold_aewgan.png> <../images//thres_plot_aewgan.png>]
+<../images//gen_aedpmerf_eps1.png, id=753, 455.301pt x 343.2825pt>
+File: ../images//gen_aedpmerf_eps1.png Graphic file (type png)
+<use ../images//gen_aedpmerf_eps1.png>
+Package pdftex.def Info: ../images//gen_aedpmerf_eps1.png  used on input line 290.
+(pdftex.def)             Requested size: 227.64993pt x 171.64082pt.
+<../images//gen_aedpmerf_eps05.png, id=754, 455.301pt x 343.2825pt>
+File: ../images//gen_aedpmerf_eps05.png Graphic file (type png)
+<use ../images//gen_aedpmerf_eps05.png>
+Package pdftex.def Info: ../images//gen_aedpmerf_eps05.png  used on input line 291.
+(pdftex.def)             Requested size: 227.64993pt x 171.64082pt.
+<../images//gen_aedpmerf_eps01.png, id=755, 455.301pt x 343.2825pt>
+File: ../images//gen_aedpmerf_eps01.png Graphic file (type png)
+<use ../images//gen_aedpmerf_eps01.png>
+Package pdftex.def Info: ../images//gen_aedpmerf_eps01.png  used on input line 292.
+(pdftex.def)             Requested size: 227.64993pt x 171.64082pt.
+<../images//gen_aedpmerf_eps001.png, id=756, 455.301pt x 343.2825pt>
+File: ../images//gen_aedpmerf_eps001.png Graphic file (type png)
+<use ../images//gen_aedpmerf_eps001.png>
+Package pdftex.def Info: ../images//gen_aedpmerf_eps001.png  used on input line 293.
+(pdftex.def)             Requested size: 227.64993pt x 171.64082pt.
+ [37]
+Overfull \vbox (25.7802pt too high) has occurred while \output is active []
+
+ [38 <../images//gen_aedpmerf_eps1.png> <../images//gen_aedpmerf_eps05.png> <../images//gen_aedpmerf_eps01.png> <../images//gen_aedpmerf_eps001.png>]
+<../images//gen_aedpwgan_eps35.png, id=770, 455.301pt x 343.2825pt>
+File: ../images//gen_aedpwgan_eps35.png Graphic file (type png)
+<use ../images//gen_aedpwgan_eps35.png>
+Package pdftex.def Info: ../images//gen_aedpwgan_eps35.png  used on input line 303.
+(pdftex.def)             Requested size: 318.70853pt x 240.2961pt.
+<../images//gen_aedpwgan_eps5.png, id=771, 455.301pt x 343.2825pt>
+File: ../images//gen_aedpwgan_eps5.png Graphic file (type png)
+<use ../images//gen_aedpwgan_eps5.png>
+Package pdftex.def Info: ../images//gen_aedpwgan_eps5.png  used on input line 304.
+(pdftex.def)             Requested size: 318.70853pt x 240.2961pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./chapters/chapter6-dis.tex [39 <../images//gen_aedpwgan_eps35.png> <../images//gen_aedpwgan_eps5.png>] [40]) (./chapters/chapter7-outro.tex [41
+
+]) [42
 
 ] (./chapters/9appendix.tex) [1
 
@@ -1176,73 +1372,84 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ]
-Overfull \hbox (6.32056pt too wide) in paragraph at lines 127--127
+Overfull \hbox (6.32056pt too wide) in paragraph at lines 130--130
 \OT1/cmr/m/n/12 ECG us-ing Gen-er-a-tive Ad-ver-sar-ial Net-works". In: \OT1/cmr/m/it/12 ArXiv \OT1/cmr/m/n/12 abs/1909.09150
  []
 
 
-Overfull \hbox (16.29352pt too wide) in paragraph at lines 127--127
+Overfull \hbox (16.29352pt too wide) in paragraph at lines 130--130
 \OT1/cmr/m/n/12 (2019). \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : []$\OT1/cmtt/m/n/12 https : / / api . semanticscholar . org / CorpusID : 202712887$[]\OT1/cmr/m/n/12 . 
  []
 
-[3]
-Overfull \hbox (158.33046pt too wide) in paragraph at lines 127--127
-\OT1/cmtt/m/n/12 proceedings . neurips . cc / paper _ files / paper / 2014 / file / 5ca3e9b122f61f8f06494c97b1afccf3 -[]
+
+Overfull \hbox (4.5389pt too wide) in paragraph at lines 130--130
+\OT1/cmr/m/it/12 Se-ries Gen-er-a-tion with Re-cur-rent Con-di-tional GANs\OT1/cmr/m/n/12 . 2017. arXiv: []$\OT1/cmtt/m/n/12 1706 .
  []
 
-
-Overfull \hbox (13.29752pt too wide) in paragraph at lines 127--127
+[3]
+Overfull \hbox (13.29752pt too wide) in paragraph at lines 130--130
 \OT1/cmr/m/it/12 na-tional Con-fer-ence on Ad-vanced Com-put-ing and Ap-pli-ca-tions (ACOMP)\OT1/cmr/m/n/12 .
  []
 
 
-Overfull \hbox (3.87883pt too wide) in paragraph at lines 127--127
+Overfull \hbox (3.87883pt too wide) in paragraph at lines 130--130
 \OT1/cmr/m/n/12 Prac-ti-cal Syn-thetic Data Gen-er-a-tion". In: \OT1/cmr/m/it/12 CoRR \OT1/cmr/m/n/12 abs/2002.11603 (2020).
  []
 
 [4]
-Overfull \hbox (40.68748pt too wide) in paragraph at lines 127--127
+Overfull \hbox (40.68748pt too wide) in paragraph at lines 130--130
 []\OT1/cmr/m/n/12 Kone^^Tcn^^Sy, J., McMa-han, B., and Ra-m-age, D. \OT1/cmr/m/it/12 Fed-er-ated Op-ti-miza-tion:Distributed
  []
 
 
-Overfull \hbox (4.51855pt too wide) in paragraph at lines 127--127
+Overfull \hbox (4.51855pt too wide) in paragraph at lines 130--130
 \OT1/cmr/m/it/12 Op-ti-miza-tion Be-yond the Dat-a-cen-ter\OT1/cmr/m/n/12 . 2015. arXiv: []$\OT1/cmtt/m/n/12 1511 . 03575$ [cs.LG][]\OT1/cmr/m/n/12 . 
  []
 
 [5]
-Overfull \hbox (16.30539pt too wide) in paragraph at lines 127--127
+Overfull \hbox (16.30539pt too wide) in paragraph at lines 130--130
 \OT1/cmtt/m/n/12 paper _ files / paper / 2007 / file / 013a006f03dbc5392effeb8f18fda755 -[]
  []
 
 [6]
-Overfull \hbox (13.92607pt too wide) in paragraph at lines 127--127
-\OT1/cmr/m/n/12 seg-ment mea-sure-ment al-go-rithms". In: \OT1/cmr/m/it/12 AN-SI/AAMI EC57:2012/(R)2020;
+Overfull \hbox (13.58989pt too wide) in paragraph at lines 130--130
+\OT1/cmr/m/n/12 seg-ment mea-sure-ment al-go-rithms". In: \OT1/cmr/m/it/12 AN-SI/AAMI EC57:2012/(R)2020\OT1/cmr/m/n/12 .
  []
 
 
-Overfull \hbox (5.11375pt too wide) in paragraph at lines 127--127
+Overfull \hbox (22.41588pt too wide) in paragraph at lines 130--130
+\OT1/cmr/m/n/12 2013. \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : []$\OT1/cmtt/m/n/12 https : / / array . aami . org / doi / abs / 10 . 2345 / 9781570204784 .
+ []
+
+[7]
+Overfull \hbox (5.11375pt too wide) in paragraph at lines 130--130
 \OT1/cmr/m/it/12 Mech-a-nism: Re-gres-sion Anal-y-sis un-der Dif-fer-en-tial Pri-vacy\OT1/cmr/m/n/12 . 2012. arXiv:
  []
 
-[7] [8] (./main.aux)
+[8] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6785002401102136C0E78B7C7149F33F;5361.
+(rerunfilecheck)             Checksum: 4EB314482CC4D34C2680AABB667529F0;5361.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35957 strings out of 477985
- 678918 string characters out of 5840058
- 1867388 words of memory out of 5000000
- 55392 multiletter control sequences out of 15000+600000
+ 38688 strings out of 477985
+ 756845 string characters out of 5840058
+ 1868388 words of memory out of 5000000
+ 58009 multiletter control sequences out of 15000+600000
  522286 words of font info for 70 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,15n,89p,1881b,2972s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist, replaced by a fixed one
 
@@ -1256,10 +1463,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (47 pages, 502594 bytes).
+Output written on main.pdf (57 pages, 1195797 bytes).
 PDF statistics:
- 868 PDF objects out of 1000 (max. 8388607)
- 764 compressed objects within 8 object streams
- 229 named destinations out of 1000 (max. 500000)
- 316 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1026 PDF objects out of 1200 (max. 8388607)
+ 868 compressed objects within 9 object streams
+ 265 named destinations out of 1000 (max. 500000)
+ 421 words of extra memory for PDF output out of 10000 (max. 10000000)
 

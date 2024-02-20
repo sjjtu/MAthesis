@@ -1,21 +1,21 @@
 \section{Theoretical background on Differential Privacy}\label{ch2}
 
-In this chapter we briefly describe and derive the most important results from Cynthia Dwork's work on differential privacy that was first introduced in 2006 \parencite{dwork2006differential}. This summary heavily relies on her writings in \parencite{dwork2019differential} as well as lecture notes from \parencite{lecture_CSE711}.
+In this chapter we briefly describe and derive the most important results from Cynthia Dwork's work on differential privacy that was first introduced in 2006 \parencite{dwork2006differential}. This summary heavily relies on her writings in \parencite{dwork2019differential} and \parencite{dwork2014algorithmic} as well as lecture notes from \parencite{lecture_CSE711}.
 
 \subsection{Defining differential privacy}
-Differential privacy (DP) should be understood as an agreement between the data holder and the data subject: the latter should not be "affected, adversely or otherwise, by allowing [her] data to be used in any study or analysis, no matter what other studies, data sets or information sources are available". This addresses the paradox of learning something useful about a population while learning nothing about the individuals
+Differential privacy (DP) should be understood as an agreement between the data holder and the data subject: the latter should not be ``affected, adversely or otherwise, by allowing [her] data to be used in any study or analysis, no matter what other studies, data sets or information sources are available'' \parencite{dwork2014algorithmic}. This addresses the paradox of learning something useful about a population while learning nothing about the individuals
 
 
-\begin{ex}[Randomised response]
+\begin{ex}[Randomised response] \label{ex:rand_resp}
     In 1965 Warner \parencite{stan65rr} proposes the following random answering procedure: In a study where participants are asked to answer with ``Yes'' or ``No'' whether they have engaged in an illegal or embarrassing activity $A$, they should:
     \begin{enumerate}
         \item Flip a coin
         \item If the coin shows tails, then the participant should respond truthfully.
-        \item If the coin shows head, then the participant should flip the coin a second time and answer "Yes" if the second coin shows head and "no" otherwise.
+        \item If the coin shows head, then the participant should flip the coin a second time and answer ``Yes'' if the second coin shows head and ``no'' otherwise.
     \end{enumerate}
     This procedure ensures participants' privacy by ``plausible deniability''; each participant's answer has non-zero probability of being truthful or not. By understanding the probabilities of the noise generation process, the data analyst can estimate the true number of ``yes'' and ``no'' answers. To this end, let $p$ be the true percentage of ``yes'' answers, $N$ the total number of participants, $n_{true}$ the true number of ``yes'' responses and $\hat{n}_{obs}$ the observed number of ``yes'' responses. We assume a fair coin with equal probability of showing heads or tails. Then the expected number of ``yes'' answers after applying the described procedure is:
     \begin{align}
-        \mathbb{E}(``Yes'') = \frac{1}{4} n_{true} + \frac{1}{4} (N-n_{true}) + \frac{1}{2} n_{true} = \frac{1}{4} N + \frac{n_{true}}{2}
+        \mathbb{E}("Yes") = \frac{1}{4} n_{true} + \frac{1}{4} (N-n_{true}) + \frac{1}{2} n_{true} = \frac{1}{4} N + \frac{n_{true}}{2}
     \end{align}
     We can estimate this using the $\hat{n}_{obs} \approx \mathbb{E}("Yes") = \frac{1}{4} N + \frac{n_{true}}{2}$ and finally solving for $n_{true}$ yields the estimate:
     \begin{align}
@@ -23,6 +23,7 @@ Differential privacy (DP) should be understood as an agreement between the data 
     \end{align}
 \end{ex}
 
+Now introduce some technical definitions, that will be need in order to define differential privacy.
 
 \begin{definition}[Probability Simplex]
     Given a discrete set $B$, the probability simplex over $B$ is defined as the set
@@ -72,20 +73,27 @@ Now we are ready to give the general definition of differential privacy:
     where the probability is taken over the randomness of $\mathcal{M}$. If $\delta=0$, we say $\mathcal{M}$ is $\epsilon$-differentially private.
 \end{definition}
 
-\colorbox{red}{why $e^\epsilon$}
+In other words, we call an algorithm $(\epsilon, \delta)$-DP if its outcome does not change ``too much'' on similar inputs. How much it is allowed to differ is specified by the factor $e^\epsilon$.
+
 
 \begin{ex}[Randomised response revisited]
-    
+    We revisit the introductory \cref{ex:rand_resp} and examine its privacy. It turns out that this simple procedure is differentially private! Without loss of generality let $x$ and $\hat{x}$ be two databases with $x_j="Yes"$ and $\hat{x}_j="No"$, $S = \{"Yes\}$. Then $\mathbb{P}(\mathcal{M}_{RR}(x_j)= "Yes") = \frac{3}{4}$, since the mechanism will return answer ``Yes'' (given the true answer is ``Yes'') if either the first coin toss is tails with probability $\frac{1}{2}$ or if the first and the second coin toss give heads with probability $\frac{1}{4}$. Similarly, we have  $\mathbb{P}(\mathcal{M}_{RR}(\hat{x}_j)= "Yes") = \frac{3}{4}$ given that the true answer is ``No'' in this case. Thus we have:
+    \begin{align}
+        \frac{\mathbb{P}(\mathcal{M}_{RR}(x_j)\in S)}{\mathbb{P}(\mathcal{M}_{RR}(\hat{x}_j)\in S)} = \frac{\mathbb{P}(\mathcal{M}_{RR}(x_j)= "Yes")}{\mathbb{P}(\mathcal{M}_{RR}(\hat{x}_j)="Yes")} = \frac{\frac{3}{4}}{\frac{1}{4}} = 3
+    \end{align} 
+    The other cases follow analogously. Hence, this gives $(\ln 3, 0)-$ differential privacy.
 \end{ex}
 
 \subsection{Important results for Differential Privacy}
-
+The first question one might ask is whether adding randomness is crucial for differential privacy or whether there are alternative ways to ensure privacy without adding randomness to it. This fundamental question is answered negatively in the following theorem:
 \begin{thm}[DP requires randomisation] \label{thm:dp_random}
     Any non-trivial DP-mechanism requires randomisation.
 \end{thm}
 \begin{proof}
-    TBA
+    \colorbox{red}{tba}
 \end{proof}
+
+Hence, we established, that adding randomness is essential for differential privacy. But once we have obtained that level of privacy the output is immune to post-processing, e. g. for the case of privacy-preserving synthetic data once we have generated the data in a differential private setting, then the synthetic data will inherit the privacy guarantees for any subsequent task.
 
 \begin{thm}[Post-processing] \label{thm:postpro}
     Let $\mathcal{M}: \mathbb{N}^{|\mathcal{X}|} \rightarrow R$ be a randomised algorithm that is $(\epsilon, \delta)$- DP. Further let $f: R \rightarrow R'$ an arbitrary function. Then $f \circ \mathcal{M}$ is also $(\epsilon, \delta)$ -DP.
@@ -98,6 +106,15 @@ Now we are ready to give the general definition of differential privacy:
         &= e^\epsilon \cdot \mathbb{P}(f(\mathcal{M}(y))\in S') + \delta
     \end{align}
     where the inequality follows from the $(\epsilon, \delta)-DP$ of $\mathcal{M}$.
+\end{proof}
+
+But if you employ two different DP mechnism at once, then their privacy degrades:
+
+\begin{thm}[Standard composition]
+    Let $\mathcal{M}_1: \mathbb{N}^{|\mathcal{X}|} \rightarrow R_1$ and $\mathcal{M}_2: \mathbb{N}^{|\mathcal{X}|} \rightarrow R_2$ be two randomised algorithms that are $(\epsilon_1, \delta_1)$- and $(\epsilon_2, \delta_2)$ DP, then their composition defined by $\mathcal{M}_{12}: \mathbb{N}^{|\mathcal{X}|} \rightarrow R_1 \times R_2$, $\mathcal{M}_{12}(x)=(\mathcal{M}_{1}(x), \mathcal{M}_{2}(x))$ is $(\epsilon_1+\epsilon_2, \delta_1+\delta_2)$ DP.
+\end{thm}
+\begin{proof}
+    TBA
 \end{proof}
 
 \begin{thm}[Group privacy]
@@ -117,16 +134,11 @@ Now we are ready to give the general definition of differential privacy:
     \end{align}
 \end{proof}
 
-\begin{thm}[Standard composition]
-    Let $\mathcal{M}_1: \mathbb{N}^{|\mathcal{X}|} \rightarrow R_1$ and $\mathcal{M}_2: \mathbb{N}^{|\mathcal{X}|} \rightarrow R_2$ be two randomised algorithms that are $(\epsilon_1, \delta_1)$- and $(\epsilon_2, \delta_2)$ DP, then their composition defined by $\mathcal{M}_{12}: \mathbb{N}^{|\mathcal{X}|} \rightarrow R_1 \times R_2$, $\mathcal{M}_{12}(x)=(\mathcal{M}_{1}(x), \mathcal{M}_{2}(x))$ is $(\epsilon_1+\epsilon_2, \delta_1+\delta_2)$ DP.
-\end{thm}
-\begin{proof}
-    TBA
-\end{proof}
+
 
 \subsection{Example of DP-mechanism: Gaussian Mechanism}
 
-Let $f:\mathbb{N}^{|\mathcal{X}|} \longrightarrow \mathbb{R}^d$ an arbitrary function mapping to a $d$-dimensional real space. $f$ can represent numerous models, e. g. a neural network, an SVM-classifier etc. We have seen from theorem \cref*{thm:dp_random} that in order to ``privatise'' the output of $f$, we need to add randomness to its output. One way to achieve this is to add gaussian noise, which is calibrated to mask the influence of a specific input. Because differential privacy aims to hide the influence of the input to the output, a natural quantity to consider when calibrating the noise is to look at how much $f$ will change, when using different inputs. This leads the following definition:
+Let $f:\mathbb{N}^{|\mathcal{X}|} \longrightarrow \mathbb{R}^d$ an arbitrary function mapping to a $d$-dimensional real space. $f$ can represent numerous models, e. g. a neural network, an SVM-classifier etc. We have seen from \cref{thm:dp_random} that in order to ``privatise'' the output of $f$, we need to add randomness to its output. One way to achieve this is to add gaussian noise, which is calibrated to mask the influence of a specific input. Because differential privacy aims to hide the influence of the input to the output, a natural quantity to consider when calibrating the noise is to look at how much $f$ will change, when using different inputs. This leads the following definition:
 
 \begin{definition}[$l_2$-sensitivity]
     Let $f:\mathbb{N}^{|\mathcal{X}|} \longrightarrow \mathbb{R}^d$ an arbitrary function, then its $l_2$-sensitivity is defined as:
