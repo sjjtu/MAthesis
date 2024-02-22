@@ -8,6 +8,7 @@ compute metrics (accuracy...)
 import torch
 import numpy as np
 from sklearn import metrics
+import matplotlib.pyplot as plt
 
 from util.ECGDataset import ECGDataset
 
@@ -42,6 +43,33 @@ class Evaluator:
                 predictions.append(seq_pred.cpu().numpy().flatten())
                 losses.append(loss.item())
         return predictions, losses
+    
+    def plot_samples(self, model_name, n=3):
+        plt.figure()
+        plt.suptitle(f"Reconstructed regular heartbeats ({model_name})")
+        for i in range(n):
+            plt.subplot(1,n,i+1)
+            plt.plot(self.pred_normal[i], linestyle="--")
+            plt.plot(self.test_normal_ds.__getitem__(i)[0])
+            plt.xticks([])
+            plt.yticks([])
+            
+        plt.tight_layout()
+        plt.legend(["Reconstruction", "Real"], loc="upper right")
+        plt.show()
+
+        plt.figure()
+        plt.suptitle(f"Reconstructed anomalous heartbeats ({model_name})")
+        for i in range(n):
+            plt.subplot(1,n,i+1)
+            plt.plot(self.pred_normal[i], linestyle="--")
+            plt.plot(self.test_anomaly_ds.__getitem__(i)[0])
+            plt.xticks([])
+            plt.yticks([])
+            
+        plt.tight_layout()
+        plt.legend(["Reconstruction", "Real"])
+        plt.show()
 
     def find_threshold(self, threshold_list = np.linspace(0,5,21)):
         corr_normal = []

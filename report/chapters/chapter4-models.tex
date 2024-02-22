@@ -4,16 +4,73 @@ In this chapter we will introduce the models that are being used for time series
 \subsection{AE-(dp)MERF}
 Out of the box, DP-MERF does not work well to generate time series data. We hypothesize, that the algorithm is not able to capture the temporal dependencies and inherent ordering in sequential data. The authors have verified their algorithm mainly on tabular data as well as image data, where it delivers competitive results. Hence, we want to leverage the capabilities and translate it into the sequential setting. Therefore, we use an autoencoder architecture, that maps the time series to a compact latent representation of fixed dimension. Data points in the latent space can then be treated as tabular data with no temporal dependencies. This approach is akin to \parencite{gan_softtext} where Haidar et al. used an autoencoder with a GAN network to generate sequences of text. AE-(dp)MERF consists of two components.
 \begin{itemize}
-    \item \underline{Autoencoder component:} \colorbox{red}{TBA}
-    \item \underline{DP-MERF component:} \colorbox{red}{TBA}
+    \item \underline{Autoencoder component:} The autoencoder constists of an encoder and a decoder. The encoder will consists of two LSTM blocks to handle sequential data. It encodes the heart beat sequence as a vector of fixed length. The decoder will have the same architecture as the encoder but reversed. Thus it will learn to recover the heart beat sequence from the latent representation.
+    \item \underline{DP-MERF component:} The DP-MERF component consists of a simple feed forward neural network, called the generator, that takes in gaussian noise as input and maps it into the latent space. We compute the MMD distance between the original encoded data and the output of the generator and use this as the loss function. For the DP variant we add some noise to the RFF of the original data as described in \cref{chapter3}.
 \end{itemize}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.5]{../images/placeholder.png}
+    \centering
+    \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\footnotesize]
+    \draw [](6.25,15.5) to[short] (17.5,15.5);
+    \draw (6.25,15.5) to[short] (17.5,15.5);
+    \draw [](7.5,10.5) to[short] (16.25,10.5);
+    \draw [short] (6.25,15.5) -- (7.5,10.5);
+    \draw [short] (16.25,10.5) -- (17.5,15.5);
+    \draw [](6.25,-8.25) to[short] (17.5,-8.25);
+    \draw (6.25,15.5) to[short] (17.5,15.5);
+    \draw [](7.5,-3.25) to[short] (16.25,-3.25);
+    \draw [short] (16.25,-3.25) -- (17.5,-8.25);
+    \draw [short] (6.25,-8.25) -- (7.5,-3.25);
+    \node [font=\LARGE] at (11.75,13) {Encoder};
+    \node [font=\LARGE] at (11.75,-5.75) {Decoder};
+    \node [font=\normalsize, color={rgb,255:red,94; green,92; blue,100}] at (8.75,9) {Latent space};
+    \draw [ color={rgb,255:red,94; green,92; blue,100}, short] (9.5,1.75) -- (9.5,0.5);
+    \draw [ color={rgb,255:red,94; green,92; blue,100}, short] (9.5,1.75) -- (12,3);
+    \draw [ color={rgb,255:red,94; green,92; blue,100}, short] (12,3) -- (12,-0.75);
+    \draw [ color={rgb,255:red,94; green,92; blue,100}, short] (9.5,0.5) -- (12,-0.75);
+    \node [font=\small] at (10.75,1.25) {Generator};
+    \draw [ color={rgb,255:red,94; green,92; blue,100} ] (14.5,8.5) rectangle (15.75,8.25);
+    \draw [ color={rgb,255:red,94; green,92; blue,100} ] (14.5,8.25) rectangle (15.75,8);
+    \draw [ color={rgb,255:red,94; green,92; blue,100} ] (14.5,8) rectangle (15.75,7.75);
+    \draw [ color={rgb,255:red,94; green,92; blue,100} ] (14.5,7.75) rectangle (15.75,7.5);
+    \draw [ color={rgb,255:red,94; green,92; blue,100} ] (14.5,8.75) rectangle (15.75,8.5);
+    \node [font=\small, color={rgb,255:red,94; green,92; blue,100}] at (15.25,7.25) {encoded heart beats};
+    \draw [ color={rgb,255:red,94; green,92; blue,100} ] (14.5,1.75) rectangle (15.75,1.5);
+    \draw [ color={rgb,255:red,94; green,92; blue,100} ] (14,1.5) rectangle (15.5,1.25);
+    \draw [ color={rgb,255:red,94; green,92; blue,100} ] (14.5,1.25) rectangle (16,1);
+    \draw [ color={rgb,255:red,94; green,92; blue,100} ] (14.25,1) rectangle (16.25,0.75);
+    \draw [ color={rgb,255:red,94; green,92; blue,100} ] (14.75,0.75) rectangle (15.5,0.5);
+    \node [font=\small, color={rgb,255:red,94; green,92; blue,100}] at (15.25,0.25) {Generated encodings};
+    \draw [ color={rgb,255:red,94; green,92; blue,100}, ->, >=Stealth] (12,1.25) -- (13.75,1.25);
+    \draw [color={rgb,255:red,94; green,92; blue,100}](15,4.25) to[short, -*] (15,4.25);
+    \node [font=\small] at (12.75,4.5) {MMD};
+    \draw [ color={rgb,255:red,94; green,92; blue,100}, short] (15,4.25) -- (10.5,4.25);
+    \draw [ color={rgb,255:red,94; green,92; blue,100}, ->, >=Stealth] (10.5,4.25) -- (10.5,2.5);
+    \draw [ color={rgb,255:red,94; green,92; blue,100} , dashed] (7.75,1) circle (0.75cm);
+    \node [font=\small, color={rgb,255:red,94; green,92; blue,100}] at (7.75,1) {Noise};
+    \draw [ color={rgb,255:red,94; green,92; blue,100}, ->, >=Stealth] (8.5,1) -- (9.5,1);
+    \draw [ color={rgb,255:red,94; green,92; blue,100} , dashed] (12,18.25) ellipse (7.75cm and 1cm);
+    \node [font=\large] at (11.75,18.25) {Original heartbeats};
+    \draw [->, >=Stealth] (12,17) .. controls (12,16.75) and (12,16.5) .. (12,15.75) ;
+    \draw [ color={rgb,255:red,94; green,92; blue,100} , dashed] (11.75,-11) ellipse (7.75cm and 1cm);
+    \draw [->, >=Stealth] (11.5,-8.5) -- (11.5,-9.75);
+    \node [font=\large] at (11.5,-11) {Generated heartbeats};
+    \draw [ color={rgb,255:red,94; green,92; blue,100} ] (15,5.75) circle (0.5cm);
+    \node [font=\footnotesize] at (15,5.75) {DP noise};
+    \draw [ color={rgb,255:red,94; green,92; blue,100}, ](15,7) to[short] (15,6.25);
+    \draw [ color={rgb,255:red,94; green,92; blue,100}, ](15,5.25) to[short] (15,4.25);
+    \draw [ color={rgb,255:red,94; green,92; blue,100}, ](15,1.75) to[short] (15,4.25);
+    \draw [ color={rgb,255:red,94; green,92; blue,100} , dashed] (6.25,9.25) rectangle  (17.5,-2);
+    \end{circuitikz}
+    }%
     \caption{AE-(dp)MERF architecture}
     \label{fig:aedpmerf_arch}
 \end{figure}
+
+
 
 We will proceed to train the two components separately, i. e. we will first train the autoencoder and then the generator component. The autoencoder will learn a latent representation of the original ECG time series. The DP-MERF generator is trained to generate data in the latent space which will then be transformed back to a ECG time series sample using the decoder. For DP version of this model just employs the same DP techniques from the original DP-MERF algorithm. The post-processing theorem for DP \cref{thm:postpro} ensures (differential) privacy for the generated ECG time series samples after being passed to the decoder.
 
@@ -23,14 +80,72 @@ We are making some small modification to the original architecture of RTSGAN. Fi
 
 To implement a (differential) private GAN there are different ways:
 \begin{itemize}
-    \item \underline{Input perturbation:} One could add differential private noise to the input data set before training. (Differential) Privacy is again preserved under the post-processing \cref{thm:postpro}. \colorbox{red}{TBA more info}
+    \item \underline{Input perturbation:} One could add differential private noise to the input data set before training. (Differential) Privacy is again preserved under the post-processing \cref{thm:postpro}.
     \item \underline{Output perturbation:} Similarly, one could add noise to the output of the model, once it is done training. 
     \item \underline{Gradient perturbation:} During training, adding a small amount of calibrated noise can also ensure (differential) privacy. This is implemented in the DP-SGD algorithm. The privacy level depends on the number iterations. 
 \end{itemize}
 Although the latter approach deteriorates privacy at each training iteration, it is still the preferred way to ``privatise'' a GAN according to this paper by researcher from Facebook \parencite{vandermaaten2020tradeoffs}. Hence, we will implement this in out GAN-based generator. Unfortunately, at the time of writing adding a gradient penalty is not supported \footnote{see github issue: \href{https://github.com/pytorch/opacus/issues/31}{https://github.com/pytorch/opacus/issues/31}} with the DP implementation of stochastic gradient descent in the \texttt{opacus} \footnote{see \href{https://opacus.ai/}{https://opacus.ai/}} package for \texttt{python}. Hence, instead of imposing the Lipschitz condition via the penalty term, we impose a strict constraint on the norm of the weights directly to enforce the Lipschitz condition. This approach was suggested initially by the authors of the original WGAN paper \parencite{arjovsky2017wasserstein}. We employ this in both the non-privacy preserving and DP version of this model to again ensure comparability.
 
 \begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.5]{../images/placeholder.png}
+        \centering
+        \resizebox{0.5\textwidth}{!}{%
+        \begin{circuitikz}
+        \tikzstyle{every node}=[font=\normalsize]
+        \draw [](6.25,15.5) to[short] (17.5,15.5);
+        \draw (6.25,15.5) to[short] (17.5,15.5);
+        \draw [](7.5,10.5) to[short] (16.25,10.5);
+        \draw [short] (6.25,15.5) -- (7.5,10.5);
+        \draw [short] (16.25,10.5) -- (17.5,15.5);
+        \draw [](6.25,-8.25) to[short] (17.5,-8.25);
+        \draw (6.25,15.5) to[short] (17.5,15.5);
+        \draw [](7.5,-3.25) to[short] (16.25,-3.25);
+        \draw [short] (16.25,-3.25) -- (17.5,-8.25);
+        \draw [short] (6.25,-8.25) -- (7.5,-3.25);
+        \node [font=\LARGE] at (11.75,13) {Encoder};
+        \node [font=\LARGE] at (9,-6) {Decoder};
+        \node [font=\normalsize, color={rgb,255:red,94; green,92; blue,100}] at (6,8.75) {Latent space};
+        \draw [ color={rgb,255:red,94; green,92; blue,100}, short] (6.75,1.5) -- (6.75,0.25);
+        \draw [ color={rgb,255:red,94; green,92; blue,100}, short] (6.75,1.5) -- (9.25,2.75);
+        \draw [ color={rgb,255:red,94; green,92; blue,100}, short] (9.25,2.75) -- (9.25,-1);
+        \draw [ color={rgb,255:red,94; green,92; blue,100}, short] (6.75,0.25) -- (9.25,-1);
+        \node [font=\small] at (8,1) {Generator};
+        \draw [ color={rgb,255:red,94; green,92; blue,100} ] (11.75,8.25) rectangle (13,8);
+        \draw [ color={rgb,255:red,94; green,92; blue,100} ] (11.75,8) rectangle (13,7.75);
+        \draw [ color={rgb,255:red,94; green,92; blue,100} ] (11.75,7.75) rectangle (13,7.5);
+        \draw [ color={rgb,255:red,94; green,92; blue,100} ] (11.75,7.5) rectangle (13,7.25);
+        \draw [ color={rgb,255:red,94; green,92; blue,100} ] (11.75,8.5) rectangle (13,8.25);
+        \node [font=\small, color={rgb,255:red,94; green,92; blue,100}] at (12.5,7) {encoded heart beats};
+        \draw [ color={rgb,255:red,94; green,92; blue,100} ] (11.75,1.5) rectangle (13,1.25);
+        \draw [ color={rgb,255:red,94; green,92; blue,100} ] (11.25,1.25) rectangle (12.75,1);
+        \draw [ color={rgb,255:red,94; green,92; blue,100} ] (11.75,1) rectangle (13.25,0.75);
+        \draw [ color={rgb,255:red,94; green,92; blue,100} ] (11.5,0.75) rectangle (13.5,0.5);
+        \draw [ color={rgb,255:red,94; green,92; blue,100} ] (12,0.5) rectangle (12.75,0.25);
+        \node [font=\small, color={rgb,255:red,94; green,92; blue,100}] at (12.5,0) {Generated encodings};
+        \draw [ color={rgb,255:red,94; green,92; blue,100}, ->, >=Stealth] (9.25,1) -- (11,1);
+        \draw [ color={rgb,255:red,94; green,92; blue,100} , dashed] (5,0.75) circle (0.75cm);
+        \node [font=\small, color={rgb,255:red,94; green,92; blue,100}] at (5,0.75) {Noise};
+        \draw [ color={rgb,255:red,94; green,92; blue,100}, ->, >=Stealth] (5.75,0.75) -- (6.75,0.75);
+        \draw [ color={rgb,255:red,94; green,92; blue,100} , dashed] (12,18.25) ellipse (7.75cm and 1cm);
+        \node [font=\large] at (11.75,18.25) {Original heartbeats};
+        \draw [->, >=Stealth] (12,17) .. controls (12,16.75) and (12,16.5) .. (12,15.75) ;
+        \draw [ color={rgb,255:red,94; green,92; blue,100} , dashed] (11.75,-11) ellipse (7.75cm and 1cm);
+        \draw [->, >=Stealth] (11.5,-8.5) -- (11.5,-9.75);
+        \node [font=\large] at (11.5,-11) {Generated heartbeats};
+        \draw [ color={rgb,255:red,94; green,92; blue,100} ] (14.75,5) rectangle (17.25,3.25);
+        \node [font=\normalsize, text width=3cm, color={rgb,255:red,94; green,92; blue,100}] at (16,4.25) {Discriminator {\tiny(with DP-SGD)}};
+        \draw [ color={rgb,255:red,94; green,92; blue,100}, ->, >=Stealth] (13.75,0.75) -- (14.75,3.5);
+        \draw [ color={rgb,255:red,94; green,92; blue,100}, ->, >=Stealth] (13.75,7.25) -- (14.75,4.75);
+        \draw [ color={rgb,255:red,94; green,92; blue,100}, ->, >=Stealth] (17.25,4) -- (18.5,4);
+        \node [font=\normalsize, color={rgb,255:red,94; green,92; blue,100}] at (19.75,4) {real or fake?};
+        \draw [color={rgb,255:red,94; green,92; blue,100}](17.75,4) to[short, -*] (17.75,4);
+        \draw [ color={rgb,255:red,94; green,92; blue,100}, dashed] (17.75,4) -- (17.75,9);
+        \draw [ color={rgb,255:red,94; green,92; blue,100}, dashed] (17.75,9) -- (8.5,9);
+        \draw [ color={rgb,255:red,94; green,92; blue,100}, ->, >=Stealth, dashed] (8.5,9) -- (8.5,2.5);
+        \draw [ color={rgb,255:red,94; green,92; blue,100}, ->, >=Stealth, dashed] (16,8.75) -- (16,5);
+        \draw [ color={rgb,255:red,94; green,92; blue,100} , dashed] (2.75,10) rectangle  (21,-2.5);
+        \end{circuitikz}
+        }%
+        
+        \label{fig:my_label}
     \caption{Architecture of AE-(dp)WGAN}
 \end{figure}

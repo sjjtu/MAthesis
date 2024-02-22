@@ -28,16 +28,16 @@
 \contentsline {section}{\numberline {4}Models}{21}{section.4}%
 \contentsline {subsection}{\numberline {4.1}AE-(dp)MERF}{21}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}AE-(dp)WGAN}{22}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Experiment}{24}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Data Set and Experiment setup}{24}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Baseline Model}{27}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Data generation}{32}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Privacy-preserving Data Generation}{36}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Polluted Data Set}{39}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Results}{39}{subsection.5.6}%
-\contentsline {section}{\numberline {6}Discussion}{41}{section.6}%
-\contentsline {section}{\numberline {7}Outro}{42}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Future Works}{42}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Conclusion}{42}{subsection.7.2}%
-\contentsline {section}{Appendix}{I}{section*.47}%
-\contentsline {section}{References}{II}{section*.48}%
+\contentsline {section}{\numberline {5}Experiment}{25}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Data Set and Experiment setup}{25}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Baseline Model}{28}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Data generation}{33}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Privacy-preserving Data Generation}{38}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Results}{43}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Contaminated Data Set}{45}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Discussion}{46}{section.6}%
+\contentsline {section}{\numberline {7}Outro}{47}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Future Works}{47}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Conclusion}{47}{subsection.7.2}%
+\contentsline {section}{Appendix}{I}{section*.49}%
+\contentsline {section}{References}{II}{section*.50}%
