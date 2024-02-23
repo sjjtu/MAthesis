@@ -1,5 +1,12 @@
 \section{Discussion}
 
-This confirms the result from \parencite{hu2023sok} stating DP-MERF is the ``best all purpose generator''.
+\subsection{(Privacy-Preserving) Data Generation}
+From our experiments, we can clearly see that the AE-(dp)MERF generated samples achieved a much higher utility compared to the GAN-based approach. This confirms the result from \parencite{hu2023sok} stating DP-MERF is the ``best all purpose generator''. We found that AE-(dp)MERF also performs well on time series data, which has not been examined prior to this work to the best of our knowledge. Of course, further data and models need to be tested for verification. Adding privacy was straight forward to implement for AE-(dp)MERF and the training of the generator worked well in even lower $\epsilon$ regimes. This is not the case for the GAN-based approache: due to the inherent stability issues with training GANs, adding noise during the process imposes even more instabilities into the training process. Thus, training with even higher \(\epsilon\) values required a careful selection of hyperparameters.
 
-Nevertheless, this experiments show, that for reasonable $\epsilon$ values and depending on the generator, utility and privacy can go hand in hand. 
+
+\subsection{Utility-Privacy-Tradeoff}
+
+A lot if studies suggest, that adding (differential) privacy to a model decreases its utility. Our result suggest, that this tradeoff is more nuanced and depends on the use case. The conducted experiments show, that for reasonable $\epsilon$ values and depending on the generator, utility of synthetic, privacy-preserving data and privacy can go hand in hand. We have observed only a slight decrease in utility when employing DP to our models. For AE-(dp)MERF using $\epsilon=$ values as low as 0.5 did not ``destroy'' utility. The GAN-based model behaved similarly, but with much higher \(\epsilon\) values ($\epsilon=25$). However, this only applies to anomaly detection and does not say something about the quality of the generated samples. On the contrary, we have seen that the generated samples appear much noisier when we add differential privacy to the generation process.
+
+\subsection{Privacy and Robustness}
+In the last experiment, we contaminated the training set with anomalous samples. 

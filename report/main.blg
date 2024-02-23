@@ -1,17 +1,17 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[37] biber:340> INFO - === Fri Feb 23, 2024, 09:32:06
-[44] Biber.pm:419> INFO - Reading 'main.bcf'
-[74] Biber.pm:979> INFO - Found 65 citekeys in bib section 0
-[81] Biber.pm:4419> INFO - Processing section 0
-[86] Biber.pm:4610> INFO - Looking for bibtex file 'references.bib' for section 0
-[87] bibtex.pm:1713> INFO - LaTeX decoding ...
-[109] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[353] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[353] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[353] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[353] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[383] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[395] bbl.pm:763> INFO - Output to main.bbl
-[395] Biber.pm:131> WARN - legacy month field 'may' in entry 'anom_rev' is not an integer - this will probably not sort properly.
-[395] Biber.pm:133> INFO - WARNINGS: 1
+[287] biber:340> INFO - === Fri Feb 23, 2024, 14:51:39
+[321] Biber.pm:419> INFO - Reading 'main.bcf'
+[471] Biber.pm:979> INFO - Found 65 citekeys in bib section 0
+[505] Biber.pm:4419> INFO - Processing section 0
+[521] Biber.pm:4610> INFO - Looking for bibtex file 'references.bib' for section 0
+[525] bibtex.pm:1713> INFO - LaTeX decoding ...
+[620] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[1554] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1555] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1555] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1555] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1667] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1718] bbl.pm:763> INFO - Output to main.bbl
+[1719] Biber.pm:131> WARN - legacy month field 'may' in entry 'anom_rev' is not an integer - this will probably not sort properly.
+[1719] Biber.pm:133> INFO - WARNINGS: 1

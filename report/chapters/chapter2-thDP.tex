@@ -1,8 +1,8 @@
-\section{Theoretical background on Differential Privacy}\label{ch2}
+\section{Theoretical Background on Differential Privacy}\label{ch2}
 
 In this chapter we briefly describe and derive the most important results from Cynthia Dwork's work on differential privacy that was first introduced in 2006 \parencite{dwork2006differential}. This summary heavily relies on her writings in \parencite{dwork2019differential} and \parencite{dwork2014algorithmic} as well as lecture notes from \parencite{lecture_CSE711}.
 
-\subsection{Defining differential privacy}
+\subsection{Defining Differential Privacy}
 Differential privacy (DP) should be understood as an agreement between the data holder and the data subject: the latter should not be ``affected, adversely or otherwise, by allowing [her] data to be used in any study or analysis, no matter what other studies, data sets or information sources are available'' \parencite{dwork2014algorithmic}. This addresses the paradox of learning something useful about a population while learning nothing about the individuals
 
 
@@ -84,7 +84,7 @@ In other words, we call an algorithm $(\epsilon, \delta)$-DP if its outcome does
     The other cases follow analogously. Hence, this gives $(\ln 3, 0)-$ differential privacy.
 \end{ex}
 
-\subsection{Important results for Differential Privacy}
+\subsection{Important Results for Differential Privacy}
 The first question one might ask is whether adding randomness is crucial for differential privacy or whether there are alternative ways to ensure privacy without adding randomness to it. This fundamental question is answered negatively in the following theorem:
 \begin{thm}[DP requires randomisation] \label{thm:dp_random}
     Any non-trivial DP-mechanism requires randomisation.

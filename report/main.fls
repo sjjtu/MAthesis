@@ -1,7 +1,7 @@
-PWD /home/user1-asd-arch/Projects/Thesis/report
+PWD /home/asd/Projekte/MAthesis/report
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/user1-asd-arch/Projects/Thesis/report/main.tex
+INPUT /home/asd/Projekte/MAthesis/report/main.tex
 OUTPUT main.log
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
@@ -18,7 +18,6 @@ INPUT /usr/share/texmf-dist/tex/latex/base/size12.clo
 INPUT /usr/share/texmf-dist/tex/latex/base/size12.clo
 INPUT /usr/share/texmf-dist/tex/latex/base/size12.clo
 INPUT /usr/share/texmf-dist/tex/latex/base/size12.clo
-INPUT /usr/share/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texmf-dist/tex/latex/base/inputenc.sty
 INPUT /usr/share/texmf-dist/tex/latex/base/inputenc.sty
@@ -1241,6 +1240,10 @@ INPUT ./chapters/eides_erkl.tex
 INPUT ./chapters/eides_erkl.tex
 INPUT chapters/eides_erkl.tex
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./chapters/acknowledgement.tex
+INPUT chapters/acknowledgement.tex
+INPUT ./chapters/acknowledgement.tex
+INPUT chapters/acknowledgement.tex
 INPUT ./main.toc
 INPUT main.toc
 INPUT main.toc

@@ -1,20 +1,20 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{Notation}{i}{section*.4}%
-\contentsline {section}{List of Figures}{ii}{section*.5}%
+\contentsline {section}{Notation}{i}{section*.5}%
+\contentsline {section}{List of Figures}{ii}{section*.6}%
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Motivation}{1}{subsection.1.1}%
-\contentsline {paragraph}{}{1}{section*.6}%
 \contentsline {paragraph}{}{1}{section*.7}%
+\contentsline {paragraph}{}{1}{section*.8}%
 \contentsline {subsection}{\numberline {1.2}Problem Definition}{2}{subsection.1.2}%
-\contentsline {paragraph}{}{2}{section*.8}%
+\contentsline {paragraph}{}{2}{section*.9}%
 \contentsline {subsection}{\numberline {1.3}Related Works and State of the Art}{3}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Note on terminology}{6}{subsection.1.4}%
-\contentsline {paragraph}{}{6}{section*.13}%
-\contentsline {paragraph}{}{7}{section*.14}%
+\contentsline {subsection}{\numberline {1.4}Note on Terminology}{6}{subsection.1.4}%
+\contentsline {paragraph}{}{6}{section*.14}%
 \contentsline {paragraph}{}{7}{section*.15}%
-\contentsline {section}{\numberline {2}Theoretical background on Differential Privacy}{8}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Defining differential privacy}{8}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Important results for Differential Privacy}{10}{subsection.2.2}%
+\contentsline {paragraph}{}{7}{section*.16}%
+\contentsline {section}{\numberline {2}Theoretical Background on Differential Privacy}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Defining Differential Privacy}{8}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Important Results for Differential Privacy}{10}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Example of DP-mechanism: Gaussian Mechanism}{12}{subsection.2.3}%
 \contentsline {section}{\numberline {3}(Time Series) Data generation}{14}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Overview}{14}{subsection.3.1}%
@@ -24,20 +24,23 @@
 \contentsline {subsubsection}{\numberline {3.2.3}Vanilla DP-MERF}{17}{subsubsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.3}RTSGAN}{18}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Review: GANs}{18}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Time series Generation with RTSGAN}{20}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2}Time Series Generation with RTSGAN}{20}{subsubsection.3.3.2}%
 \contentsline {section}{\numberline {4}Models}{21}{section.4}%
 \contentsline {subsection}{\numberline {4.1}AE-(dp)MERF}{21}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}AE-(dp)WGAN}{22}{subsection.4.2}%
 \contentsline {section}{\numberline {5}Experiment}{25}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Data Set and Experiment setup}{25}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.1}Data Set and Experiment Setup}{25}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Baseline Model}{28}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Data generation}{33}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.3}Data Generation}{33}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Privacy-preserving Data Generation}{38}{subsection.5.4}%
 \contentsline {subsection}{\numberline {5.5}Results}{43}{subsection.5.5}%
 \contentsline {subsection}{\numberline {5.6}Contaminated Data Set}{45}{subsection.5.6}%
-\contentsline {section}{\numberline {6}Discussion}{47}{section.6}%
-\contentsline {section}{\numberline {7}Outro}{48}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Future Works}{48}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Conclusion}{48}{subsection.7.2}%
-\contentsline {section}{Appendix}{I}{section*.50}%
-\contentsline {section}{References}{II}{section*.51}%
+\contentsline {section}{\numberline {6}Discussion}{48}{section.6}%
+\contentsline {subsection}{\numberline {6.1}(Privacy-Preserving) Data Generation}{48}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Utility-Privacy-Tradeoff}{48}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Privacy and Robustness}{48}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Outro}{49}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Future Works}{49}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Conclusion}{49}{subsection.7.2}%
+\contentsline {section}{Appendix}{I}{section*.51}%
+\contentsline {section}{References}{II}{section*.52}%

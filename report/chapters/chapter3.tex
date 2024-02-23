@@ -141,7 +141,7 @@ Although theoretical results for convergence where obtained in the original pape
 
 In light of privacy concerns, standard GAN architectures without any formal privacy guarantees do not preserve any meaningful privacy of the training data. This negative results has been confirmed in \parencite{lin2021privacy,stadler2022synthetic}. Hence, a dedicated privacy mechanism has to be used. In particular, we will ``privatise'' the GAN architecture by using a DP-SGD when training the discriminator, similar to \parencite{xie2018differentially}.
 
-\subsubsection{Time series Generation with RTSGAN}
+\subsubsection{Time Series Generation with RTSGAN}
 The authors in \parencite{pei2021towards} propose a hybrid approach that employs a similar idea to our proposed AE-(DP)MERF algorithm; it combines an autoencoder architecture to learn a latent space and generates data within that space with a WGAN network.
 
 \begin{figure}[h]
