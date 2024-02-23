@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1708600363 "main.bcf" "main.bbl" "main" 1708600582 0
+["biber main"] 1708677126 "main.bcf" "main.bbl" "main" 1708677402 0
   "./references.bib" 1708504743 24151 968fb773ddbee0e910b086594cdc1042 ""
-  "main.bcf" 1708600582 114123 57a66968d244fd5905a861981ae4668e "pdflatex"
+  "main.bcf" 1708677402 114123 57a66968d244fd5905a861981ae4668e "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1708600580 "/home/user1-asd-arch/Projects/Thesis/report/main.tex" "main.pdf" "main" 1708600582 0
+["pdflatex"] 1708677400 "/home/user1-asd-arch/Projects/Thesis/report/main.tex" "main.pdf" "main" 1708677402 0
   "../images//KTH_Royal_Institute_of_Technology_logo.svg.png" 1697440071 82662 5be601439497e03bff7ba13a23a68e47 ""
   "../images//SinusRhythmLabels.png" 1708379835 66104 3130397dd419c1285b0e90967f07ef06 ""
   "../images//anom_hb_samples.png" 1708523978 29599 0b9c94d6d6a747bb68f9778746f94970 ""
@@ -30,8 +30,9 @@
   "../images//rec_anom_samples_baseline.png" 1708422439 48123 90b55c1c824d8c4a814128edc90bad04 ""
   "../images//rec_reguarl_samples_baseline.png" 1708422430 51891 af094871f50b556903fc790bad047899 ""
   "../images//reg_hb_samples.png" 1708523882 28472 d50958bb166875a7f50ef9fbc271bccb ""
-  "../images//restuls_dprtsgan.png" 1708530314 60967 e9c4b82f3febb880c927470c808f6be0 ""
-  "../images//results_aedpmerf.png" 1707982021 55919 ee446fcb3e8dbdcb332b2effb8b2ac1b ""
+  "../images//restuls_dprtsgan.png" 1708673958 63371 4c0a3bca5547b1e1830d14a14a75cd6f ""
+  "../images//results_aedpmerf.png" 1708673934 55611 5b519f701623182ec86a922229d7b534 ""
+  "../images//results_aedpmerf_contam.png" 1708676838 122275 fe8557ec9cd91d0774c065b9bce54bea ""
   "../images//thres_plot_aemerf.png" 1708444039 35223 a657ab23fbcc7b30324a3657433d7b84 ""
   "../images//thres_plot_aewgan.png" 1708449088 38527 57ff69653dc00730303ce69d519dc6ee ""
   "../images//thres_plot_baseline.png" 1708422728 34843 caa498c17623f3e6039c61e42a200bd5 ""
@@ -292,19 +293,19 @@
   "chapters/chapter2-thDP.tex" 1708344100 12613 fb9e5df09fef96734190a18f8d7914db ""
   "chapters/chapter3.tex" 1708343916 15221 05cd790ca2f2f5bbb38f13e328a9ba18 ""
   "chapters/chapter4-models.tex" 1708544275 13675 73b6712b583d1fe5ece8f1f6df5b611d ""
-  "chapters/chapter5-exp.tex" 1708600580 29126 2027c4afd16575ad39ffb7f85228cb78 ""
+  "chapters/chapter5-exp.tex" 1708677400 29940 f737199bc7217d9a1eafd6b739987b0a ""
   "chapters/chapter6-dis.tex" 1708545521 278 9f0ea38ceca1491af4be59ead1edcc0c ""
   "chapters/chapter7-outro.tex" 1708018090 236 119c26d1e0643071aed8cf92f49768b1 ""
   "chapters/eides_erkl.tex" 1703003100 360 57ebeb8056d86a4c0d0d1ae6a42b531f ""
   "chapters/notation.tex" 1706141274 798 6bab454971a589a031d886c5bdefbb04 ""
   "chapters/titlepage.tex" 1708504895 552 b1f5e13c9e33f148c43d2417c8e35ae4 ""
-  "main.aux" 1708600582 27791 d712c382ffd211b4853a55fb8ff2c133 "pdflatex"
-  "main.bbl" 1708600364 114349 2ca403792b98ef4988773ca41a84c0db "biber main"
-  "main.lof" 1708600582 3795 f1ec149e1b7f093625ebab65e95725ed "pdflatex"
-  "main.out" 1708600582 5381 f80ac1100d7b58344015491f3d2c48fc "pdflatex"
-  "main.run.xml" 1708600582 2311 be769915957fbf504b291cf0394a7670 "pdflatex"
+  "main.aux" 1708677402 28134 9695a27f73ca58ab7b6b9e7e86a16545 "pdflatex"
+  "main.bbl" 1708677127 114349 2ca403792b98ef4988773ca41a84c0db "biber main"
+  "main.lof" 1708677402 3924 e2e5ebcc587117cae0317f45770f66dc "pdflatex"
+  "main.out" 1708677402 5381 bc1f395429c465c25e11015c17d50d95 "pdflatex"
+  "main.run.xml" 1708677402 2311 be769915957fbf504b291cf0394a7670 "pdflatex"
   "main.tex" 1708514288 3405 71ab1efea7c22fe68399ae96794f19aa ""
-  "main.toc" 1708600582 3233 d2712886d1a2059da38655532233f328 "pdflatex"
+  "main.toc" 1708677402 3233 50b34eac57d16b53ceabf11fbb8fc658 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

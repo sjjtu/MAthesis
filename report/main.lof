@@ -25,3 +25,4 @@
 \contentsline {figure}{\numberline {24}{\ignorespaces AE-dpWGAN generated samples with different $\epsilon $, the lower the value the higher the privacy guarantees\relax }}{42}{figure.caption.45}%
 \contentsline {figure}{\numberline {25}{\ignorespaces Utility loss over privacy budget $\epsilon $ for AE-(dp)MERF\relax }}{44}{figure.caption.47}%
 \contentsline {figure}{\numberline {26}{\ignorespaces Utility loss over privacy budget $\epsilon $ for AE-(dp)WGAN\relax }}{45}{figure.caption.48}%
+\contentsline {figure}{\numberline {27}{\ignorespaces AE-(dp)MERF on contaminated training data\relax }}{46}{figure.caption.49}%

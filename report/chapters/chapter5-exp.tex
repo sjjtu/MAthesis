@@ -427,4 +427,28 @@ Now we contaminate the original training set that previously consisted of regula
     \item We can check how adding DP to the generation procedure will impact the robustness of the generated samples. 
 \end{enumerate}
 
-Therefore, we contaminate the training data with 1\%, 2\% and 5\% of anomalous heartbeat samples and repeat the data generation and anomaly detection as before.
+Therefore, we contaminate the training data with 1\%, 2\% and 5\% of anomalous heartbeat samples and repeat the data generation and anomaly detection as before only for the AE-(dp)MERF models since they delivered promising results.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{results_aedpmerf_contam.png}
+    \caption{AE-(dp)MERF on contaminated training data}
+    \label{fig:enter-label}
+\end{figure}
+
+Baseline:
+\begin{itemize}
+    \item performance decreases in all metrics
+    \item except precision: expected since precision measures correctly detected anomalies in all detected anomalies, i.e. $\frac{TP}{TP+FP}$, here FP will go down because of contamination
+\end{itemize}
+
+AE-MERF:
+\begin{itemize}
+    \item similar behaviour as baseline with precision
+\end{itemize}
+
+AE-dpMERF eps 1 and 0.5:
+\begin{itemize}
+    \item initial increase in all metrics with contamination level 1
+    \item afterwards decrease and then increase again
+\end{itemize}

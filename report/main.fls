@@ -1439,6 +1439,10 @@ INPUT ../images//restuls_dprtsgan.png
 INPUT ../images//restuls_dprtsgan.png
 INPUT ../images//restuls_dprtsgan.png
 INPUT ../images//restuls_dprtsgan.png
+INPUT ../images//results_aedpmerf_contam.png
+INPUT ../images//results_aedpmerf_contam.png
+INPUT ../images//results_aedpmerf_contam.png
+INPUT ../images//results_aedpmerf_contam.png
 INPUT ./chapters/chapter6-dis.tex
 INPUT chapters/chapter6-dis.tex
 INPUT ./chapters/chapter6-dis.tex
