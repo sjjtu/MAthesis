@@ -39,8 +39,7 @@
 \contentsline {subsection}{\numberline {6.1}(Privacy-Preserving) Data Generation}{48}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Utility-Privacy-Tradeoff}{48}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}Privacy and Robustness}{48}{subsection.6.3}%
-\contentsline {section}{\numberline {7}Outro}{49}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Future Works}{49}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Conclusion}{49}{subsection.7.2}%
+\contentsline {subsection}{\numberline {6.4}Future Works}{49}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Conclusion}{50}{section.7}%
 \contentsline {section}{Appendix}{I}{section*.51}%
 \contentsline {section}{References}{II}{section*.52}%
