@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1708760437 "main.bcf" "main.bbl" "main" 1708791670 0
-  "./references.bib" 1708504743 24151 968fb773ddbee0e910b086594cdc1042 ""
-  "main.bcf" 1708791670 114191 736711c3ac70d0ff4792816790b097b7 "pdflatex"
+["biber main"] 1708811168 "main.bcf" "main.bbl" "main" 1708811752 0
+  "./references.bib" 1708811156 27084 e029079ecfb86bf4a4ec0c727fb1fbad ""
+  "main.bcf" 1708811752 114164 cb6281addcdb0f67b4c0294731e2d810 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1708791667 "/home/user1-asd-arch/Projects/Thesis/report/main.tex" "main.pdf" "main" 1708791670 0
+["pdflatex"] 1708811749 "/home/user1-asd-arch/Projects/Thesis/report/main.tex" "main.pdf" "main" 1708811752 0
   "../images//KTH_Royal_Institute_of_Technology_logo.svg.png" 1697440071 82662 5be601439497e03bff7ba13a23a68e47 ""
   "../images//SinusRhythmLabels.png" 1708379835 66104 3130397dd419c1285b0e90967f07ef06 ""
   "../images//anom_hb_samples.png" 1708523978 29599 0b9c94d6d6a747bb68f9778746f94970 ""
@@ -26,7 +26,6 @@
   "../images//loss_aegwan.png" 1708449029 23365 fbf4bf25b899b4f18118dffb82d863b7 ""
   "../images//loss_aemerf.png" 1708443759 29900 d690ffe86bb31483b21aaf474aefa46f ""
   "../images//loss_baseline.png" 1708420565 29116 4564b3e7235e90e1760f52315b75e1cd ""
-  "../images//placeholder.png" 1707983092 30255 efecd9d40367ec0d16517eccd2131f51 ""
   "../images//rec_anom_samples_baseline.png" 1708422439 48123 90b55c1c824d8c4a814128edc90bad04 ""
   "../images//rec_reguarl_samples_baseline.png" 1708422430 51891 af094871f50b556903fc790bad047899 ""
   "../images//reg_hb_samples.png" 1708523882 28472 d50958bb166875a7f50ef9fbc271bccb ""
@@ -290,7 +289,7 @@
   "chapters/9appendix.tex" 1705137200 20 e013df3c398b8335c44d8c0cc6dbb7a5 ""
   "chapters/abstract.tex" 1705137200 50 213856d09abe922928aa763be50e9831 ""
   "chapters/acknowledgement.tex" 1708759139 59 f9b1303ac93d1872e521a4a1e4e1a737 ""
-  "chapters/chapter1-intro.tex" 1708759139 16101 436ad90709f4cd4bf21c8ad0560a365d ""
+  "chapters/chapter1-intro.tex" 1708811749 15849 52ba575ef0ec95367f0c9e6c4f2976b1 ""
   "chapters/chapter2-thDP.tex" 1708759139 12613 0d424f3d41b13c08ee43ae1af89230b1 ""
   "chapters/chapter3.tex" 1708759139 15221 c4ce3034c960eba5b73cf74051300032 ""
   "chapters/chapter4-models.tex" 1708544275 13675 73b6712b583d1fe5ece8f1f6df5b611d ""
@@ -298,15 +297,15 @@
   "chapters/chapter6-dis.tex" 1708774611 3801 d0087e27ec58c4a0446d990d6520733f ""
   "chapters/chapter7-outro.tex" 1708791667 1068 82c268b0dd2a5c719c23731fbca80128 ""
   "chapters/eides_erkl.tex" 1703003100 360 57ebeb8056d86a4c0d0d1ae6a42b531f ""
-  "chapters/notation.tex" 1706141274 798 6bab454971a589a031d886c5bdefbb04 ""
+  "chapters/notation.tex" 1708804544 888 ed375343d4d1620c6e0a58823c8893ca ""
   "chapters/titlepage.tex" 1708504895 552 b1f5e13c9e33f148c43d2417c8e35ae4 ""
-  "main.aux" 1708791670 28508 b06a5464bd2ff770c66cd7e5ef85da03 "pdflatex"
-  "main.bbl" 1708760437 114349 2ca403792b98ef4988773ca41a84c0db "biber main"
-  "main.lof" 1708791670 3924 f8dd65edf08599f4821ba4d667dcbc22 "pdflatex"
-  "main.out" 1708791670 5900 1646a76a38680f82f606255b95b06ef6 "pdflatex"
-  "main.run.xml" 1708791670 2311 be769915957fbf504b291cf0394a7670 "pdflatex"
+  "main.aux" 1708811752 28135 98d585a0a54a26b0ebf18f0a76751294 "pdflatex"
+  "main.bbl" 1708811168 122437 8322f3b8b9716e42f7628d34de19adae "biber main"
+  "main.lof" 1708811752 3735 a20c999682500b4037f6ab3490e23379 "pdflatex"
+  "main.out" 1708811752 5900 319f628c2e16bfa1d9b88817399c3535 "pdflatex"
+  "main.run.xml" 1708811752 2311 be769915957fbf504b291cf0394a7670 "pdflatex"
   "main.tex" 1708774147 3480 d961dee57d2d42ef22c30b7e3190c31a ""
-  "main.toc" 1708791670 3444 f91c4d51df5c30ef87cf2df070540134 "pdflatex"
+  "main.toc" 1708811752 3399 5692d4391c5ce5436a30bd20e7fe1c35 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

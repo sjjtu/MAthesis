@@ -574,6 +574,40 @@
       \verb http://arxiv.org/abs/1802.08232
       \endverb
     \endentry
+    \entry{lstm_ecg}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=2dafea5807425c53f50ebc87eddd5cc7}{%
+           family={Chauhan},
+           familyi={C\bibinitperiod},
+           given={Sucheta},
+           giveni={S\bibinitperiod}}}%
+        {{hash=dd153a0cfbbb770a226276234db9aa76}{%
+           family={Vig},
+           familyi={V\bibinitperiod},
+           given={Lovekesh},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{79f2bd5662e222c1039c0c98d65236ca}
+      \strng{fullhash}{79f2bd5662e222c1039c0c98d65236ca}
+      \strng{bibnamehash}{79f2bd5662e222c1039c0c98d65236ca}
+      \strng{authorbibnamehash}{79f2bd5662e222c1039c0c98d65236ca}
+      \strng{authornamehash}{79f2bd5662e222c1039c0c98d65236ca}
+      \strng{authorfullhash}{79f2bd5662e222c1039c0c98d65236ca}
+      \field{labelalpha}{CV15}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2015 IEEE International Conference on Data Science and Advanced Analytics (DSAA)}
+      \field{title}{Anomaly detection in ECG time signals via deep long short-term memory networks}
+      \field{year}{2015}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/DSAA.2015.7344872
+      \endverb
+      \keyw{Electrocardiography;Logic gates;Time series analysis;Heart beat;Rhythm;Training}
+    \endentry
     \entry{dpgen}{inproceedings}{}
       \name{author}{5}{}{%
         {{hash=68b0310a3bd1d51e9f87506e5924aff3}{%
@@ -620,6 +654,53 @@
       \range{pages}{10}
       \verb{doi}
       \verb 10.1109/CVPR52688.2022.00820
+      \endverb
+    \endentry
+    \entry{Chazal20041196}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c0e17e84751d2e2c02042ac7a945388b}{%
+           family={De\bibnamedelima Chazal},
+           familyi={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e2989cd5582bee6e12754d1431fb42d3}{%
+           family={O'Dwyer},
+           familyi={O\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=de62edad37526aed8556911e22642355}{%
+           family={Reilly},
+           familyi={R\bibinitperiod},
+           given={Richard\bibnamedelima B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{9d99c3259bd9808fd37c20af59f5c861}
+      \strng{fullhash}{9d99c3259bd9808fd37c20af59f5c861}
+      \strng{bibnamehash}{9d99c3259bd9808fd37c20af59f5c861}
+      \strng{authorbibnamehash}{9d99c3259bd9808fd37c20af59f5c861}
+      \strng{authornamehash}{9d99c3259bd9808fd37c20af59f5c861}
+      \strng{authorfullhash}{9d99c3259bd9808fd37c20af59f5c861}
+      \field{labelalpha}{DOR04}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Biomedical Engineering}
+      \field{number}{7}
+      \field{title}{Automatic classification of heartbeats using ECG morphology and heartbeat interval features}
+      \field{type}{Article}
+      \field{volume}{51}
+      \field{year}{2004}
+      \field{pages}{1196\bibrangedash 1206}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/TBME.2004.827359
+      \endverb
+      \verb{urlraw}
+      \verb https://www.scopus.com/inward/record.uri?eid=2-s2.0-2942709662&doi=10.1109%2fTBME.2004.827359&partnerID=40&md5=4ea9a85bebd0ae14d07e8e626aae1270
+      \endverb
+      \verb{url}
+      \verb https://www.scopus.com/inward/record.uri?eid=2-s2.0-2942709662&doi=10.1109%2fTBME.2004.827359&partnerID=40&md5=4ea9a85bebd0ae14d07e8e626aae1270
       \endverb
     \endentry
     \entry{Delaney2019SynthesisOR}{article}{}
@@ -1782,6 +1863,103 @@
       \verb 2007.05089
       \endverb
     \endentry
+    \entry{ann_ecg}{article}{}
+      \name{author}{5}{}{%
+        {{hash=3ea9d6c9f3c35212eb364fd368df4f47}{%
+           family={Mar},
+           familyi={M\bibinitperiod},
+           given={Tanis},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5d3c139f97526054ffc04c8846300c3b}{%
+           family={Zaunseder},
+           familyi={Z\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=74b031be073558072c22263082faa892}{%
+           family={Martínez},
+           familyi={M\bibinitperiod},
+           given={Juan\bibnamedelima Pablo},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d4893b6ba876e9dd224c1eda445f35a3}{%
+           family={Llamedo},
+           familyi={L\bibinitperiod},
+           given={Mariano},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fdf101f41772881a6c5e269709f2278a}{%
+           family={Poll},
+           familyi={P\bibinitperiod},
+           given={Rdiger},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{f2dbbc21b4ecd3ad96c79d59e51f1e0e}
+      \strng{fullhash}{625c43e8ff89887f48507e14f830e884}
+      \strng{bibnamehash}{625c43e8ff89887f48507e14f830e884}
+      \strng{authorbibnamehash}{625c43e8ff89887f48507e14f830e884}
+      \strng{authornamehash}{f2dbbc21b4ecd3ad96c79d59e51f1e0e}
+      \strng{authorfullhash}{625c43e8ff89887f48507e14f830e884}
+      \field{labelalpha}{Mar+11}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Biomedical Engineering}
+      \field{number}{8}
+      \field{title}{Optimization of ECG classification by means of feature selection}
+      \field{type}{Article}
+      \field{volume}{58}
+      \field{year}{2011}
+      \field{pages}{2168\bibrangedash 2177}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/TBME.2011.2113395
+      \endverb
+      \verb{urlraw}
+      \verb https://www.scopus.com/inward/record.uri?eid=2-s2.0-79960710929&doi=10.1109%2fTBME.2011.2113395&partnerID=40&md5=df9c677566adc5bd62abef42c46d588b
+      \endverb
+      \verb{url}
+      \verb https://www.scopus.com/inward/record.uri?eid=2-s2.0-79960710929&doi=10.1109%2fTBME.2011.2113395&partnerID=40&md5=df9c677566adc5bd62abef42c46d588b
+      \endverb
+    \endentry
+    \entry{matias2021robust}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=99b545797cc3c672abff079500a037eb}{%
+           family={Matias},
+           familyi={M\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4c4c8c8f7b0a640fd2eb50924f603ca0}{%
+           family={Folgado},
+           familyi={F\bibinitperiod},
+           given={Duarte},
+           giveni={D\bibinitperiod}}}%
+        {{hash=39373e81224868b45d52fc335d10d5cf}{%
+           family={Gamboa},
+           familyi={G\bibinitperiod},
+           given={Hugo},
+           giveni={H\bibinitperiod}}}%
+        {{hash=97c3e90a54c865b2d32f2e9828004aa3}{%
+           family={Carreiro},
+           familyi={C\bibinitperiod},
+           given={André\bibnamedelima V},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{53898bd190739b69e30a145fb64f7631}
+      \strng{fullhash}{16782070f32c9ad656371cfe7f628139}
+      \strng{bibnamehash}{16782070f32c9ad656371cfe7f628139}
+      \strng{authorbibnamehash}{16782070f32c9ad656371cfe7f628139}
+      \strng{authornamehash}{53898bd190739b69e30a145fb64f7631}
+      \strng{authorfullhash}{16782070f32c9ad656371cfe7f628139}
+      \field{labelalpha}{Mat+21}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Biosignals}
+      \field{title}{Robust Anomaly Detection in Time Series through Variational AutoEncoders and a Local Similarity Score.}
+      \field{year}{2021}
+      \field{pages}{91\bibrangedash 102}
+      \range{pages}{12}
+    \endentry
     \entry{mcmahan2018learning}{misc}{}
       \name{author}{4}{}{%
         {{hash=707fa44f08f047ab822f84fe38c69dfb}{%
@@ -1925,6 +2103,50 @@
       \verb 10.1109/SP.2008.33
       \endverb
     \endentry
+    \entry{anobeat}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=ff5a476346fd8eaf318f6e44baa6694c}{%
+           family={Ou},
+           familyi={O\bibinitperiod},
+           given={Yingzi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=86d8cd66cb62928ca1ec636d8cd2e11c}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=d888a5de4eb0625e7b42b6f28869cf62}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Zhenyu},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=8551a8aa28f68c3e6230d6691ce106e2}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yizhuo},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{a1f6190b62a9789f3dc2a96dcf2bf7a4}
+      \strng{fullhash}{74e069932564f9817b89600d86a57739}
+      \strng{bibnamehash}{74e069932564f9817b89600d86a57739}
+      \strng{authorbibnamehash}{74e069932564f9817b89600d86a57739}
+      \strng{authornamehash}{a1f6190b62a9789f3dc2a96dcf2bf7a4}
+      \strng{authorfullhash}{74e069932564f9817b89600d86a57739}
+      \field{labelalpha}{Ou+20}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2020 IEEE Fifth International Conference on Data Science in Cyberspace (DSC)}
+      \field{title}{Anobeat: Anomaly Detection for Electrocardiography Beat Signals}
+      \field{year}{2020}
+      \field{pages}{142\bibrangedash 149}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/DSC50466.2020.00029
+      \endverb
+      \keyw{Anomaly Detection;Electrocardiogram;Heartbeat}
+    \endentry
     \entry{papernot2017semisupervised}{misc}{}
       \name{author}{5}{}{%
         {{hash=58ca864d11bbe53214716bb8177beab9}{%
@@ -1971,6 +2193,70 @@
       \verb{eprint}
       \verb 1610.05755
       \endverb
+    \endentry
+    \entry{svm_ecg}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{hash=ee8b8c9db3b427e6b45f8be197993e1b}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={K.S.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=eb90ed2905086d999a2213e3aa45b182}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={B.H.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=bfd3770350250edf7bac1595cfe7c20a}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={D.H.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=fe5e6f5233de35642b8b94d44bf62ab0}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={S.H.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7a325818c77a4b89409bac33e2098339}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={J.S.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=06ab42915e6a980b3f62b79c922a6caf}{%
+           family={Chee},
+           familyi={C\bibinitperiod},
+           given={Y.J.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b7d10c8c691a4c14bc93938633561eb0}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={I.Y.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=5cd6a52e35aea61a826c022387a1f3f9}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={S.I.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{a6e0c682e7cf34a49396395d53e0ac2e}
+      \strng{fullhash}{8482e0ae31ddb806d6975991225c5d9f}
+      \strng{bibnamehash}{8482e0ae31ddb806d6975991225c5d9f}
+      \strng{authorbibnamehash}{8482e0ae31ddb806d6975991225c5d9f}
+      \strng{authornamehash}{a6e0c682e7cf34a49396395d53e0ac2e}
+      \strng{authorfullhash}{8482e0ae31ddb806d6975991225c5d9f}
+      \field{labelalpha}{Par+08}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2008 Computers in Cardiology}
+      \field{title}{Hierarchical support vector machine based heartbeat classification using higher order statistics and hermite basis function}
+      \field{year}{2008}
+      \field{pages}{229\bibrangedash 232}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/CIC.2008.4749019
+      \endverb
+      \keyw{Support vector machines;Support vector machine classification;Heart beat;Higher order statistics;Electrocardiography;Feature extraction;Cardiac disease;Noise level;Heart rate variability;DH-HEMTs}
     \endentry
     \entry{pei2021towards}{inproceedings}{}
       \name{author}{6}{}{%
@@ -2131,94 +2417,6 @@
       \verb https://proceedings.neurips.cc/paper_files/paper/2007/file/013a006f03dbc5392effeb8f18fda755-Paper.pdf
       \endverb
     \endentry
-    \entry{anom_rev}{article}{}
-      \name{author}{3}{}{%
-        {{hash=4a742bada01b9a54aa361c425bdc817d}{%
-           family={Schmidl},
-           familyi={S\bibinitperiod},
-           given={Sebastian},
-           giveni={S\bibinitperiod}}}%
-        {{hash=57c098baaa906cd941d31b83350f2fe5}{%
-           family={Wenig},
-           familyi={W\bibinitperiod},
-           given={Phillip},
-           giveni={P\bibinitperiod}}}%
-        {{hash=7a50a572ebbc65b289cc3df3ee2cba96}{%
-           family={Papenbrock},
-           familyi={P\bibinitperiod},
-           given={Thorsten},
-           giveni={T\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {VLDB Endowment}%
-      }
-      \strng{namehash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
-      \strng{fullhash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
-      \strng{bibnamehash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
-      \strng{authorbibnamehash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
-      \strng{authornamehash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
-      \strng{authorfullhash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
-      \field{extraname}{1}
-      \field{labelalpha}{SWP22}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extraalpha}{1}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Proc. VLDB Endow.}
-      \field{month}{5}
-      \field{number}{9}
-      \field{title}{Anomaly detection in time series: a comprehensive evaluation}
-      \field{volume}{15}
-      \field{year}{2022}
-      \field{pages}{1779\bibrangedash 1797}
-      \range{pages}{19}
-      \verb{doi}
-      \verb 10.14778/3538598.3538602
-      \endverb
-    \endentry
-    \entry{schmidl2022anomaly}{article}{}
-      \name{author}{3}{}{%
-        {{hash=4a742bada01b9a54aa361c425bdc817d}{%
-           family={Schmidl},
-           familyi={S\bibinitperiod},
-           given={Sebastian},
-           giveni={S\bibinitperiod}}}%
-        {{hash=57c098baaa906cd941d31b83350f2fe5}{%
-           family={Wenig},
-           familyi={W\bibinitperiod},
-           given={Phillip},
-           giveni={P\bibinitperiod}}}%
-        {{hash=7a50a572ebbc65b289cc3df3ee2cba96}{%
-           family={Papenbrock},
-           familyi={P\bibinitperiod},
-           given={Thorsten},
-           giveni={T\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {VLDB Endowment}%
-      }
-      \strng{namehash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
-      \strng{fullhash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
-      \strng{bibnamehash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
-      \strng{authorbibnamehash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
-      \strng{authornamehash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
-      \strng{authorfullhash}{2a5f7ca2f6f4d1afe4fd1525899bb8f9}
-      \field{extraname}{2}
-      \field{labelalpha}{SWP22}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extraalpha}{2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Proceedings of the VLDB Endowment}
-      \field{number}{9}
-      \field{title}{Anomaly detection in time series: a comprehensive evaluation}
-      \field{volume}{15}
-      \field{year}{2022}
-      \field{pages}{1779\bibrangedash 1797}
-      \range{pages}{19}
-    \endentry
     \entry{Scholkopf2001AGR}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=a8ec77afd672acfe7820edd22821493e}{%
@@ -2373,24 +2571,6 @@
       \field{year}{2022}
       \verb{eprint}
       \verb 2011.07018
-      \endverb
-    \endentry
-    \entry{aami}{inbook}{}
-      \field{labelalpha}{13}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{ANSI/AAMI EC57:2012/(R)2020}
-      \field{title}{Testing and reporting performance results of cardiac rhythm and ST segment measurement algorithms}
-      \field{year}{2013}
-      \verb{doi}
-      \verb 10.2345/9781570204784.ch1
-      \endverb
-      \verb{urlraw}
-      \verb https://array.aami.org/doi/abs/10.2345/9781570204784.ch1
-      \endverb
-      \verb{url}
-      \verb https://array.aami.org/doi/abs/10.2345/9781570204784.ch1
       \endverb
     \endentry
     \entry{wang2020accurate}{inproceedings}{}
