@@ -13,13 +13,13 @@ Differential privacy (DP) should be understood as an agreement between the data 
         \item If the coin shows tails, then the participant should respond truthfully.
         \item If the coin shows head, then the participant should flip the coin a second time and answer ``Yes'' if the second coin shows head and ``no'' otherwise.
     \end{enumerate}
-    This procedure ensures participants' privacy by ``plausible deniability''; each participant's answer has non-zero probability of being truthful or not. By understanding the probabilities of the noise generation process, the data analyst can estimate the true number of ``yes'' and ``no'' answers. To this end, let $p$ be the true percentage of ``yes'' answers, $N$ the total number of participants, $n_{true}$ the true number of ``yes'' responses and $\hat{n}_{obs}$ the observed number of ``yes'' responses. We assume a fair coin with equal probability of showing heads or tails. Then the expected number of ``yes'' answers after applying the described procedure is:
+    This procedure ensures participants' privacy by ``plausible deniability''; each participant's answer has non-zero probability of being truthful or not. By understanding the probabilities of the noise generation process, the data analyst can estimate the true number of ``yes'' and ``no'' answers. To this end, let $N$ be the total number of participants, $n_{true}$ the true number of ``yes'' responses and $\hat{n}_{obs}$ the observed number of ``yes'' responses. We assume a fair coin with equal probability of showing heads or tails. Then the expected number of ``yes'' answers after applying the described procedure is
     \begin{align}
         \mathbb{E}("Yes") = \frac{1}{4} n_{true} + \frac{1}{4} (N-n_{true}) + \frac{1}{2} n_{true} = \frac{1}{4} N + \frac{n_{true}}{2}
     \end{align}
     We can estimate this using the $\hat{n}_{obs} \approx \mathbb{E}("Yes") = \frac{1}{4} N + \frac{n_{true}}{2}$ and finally solving for $n_{true}$ yields the estimate:
     \begin{align}
-        \hat{n_{true}} = 2 \hat{n}_{obs} - \frac{1}{2} N
+        \hat{n}_{true} = 2 \hat{n}_{obs} - \frac{1}{2} N \mperiod
     \end{align}
 \end{ex}
 
@@ -32,6 +32,7 @@ Now introduce some technical definitions, that will be need in order to define d
     \end{align}
 \end{definition}
 
+A randomised algorithm given some input $a$ should produce random output $\mathcal{M}(a)=b$ with some probability distribution on the set of all possible outcomes.
 \begin{definition}[Randomised Algorithm]
     A randomized algorithm $\mathcal{M}$ with domain $A$ and discrete range $B$ is associated with a mapping $M: A \rightarrow \Delta(B)$. On input $a\in A$ algorithm $\mathcal{M}$ outputs $\mathcal{M}(a)=b$ with probability $(M(a))_b$
 \end{definition}
@@ -49,26 +50,26 @@ The previous definition of a database might sound cryptic at first, hence we wil
     Let $\mathcal{X}=\{P_1, ..., P_N\}$ be the set of $N$ distinct patients in a study. Then $x_1 = (1,0,...,0) \in \mathbb{N}^N$ would correspond to patient $P_1$, $x_2 = (0,1,0...,0) \in \mathbb{N}^N$ to patient $P_2$ and so on.
 \end{ex}
 
-Equipped with this definition of a database one can now naturally define a way to measure ``how much databases differ'', i. e. in how many entries they differ.
+Equipped with this definition of a database one can now naturally define a way to measure ``how much databases differ'', i.e. in how many entries they differ.
 
 \begin{definition}[$l_1$-norm of a database in histogram representation]
-    The $l_1$-norm of a database is a measure of the size of the database and defined as:
+    The $l_1$-norm of a database is a measure of the size of the database and defined as
     \begin{align}
-        ||x||_1 = \sum_{i=1}^{|\mathcal{X}|} |x_i|
+        ||x||_1 = \sum_{i=1}^{|\mathcal{X}|} |x_i| \mperiod
     \end{align}
 \end{definition}
 
-This immediately gives rise to a notion of distance between two databases $x$ and $y$, namely:
+This immediately gives rise to a notion of distance between two databases $x$ and $y$, namely,
 \begin{align}
-    ||x-y||_1   = \sum_{i=1}^{|\mathcal{X}|} |x_i-y_i|
+    ||x-y||_1   = \sum_{i=1}^{|\mathcal{X}|} |x_i-y_i| \mcomma
 \end{align}
 which basically counts the number of different entries.
 
 Now we are ready to give the general definition of differential privacy:
 \begin{definition}[$(\epsilon, \delta)$-DP] \label{def:dp}
-    A randomised algorithm $\mathcal{M}$ with domain $\mathbb{N}^{|\mathcal{X}|}$ is $(\epsilon, \delta)$- differentially private if for all outcomes $S \subset ran \mathcal{M}$ and for all databases $x,y \in \mathbb{N}^{|\mathcal{X}|}$, such that $||x-y||_1$ (i. e. they only differ in one element) we have
+    A randomised algorithm $\mathcal{M}$ with domain $\mathbb{N}^{|\mathcal{X}|}$ is $(\epsilon, \delta)$- differentially private if for all  set of outcomes $S \subset ran \mathcal{M}$ and for all databases $x,y \in \mathbb{N}^{|\mathcal{X}|}$, such that $||x-y||_1 \le 1$ (i.e. they only differ in one element) we have
     \begin{align}
-        \mathbb{P}(\mathcal{M}(x) \in S) \le e^\epsilon \cdot \mathbb{P}(\mathcal{M}(y) \in S) + \delta 
+        \mathbb{P}(\mathcal{M}(x) \in S) \le e^\epsilon \cdot \mathbb{P}(\mathcal{M}(y) \in S) + \delta \mcomma
     \end{align}
     where the probability is taken over the randomness of $\mathcal{M}$. If $\delta=0$, we say $\mathcal{M}$ is $\epsilon$-differentially private.
 \end{definition}
@@ -77,7 +78,7 @@ In other words, we call an algorithm $(\epsilon, \delta)$-DP if its outcome does
 
 
 \begin{ex}[Randomised response revisited]
-    We revisit the introductory \cref{ex:rand_resp} and examine its privacy. It turns out that this simple procedure is differentially private! Without loss of generality let $x$ and $\hat{x}$ be two databases with $x_j="Yes"$ and $\hat{x}_j="No"$, $S = \{"Yes\}$. Then $\mathbb{P}(\mathcal{M}_{RR}(x_j)= "Yes") = \frac{3}{4}$, since the mechanism will return answer ``Yes'' (given the true answer is ``Yes'') if either the first coin toss is tails with probability $\frac{1}{2}$ or if the first and the second coin toss give heads with probability $\frac{1}{4}$. Similarly, we have  $\mathbb{P}(\mathcal{M}_{RR}(\hat{x}_j)= "Yes") = \frac{3}{4}$ given that the true answer is ``No'' in this case. Thus we have:
+    We revisit the introductory \cref{ex:rand_resp} and examine its privacy. It turns out that this simple procedure is differentially private! Let us denote by $\mathcal{M}_RR$ the randomised response mechanism Without loss of generality let $x$ and $\hat{x}$ be two databases with $x_j="Yes"$ and $\hat{x}_j="No"$, $S = \{"Yes\}$. Then $\mathbb{P}(\mathcal{M}_{RR}(x_j)= "Yes") = \frac{3}{4}$, since the mechanism will return answer ``Yes'' (given the true answer is ``Yes'') if either the first coin toss is tails with probability $\frac{1}{2}$ or if the first and the second coin toss give heads with probability $\frac{1}{4}$. Similarly, we have  $\mathbb{P}(\mathcal{M}_{RR}(\hat{x}_j)= "Yes") = \frac{3}{4}$ given that the true answer is ``No'' in this case. Thus we have:
     \begin{align}
         \frac{\mathbb{P}(\mathcal{M}_{RR}(x_j)\in S)}{\mathbb{P}(\mathcal{M}_{RR}(\hat{x}_j)\in S)} = \frac{\mathbb{P}(\mathcal{M}_{RR}(x_j)= "Yes")}{\mathbb{P}(\mathcal{M}_{RR}(\hat{x}_j)="Yes")} = \frac{\frac{3}{4}}{\frac{1}{4}} = 3
     \end{align} 
@@ -93,13 +94,13 @@ The first question one might ask is whether adding randomness is crucial for dif
     \colorbox{red}{tba}
 \end{proof}
 
-Hence, we established, that adding randomness is essential for differential privacy. But once we have obtained that level of privacy the output is immune to post-processing, e. g. for the case of privacy-preserving synthetic data once we have generated the data in a differential private setting, then the synthetic data will inherit the privacy guarantees for any subsequent task.
+Hence, we established, that adding randomness is essential for differential privacy. But once we have obtained that level of privacy the output is immune to post-processing, e.g. for the case of privacy-preserving synthetic data once we have generated the data in a differential private setting, then the synthetic data will inherit the privacy guarantees for any subsequent task.
 
 \begin{thm}[Post-processing] \label{thm:postpro}
     Let $\mathcal{M}: \mathbb{N}^{|\mathcal{X}|} \rightarrow R$ be a randomised algorithm that is $(\epsilon, \delta)$- DP. Further let $f: R \rightarrow R'$ an arbitrary function. Then $f \circ \mathcal{M}$ is also $(\epsilon, \delta)$ -DP.
 \end{thm}
 \begin{proof}
-    First fix data sets $x,y \in \mathbb{N}^{|\mathcal{X}|}$, s. t. $||x-y||_1\le 1$ and outcome $S' \subseteq R'$. Define a set $S=\left\{r\in R: f(r) \in S'\right\}$. Then we have:
+    First fix data sets $x,y \in \mathbb{N}^{|\mathcal{X}|}$, such that $||x-y||_1\le 1$ and outcome $S' \subseteq R'$. Define a set $S=\left\{r\in R: f(r) \in S'\right\}$. Then we have:
     \begin{align}
         \mathbb{P}(f(\mathcal{M}(x))\in S') &= \mathbb{P}(\mathcal{M}(x)\in S) \nonumber \\
         &\le e^\epsilon \cdot \mathbb{P}(\mathcal{M}(y)\in S) + \delta \nonumber \\
@@ -108,7 +109,7 @@ Hence, we established, that adding randomness is essential for differential priv
     where the inequality follows from the $(\epsilon, \delta)-DP$ of $\mathcal{M}$.
 \end{proof}
 
-But if you employ two different DP mechnism at once, then their privacy degrades:
+But if we employ two different DP mechnism at once, then their privacy degrades, as follows
 
 \begin{thm}[Standard composition]
     Let $\mathcal{M}_1: \mathbb{N}^{|\mathcal{X}|} \rightarrow R_1$ and $\mathcal{M}_2: \mathbb{N}^{|\mathcal{X}|} \rightarrow R_2$ be two randomised algorithms that are $(\epsilon_1, \delta_1)$- and $(\epsilon_2, \delta_2)$ DP, then their composition defined by $\mathcal{M}_{12}: \mathbb{N}^{|\mathcal{X}|} \rightarrow R_1 \times R_2$, $\mathcal{M}_{12}(x)=(\mathcal{M}_{1}(x), \mathcal{M}_{2}(x))$ is $(\epsilon_1+\epsilon_2, \delta_1+\delta_2)$ DP.
@@ -118,13 +119,13 @@ But if you employ two different DP mechnism at once, then their privacy degrades
 \end{proof}
 
 \begin{thm}[Group privacy]
-    Let $\mathcal{M}: \mathbb{N}^{|\mathcal{X}|} \rightarrow R$ be a randomised algorithm that is $(\epsilon, \delta)$- DP, then $\mathcal{M}$ is $(k\epsilon, k e^{k\epsilon} \delta)$- DP for groups of size $k$, i. e. it holds for databases $x,y \in \mathbb{N}^{|\mathcal{X}|}$ such that $||x-y||_1\le k$ and for all $S \subseteq R$:
+    Let $\mathcal{M}: \mathbb{N}^{|\mathcal{X}|} \rightarrow R$ be a randomised algorithm that is $(\epsilon, \delta)$- DP, then $\mathcal{M}$ is $(k\epsilon, k e^{k\epsilon} \delta)$- DP for groups of size $k$, i.e. it holds for databases $x,y \in \mathbb{N}^{|\mathcal{X}|}$ such that $||x-y||_1\le k$ and for all $S \subseteq R$:
     \begin{align}
         \mathbb{P}(\mathcal{M}(x) \in S) \le e^{k\epsilon} \cdot \mathbb{P}(\mathcal{M}(y) \in S) + k\delta 
     \end{align}
 \end{thm}
 \begin{proof}
-    First fix data sets $x,y \in \mathbb{N}^{|\mathcal{X}|}$, s. t. $||x-y||_1\le k$ and outcome $S \subseteq R$. Now there exists a series of databases $z_0,..., z_k$, such that $x=z_0$ and $y=z_k$ and $|| z_{i+1} - z_i||_1 \le 1$, i. e. we can find a series of databases that transforms $x$ into $y$ by removing or adding one record at a time. Then we have:
+    First fix data sets $x,y \in \mathbb{N}^{|\mathcal{X}|}$, such that $||x-y||_1\le k$ and outcome $S \subseteq R$. Now there exists a series of databases $z_0,..., z_k$, such that $x=z_0$ and $y=z_k$ and $|| z_{i+1} - z_i||_1 \le 1$, i.e. we can find a series of databases that transforms $x$ into $y$ by removing or adding one record at a time. Then we have:
     \begin{align}
         \mathbb{P}(\mathcal{M}(x)\in S) &= \mathbb{P}(\mathcal{M}(z_0)\in S) \nonumber \\
         &\le e^\epsilon \cdot \mathbb{P}(\mathcal{M}(z_1)\in S) + \delta \nonumber \\
@@ -138,10 +139,10 @@ But if you employ two different DP mechnism at once, then their privacy degrades
 
 \subsection{Example of DP-mechanism: Gaussian Mechanism}
 
-Let $f:\mathbb{N}^{|\mathcal{X}|} \longrightarrow \mathbb{R}^d$ an arbitrary function mapping to a $d$-dimensional real space. $f$ can represent numerous models, e. g. a neural network, an SVM-classifier etc. We have seen from \cref{thm:dp_random} that in order to ``privatise'' the output of $f$, we need to add randomness to its output. One way to achieve this is to add gaussian noise, which is calibrated to mask the influence of a specific input. Because differential privacy aims to hide the influence of the input to the output, a natural quantity to consider when calibrating the noise is to look at how much $f$ will change, when using different inputs. This leads the following definition:
+Let be $f:\mathbb{N}^{|\mathcal{X}|} \longrightarrow \mathbb{R}^d$ an arbitrary function mapping to a $d$-dimensional real space. The function $f$ can represent numerous models, e.g. a neural network, an SVM-classifier etc. We have seen from \cref{thm:dp_random} that in order to ``privatise'' the output of $f$, we need to add randomness to its output. One way to achieve this is to add Gaussian noise, which is calibrated to mask the influence of a specific input. Because differential privacy aims to hide the influence of the input to the output, a natural quantity to consider when calibrating the noise is to look at how much $f$ will change, when using different inputs. This leads the following definitions.
 
 \begin{definition}[$l_2$-sensitivity]
-    Let $f:\mathbb{N}^{|\mathcal{X}|} \longrightarrow \mathbb{R}^d$ an arbitrary function, then its $l_2$-sensitivity is defined as:
+    Let $f:\mathbb{N}^{|\mathcal{X}|} \longrightarrow \mathbb{R}^d$ be an arbitrary function, then its $l_2$-sensitivity is defined by
     \begin{align}
         \Delta f = \max_{\substack{x,y \in \mathbb{N}^{|\mathcal{X}|} \\ ||x-y||_1\le 1}} ||f(x)-f(y)||_2 
     \end{align}
@@ -153,10 +154,10 @@ Now we can calibrate the noise according to its sensitivity which we can prove t
     \begin{align}
         F(x) = f(x) + \mathcal{N}(0, \sigma^2)
     \end{align}
-    where the variance is calibrated by the sensitivity of $f$ and the given privacy level, s. t. $\sigma \ge \frac{2 \Delta f}{\epsilon}\ln(\frac{1.25}{\delta})$
+    where the variance is calibrated by the sensitivity of $f$ and the given privacy level, such that $\sigma \ge \frac{2 \Delta f}{\epsilon}\ln(\frac{1.25}{\delta})$
 \end{definition}
 
 \begin{thm}[Gaussian Mechanism satisfies DP]
-    The gaussian mechanism defined in \cref{def:gm} satisfies $(\epsilon, \delta)$-DP.
+    The Gaussian mechanism defined in \cref{def:gm} satisfies $(\epsilon, \delta)$-DP.
 \end{thm}
-The proof is rather lengthy and the curious reader is referred to read through \parencite[][Appendix A]{dwork2014algorithmic}
+For the proof, the curious reader is referred to read through \parencite[][Appendix A]{dwork2014algorithmic}

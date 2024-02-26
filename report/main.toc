@@ -13,7 +13,7 @@
 \contentsline {paragraph}{}{6}{section*.14}%
 \contentsline {section}{\numberline {2}Theoretical Background on Differential Privacy}{7}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Defining Differential Privacy}{7}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Important Results for Differential Privacy}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}Important Results for Differential Privacy}{10}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Example of DP-mechanism: Gaussian Mechanism}{11}{subsection.2.3}%
 \contentsline {section}{\numberline {3}(Time Series) Data generation}{13}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Overview}{13}{subsection.3.1}%
