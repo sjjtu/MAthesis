@@ -1,6 +1,6 @@
 \section[(Time Series) Data generation]{(Time Series) Data generation}\label{chapter3}
 
-This chapter gives a broad overview of different ML-based data generation algorithms. In particular, two algorithms will be explained in more detail that serve as a basis for the subsequent task of ECG time series data generation.
+This chapter gives a broad overview of different machine learning based data generation algorithms. In particular, two algorithms will be explained in more detail that serve as a basis for the subsequent task of ECG time series data generation.
 
 \subsection{Overview}
 
@@ -9,35 +9,36 @@ Time series data are sequences of data points in which there is a notion of time
 We have chosen two architectures from the state of the art, that we will adapt to work on time series data. The first model is an example of a feature-based method, where a simple generative model is trained to map from a noise distribution to the data distribution. This is done by comparing the features of the synthetic data (or a suitable transformation thereof) with those of the original data. One particular instance of this class, DP-MERF \parencite{dpmerf}, has shown to give efficient and accurate results. Making this algorithm differentially private is straight-forward, since the loss function here can be separated into a term that is dependent on the original data and one that is not. So one only needs to introduce differential private noise to the data-dependent term once.
 
 
-The second model follows a GAN-based approach. GANs introduced by Goodfellow et. al \parencite{gan_og} have been studied extensively in recent works as they have shown promising results in the field of image generation. They consist of two networks, a generator and a discriminator, where those two networks play a zero-sum game: the generator aims to generate authentic data whereas the discriminator aims to distinguish between generated and real data.
+The second model follows a GAN-based approach. GANs introduced by Goodfellow et. al \parencite{gan_og} have been applied extensively in recent works as they have shown promising results in the field of image generation. They consist of two networks, a generator and a discriminator, where those two networks play a zero-sum game: the generator aims to generate authentic data whereas the discriminator aims to distinguish between generated and real data.
 
 
 \subsection{DP-MERF}
 
-DP-MERF \parencite{dpmerf} is an efficient all purpose data generation algorithm that is based on minimising the so-called Maximum Mean Discrepancy (MMD) between the real and the synthetic data distributions. It employs a so-called kernel mean embedding to transform the underlying probability distribution of the original data into a reproducing kernel hilbert space (RKHS). The distance between two distributions in the RKHS is then measured by the MMD. The authors mainly verified their results using tabular data like the isolet dataset\footnote{see https://archive.ics.uci.edu/dataset/54/isolet} but also image data, notably the MNIST \footnote{see http://yann.lecun.com/exdb/mnist/} data set. It has not been used for time series data, but we will consider this data generation for generating time series data in this thesis, because according to a recent survey \parencite{hu2023sok}, DP-MERF delivers the best all purpose data generation performance.
+DP-MERF \parencite{dpmerf} is an efficient all purpose data generation algorithm that is based on minimising the so-called Maximum Mean Discrepancy (MMD) between the real and the synthetic data distributions. It employs a so-called kernel mean embedding to transform the underlying probability distribution of the original data into a reproducing kernel Hilbert space (RKHS) \colorbox{red}{tba}. The distance between two distributions in the RKHS is then measured by the MMD. The authors mainly verified their results using tabular data like the isolet dataset\footnote{see https://archive.ics.uci.edu/dataset/54/isolet} but also image data, notably the MNIST \footnote{see http://yann.lecun.com/exdb/mnist/} data set. It has not been used for time series data, but we will consider this data generation for generating time series data in this thesis, because according to a recent survey \parencite{hu2023sok}, DP-MERF delivers the best all purpose data generation performance.
 
 \subsubsection{Maximum Mean Discrepancy}
-There are different ways to measure the "distance" between two distributions $P$ and $Q$. On popular metric is the Maximum Mean Discrepancy (MMD) between $P$ and $Q$, where the random variables are projected into another feature space and the expected values are compared to each other in this space.
+There are different ways to measure the "distance" between two distributions $P$ and $Q$. On popular metric is the maximum mean discrepancy (MMD) between $P$ and $Q$, where the random variables are projected into another (possibly higher dimensional) space and the expected values are compared to each other in this space.
 
 \begin{definition}[MMD]
-    Let $\phi: \mathcal{X} \rightarrow \mathcal{H}$, where $\mathcal{H}$ is a reproducing kernel hilbert space (RKHS) and $P$ and $Q$ some distributions over $\mathcal{X}$ and random variables $X \sim P$, $Y \sim Q$ given. Then the Maximum mean Discrepancy is defined as:
+    Let $\phi: \mathcal{X} \rightarrow \mathcal{H}$, where $\mathcal{H}$ is a reproducing kernel Hilbert space (RKHS) and $P$ and $Q$ some distributions over $\mathcal{X}$ and random variables $X \sim P$, $Y \sim Q$ given. Then the maximum mean discrepancy is defined as:
     \begin{align}
-        MMD(P,Q)=|| \mathbb{E}[\phi(X)] - \mathbb{E}[\phi(Y)] ||_\mathcal{H}
+        MMD(P,Q)=|| \mathbb{E}[\phi(X)] - \mathbb{E}[\phi(Y)] ||_\mathcal{H} \mperiod
     \end{align}
+    The mapping $\phi$ is called a feature mapping and the Hilbert space $\mathcal{H}$ a feature space.
 \end{definition}
 
 Some ``easy'' features maps $\phi$ are for example:
 \begin{ex}
-    Let $P$ and $Q$ some distributions over $\mathcal{X}$ and random variables $X \sim P$, $Y \sim Q$ given.
+    Let $P$ and $Q$ be distributions over $\mathcal{X}$ with random variables $X \sim P$, $Y \sim Q$ given.
     \begin{itemize}
         \item \textbf{Identity feature}: $\mathcal{X}=\mathcal{H}=\mathbb{R}^d$ and $\phi(x)=x$, then we have:
         \begin{align}
             MMD(P,Q) &= || \mathbb{E}[\phi(X)] - \mathbb{E}[\phi(Y)] ||_\mathcal{H} \nonumber \\
-            &= || \mathbb{E}[X] - \mathbb{E}[Y] ||_{\mathbb{R}^d}
+            &= || \mathbb{E}[X] - \mathbb{E}[Y] ||_{\mathbb{R}^d} \mperiod
         \end{align}
         So we only compare the two distributions in terms of their means. 
 
-        \item \textbf{Quadratic features}: $\mathcal{X}=\mathbb{R}$ $\mathcal{H}=\mathbb{R}^2$ and $\phi(x)=(x, x^2)$, then we have:
+        \item \textbf{Quadratic features}: $\mathcal{X}=\mathbb{R}$ ,$\mathcal{H}=\mathbb{R}^2$ and $\phi(x)=(x, x^2)$, then we have:
         \begin{align}
             MMD(P,Q) &= || \mathbb{E}[\phi(X)] - \mathbb{E}[\phi(Y)] ||_\mathcal{H} \nonumber \\
             &= || \mathbb{E}[(X, X^2)] - \mathbb{E}[(Y, Y^2)] ||_\mathcal{H} \nonumber \\
@@ -46,24 +47,24 @@ Some ``easy'' features maps $\phi$ are for example:
             \end{pmatrix} - \begin{pmatrix}
                 \mathbb{E}[Y] \\ \mathbb{E}[Y^2]
             \end{pmatrix} ||_{\mathbb{R}^2} \nonumber \\
-            &= \sqrt{(\mathbb{E}[X] - \mathbb{E}[Y])^2 - (\mathbb{E}[X^2] - \mathbb{E}[Y^2])^2}
+            &= \sqrt{(\mathbb{E}[X] - \mathbb{E}[Y])^2 + (\mathbb{E}[X^2] - \mathbb{E}[Y^2])^2} \mperiod
         \end{align}
         So here we compare the two distributions in terms of their means and their variance (or first and second moments respectively).
     \end{itemize}
 \end{ex}
 
-Now instead of computing a possibly high or even infinite dimensional transformation $\phi$ one can use the well-known kernel trick \parencite{Scholkopf2001AGR}. Let $k(x,y)=<\phi(x), \phi(y)>_{\mathcal{H}}$ be a kernel with corresponding reproducing kernel hilbert space $\mathcal{H}$, then the computation of the MMD simplifies to:
+Now instead of computing a possibly high or even infinite dimensional transformation $\phi$ one can use the well-known kernel trick \parencite{Scholkopf2001AGR}. Let $k(x,y)=<\phi(x), \phi(y)>_{\mathcal{H}}$ be a kernel with corresponding reproducing kernel Hilbert space $\mathcal{H}$, then the computation of the MMD simplifies to
 
 \begin{align}
     MMD^2(P,Q) &= || \mathbb{E}[\phi(X)] - \mathbb{E}[\phi(Y)] ||^2_\mathcal{H} \nonumber \\
     &= <\mathbb{E}[\phi(X)], \mathbb{E}[\phi(X')]> - <\mathbb{E}[\phi(X)], \mathbb{E}[\phi(Y)]> - <\mathbb{E}[\phi(Y)], \mathbb{E}[\phi(X)]> \nonumber \\ &\phantom{mmmmmmmmmmmmmmmmmmmm}+ <\mathbb{E}[\phi(Y)], \mathbb{E}[\phi(Y')]> \nonumber \\
     &= \mathbb{E}[<\phi(X), \phi(X')>] - 2 \mathbb{E}[<\phi(X), \phi(Y)>] + \mathbb{E}[<\phi(Y), \phi(Y')>] \nonumber \\
-    &= \mathbb{E}[k(X,X')] - 2 \mathbb{E}[k(X,Y)] + \mathbb{E}[k(Y,Y')]
+    &= \mathbb{E}[k(X,X')] - 2 \mathbb{E}[k(X,Y)] + \mathbb{E}[k(Y,Y')] \mcomma
 \end{align}
 
-Where we introduced independent random variables $X,X' \sim P$, $Y,Y' \sim Q$.
+where we introduced independent random variables $X,X' \sim P$, $Y,Y' \sim Q$.
 
-In particular, this avoids computation in very high or even infinite dimensional spaces. A popular choice for the kernel is the
+In particular, this avoids computation in very high or even infinite dimensional spaces. A popular choice for the kernel is the following example.
 
 \begin{ex}[Gaussian Kernel]
     Let us define $k(x,y)=e^{\frac{||x-y||^2_2}{2}}$. This corresponds to an infinite-dimensional feature space, as can been seen with the following computation:
@@ -75,55 +76,55 @@ In particular, this avoids computation in very high or even infinite dimensional
 Now given a training data set $X_m = \{x_i\}_{i=1}^m \sim P$ and a synthetic data set $X'_m = \{x_i\}_{i=1}^m \sim Q$ we can estimate their $MMD^2$ by estimating the expected value with a mean estimate:
 
 \begin{align} \label{eq:mmd}
-    \widehat{MMD}^2(X_m, X'_m) = \frac{1}{m^2} \sum_{i,j=1}^m k(x_i,x_j) + \frac{1}{m^2} \sum_{i,j=1}^m k(x'_i,x'_j) - \frac{2}{m^2} \sum_{i,j=1}^m k(x_i,x'_j)
+    \widehat{MMD}^2(X_m, X'_m) := \frac{1}{m^2} \sum_{i,j=1}^m k(x_i,x_j) + \frac{1}{m^2} \sum_{i,j=1}^m k(x'_i,x'_j) - \frac{2}{m^2} \sum_{i,j=1}^m k(x_i,x'_j)
 \end{align}
-Unfortunately, this will require $\mathcal{O}(m^2)$ computations which grows quadratically in the number of samples. This will be too big for a large training data set. As a remedy, the authors of \parencite{dpmerf} propose to use Random Fourier Features based on a paper from 2007 \parencite[see][]{rff}, to approximate the kernel $k$ using its fourier transform and Monte-Carlo-Simulation.
+Unfortunately, this will require $\mathcal{O}(m^2)$ computations which grows quadratically in the number of samples. This will be too big for a large training data set. As a remedy, the authors of \parencite{dpmerf} propose to use Random Fourier Features based on a paper from 2007 \parencite[see][]{rff}, to approximate the kernel $k$ using its Fourier transform and Monte Carlo simulation.
 
 \begin{align}
     k(x,y) \approx \hat{\Phi}(x)^T \hat{\Phi}(x')
 \end{align}
 where $\hat{\Phi}(x) \in \mathbb{R}^D$ and $\hat{\Phi}_j(x) = \sqrt{\frac{2}{D}} cos (\omega_j^T x)$.
 
-If we sample $w_j \sim \mathcal{N}$ from the Gaussian distribution, we are approximating the gaussian kernel.
+If we sample $w_j \sim \mathcal{N}$ from the Gaussian distribution, we are approximating the Gaussian kernel.
 
-Now we can approximate \cref{eq:mmd} using those random fourier features:
+Now we can approximate \cref{eq:mmd} using the random Fourier features:
 
 \begin{align} \label{eq:rff}
     \widehat{MMD}^2_{RFF}(X_m, X'_m) &\approx \frac{1}{m^2} \sum_{i,j=1}^m \hat{\Phi}(x_i)^T \hat{\Phi}(x_j') + \frac{1}{m^2} \sum_{i,j=1}^m \hat{\Phi}(x_i)^T \hat{\Phi}(x_j') - \frac{2}{m^2} \sum_{i,j=1}^m \hat{\Phi}(x_i)^T \hat{\Phi}(x_j') \nonumber \\
     &= || \frac{1}{m} \sum_{i=1}^m \hat{\Phi}(x_i) - \frac{1}{m} \sum_{j=1}^m \hat{\Phi}(x_j') ||_\mathcal{H}^2
 \end{align}
 
-more stuff: https://gregorygundersen.com/blog/2019/12/23/random-fourier-features/
 
 \subsubsection{Vanilla DP-MERF}
-We can now introduce the version of DP-MERF presented in \parencite{dpmerf}. Let $G_\theta$ denote a generative neural network with parameters $\theta$, i.\ e.\ given input $z \sim p(z)$ from some known probability distribution $p(z)$ we obtain a synthetic sample through $x' = G_\theta(z)$. We denote the distribution of the synthetic data samples by $Q$. Further, let $X_m = \{x_i\}_{i=1}^m \sim P$ be our training data with true distribution $P$. By minimising 
+We can now introduce the version of DP-MERF presented in \parencite{dpmerf}. Let $G_\theta$ denote a generative neural network with parameters $\theta$, i.e.\ given input $z \sim p_z$ from some known probability distribution $p_z$ we obtain a synthetic sample through $x' = G_\theta(z)$. We denote the distribution of the synthetic data samples by $Q$. Further, let $X_m = \{x_i\}_{i=1}^m$ be our training data with independent samples from  distribution $P$. By minimising 
 \begin{align}
     \widehat{\theta} &= \argmin_\theta \widehat{MMD}^2_{RFF}(P, Q) \nonumber \\
-    &\overset{\cref{eq:rff}}{=} \argmin_\theta || \frac{1}{m} \sum_{i=1}^m \hat{\Phi}(x_i) - \frac{1}{m} \sum_{j=1}^m \hat{\Phi}(x_j') ||_2^2 \nonumber \\
+    &\overset{\ref{eq:rff}}{=} \argmin_\theta || \frac{1}{m} \sum_{i=1}^m \hat{\Phi}(x_i) - \frac{1}{m} \sum_{j=1}^m \hat{\Phi}(x_j') ||_2^2 \nonumber \\
     &= \argmin_\theta || \hat{\mu}_P - \hat{\mu}_Q ||_2^2
 \end{align}
 
-where we introduced notation $\hat{\mu}_P = \frac{1}{m} \sum_{i=1}^m \hat{\Phi}(x_i)$ and $\hat{\mu}_Q = \frac{1}{m} \sum_{i=1}^m \hat{\Phi}(x'_i)$. The DP version is obtained by observing that the original data set is entering the equation only through $\hat{mu}_P$ so we have to introduce noise only in this term by adding gaussian noise:
+where we introduced the notation $\hat{\mu}_P = \frac{1}{m} \sum_{i=1}^m \hat{\Phi}(x_i)$ and $\hat{\mu}_Q = \frac{1}{m} \sum_{i=1}^m \hat{\Phi}(x'_i)$. The DP version is obtained by observing that the original data set is entering the equation only through $\hat{\mu}_P$ so we have to introduce noise only in this term by adding gaussian noise:
 \begin{align}
     \tilde{\mu}_p = \hat{\mu}_P + \mathcal{N}(0, \sigma^2 I)
 \end{align}
-We choose $\sigma$ according to \cref{def:gm}. For a given privacy level $(\epsilon, \delta)$ we need to compute the sensitivity $\Delta_{\hat{\mu}_P}$. There is an upper bound since we have by definition:
+We choose $\sigma$ according to \cref{def:gm}. For a given privacy level $(\epsilon, \delta)$ we need to compute the sensitivity $\Delta_{\hat{\mu}_P}$. There is an upper bound since we have
 \begin{align}
     \Delta_{\hat{\mu}_P} &= \max_{\substack{X_m,X_m' \\ ||X_m-X_m'||_1=1}} || \frac{1}{m} \sum_{i=1}^m \hat{\Phi}(x_i) - \frac{1}{m} \sum_{j=1}^m \hat{\Phi}(x_j') ||_2 \nonumber \\
     &= \frac{1}{m} \max_{x_m \neq x'_m} || \hat{\Phi}(x_m) - \hat{\Phi}(x'_m)||_2 \nonumber \\
-    &\overset{\Delta \neq}{\leq} \frac{1}{m} \max_{x_m \neq x'_m} || \hat{\Phi}(x_m) ||_2 + ||\hat{\Phi}(x'_m)||_2 \nonumber \\
-    &\leq \frac{2}{m} 
+    &\overset{\footnotemark}{\leq} \frac{1}{m} \max_{x_m \neq x'_m} || \hat{\Phi}(x_m) ||_2 + ||\hat{\Phi}(x'_m)||_2 \nonumber \\
+    &\leq \frac{2}{m} \mcomma
 \end{align}
 where in the second equality we assumed without loss of generality that $X_m$ and $X_m'$ differ only in their last element, so that the other summands cancel each out and in the last inequality we are using the fact that $||\hat{\Phi}(\cdot)||_2 \leq 1$.
 
+\footnotetext{triangle inequality}
 
 
 \subsection{RTSGAN} 
 
 \subsubsection{Review: GANs}
-Generative adversarial networks (GAN) were first introduced in 2014 by Goodfellow et. al in \parencite{gan_og} as an unsupervised learning algorithm for generative modelling. Since then it has been used extensively in image generation, where it excels at generating high-resolution images. The original paper proposes a joint training of two machine learning models to output $\hat{p}_{model}$, usually neural networks, to implicitly model the unknown data distribution $p_{data}$ of a given training set. 
+Generative adversarial networks (GAN) were first introduced in 2014 by Goodfellow et al. in \parencite{gan_og} as an unsupervised learning algorithm for generative modelling. Since then it has been used extensively in image generation, where it excels at generating high-resolution images. The original paper proposes a joint training of two machine learning models to output $\hat{p}_{model}$, usually neural networks, to implicitly model the unknown data distribution $p_{data}$ of a given training set. 
 
-Therefore, the first network denoted by $G$, commonly referred to as the generator, is able to sample from $\hat{p}_{model}$ by finding a mapping from some random noise $z$ and maps it to a sample $G(z; \theta_G)$ following $\hat{p}_{model}$. $G$ is parametrised by a set of weights $\theta_G$. The second model denoted by $D$, commonly referred to as the discriminator, aims to distinguish generated samples $\hat{x}= G(z,\theta_G)$ from real samples $x$, which can be treated as a binary classification model. The output $D(x; \theta_D)$ then is an estimate whether $x$ is a real sample, i. e. sampled from $p_{data}$ or fake, i. e. sampled from $\hat{p}_{model}$ respectively. Similarly, $D$ is parametrised by $\theta_D$.
+Therefore, the first network denoted by $G$, commonly referred to as the generator, is able to sample from $\hat{p}_{model}$ by finding a mapping from some random noise $z$ to a sample $G(z; \theta_G)$ following $\hat{p}_{model}$. The generator $G$ is parametrised by a set of weights $\theta_G$. The second model denoted by $D$, commonly referred to as the discriminator, aims to distinguish generated samples $\hat{x}= G(z,\theta_G)$ from real samples $x$, which can be treated as a binary classification model. The output $D(x; \theta_D)$ then is an estimate whether $x$ is a real sample, i.e. sampled from $p_{data}$ or fake, i.e. sampled from $\hat{p}_{model}$ respectively. Similarly, $D$ is parametrised by $\theta_D$.
 
 During training the weights $\theta_D$ and $\theta_G$ are adjusted in order to minimise or maximise a certain loss:
 \begin{itemize}
@@ -131,13 +132,13 @@ During training the weights $\theta_D$ and $\theta_G$ are adjusted in order to m
     \item $G$ is trained to minimise the probability that $D$ identifies the generated samples.
 \end{itemize}
 
-This leads to the following minmax loss:
+This leads to the following minmax loss
 \begin{align} \label{eq:gan_loss}
-    \min_G \max_D \mathbb{E}_x[\log D(x)] + \mathbb{E}_z[1-D(G(z))]
+    \min_G \max_D \left(\mathbb{E}_x[\log D(x)] + \mathbb{E}_z[1-D(G(z))]\right) \mperiod
 \end{align}
-The training is done sequentially, i. e. in every epoch we first update the discriminator's weights using a some type of gradient descent that maximises  \cref{eq:gan_loss}. Then the generator's weights are adjusted so that it minimises \cref{eq:gan_loss}. This optimisation can be regarded as a zero-sum game from game theory. 
+The training is done sequentially, i.e. in every epoch we first update the discriminator's weights using a some type of gradient descent that maximises  \cref{eq:gan_loss}. Then the generator's weights are adjusted so that it minimises \cref{eq:gan_loss}. This optimisation can be regarded as a zero-sum game in game theory. 
 
-Although theoretical results for convergence where obtained in the original paper by Goodfellow et al., in practise GANs suffer from stability issues coming from exploding or vanishing gradients and mode-collapse \parencite[see][for in-depth review]{gui2020review,jabbar2020survey}. Thus, modifications to the loss function and training process that aim to stabilise training where developed, e. g. WGAN using the Wasserstein loss \parencite{arjovsky2017wasserstein}.
+Although theoretical results for convergence where obtained in the original paper by Goodfellow et al., in practise GANs suffer from stability issues coming from exploding or vanishing gradients and mode-collapse \parencite[see][for in-depth review]{gui2020review,jabbar2020survey}. Thus, modifications to the loss function and training process that aim to stabilise training where developed, e.g. WGAN using the Wasserstein loss \parencite{arjovsky2017wasserstein}.
 
 In light of privacy concerns, standard GAN architectures without any formal privacy guarantees do not preserve any meaningful privacy of the training data. This negative results has been confirmed in \parencite{lin2021privacy,stadler2022synthetic}. Hence, a dedicated privacy mechanism has to be used. In particular, we will ``privatise'' the GAN architecture by using a DP-SGD when training the discriminator, similar to \parencite{xie2018differentially}.
 
@@ -151,12 +152,12 @@ The authors in \parencite{pei2021towards} propose a hybrid approach that employs
     \label{fig:rtsgan_arch}
 \end{figure}
 
-The authors also implement a mechanism to handle missing values, but we will not concern about this issue for the scope of this thesis.
+The authors also implement a mechanism to handle missing values, which we do not consider in this thesis.
 \begin{itemize}
     \item \underline{Autoencoder component:} A gated recurrent unit (GRU) is used for both the encoder and the decoder. The encoder transforms the time series into a vector of fixed size in the latent space. This latent representation is then fed into the decoder which aims to reconstruct the time series from the latent space.
-    \item \underline{Generator component} The generator is based on the WGAN architecture. The main differences to a regular GAN lie in the loss function which is based on the so-called Wasserstein-1 distance and penalty term. Further, a Lipschitz-constraint is imposed on the discriminator through this penalty term.
+    \item \underline{Generator component} The generator is based on the WGAN architecture. The main differences to a regular GAN lie in the loss function which is based on the Wasserstein-1 distance and a penalty term. Further, a Lipschitz-constraint is imposed on the discriminator through this penalty term (as suggested in \parencite{arjovsky2017wasserstein}),
     \begin{align} \label{eq:wgan_loss}
-        \min_G \max_{D \in \mathcal{D}} \mathbb{E}_x[\log D(x)] - \mathbb{E}_z[D(G(z))] + \lambda \mathbb{E}_z [ (||\nabla_z D(G(z))||_2 - 1)^2]
+        \min_G \max_{D \in \mathcal{D}} \mathbb{E}_x[\log D(x)] - \mathbb{E}_z[D(G(z))] + \lambda \mathbb{E}_z [ (||\nabla_z D(G(z))||_2 - 1)^2] \mcomma
     \end{align}
-    where $\mathcal{D}$ denotes the set of 1-Lipschitz functions \footnote[1]{a differentiable function is 1-Lipschitz if and only if its derivative is bounded in norm by 1}). To impose this constraint, the authors chose to impose a penalty on the gradients as suggested in \parencite{arjovsky2017wasserstein}.
+    where $\mathcal{D}$ denotes the set of 1-Lipschitz functions \footnote[1]{a differentiable function is 1-Lipschitz if and only if its derivative is bounded in norm by 1}.
 \end{itemize}
