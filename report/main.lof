@@ -3,7 +3,7 @@
 \contentsline {figure}{\numberline {2}{\ignorespaces AE-(dp)MERF architecture\relax }}{21}{figure.caption.16}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Architecture of AE-(dp)WGAN\relax }}{23}{figure.caption.17}%
 \contentsline {figure}{\numberline {4}{\ignorespaces Excerpt from one ECG data sample, where the R peaks are highlighted\relax }}{24}{figure.caption.18}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Schemativ represetation of a regular ECG wave, taken from \href {https://en.wikipedia.org/wiki/QRS_complex}{wikipedia}\relax }}{25}{figure.caption.19}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Schematic represetation of a regular ECG wave, taken from \href {https://en.wikipedia.org/wiki/QRS_complex}{Wikipedia}\relax }}{25}{figure.caption.19}%
 \contentsline {figure}{\numberline {6}{\ignorespaces Regular and anomalous heart beat samples\relax }}{26}{figure.caption.20}%
 \contentsline {figure}{\numberline {7}{\ignorespaces Division of the private data set into training, test and validation set\relax }}{27}{figure.caption.21}%
 \contentsline {figure}{\numberline {8}{\ignorespaces Architecture of baseline model\relax }}{28}{figure.caption.22}%
@@ -14,12 +14,12 @@
 \contentsline {figure}{\numberline {13}{\ignorespaces Percentages of correctly classified samples based on different threshold values\relax }}{31}{figure.caption.29}%
 \contentsline {figure}{\numberline {14}{\ignorespaces Generated regular heartbeats by AE-MERF model\relax }}{34}{figure.caption.33}%
 \contentsline {figure}{\numberline {15}{\ignorespaces Loss over epoch for baseline model together with loss on validation set\relax }}{34}{figure.caption.34}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Caption\relax }}{35}{figure.caption.35}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Caption\relax }}{35}{figure.caption.35}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Distribution of reconstruction error on validation set with AE-MERF generated samples\relax }}{35}{figure.caption.35}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Percentage of correctly classified regular and anomalous test samples for different threshold values with AE-MERF generated sampled\relax }}{35}{figure.caption.35}%
 \contentsline {figure}{\numberline {18}{\ignorespaces Generated regular heartbeats by AE-WGAN model\relax }}{36}{figure.caption.38}%
 \contentsline {figure}{\numberline {19}{\ignorespaces Loss over epoch for AE-WGAN model together with loss on validation set\relax }}{37}{figure.caption.39}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Caption\relax }}{37}{figure.caption.40}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Caption\relax }}{37}{figure.caption.40}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Distribution of reconstruction error on validation set with AE-WGAN generated samples\relax }}{37}{figure.caption.40}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Percentage of correctly classified regular and anomalous test samples for different threshold values with AE-WGAN generated sampled\relax }}{37}{figure.caption.40}%
 \contentsline {figure}{\numberline {22}{\ignorespaces AE-dpMERF generated samples with different $\epsilon $, the lower the value the higher the privacy guarantees\relax }}{39}{figure.caption.42}%
 \contentsline {figure}{\numberline {23}{\ignorespaces AE-dpWGAN generated samples with different $\epsilon $, the lower the value the higher the privacy guarantees\relax }}{41}{figure.caption.44}%
 \contentsline {figure}{\numberline {24}{\ignorespaces Utility loss over privacy budget $\epsilon $ for AE-(dp)MERF\relax }}{43}{figure.caption.46}%

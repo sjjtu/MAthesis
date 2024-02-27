@@ -2447,12 +2447,16 @@
     <bcf:citekey order="70" intorder="1">vandermaaten2020tradeoffs</bcf:citekey>
     <bcf:citekey order="71" intorder="1">arjovsky2017wasserstein</bcf:citekey>
     <bcf:citekey order="72" intorder="1">desai2022arrhythmias</bcf:citekey>
-    <bcf:citekey order="73" intorder="1">wfdb</bcf:citekey>
-    <bcf:citekey order="74" intorder="1">esteban2017realvalued</bcf:citekey>
-    <bcf:citekey order="75" intorder="1">pei2021towards</bcf:citekey>
-    <bcf:citekey order="76" intorder="1">dwork2019differential</bcf:citekey>
-    <bcf:citekey order="77" intorder="1">hu2023sok</bcf:citekey>
-    <bcf:citekey order="78" intorder="1">du2019robust</bcf:citekey>
+    <bcf:citekey order="73" intorder="1">ROY2023106484</bcf:citekey>
+    <bcf:citekey order="74" intorder="1">wfdb</bcf:citekey>
+    <bcf:citekey order="75" intorder="1">esteban2017realvalued</bcf:citekey>
+    <bcf:citekey order="76" intorder="1">pei2021towards</bcf:citekey>
+    <bcf:citekey order="77" intorder="1">dwork2019differential</bcf:citekey>
+    <bcf:citekey order="78" intorder="1">hu2023sok</bcf:citekey>
+    <bcf:citekey order="79" intorder="1">sreekumar2019optimal</bcf:citekey>
+    <bcf:citekey order="79" intorder="2">zamani2023privacy</bcf:citekey>
+    <bcf:citekey order="79" intorder="3">stadler2022synthetic</bcf:citekey>
+    <bcf:citekey order="80" intorder="1">du2019robust</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

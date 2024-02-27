@@ -1730,7 +1730,7 @@
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.LG}
       \field{eprinttype}{arXiv}
-      \field{title}{Federated Optimization:Distributed Optimization Beyond the Datacenter}
+      \field{title}{Federated Optimization: Distributed Optimization Beyond the Datacenter}
       \field{year}{2015}
       \verb{eprint}
       \verb 1511.03575
@@ -2417,6 +2417,58 @@
       \verb https://proceedings.neurips.cc/paper_files/paper/2007/file/013a006f03dbc5392effeb8f18fda755-Paper.pdf
       \endverb
     \endentry
+    \entry{ROY2023106484}{article}{}
+      \name{author}{4}{}{%
+        {{hash=80362a0b0478e4480bd8493514b90eae}{%
+           family={Roy},
+           familyi={R\bibinitperiod},
+           given={Moumita},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6f328975760853e7bc74a3e3871a3ff8}{%
+           family={Majumder},
+           familyi={M\bibinitperiod},
+           given={Sukanta},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0f79c0debe7d9b3a614dfcc5c165f7c4}{%
+           family={Halder},
+           familyi={H\bibinitperiod},
+           given={Anindya},
+           giveni={A\bibinitperiod}}}%
+        {{hash=53a18455942cd55c6e9e53a2fc398a83}{%
+           family={Biswas},
+           familyi={B\bibinitperiod},
+           given={Utpal},
+           giveni={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{94845f48653631bdae76f5e199f162a9}
+      \strng{fullhash}{0538dea623e86f7ee23f4dcadcc4a951}
+      \strng{bibnamehash}{0538dea623e86f7ee23f4dcadcc4a951}
+      \strng{authorbibnamehash}{0538dea623e86f7ee23f4dcadcc4a951}
+      \strng{authornamehash}{94845f48653631bdae76f5e199f162a9}
+      \strng{authorfullhash}{0538dea623e86f7ee23f4dcadcc4a951}
+      \field{labelalpha}{Roy+23}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0952-1976}
+      \field{journaltitle}{Engineering Applications of Artificial Intelligence}
+      \field{title}{ECG-NET: A deep LSTM autoencoder for detecting anomalous ECG}
+      \field{volume}{124}
+      \field{year}{2023}
+      \field{pages}{106484}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.engappai.2023.106484
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0952197623006681
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0952197623006681
+      \endverb
+      \keyw{ECG arrhythmia,Deep learning,LSTM,Autoencoder,Thresholding,Kapur’s thresholding}
+    \endentry
     \entry{Scholkopf2001AGR}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=a8ec77afd672acfe7820edd22821493e}{%
@@ -2535,6 +2587,39 @@
       \verb{eprint}
       \verb 1610.05820
       \endverb
+    \endentry
+    \entry{sreekumar2019optimal}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=f103ce33bb0535d2e3876bc526e15ece}{%
+           family={Sreekumar},
+           familyi={S\bibinitperiod},
+           given={Sreejith},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3bd4400129463277bb17f358382a72a7}{%
+           family={Gündüz},
+           familyi={G\bibinitperiod},
+           given={Deniz},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{8b03395763fe2b4c4c421800cad1966c}
+      \strng{fullhash}{8b03395763fe2b4c4c421800cad1966c}
+      \strng{bibnamehash}{8b03395763fe2b4c4c421800cad1966c}
+      \strng{authorbibnamehash}{8b03395763fe2b4c4c421800cad1966c}
+      \strng{authornamehash}{8b03395763fe2b4c4c421800cad1966c}
+      \strng{authorfullhash}{8b03395763fe2b4c4c421800cad1966c}
+      \field{labelalpha}{SG19}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2019 IEEE International Symposium on Information Theory (ISIT)}
+      \field{title}{Optimal privacy-utility trade-off under a rate constraint}
+      \field{year}{2019}
+      \field{pages}{2159\bibrangedash 2163}
+      \range{pages}{5}
     \endentry
     \entry{stadler2022synthetic}{misc}{}
       \name{author}{3}{}{%
@@ -2903,6 +2988,42 @@
       \verb{eprint}
       \verb 1802.06739
       \endverb
+    \endentry
+    \entry{zamani2023privacy}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d06ca02bfdcd567aab2e55d3b9405274}{%
+           family={Zamani},
+           familyi={Z\bibinitperiod},
+           given={Amirreza},
+           giveni={A\bibinitperiod}}}%
+        {{hash=76b72d3c6066010f8b7b07cb1dafa4db}{%
+           family={Oechtering},
+           familyi={O\bibinitperiod},
+           given={Tobias\bibnamedelima J},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=cc3e51666857a008fc2771ca4adfaa9f}{%
+           family={Skoglund},
+           familyi={S\bibinitperiod},
+           given={Mikael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{abfe21e64978d3215195ff8acabd5b02}
+      \strng{fullhash}{abfe21e64978d3215195ff8acabd5b02}
+      \strng{bibnamehash}{abfe21e64978d3215195ff8acabd5b02}
+      \strng{authorbibnamehash}{abfe21e64978d3215195ff8acabd5b02}
+      \strng{authornamehash}{abfe21e64978d3215195ff8acabd5b02}
+      \strng{authorfullhash}{abfe21e64978d3215195ff8acabd5b02}
+      \field{labelalpha}{ZOS23}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Information Theory}
+      \field{title}{On the privacy-utility trade-off with and without direct access to the private data}
+      \field{year}{2023}
     \endentry
     \entry{zhang2012functional}{misc}{}
       \name{author}{5}{}{%
