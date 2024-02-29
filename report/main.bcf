@@ -2457,6 +2457,7 @@
     <bcf:citekey order="79" intorder="2">zamani2023privacy</bcf:citekey>
     <bcf:citekey order="79" intorder="3">stadler2022synthetic</bcf:citekey>
     <bcf:citekey order="80" intorder="1">du2019robust</bcf:citekey>
+    <bcf:citekey order="81" intorder="1">adversay</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

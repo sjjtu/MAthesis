@@ -91,7 +91,12 @@ The first question one might ask is whether adding randomness is crucial for dif
     Any non-trivial DP-mechanism requires randomisation.
 \end{thm}
 \begin{proof}
-    \colorbox{red}{tba}
+    By contradiction, let us assume that there exists a non-trivial, deterministic algorithm $\mathcal{M}$, that fulfills \cref{def:dp}. Non-triviality means that there exists two databases $x$ and $y$, such that $\mathcal{M}(x) = r \neq r' = \mathcal{M}(y)$. Now an adversary can apply the following iterative procedure:
+    \begin{enumerate}
+        \item Exchange one entry with x with another entry that is different from all other entries to obtain a database $x'$ with $||x-x'||_1 = 1$, i.e. they differ in one entry.
+        \item Now check if $\mathcal{M}(x) = r\neq r'= \mathcal{M}(x')$, if yes we are done, if not repeat.
+    \end{enumerate}
+    Non triviality guarantees that this procedure will end, but this breaches the privacy of the entry in that row.
 \end{proof}
 
 Hence, we established, that adding randomness is essential for differential privacy. But once we have obtained that level of privacy the output is immune to post-processing, e.g. for the case of privacy-preserving synthetic data once we have generated the data in a differential private setting, then the synthetic data will inherit the privacy guarantees for any subsequent task.

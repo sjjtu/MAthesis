@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.16)  27 FEB 2024 17:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.16)  29 FEB 2024 17:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1154,7 +1154,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.38 ...ving) Data Generation}{47}{subsection.6.1}
+l.38 ...ving) Data Generation}{48}{subsection.6.1}
                                                   % [4
 
 ])
@@ -1194,7 +1194,7 @@ Overfull \hbox (28.15288pt too wide) detected at line 63
  []
 
 [15]
-Overfull \hbox (37.08943pt too wide) detected at line 95
+Overfull \hbox (37.08943pt too wide) detected at line 102
 []
  []
 
@@ -1202,38 +1202,42 @@ Overfull \hbox (37.08943pt too wide) detected at line 95
 <../images/placeholder.png, id=622, 401.5pt x 401.5pt>
 File: ../images/placeholder.png Graphic file (type png)
 <use ../images/placeholder.png>
-Package pdftex.def Info: ../images/placeholder.png  used on input line 150.
+Package pdftex.def Info: ../images/placeholder.png  used on input line 157.
 (pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
-) (./chapters/chapter4-models.tex [19 <../images/placeholder.png>]
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[20
-
-] [21]
+[19]) (./chapters/chapter4-models.tex [20 <../images/placeholder.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./chapters/chapter5-exp.tex [22] [23]
-<../images//excerpt_ecg_rpeaks.png, id=668, 439.4016pt x 328.8285pt>
+[21
+
+] [22]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./chapters/chapter5-exp.tex [23] [24]
+<../images//excerpt_ecg_rpeaks.png, id=676, 439.4016pt x 328.8285pt>
 File: ../images//excerpt_ecg_rpeaks.png Graphic file (type png)
 <use ../images//excerpt_ecg_rpeaks.png>
 Package pdftex.def Info: ../images//excerpt_ecg_rpeaks.png  used on input line 9.
 (pdftex.def)             Requested size: 307.57901pt x 230.17838pt.
- [24
+ [25
 
  <../images//excerpt_ecg_rpeaks.png>]
-<../images//SinusRhythmLabels.png, id=676, 765.6103pt x 667.74469pt>
+<../images//SinusRhythmLabels.png, id=684, 765.6103pt x 667.74469pt>
 File: ../images//SinusRhythmLabels.png Graphic file (type png)
 <use ../images//SinusRhythmLabels.png>
 Package pdftex.def Info: ../images//SinusRhythmLabels.png  used on input line 17.
 (pdftex.def)             Requested size: 229.68486pt x 200.32495pt.
-<../images//reg_hb_samples.png, id=679, 455.301pt x 343.2825pt>
+<../images//reg_hb_samples.png, id=687, 455.301pt x 343.2825pt>
 File: ../images//reg_hb_samples.png Graphic file (type png)
 <use ../images//reg_hb_samples.png>
 Package pdftex.def Info: ../images//reg_hb_samples.png  used on input line 24.
 (pdftex.def)             Requested size: 227.64993pt x 171.64082pt.
-<../images//anom_hb_samples.png, id=680, 455.301pt x 343.2825pt>
+<../images//anom_hb_samples.png, id=688, 455.301pt x 343.2825pt>
 File: ../images//anom_hb_samples.png Graphic file (type png)
 <use ../images//anom_hb_samples.png>
 Package pdftex.def Info: ../images//anom_hb_samples.png  used on input line 25.
@@ -1242,13 +1246,13 @@ Package pdftex.def Info: ../images//anom_hb_samples.png  used on input line 25.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25 <../images//SinusRhythmLabels.png>]
+[26 <../images//SinusRhythmLabels.png>]
 Overfull \hbox (3.53693pt too wide) in paragraph at lines 62--62
  [][]\OT1/cmr/m/n/12 Anomalous: 
  []
 
-[26 <../images//reg_hb_samples.png> <../images//anom_hb_samples.png>] [27]
-<../images//loss_baseline.png, id=703, 409.7709pt x 328.8285pt>
+[27 <../images//reg_hb_samples.png> <../images//anom_hb_samples.png>] [28]
+<../images//loss_baseline.png, id=712, 409.7709pt x 328.8285pt>
 File: ../images//loss_baseline.png Graphic file (type png)
 <use ../images//loss_baseline.png>
 Package pdftex.def Info: ../images//loss_baseline.png  used on input line 152.
@@ -1257,13 +1261,13 @@ Package pdftex.def Info: ../images//loss_baseline.png  used on input line 152.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../images//rec_reguarl_samples_baseline.png, id=704, 455.301pt x 343.2825pt>
+<../images//rec_reguarl_samples_baseline.png, id=713, 455.301pt x 343.2825pt>
 File: ../images//rec_reguarl_samples_baseline.png Graphic file (type png)
 <use ../images//rec_reguarl_samples_baseline.png>
 Package pdftex.def Info: ../images//rec_reguarl_samples_baseline.png  used on input line 161.
 (pdftex.def)             Requested size: 318.70853pt x 240.2961pt.
-[28]
-<../images//rec_anom_samples_baseline.png, id=712, 455.301pt x 343.2825pt>
+[29]
+<../images//rec_anom_samples_baseline.png, id=720, 455.301pt x 343.2825pt>
 File: ../images//rec_anom_samples_baseline.png Graphic file (type png)
 <use ../images//rec_anom_samples_baseline.png>
 Package pdftex.def Info: ../images//rec_anom_samples_baseline.png  used on input line 170.
@@ -1272,20 +1276,20 @@ Package pdftex.def Info: ../images//rec_anom_samples_baseline.png  used on input
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[29 <../images//loss_baseline.png> <../images//rec_reguarl_samples_baseline.png>]
-<../images//hist_threshold_baseline.png, id=720, 498.663pt x 328.8285pt>
+[30 <../images//loss_baseline.png> <../images//rec_reguarl_samples_baseline.png>]
+<../images//hist_threshold_baseline.png, id=728, 498.663pt x 328.8285pt>
 File: ../images//hist_threshold_baseline.png Graphic file (type png)
 <use ../images//hist_threshold_baseline.png>
 Package pdftex.def Info: ../images//hist_threshold_baseline.png  used on input line 180.
 (pdftex.def)             Requested size: 349.0617pt x 230.17838pt.
- [30 <../images//rec_anom_samples_baseline.png> <../images//hist_threshold_baseline.png>]
-<../images//thres_plot_baseline.png, id=729, 430.0065pt x 328.8285pt>
+ [31 <../images//rec_anom_samples_baseline.png> <../images//hist_threshold_baseline.png>]
+<../images//thres_plot_baseline.png, id=737, 430.0065pt x 328.8285pt>
 File: ../images//thres_plot_baseline.png Graphic file (type png)
 <use ../images//thres_plot_baseline.png>
 Package pdftex.def Info: ../images//thres_plot_baseline.png  used on input line 187.
 (pdftex.def)             Requested size: 301.00249pt x 230.17838pt.
- [31 <../images//thres_plot_baseline.png>] [32]
-<../images//gen_aemerf.png, id=755, 455.301pt x 343.2825pt>
+ [32 <../images//thres_plot_baseline.png>] [33]
+<../images//gen_aemerf.png, id=763, 455.301pt x 343.2825pt>
 File: ../images//gen_aemerf.png Graphic file (type png)
 <use ../images//gen_aemerf.png>
 Package pdftex.def Info: ../images//gen_aemerf.png  used on input line 256.
@@ -1294,13 +1298,13 @@ Package pdftex.def Info: ../images//gen_aemerf.png  used on input line 256.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[33]
-<../images//loss_aemerf.png, id=768, 409.7709pt x 328.8285pt>
+[34]
+<../images//loss_aemerf.png, id=777, 409.7709pt x 328.8285pt>
 File: ../images//loss_aemerf.png Graphic file (type png)
 <use ../images//loss_aemerf.png>
 Package pdftex.def Info: ../images//loss_aemerf.png  used on input line 265.
 (pdftex.def)             Requested size: 286.83768pt x 230.17838pt.
-<../images//hist_threshold_aemerf.png, id=769, 492.1587pt x 328.8285pt>
+<../images//hist_threshold_aemerf.png, id=778, 492.1587pt x 328.8285pt>
 File: ../images//hist_threshold_aemerf.png Graphic file (type png)
 <use ../images//hist_threshold_aemerf.png>
 Package pdftex.def Info: ../images//hist_threshold_aemerf.png  used on input line 275.
@@ -1310,7 +1314,7 @@ Overfull \hbox (4.80519pt too wide) in paragraph at lines 275--276
  [][] 
  []
 
-<../images//thres_plot_aemerf.png, id=770, 409.7709pt x 328.8285pt>
+<../images//thres_plot_aemerf.png, id=779, 409.7709pt x 328.8285pt>
 File: ../images//thres_plot_aemerf.png Graphic file (type png)
 <use ../images//thres_plot_aemerf.png>
 Package pdftex.def Info: ../images//thres_plot_aemerf.png  used on input line 281.
@@ -1318,20 +1322,20 @@ Package pdftex.def Info: ../images//thres_plot_aemerf.png  used on input line 28
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[34 <../images//gen_aemerf.png> <../images//loss_aemerf.png>]
-<../images//gen_aewgan.png, id=779, 455.301pt x 343.2825pt>
+[35 <../images//gen_aemerf.png> <../images//loss_aemerf.png>]
+<../images//gen_aewgan.png, id=787, 455.301pt x 343.2825pt>
 File: ../images//gen_aewgan.png Graphic file (type png)
 <use ../images//gen_aewgan.png>
 Package pdftex.def Info: ../images//gen_aewgan.png  used on input line 314.
 (pdftex.def)             Requested size: 318.70853pt x 240.2961pt.
- [35 <../images//hist_threshold_aemerf.png> <../images//thres_plot_aemerf.png>]
-<../images//loss_aegwan.png, id=788, 400.3758pt x 326.6604pt>
+ [36 <../images//hist_threshold_aemerf.png> <../images//thres_plot_aemerf.png>]
+<../images//loss_aegwan.png, id=796, 400.3758pt x 326.6604pt>
 File: ../images//loss_aegwan.png Graphic file (type png)
 <use ../images//loss_aegwan.png>
 Package pdftex.def Info: ../images//loss_aegwan.png  used on input line 322.
 (pdftex.def)             Requested size: 280.26114pt x 228.6607pt.
- [36 <../images//gen_aewgan.png>]
-<../images//hist_threshold_aewgan.png, id=795, 489.2679pt x 328.8285pt>
+ [37 <../images//gen_aewgan.png>]
+<../images//hist_threshold_aewgan.png, id=803, 489.2679pt x 328.8285pt>
 File: ../images//hist_threshold_aewgan.png Graphic file (type png)
 <use ../images//hist_threshold_aewgan.png>
 Package pdftex.def Info: ../images//hist_threshold_aewgan.png  used on input line 330.
@@ -1341,53 +1345,53 @@ Overfull \hbox (3.6489pt too wide) in paragraph at lines 330--331
  [][] 
  []
 
-<../images//thres_plot_aewgan.png, id=796, 409.7709pt x 340.3917pt>
+<../images//thres_plot_aewgan.png, id=804, 409.7709pt x 340.3917pt>
 File: ../images//thres_plot_aewgan.png Graphic file (type png)
 <use ../images//thres_plot_aewgan.png>
 Package pdftex.def Info: ../images//thres_plot_aewgan.png  used on input line 336.
 (pdftex.def)             Requested size: 163.90546pt x 136.15425pt.
-[37 <../images//loss_aegwan.png> <../images//hist_threshold_aewgan.png> <../images//thres_plot_aewgan.png>]
-<../images//gen_aedpmerf_eps1.png, id=805, 455.301pt x 343.2825pt>
+[38 <../images//loss_aegwan.png> <../images//hist_threshold_aewgan.png> <../images//thres_plot_aewgan.png>]
+<../images//gen_aedpmerf_eps1.png, id=813, 455.301pt x 343.2825pt>
 File: ../images//gen_aedpmerf_eps1.png Graphic file (type png)
 <use ../images//gen_aedpmerf_eps1.png>
 Package pdftex.def Info: ../images//gen_aedpmerf_eps1.png  used on input line 352.
 (pdftex.def)             Requested size: 227.64993pt x 171.64082pt.
-<../images//gen_aedpmerf_eps05.png, id=806, 455.301pt x 343.2825pt>
+<../images//gen_aedpmerf_eps05.png, id=814, 455.301pt x 343.2825pt>
 File: ../images//gen_aedpmerf_eps05.png Graphic file (type png)
 <use ../images//gen_aedpmerf_eps05.png>
 Package pdftex.def Info: ../images//gen_aedpmerf_eps05.png  used on input line 353.
 (pdftex.def)             Requested size: 227.64993pt x 171.64082pt.
-<../images//gen_aedpmerf_eps01.png, id=807, 455.301pt x 343.2825pt>
+<../images//gen_aedpmerf_eps01.png, id=815, 455.301pt x 343.2825pt>
 File: ../images//gen_aedpmerf_eps01.png Graphic file (type png)
 <use ../images//gen_aedpmerf_eps01.png>
 Package pdftex.def Info: ../images//gen_aedpmerf_eps01.png  used on input line 354.
 (pdftex.def)             Requested size: 227.64993pt x 171.64082pt.
-<../images//gen_aedpmerf_eps001.png, id=808, 455.301pt x 343.2825pt>
+<../images//gen_aedpmerf_eps001.png, id=816, 455.301pt x 343.2825pt>
 File: ../images//gen_aedpmerf_eps001.png Graphic file (type png)
 <use ../images//gen_aedpmerf_eps001.png>
 Package pdftex.def Info: ../images//gen_aedpmerf_eps001.png  used on input line 355.
 (pdftex.def)             Requested size: 227.64993pt x 171.64082pt.
- [38]
+ [39]
 Overfull \vbox (25.7802pt too high) has occurred while \output is active []
 
- [39 <../images//gen_aedpmerf_eps1.png> <../images//gen_aedpmerf_eps05.png> <../images//gen_aedpmerf_eps01.png> <../images//gen_aedpmerf_eps001.png>]
-<../images//gen_aedpwgan_eps35.png, id=824, 455.301pt x 343.2825pt>
+ [40 <../images//gen_aedpmerf_eps1.png> <../images//gen_aedpmerf_eps05.png> <../images//gen_aedpmerf_eps01.png> <../images//gen_aedpmerf_eps001.png>]
+<../images//gen_aedpwgan_eps35.png, id=833, 455.301pt x 343.2825pt>
 File: ../images//gen_aedpwgan_eps35.png Graphic file (type png)
 <use ../images//gen_aedpwgan_eps35.png>
 Package pdftex.def Info: ../images//gen_aedpwgan_eps35.png  used on input line 367.
 (pdftex.def)             Requested size: 273.1827pt x 205.97107pt.
-<../images//gen_aedpwgan_eps25.png, id=825, 455.301pt x 343.2825pt>
+<../images//gen_aedpwgan_eps25.png, id=834, 455.301pt x 343.2825pt>
 File: ../images//gen_aedpwgan_eps25.png Graphic file (type png)
 <use ../images//gen_aedpwgan_eps25.png>
 Package pdftex.def Info: ../images//gen_aedpwgan_eps25.png  used on input line 368.
 (pdftex.def)             Requested size: 273.1827pt x 205.97107pt.
-<../images//gen_aedpwgan_eps5.png, id=826, 455.301pt x 343.2825pt>
+<../images//gen_aedpwgan_eps5.png, id=835, 455.301pt x 343.2825pt>
 File: ../images//gen_aedpwgan_eps5.png Graphic file (type png)
 <use ../images//gen_aedpwgan_eps5.png>
 Package pdftex.def Info: ../images//gen_aedpwgan_eps5.png  used on input line 369.
 (pdftex.def)             Requested size: 273.1827pt x 205.97107pt.
- [40] [41 <../images//gen_aedpwgan_eps35.png> <../images//gen_aedpwgan_eps25.png> <../images//gen_aedpwgan_eps5.png>]
-<../images//results_aedpmerf.png, id=842, 714.7503pt x 714.7503pt>
+ [41] [42 <../images//gen_aedpwgan_eps35.png> <../images//gen_aedpwgan_eps25.png> <../images//gen_aedpwgan_eps5.png>]
+<../images//results_aedpmerf.png, id=850, 714.7503pt x 714.7503pt>
 File: ../images//results_aedpmerf.png Graphic file (type png)
 <use ../images//results_aedpmerf.png>
 Package pdftex.def Info: ../images//results_aedpmerf.png  used on input line 413.
@@ -1397,8 +1401,8 @@ Overfull \hbox (2.06216pt too wide) in paragraph at lines 413--414
  [][] 
  []
 
-[42]
-<../images//restuls_dprtsgan.png, id=848, 714.7503pt x 714.7503pt>
+[43]
+<../images//restuls_dprtsgan.png, id=856, 714.7503pt x 714.7503pt>
 File: ../images//restuls_dprtsgan.png Graphic file (type png)
 <use ../images//restuls_dprtsgan.png>
 Package pdftex.def Info: ../images//restuls_dprtsgan.png  used on input line 420.
@@ -1408,15 +1412,15 @@ Overfull \hbox (2.06216pt too wide) in paragraph at lines 420--421
  [][] 
  []
 
-[43 <../images//results_aedpmerf.png>] [44 <../images//restuls_dprtsgan.png>]
-<../images//results_aedpmerf_contam.png, id=861, 603.4545pt x 617.9085pt>
+[44 <../images//results_aedpmerf.png>] [45 <../images//restuls_dprtsgan.png>]
+<../images//results_aedpmerf_contam.png, id=869, 603.4545pt x 617.9085pt>
 File: ../images//results_aedpmerf_contam.png Graphic file (type png)
 <use ../images//results_aedpmerf_contam.png>
 Package pdftex.def Info: ../images//results_aedpmerf_contam.png  used on input line 436.
 (pdftex.def)             Requested size: 422.41527pt x 432.53299pt.
- [45 <../images//results_aedpmerf_contam.png>]) (./chapters/chapter6-dis.tex [46] [47
+ [46 <../images//results_aedpmerf_contam.png>]) (./chapters/chapter6-dis.tex [47] [48
 
-]) (./chapters/chapter7-outro.tex [48]) [49
+]) (./chapters/chapter7-outro.tex [49]) [50
 
 ] (./chapters/9appendix.tex) [1
 
@@ -1470,13 +1474,16 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55564 strings out of 477473
- 1266953 string characters out of 5829992
- 2259996 words of memory out of 5000000
- 74944 multiletter control sequences out of 15000+600000
+ 55573 strings out of 477473
+ 1267135 string characters out of 5829992
+ 2260041 words of memory out of 5000000
+ 74947 multiletter control sequences out of 15000+600000
  525379 words of font info for 82 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  84i,15n,89p,1525b,2972s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exist, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist, replaced by a fixed one
 
@@ -1505,10 +1512,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (65 pages, 1470386 bytes).
+Output written on main.pdf (66 pages, 1475656 bytes).
 PDF statistics:
- 1133 PDF objects out of 1200 (max. 8388607)
- 955 compressed objects within 10 object streams
- 287 named destinations out of 1000 (max. 500000)
+ 1149 PDF objects out of 1200 (max. 8388607)
+ 970 compressed objects within 10 object streams
+ 293 named destinations out of 1000 (max. 500000)
  462 words of extra memory for PDF output out of 10000 (max. 10000000)
 

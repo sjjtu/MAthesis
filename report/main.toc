@@ -19,26 +19,26 @@
 \contentsline {subsection}{\numberline {3.1}Overview}{13}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}DP-MERF}{13}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Maximum Mean Discrepancy}{14}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Random Fourier Features}{15}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Vanilla DP-MERF}{16}{subsubsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.3}RTSGAN}{17}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Review: GANs}{17}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Random Fourier Features}{16}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Vanilla DP-MERF}{17}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}RTSGAN}{18}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Review: GANs}{18}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Time Series Generation with RTSGAN}{19}{subsubsection.3.3.2}%
-\contentsline {section}{\numberline {4}Models}{20}{section.4}%
-\contentsline {subsection}{\numberline {4.1}AE-(dp)MERF}{20}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}AE-(dp)WGAN}{21}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Experiment}{24}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Data Set and Experiment Setup}{24}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Baseline Model}{27}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Data Generation}{32}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Privacy-preserving Data Generation}{37}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Results}{42}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Contaminated Data Set}{44}{subsection.5.6}%
-\contentsline {section}{\numberline {6}Discussion}{47}{section.6}%
-\contentsline {subsection}{\numberline {6.1}(Privacy-Preserving) Data Generation}{47}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Utility-Privacy-Tradeoff}{47}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Privacy and Robustness}{47}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Future Works}{48}{subsection.6.4}%
-\contentsline {section}{\numberline {7}Conclusion}{49}{section.7}%
+\contentsline {section}{\numberline {4}Models}{21}{section.4}%
+\contentsline {subsection}{\numberline {4.1}AE-(dp)MERF}{21}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}AE-(dp)WGAN}{22}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Experiment}{25}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Data Set and Experiment Setup}{25}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Baseline Model}{28}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Data Generation}{33}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Privacy-preserving Data Generation}{38}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Results}{43}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Contaminated Data Set}{45}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Discussion}{48}{section.6}%
+\contentsline {subsection}{\numberline {6.1}(Privacy-Preserving) Data Generation}{48}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Utility-Privacy-Tradeoff}{48}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Privacy and Robustness}{48}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Future Works}{49}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Conclusion}{50}{section.7}%
 \contentsline {section}{Appendix}{I}{section*.49}%
 \contentsline {section}{References}{II}{section*.50}%

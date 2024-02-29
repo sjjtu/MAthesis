@@ -67,8 +67,15 @@ where we introduced independent random variables $X,X' \sim P$, $Y,Y' \sim Q$.
 In particular, this avoids computation in very high or even infinite dimensional spaces. A popular choice for the kernel is the following example.
 
 \begin{ex}[Gaussian Kernel]
-    Let us define $k(x,y)=e^{\frac{||x-y||^2_2}{2}}$. This corresponds to an infinite-dimensional feature space, as can been seen with the following computation:
-    \colorbox{red}{tba}
+    Let us define $k(x,y)=e^{\frac{-||x-y||^2_2}{2}}$. This corresponds to an infinite-dimensional feature space, as can been seen with the following computation
+    \begin{align}
+        k(x,y) &= e^{\frac{-||x-y||^2_2}{2}} \nonumber \\
+        &= e^{-\frac{1}{2} <x-y, x-y>} \nonumber \\
+        &= e^{-\frac{1}{2} (<x, x> - <x,y,> - <y, x> + <y,y>)} \nonumber \\
+        &= e^{-\frac{1}{2}||x||^2} e^{-\frac{1}{2}||y||^2} e^{-2<x,y>} \nonumber \\
+        &= C(x) C(y) \sum_{k=0}^\infty \frac{(-2<x,y>)^k}{k!} \mperiod
+    \end{align}
+    Hence, the last equation shows that the Gaussian kernel can seen as an infinite sum of polynomial kernels. 
 \end{ex}
 
 \subsubsection{Random Fourier Features}

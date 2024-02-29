@@ -2103,6 +2103,60 @@
       \verb 10.1109/SP.2008.33
       \endverb
     \endentry
+    \entry{adversay}{article}{}
+      \name{author}{5}{}{%
+        {{hash=9622bf07a4de0cfdfb06f4540c32350d}{%
+           family={Nasr},
+           familyi={N\bibinitperiod},
+           given={Milad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=92c99350754b1b4ccebaee9d334f0f3e}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Shuang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=caaaf78e4ea5134f14ec5cc490265c9e}{%
+           family={Thakurta},
+           familyi={T\bibinitperiod},
+           given={Abhradeep},
+           giveni={A\bibinitperiod}}}%
+        {{hash=58ca864d11bbe53214716bb8177beab9}{%
+           family={Papernot},
+           familyi={P\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=93330b46aec6ec2750a8adced7fef821}{%
+           family={Carlini},
+           familyi={C\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a9d68c8f9590e0ec29717afe0d5598b}
+      \strng{fullhash}{c59412adf2641fb138a9d62ad2145e87}
+      \strng{bibnamehash}{c59412adf2641fb138a9d62ad2145e87}
+      \strng{authorbibnamehash}{c59412adf2641fb138a9d62ad2145e87}
+      \strng{authornamehash}{0a9d68c8f9590e0ec29717afe0d5598b}
+      \strng{authorfullhash}{c59412adf2641fb138a9d62ad2145e87}
+      \field{labelalpha}{Nas+21}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Adversary Instantiation: Lower Bounds for Differentially Private Machine Learning}
+      \field{volume}{abs/2101.04535}
+      \field{year}{2021}
+      \verb{eprint}
+      \verb 2101.04535
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2101.04535
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2101.04535
+      \endverb
+    \endentry
     \entry{anobeat}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=ff5a476346fd8eaf318f6e44baa6694c}{%
