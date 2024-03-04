@@ -1,0 +1,19 @@
+%------------------------------------------------
+\section{Privacy-preserving Time Series Data Generation}
+%------------------------------------------------
+\begin{frame}{Models}
+    AE-MERF
+    \begin{itemize}
+        \item AE-MERF is based on the non-private version of DP-MERF (best state of the art generator for tabular data).
+        \item Simple architecture with mathematically sophisticated loss function.
+        \item Does not work with time series data out of the box, but we will modify it so it works.
+    \end{itemize}
+    RTSGAN
+    \begin{itemize}
+        \item Model based on GAN network, which are commonly used in image generation.
+        \item Delivers state of the art performance for time series data.
+        \item No private counterpart, hence we will implement our own private version.
+    \end{itemize}
+    
+\end{frame}
+

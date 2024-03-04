@@ -1,0 +1,60 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+\usepackage[T1]{fontenc}
+\usetheme{DarkConsoleFiraRemix}
+
+\usepackage{hyperref}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage[natbib=true,style=authoryear,backend=bibtex,useprefix=true]{biblatex}
+\addbibresource{references.bib}
+\usepackage{multirow}
+\usepackage{ulem}
+\usepackage{caption}
+
+\graphicspath{ {../images/} } 
+
+
+\AtBeginSection[]{
+  \frame<beamer>{ 
+    \frametitle{Outline}   
+ 
+\tableofcontents[currentsection,currentsubsection,sectionstyle=show/shaded,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/show/shaded/shaded]}
+}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+% The title
+\title[short title]{Privacy-preserving Data Generation:}
+\subtitle{Towards generating privacy-preserving, synthetic and useful time series ECG data for anomaly detection}
+\author[SJTU]{Sijun John Tu}
+\institute{KTH x RISE}
+\date{\today} % Date, can be changed to a custom date
+
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\input{chapters/chapter0}
+
+\input{chapters/chapter1}
+
+\input{chapters/chapter2}
+
+\input{chapters/chapter3}
+
+\input{chapters/chapter4}
+
+\input{chapters/chapter5}
+
+\input{chapters/ref}
+
+
+\end{document}

@@ -1,0 +1,32 @@
+\section{Project introduction}
+\begin{frame}{Anomaly detection using privacy-preserving, synthetic time series data}
+
+    \begin{itemize}
+        \item ECG data can used for different downstream tasks like arrhythmia detection or other cardiac diseases and even studies on sleep, emotions and stress.
+        \item Heartbeat data can be used for biometrics authentication similar to the fingerprint. Hence, ensuring privacy is important.
+        \item Synthetic data with differential private (DP) guarantees is a promising solution to ensure privacy independent of downstream task.
+        \item Commonly, a gain in privacy results in a loss of utility.
+        \item For anomaly detection this might not be the case (?).
+    \end{itemize}
+    Goal: generate useful and privacy-preserving ECG data for anomaly detection.
+\end{frame}
+
+\begin{frame}{Structure}
+    \begin{enumerate}
+        \item Train baseline model for anomaly detection only on regular heartbeat data using an LSTM-AE.
+        \item Generate heartbeat data (without DP) using two approaches:
+        \begin{itemize}
+            \item[--] AE-MERF
+            \item[--] RTSGAN
+        \end{itemize}
+        \item Train LSTM-AE for anomaly detection on synthetic data and test on real (TSTR).
+        \item Add DP noise and repeat:
+        \begin{itemize}
+            \item[--] AE-DPMERF
+            \item[--] DP-RTSGAN
+        \end{itemize}
+        \item Contaminate training data with anomalous heartbeats and repeat
+    \end{enumerate}
+\end{frame}
+
+
