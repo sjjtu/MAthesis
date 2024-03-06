@@ -44,8 +44,9 @@
   \setcounter{footnote}{1} % \dagger
   \noindent >\hbox{}>\hbox{}> {\usebeamerfont{title}\usebeamercolor[fg]{title}\bfseries\boldmath\inserttitle}
   \ifx\insertsubtitle\@empty\else\\>\hbox{}>\hbox{}> {\usebeamerfont{title}\usebeamercolor[fg]{title}\insertsubtitle}\fi~\\[3em]
-  \centering\insertauthor\ \ifx\centering\insertinstitute\@empty\else(\insertinstitute)\fi\\
-  \insertdate
+  \centering\texttt{\insertinstitute}\\
+  \centering\texttt{\insertauthor}\\
+  \centering\insertdate
   \\
   \inserttitlegraphic
   \renewcommand\thefootnote{\arabic{footnote}}

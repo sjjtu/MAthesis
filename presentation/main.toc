@@ -1,6 +1,6 @@
 \beamer@sectionintoc {1}{Project introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{Heartbeat Arrhythmia}{6}{0}{2}
-\beamer@sectionintoc {3}{Privacy-preserving Time Series Data Generation}{10}{0}{3}
-\beamer@sectionintoc {4}{Results}{12}{0}{4}
-\beamer@sectionintoc {5}{Summary}{18}{0}{5}
-\beamer@sectionintoc {6}{References}{20}{0}{6}
+\beamer@sectionintoc {2}{Heartbeat Arrhythmia}{7}{0}{2}
+\beamer@sectionintoc {3}{Privacy-preserving Time Series Data Generation}{12}{0}{3}
+\beamer@sectionintoc {4}{Results}{23}{0}{4}
+\beamer@sectionintoc {5}{Summary}{33}{0}{5}
+\beamer@sectionintoc {6}{References}{36}{0}{6}

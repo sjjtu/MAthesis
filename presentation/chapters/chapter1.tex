@@ -1,15 +1,36 @@
 \section{Project introduction}
-\begin{frame}{Anomaly detection using privacy-preserving, synthetic time series data}
 
-    \begin{itemize}
-        \item ECG data can used for different downstream tasks like arrhythmia detection or other cardiac diseases and even studies on sleep, emotions and stress.
-        \item Heartbeat data can be used for biometrics authentication similar to the fingerprint. Hence, ensuring privacy is important.
-        \item Synthetic data with differential private (DP) guarantees is a promising solution to ensure privacy independent of downstream task.
-        \item Commonly, a gain in privacy results in a loss of utility.
-        \item For anomaly detection this might not be the case (?).
-    \end{itemize}
-    Goal: generate useful and privacy-preserving ECG data for anomaly detection.
+\begin{frame}
+    \frametitle{Machine Learning Pipeline}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[scale=0.38]{ml_pipeline.png}
+         \caption{High-level machine learning pipeline}
+    \end{figure}
 \end{frame}
+
+\begin{frame}{Anomaly detection using privacy-preserving, synthetic time series data}
+    
+    \begin{itemize}
+        \item Problem
+        \begin{itemize}
+            \item ML models are very data hungry.
+            \item In many cases sharing data comes with privacy risks.
+        \end{itemize}
+        \item Solution:
+        \begin{itemize}
+            \item Promising solution: \alert{synthetic data} with privacy guarantees!
+            \item Synthetic data with \alert{differential private} (DP) guarantees is a promising solution to ensure privacy independent of downstream task.
+        \end{itemize}
+        \item BUT:
+        \begin{itemize}
+            \item \alert{Privacy-Utility-Tradeoff}: Commonly, a gain in privacy results in a loss of utility. 
+            \item For \alert{anomaly detection} this might not be the case (?).
+        \end{itemize}
+    \end{itemize}
+    Goal: generate useful and privacy-preserving ECG data for anomaly detection (heartbeat arrhythmia).
+\end{frame}
+
 
 \begin{frame}{Structure}
     \begin{enumerate}

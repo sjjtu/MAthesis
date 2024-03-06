@@ -12,16 +12,20 @@
 \addbibresource{references.bib}
 \usepackage{multirow}
 \usepackage{ulem}
-\usepackage{caption}
+\usepackage{caption} 
+
+\setbeamercovered{invisible}
 
 \graphicspath{ {../images/} } 
 
+\newcommand\mperiod[0]{\;\;\;.}
+\newcommand\mcomma[0]{\;\;\;,}
 
 \AtBeginSection[]{
   \frame<beamer>{ 
     \frametitle{Outline}   
  
-\tableofcontents[currentsection,currentsubsection,sectionstyle=show/shaded,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/show/shaded/shaded]}
+\tableofcontents[currentsection]}
 }
 
 %----------------------------------------------------------------------------------------
@@ -56,5 +60,6 @@
 
 \input{chapters/ref}
 
+\input{chapters/backup.tex}
 
 \end{document}

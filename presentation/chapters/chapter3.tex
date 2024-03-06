@@ -1,18 +1,34 @@
 %------------------------------------------------
 \section{Privacy-preserving Time Series Data Generation}
 %------------------------------------------------
+
+\begin{frame}
+    \frametitle{Review: Differential Privacy}
+    \onslide<1,2>\textbf{Idea.} Hide the influence of one particular sample on the output of the model by adding randomness.
+    \onslide<2->\begin{definition}[Differential Privacy]
+        A randomised algorithm $\mathcal{M}$ is $(\epsilon, \delta)$- differentially private if for all  set of outcomes $S \subset ran \mathcal{M}$ and for all databases $x,y $, such that they \textbf{only differ in one element}, we have
+        \begin{align}
+            \mathbb{P}(\mathcal{M}(x) \in S) \le e^\epsilon \cdot \mathbb{P}(\mathcal{M}(y) \in S) + \delta \mcomma
+        \end{align}
+        where the probability is taken over the randomness of $\mathcal{M}$.
+    \end{definition}
+
+    \onslide<3>\textbf{Informally.} Replacing one record in the data will not change the outcome of algorithm $\mathcal{M}$ \textit{too much} (specified via privacy budget $\epsilon$). The lower $\epsilon$ the stricter the privacy guarantees.
+
+\end{frame}
+
 \begin{frame}{Models}
-    AE-MERF
+    \onslide<1->{\textcolor{tomato}{AE-(dp)MERF}}
     \begin{itemize}
-        \item AE-MERF is based on the non-private version of DP-MERF (best state of the art generator for tabular data).
-        \item Simple architecture with mathematically sophisticated loss function.
-        \item Does not work with time series data out of the box, but we will modify it so it works.
+        \item<1-> AE-(dp)MERF is based on DP-MERF (best state of the art generator for tabular data).
+        \item<2-> Simple architecture with mathematically sophisticated loss function.
+        \item<3-> Does not work with time series data out of the box, but we will modify it so it works.
     \end{itemize}
-    RTSGAN
+    \onslide<4->{\textcolor{tomato}{AE-(dp)WGAN}}
     \begin{itemize}
-        \item Model based on GAN network, which are commonly used in image generation.
-        \item Delivers state of the art performance for time series data.
-        \item No private counterpart, hence we will implement our own private version.
+        \item<5-> Model based on GAN network, which are commonly used in image generation.
+        \item<6-> Delivers state of the art performance for time series data.
+        \item<7> No private counterpart, hence we will implement our own private version.
     \end{itemize}
     
 \end{frame}

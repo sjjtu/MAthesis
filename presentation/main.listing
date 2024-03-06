@@ -1,0 +1,21 @@
+whoami |\LR | root id |\LR | uid=0(root) gid=0(root) groups=0(root) hostname |\LR | ubuntu _ \end {ubuntu} \end {beamer@frameslide}\ifbeamer@twoscreenstext \beamer@dosecondscreennow {\newtcblisting {ubuntu}{colback=violet!50!black, colupper=white,colframe=gray!65!black,listing only, listing options={style=tcblatex,language=sh,escapeinside=||,}, title={\textcolor {orange}{\Huge {$\bullet $}}{\textcolor {gray}{\Huge {$\bullet \bullet $}}}}, every listing line={\textcolor {lime}{\small \ttfamily \bfseries root@ubuntu{\textcolor {white}:}\textcolor {cyan!60}{\url {~}}{\textcolor {white}\#} }}} \newlength {\Lind } \setbox 0\hbox {\small \ttfamily \bfseries root@} \setlength {\Lind }{\the \dimexpr \wd 0+1pt} \newcommand {\LR }{\\\hspace *{-\Lind }} \begin {ubuntu} whoami |\LR | root id |\LR | uid=0(root) gid=0(root) groups=0(root) hostname |\LR | ubuntu _ \end {ubuntu} }\fi \ifbeamer@anotherslide \advance \beamer@slideinframe by 1\relax \relax \expandafter \iterate \fi \let \iterate \relax \beamer@writeslidentry \beamer@reseteecodes 
+
+\begin{frame}{Structure}
+    \begin{enumerate}
+        \item Train baseline model for anomaly detection only on regular heartbeat data using an LSTM-AE.
+        \item Generate heartbeat data (without DP) using two approaches:
+        \begin{itemize}
+            \item[--] AE-MERF
+            \item[--] RTSGAN
+        \end{itemize}
+        \item Train LSTM-AE for anomaly detection on synthetic data and test on real (TSTR).
+        \item Add DP noise and repeat:
+        \begin{itemize}
+            \item[--] AE-DPMERF
+            \item[--] DP-RTSGAN
+        \end{itemize}
+        \item Contaminate training data with anomalous heartbeats and repeat
+    \end{enumerate}
+\end{frame}
+
+

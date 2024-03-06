@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.3.4)  4 MAR 2024 14:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.3.4)  6 MAR 2024 19:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -908,30 +908,27 @@ LaTeX Warning: Label `fig:enter-label' multiply defined.
 
 LaTeX Warning: Label `fig:enter-label' multiply defined.
 
-
-LaTeX Warning: Label `fig:enter-label' multiply defined.
-
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -986,7 +983,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 43.
+Package hyperref Info: Link coloring OFF on input line 47.
  (./main.out) (./main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
@@ -1028,23 +1025,23 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 43.
-Package biblatex Info: Reference segment=0 on input line 43.
+Package biblatex Info: Reference section=0 on input line 47.
+Package biblatex Info: Reference segment=0 on input line 47.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./main.nav)
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/sl/n' in size <6> not available
-(Font)              Font shape `T1/FiraSans-LF/book/n' tried instead on input line 43.
+(Font)              Font shape `T1/FiraSans-LF/book/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/book/n' will be
-(Font)              scaled to size 6.0pt on input line 43.
-LaTeX Font Info:    Trying to load font information for T1+FiraMono-TLF on input line 43.
+(Font)              scaled to size 6.0pt on input line 47.
+LaTeX Font Info:    Trying to load font information for T1+FiraMono-TLF on input line 47.
  (/usr/share/texmf-dist/tex/latex/fira/T1FiraMono-TLF.fd
 File: T1FiraMono-TLF.fd 2019/10/10 (autoinst) Font definitions for T1/FiraMono-TLF.
 )
 LaTeX Font Info:    Font shape `T1/FiraMono-TLF/sb/n' in size <5> not available
-(Font)              Font shape `T1/FiraMono-TLF/medium/n' tried instead on input line 43.
+(Font)              Font shape `T1/FiraMono-TLF/medium/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `T1/FiraMono-TLF/medium/n' will be
-(Font)              scaled to size 5.0pt on input line 43.
+(Font)              scaled to size 5.0pt on input line 47.
  (./chapters/chapter0.tex
 LaTeX Font Info:    Font shape `T1/FiraMono-TLF/sb/n' in size <10.95> not available
 (Font)              Font shape `T1/FiraMono-TLF/medium/n' tried instead on input line 4.
@@ -1062,38 +1059,57 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Font shape `T1/FiraMono-TLF/m/n' in size <10.95> not available
+(Font)              Font shape `T1/FiraMono-TLF/regular/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `T1/FiraMono-TLF/regular/n' will be
+(Font)              scaled to size 10.95pt on input line 4.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/sl/n' in size <4> not available
 (Font)              Font shape `T1/FiraSans-LF/book/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/book/n' will be
 (Font)              scaled to size 4.0pt on input line 4.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/fira/fir_tz2nek.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fira/fir_i3ioen.enc}] (./main.toc)
-LaTeX Font Info:    Font shape `T1/FiraMono-TLF/m/n' in size <10.95> not available
-(Font)              Font shape `T1/FiraMono-TLF/regular/n' tried instead on input line 9.
-LaTeX Font Info:    Font shape `T1/FiraMono-TLF/regular/n' will be
-(Font)              scaled to size 10.95pt on input line 9.
- [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/fira/fir_tz2nek.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fira/fir_i3ioen.enc}] (./main.toc) [2
 
 ]) (./chapters/chapter1.tex (./main.toc) [3
 
-] [4
-
 ]
+<../images//ml_pipeline.png, id=83, 1011.78pt x 445.665pt>
+File: ../images//ml_pipeline.png Graphic file (type png)
+<use ../images//ml_pipeline.png>
+Package pdftex.def Info: ../images//ml_pipeline.png  used on input line 10.
+(pdftex.def)             Requested size: 384.4804pt x 169.35446pt.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/sl/n' in size <10> not available
-(Font)              Font shape `T1/FiraSans-LF/book/n' tried instead on input line 30.
+(Font)              Font shape `T1/FiraSans-LF/book/n' tried instead on input line 10.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/book/n' will be
-(Font)              scaled to size 10.0pt on input line 30.
+(Font)              scaled to size 10.0pt on input line 10.
 LaTeX Font Info:    Font shape `T1/FiraMono-TLF/sb/n' in size <10> not available
-(Font)              Font shape `T1/FiraMono-TLF/medium/n' tried instead on input line 30.
+(Font)              Font shape `T1/FiraMono-TLF/medium/n' tried instead on input line 10.
 LaTeX Font Info:    Font shape `T1/FiraMono-TLF/medium/n' will be
-(Font)              scaled to size 10.0pt on input line 30.
+(Font)              scaled to size 10.0pt on input line 10.
+
+Overfull \vbox (0.86325pt too high) detected at line 10
+ []
+
+[4
+
+ <../images//ml_pipeline.png>]
+LaTeX Font Info:    Trying to load font information for TS1+FiraMono-TLF on input line 32.
+ (/usr/share/texmf-dist/tex/latex/fira/TS1FiraMono-TLF.fd
+File: TS1FiraMono-TLF.fd 2019/10/10 (autoinst) Font definitions for TS1/FiraMono-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/FiraMono-TLF/sb/n' in size <10> not available
+(Font)              Font shape `TS1/FiraMono-TLF/medium/n' tried instead on input line 32.
+LaTeX Font Info:    Font shape `TS1/FiraMono-TLF/medium/n' will be
+(Font)              scaled to size 10.0pt on input line 32.
  [5
 
-]) (./chapters/chapter2.tex (./main.toc) [6
+{/usr/share/texmf-dist/fonts/enc/dvips/fira/fir_ikmdpu.enc}] [6
+
+]) (./chapters/chapter2.tex (./main.toc) [7
 
 ]
-<images/heartbeat_arr.png, id=102, 718.685pt x 431.6125pt>
+<images/heartbeat_arr.png, id=115, 718.685pt x 431.6125pt>
 File: images/heartbeat_arr.png Graphic file (type png)
 <use images/heartbeat_arr.png>
 Package pdftex.def Info: images/heartbeat_arr.png  used on input line 9.
@@ -1106,12 +1122,12 @@ LaTeX Font Info:    Font shape `T1/FiraSans-LF/sl/n' in size <9> not available
 (Font)              Font shape `T1/FiraSans-LF/book/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/book/n' will be
 (Font)              scaled to size 9.0pt on input line 9.
- [7
+ [8
 
- <./images/heartbeat_arr.png>] [8
+ <./images/heartbeat_arr.png>] [9
 
 ]
-<images/rec_normal.png, id=117, 401.8212pt x 298.4751pt>
+<images/rec_normal.png, id=129, 401.8212pt x 298.4751pt>
 File: images/rec_normal.png Graphic file (type png)
 <use images/rec_normal.png>
 Package pdftex.def Info: images/rec_normal.png  used on input line 41.
@@ -1122,7 +1138,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{fig:enter-labe
                    \relax 
 l.41 \end{frame}
                 
-<images/rec_anom.png, id=119, 401.8212pt x 314.3745pt>
+<images/rec_anom.png, id=131, 401.8212pt x 314.3745pt>
 File: images/rec_anom.png Graphic file (type png)
 <use images/rec_anom.png>
 Package pdftex.def Info: images/rec_anom.png  used on input line 41.
@@ -1132,74 +1148,152 @@ pdfTeX warning (ext4): destination with the same identifier (name{fig:enter-labe
 <to be read again> 
                    \relax 
 l.41 \end{frame}
-                 [9
+                 [10
 
- <./images/rec_normal.png> <./images/rec_anom.png>]) (./chapters/chapter3.tex (./main.toc) [10
+ <./images/rec_normal.png> <./images/rec_anom.png>] [11
 
-] [11
-
-]) (./chapters/chapter4.tex (./main.toc) [12
+]) (./chapters/chapter3.tex (./main.toc) [12
 
 ]
-<../images//results_aedpmerf.png, id=157, 714.7503pt x 714.7503pt>
+LaTeX Font Info:    Font shape `T1/FiraSans-LF/b/n' in size <10.95> not available
+(Font)              Font shape `T1/FiraSans-LF/bold/n' tried instead on input line 18.
+LaTeX Font Info:    Font shape `T1/FiraSans-LF/bold/n' will be
+(Font)              scaled to size 10.95pt on input line 18.
+LaTeX Font Info:    Font shape `T1/FiraSans-LF/sl/it' in size <10.95> not available
+(Font)              Font shape `T1/FiraSans-LF/book/it' tried instead on input line 18.
+LaTeX Font Info:    Font shape `T1/FiraSans-LF/book/it' will be
+(Font)              scaled to size 10.95pt on input line 18.
+ [13
+
+] [14
+
+] [15
+
+] [16
+
+] [17
+
+] [18
+
+] [19
+
+] [20
+
+] [21
+
+] [22
+
+]) (./chapters/chapter4.tex (./main.toc) [23
+
+]
+<../images//results_aedpmerf.png, id=238, 714.7503pt x 736.4313pt>
 File: ../images//results_aedpmerf.png Graphic file (type png)
 <use ../images//results_aedpmerf.png>
 Package pdftex.def Info: ../images//results_aedpmerf.png  used on input line 10.
-(pdftex.def)             Requested size: 164.38911pt x 164.38911pt.
+(pdftex.def)             Requested size: 164.38911pt x 169.37563pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:enter-label}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.10 \end{frame}
                 
-Overfull \vbox (7.18024pt too high) detected at line 10
+Overfull \vbox (12.16675pt too high) detected at line 10
  []
 
-[13
+[24
 
  <../images//results_aedpmerf.png>]
-<../images//restuls_dprtsgan.png, id=166, 714.7503pt x 714.7503pt>
+<../images//restuls_dprtsgan.png, id=246, 714.7503pt x 736.4313pt>
 File: ../images//restuls_dprtsgan.png Graphic file (type png)
 <use ../images//restuls_dprtsgan.png>
 Package pdftex.def Info: ../images//restuls_dprtsgan.png  used on input line 19.
-(pdftex.def)             Requested size: 164.38911pt x 164.38911pt.
+(pdftex.def)             Requested size: 164.38911pt x 169.37563pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:enter-label}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.19 \end{frame}
                 
-Overfull \vbox (7.18024pt too high) detected at line 19
+Overfull \vbox (12.16675pt too high) detected at line 19
  []
 
-[14
+[25
 
- <../images//restuls_dprtsgan.png>] [15
+ <../images//restuls_dprtsgan.png>] [26
 
-] [16
+] [27
 
 ]
-<../images//results_aedpmerf_contam.png, id=186, 603.4545pt x 617.9085pt>
+<../images//results_aedpmerf_contam.png, id=267, 603.4545pt x 657.657pt>
 File: ../images//results_aedpmerf_contam.png Graphic file (type png)
 <use ../images//results_aedpmerf_contam.png>
-Package pdftex.def Info: ../images//results_aedpmerf_contam.png  used on input line 41.
-(pdftex.def)             Requested size: 199.1406pt x 203.91043pt.
+Package pdftex.def Info: ../images//results_aedpmerf_contam.png  used on input line 47.
+(pdftex.def)             Requested size: 184.58891pt x 201.17213pt.
 
-pdfTeX warning (ext4): destination with the same identifier (name{fig:enter-label}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.41 \end{frame}
-                
-Overfull \vbox (34.70155pt too high) detected at line 41
+Overfull \vbox (31.96326pt too high) detected at line 47
  []
 
-[17
+[28
 
- <../images//results_aedpmerf_contam.png>]) (./chapters/chapter5.tex (./main.toc) [18
+ <../images//results_aedpmerf_contam.png>]
+<../images//results_aedpmerf_contam_baseline.png, id=275, 603.4545pt x 657.657pt>
+File: ../images//results_aedpmerf_contam_baseline.png Graphic file (type png)
+<use ../images//results_aedpmerf_contam_baseline.png>
+Package pdftex.def Info: ../images//results_aedpmerf_contam_baseline.png  used on input line 47.
+(pdftex.def)             Requested size: 184.58891pt x 201.17213pt.
 
-] [19
+Overfull \vbox (31.96326pt too high) detected at line 47
+ []
 
-]) (./chapters/ref.tex (./main.toc) [20
+[29
+
+ <../images//results_aedpmerf_contam_baseline.png>]
+<../images//results_aedpmerf_contam_aemerf.png, id=283, 603.4545pt x 657.657pt>
+File: ../images//results_aedpmerf_contam_aemerf.png Graphic file (type png)
+<use ../images//results_aedpmerf_contam_aemerf.png>
+Package pdftex.def Info: ../images//results_aedpmerf_contam_aemerf.png  used on input line 47.
+(pdftex.def)             Requested size: 184.58891pt x 201.17213pt.
+
+Overfull \vbox (31.96326pt too high) detected at line 47
+ []
+
+[30
+
+ <../images//results_aedpmerf_contam_aemerf.png>]
+<../images//results_aedpmerf_contam_aedpmerf.png, id=292, 603.4545pt x 657.657pt>
+File: ../images//results_aedpmerf_contam_aedpmerf.png Graphic file (type png)
+<use ../images//results_aedpmerf_contam_aedpmerf.png>
+Package pdftex.def Info: ../images//results_aedpmerf_contam_aedpmerf.png  used on input line 47.
+(pdftex.def)             Requested size: 184.58891pt x 201.17213pt.
+
+Overfull \vbox (31.96326pt too high) detected at line 47
+ []
+
+[31
+
+ <../images//results_aedpmerf_contam_aedpmerf.png>]
+File: ../images//results_aedpmerf_contam.png Graphic file (type png)
+<use ../images//results_aedpmerf_contam.png>
+Package pdftex.def Info: ../images//results_aedpmerf_contam.png  used on input line 47.
+(pdftex.def)             Requested size: 184.58891pt x 201.17213pt.
+
+Overfull \vbox (31.96326pt too high) detected at line 47
+ []
+
+[32
+
+]) (./chapters/chapter5.tex (./main.toc) [33
+
+] [34
+
+]
+LaTeX Font Info:    Font shape `T1/FiraSans-LF/sl/n' in size <20.74> not available
+(Font)              Font shape `T1/FiraSans-LF/book/n' tried instead on input line 14.
+LaTeX Font Info:    Font shape `T1/FiraSans-LF/book/n' will be
+(Font)              scaled to size 20.74pt on input line 14.
+ [35
+
+]) (./chapters/ref.tex (./main.toc) [36
 
 ]
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/sl/sc' in size <10.95> not available
@@ -1216,13 +1310,22 @@ Overfull \hbox (70.05762pt too wide) in paragraph at lines 6--6
 |   []\T1/FiraSans-LF/book/n/10.95 .[] 
  []
 
-[21
+[37
 
-{/usr/share/texmf-dist/fonts/enc/dvips/fira/fir_uhzub2.enc} </usr/share/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [22
+{/usr/share/texmf-dist/fonts/enc/dvips/fira/fir_uhzub2.enc} </usr/share/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [38
 
 
-] [23
+] [39
 
+
+]) (./chapters/backup.tex
+LaTeX Font Info:    Font shape `T1/FiraMono-TLF/sb/n' in size <20.74> not available
+(Font)              Font shape `T1/FiraMono-TLF/medium/n' tried instead on input line 9.
+LaTeX Font Info:    Font shape `T1/FiraMono-TLF/medium/n' will be
+(Font)              scaled to size 20.74pt on input line 9.
+ [40
+
+] [41
 
 ])
 \tf@nav=\write7
@@ -1239,24 +1342,24 @@ Overfull \hbox (70.05762pt too wide) in paragraph at lines 6--6
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 414930ABF169E196D1E935EF5D94527B;919.
+(rerunfilecheck)             Checksum: B21E98A42CA4C3D7E7234ED1EC893206;992.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32290 strings out of 477473
- 634077 string characters out of 5829993
- 1865388 words of memory out of 5000000
- 51919 multiletter control sequences out of 15000+600000
- 627448 words of font info for 90 fonts, out of 8000000 for 9000
+ 32496 strings out of 477473
+ 638767 string characters out of 5829993
+ 1866388 words of memory out of 5000000
+ 52065 multiletter control sequences out of 15000+600000
+ 678749 words of font info for 118 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 128i,11n,122p,1922b,1701s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/fira/FiraMono-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraMono-Medium.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraMono-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraSans-Book.pfb>
-Output written on main.pdf (23 pages, 464811 bytes).
+ 128i,11n,122p,1922b,1700s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/fira/FiraMono-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraMono-Medium.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraMono-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraSans-Book.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraSans-BookItalic.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (41 pages, 878053 bytes).
 PDF statistics:
- 318 PDF objects out of 1000 (max. 8388607)
- 261 compressed objects within 3 object streams
- 67 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 494 PDF objects out of 1000 (max. 8388607)
+ 394 compressed objects within 4 object streams
+ 104 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 
