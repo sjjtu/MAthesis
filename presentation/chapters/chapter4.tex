@@ -82,15 +82,16 @@
 
 \begin{frame}{Conclusion}
     \begin{itemize}
-        \item DPMERF performs best and is very efficient computationally.
-        \item DPMERF can work in lower epsilon ranges, which translates to higher privacy guarantees.
-        \item DP-RTSGAN gives worse generative performance and can only work with meaningless privacy budgets epsilon.
-        \item Adding privacy does not impact the utility for anomaly detection too much until too much noise is added.
+        \item<1-> \alert{AE-(dp)MERF performs best} and is very efficient computationally.
+        \item<2-> AE-(dp)MERF can work in \alert{lower epsilon ranges}, which translates to \alert{stronger privacy guarantees}.
+        \item<3-> \alert{AE-(dp)WGAN gives worse utility} and can only work with meaningless privacy budgets $\epsilon$.
+        \item<4-> We lose utility when \alert{replacing original data with non-private synthetic} data.
+        \item<5-> BUT: Adding \alert{privacy does not further degrade the utility} for anomaly detection too much until too much noise is added.
     \end{itemize}
 \end{frame}
 
 \begin{frame}{Contamination}
-    We contaminate the train set that only consists of normal samples with 1\%, 2\%, 5\% anomalous samples (the percentage of heartbeat arrhythmias is estimated to be around max. 5\%).
+    We \alert{contaminate} the train set that only consists of regular samples with \alert{1\%, 2\%, 5\% anomalous samples} (the percentage of heartbeat arrhythmias is estimated to be around max. 5\%).
 \end{frame}
 
 \begin{frame}{Contamination}

@@ -19,23 +19,23 @@
 \begin{frame}{Anomaly detection using privacy-preserving, synthetic time series data}
     
     \begin{itemize}
-        \item Problem
+        \item<1-> Problem
         \begin{itemize}
-            \item ML models are very \alert{data hungry}.
-            \item In many cases sharing data comes with \alert{privacy risks}.
+            \item<1-> ML models are very \alert{data hungry}.
+            \item<1-> In many cases sharing data comes with \alert{privacy risks}.
         \end{itemize}
-        \item Solution:
+        \item<2-> Solution:
         \begin{itemize}
-            \item Promising solution: \alert{synthetic data} with privacy guarantees!
-            \item Synthetic data with \alert{differential private} (DP) guarantees is a promising solution to ensure privacy independent of downstream task.
+            \item<2-> Promising solution: \alert{synthetic data} with privacy guarantees!
+            \item<2-> Synthetic data with \alert{differential private} (DP) guarantees is a promising solution to ensure privacy independent of downstream task.
         \end{itemize}
-        \item BUT:
+        \item<3-> BUT:
         \begin{itemize}
-            \item \alert{Privacy-Utility-Tradeoff}: Commonly, a gain in privacy results in a loss of utility. 
-            \item For \alert{anomaly detection} this might not be the case (?).
+            \item<3-> \alert{Privacy-Utility-Tradeoff}: Commonly, a gain in privacy results in a loss of utility. 
+            \item<3-> For \alert{anomaly detection} this might not be the case (?).
         \end{itemize}
     \end{itemize}
-    Goal: generate useful and privacy-preserving ECG data for anomaly detection (heartbeat arrhythmia).
+    \onslide<4>{Goal: generate useful and privacy-preserving ECG data for anomaly detection (heartbeat arrhythmia).}
 \end{frame}
 
 
@@ -57,13 +57,13 @@
 
 \begin{frame}{Structure}
     \begin{enumerate}
-        \item<1-> Train \alert{baseline model} for anomaly detection only on regular heartbeat data using an LSTM-AE.
-        \item<2->  \alert{Generate heartbeat} data using two approaches:
+        \item<1-> Train \alert{baseline model} for anomaly detection only on \alert{regular, private heartbeat data} using an LSTM-Autoencoder.
+        \item<2->  \alert{Generate regular heartbeat} data using two approaches:
         \begin{itemize}
             \item<2-> [--] AE-(dp)MERF
             \item<2-> [--] AE-(dp)WGAN
         \end{itemize}
-        \item<3->  Train LSTM-AE for \alert{anomaly detection on synthetic data} and \alert{test on real}.
+        \item<3->  Train LSTM-Autoencoder for \alert{anomaly detection on synthetic data} and \alert{test on real}.
         \item<3-> Assess \alert{utility} by measuring performance for anomaly detection (Accuracy, precision, recall, F1). 
         \item<4->  \alert{Contaminate} training data with anomalous heartbeats and repeat.
     \end{enumerate}

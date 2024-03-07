@@ -1,6 +1,6 @@
 \beamer@sectionintoc {1}{Project introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{Dataset: MITBIH ECG data}{11}{0}{2}
-\beamer@sectionintoc {3}{Privacy-preserving Time Series Data Generation}{20}{0}{3}
-\beamer@sectionintoc {4}{Results}{32}{0}{4}
-\beamer@sectionintoc {5}{Summary}{45}{0}{5}
-\beamer@sectionintoc {6}{References}{57}{0}{6}
+\beamer@sectionintoc {2}{Dataset: MITBIH ECG data}{14}{0}{2}
+\beamer@sectionintoc {3}{Privacy-preserving Time Series Data Generation}{23}{0}{3}
+\beamer@sectionintoc {4}{Results}{35}{0}{4}
+\beamer@sectionintoc {5}{Summary}{52}{0}{5}
+\beamer@sectionintoc {6}{References}{64}{0}{6}
