@@ -1,4 +1,4 @@
-\section{Heartbeat Arrhythmia}
+\section{Dataset: MITBIH ECG data}
 \begin{frame}{Heartbeat Arrhythmia}
     \begin{figure}
         \centering
@@ -11,11 +11,11 @@
 \begin{frame}{Arrhythmia Detection as an Anomaly Detection Problem}
 We treat the problem of detecting irregular heartbeats as an anomaly detection problem from machine learning based on the reconstruction error:
 \begin{itemize}
-    \item We train a model on regular heartbeats that is able to reconstruct that regular heartbeat.
-    \item Given an irregular heartbeat the model should give higher reconstruction error.
-    \item Based on an optimal threshold for that error we classify this heartbeat as either regular or irregular.
+    \item<2->  We train a model \alert{on regular heartbeats} that is able to reconstruct that regular heartbeat.
+    \item<3->  Given an irregular heartbeat the model should give \alert{higher reconstruction error}.
+    \item<4->  Based on an optimal \alert{threshold} for that error we classify this heartbeat as either regular or irregular.
 \end{itemize}
-    Two reasons for this semi-supervised approach: high class imbalancy and no need for labelling.
+    \onslide<5>{Two reasons for this semi-supervised approach: high class imbalancy and no need for labelling.}
 \end{frame} 
 
 \begin{frame}{Baseline Model}
@@ -43,6 +43,17 @@ We treat the problem of detecting irregular heartbeats as an anomaly detection p
 \begin{frame}
     \frametitle{Classification based on Reconstruction Error}
 
-    
+    \begin{columns}
+        \begin{column}{0.48\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.3]{hist_threshold_baseline.png}
+            \caption{Distribution of reconstruction error on regular \& anomalous samples}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+        We can clearly see a \alert{difference in error distribution} for regular and anomalous samples. We choose the \alert{threshold that maximises the classification} accuracy.
+    \end{column}
+    \end{columns}
 
 \end{frame}

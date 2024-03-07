@@ -1,5 +1,36 @@
 \section{Results}
 
+\begin{frame}
+    \frametitle{AE-(dp)MERF}
+
+    \begin{columns}
+        \begin{column}{0.48\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.25]{gen_aemerf.png}
+        \end{figure}
+        \begin{figure}[h]
+            \centering
+            \includegraphics[scale=0.25]{gen_aedpmerf_eps05.png}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.25]{gen_aedpmerf_eps1.png}
+        \end{figure}
+        \begin{figure}[h]
+            \centering
+            \includegraphics[scale=0.25]{gen_aedpmerf_eps001.png}
+        \end{figure}
+    \end{column}
+    
+    \end{columns}
+    \centering
+    \textcolor{gold}{Figure:} AE-(dp)MERF generated samples
+
+\end{frame}
+
 \begin{frame}{AE-(DP)MERF}
     \begin{figure}
         \centering
@@ -9,11 +40,42 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{(DP-)RTSGAN}
+\begin{frame}
+    \frametitle{AE-(dp)WGAN}
+
+    \begin{columns}
+        \begin{column}{0.48\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.25]{gen_aewgan.png}
+        \end{figure}
+        \begin{figure}[h]
+            \centering
+            \includegraphics[scale=0.25]{gen_aedpwgan_eps35.png}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.25]{gen_aedpwgan_eps25.png}
+        \end{figure}
+        \begin{figure}[h]
+            \centering
+            \includegraphics[scale=0.25]{gen_aedpwgan_eps5.png}
+        \end{figure}
+    \end{column}
+    
+    \end{columns}
+    \centering
+    \textcolor{gold}{Figure:} AE-(dp)WGAN generated samples
+
+\end{frame}
+
+\begin{frame}{AE-(dp)WGAN}
     \begin{figure}
         \centering
         \includegraphics[scale=0.23]{restuls_dprtsgan.png}
-        \caption{Results of (DP-)RTSGAN with different privacy budgets (lower epsilon means higher privacy)}
+        \caption{Results of AE-(dp)WGAN with different privacy budgets (lower epsilon means higher privacy)}
         \label{fig:enter-label}
     \end{figure}
 \end{frame}
@@ -29,6 +91,17 @@
 
 \begin{frame}{Contamination}
     We contaminate the train set that only consists of normal samples with 1\%, 2\%, 5\% anomalous samples (the percentage of heartbeat arrhythmias is estimated to be around max. 5\%).
+\end{frame}
+
+\begin{frame}{Contamination}
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[scale=0.28]{str_comtam.png}
+        \caption{Structure of Contamination Experiment}
+        \label{fig:enter-label}
+    \end{figure}
+
 \end{frame}
 
 \begin{frame}{Contamination: AE-(DP)MERF}

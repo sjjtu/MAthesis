@@ -2,20 +2,27 @@
 
 \begin{frame}
     \frametitle{Machine Learning Pipeline}
+    \tikz{
+            \node[circle,fill=Button1,inner sep=3pt] (c) at (0,0){};
+            \node[circle,fill=Button2,inner sep=3pt] (c) at (0.5,0){};
+            \node[circle,fill=Button3,inner sep=3pt] (c) at (1,0){};
+        }~~~~~~\textcolor{gold}{Figure: }High-level machine learning pipeline
     \begin{figure}[h]
+        
         \centering
-        \includegraphics[scale=0.38]{ml_pipeline.png}
-         \caption{High-level machine learning pipeline}
+        \includegraphics[scale=0.45]{ml_pipeline.png}
     \end{figure}
 \end{frame}
+
+
 
 \begin{frame}{Anomaly detection using privacy-preserving, synthetic time series data}
     
     \begin{itemize}
         \item Problem
         \begin{itemize}
-            \item ML models are very data hungry.
-            \item In many cases sharing data comes with privacy risks.
+            \item ML models are very \alert{data hungry}.
+            \item In many cases sharing data comes with \alert{privacy risks}.
         \end{itemize}
         \item Solution:
         \begin{itemize}
@@ -33,20 +40,32 @@
 
 
 \begin{frame}{Structure}
+    
+    \begin{figure}[h]
+        \begin{flushleft}
+            \tikz{
+            \node[circle,inner sep=3pt] (c) at (-0.5,0){};
+            \node[circle,fill=Button1,inner sep=3pt] (c) at (1.0,0){};
+            \node[circle,fill=Button2,inner sep=3pt] (c) at (1.5,0){};
+            \node[circle,fill=Button3,inner sep=3pt] (c) at (2.0,0){};
+        }~~~~~~\textcolor{gold}{Figure: }Structure of Experiment pipeline
+        \end{flushleft}
+        \centering
+        \includegraphics[scale=0.28]{str.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Structure}
     \begin{enumerate}
-        \item Train baseline model for anomaly detection only on regular heartbeat data using an LSTM-AE.
-        \item Generate heartbeat data (without DP) using two approaches:
+        \item<1-> Train \alert{baseline model} for anomaly detection only on regular heartbeat data using an LSTM-AE.
+        \item<2->  \alert{Generate heartbeat} data using two approaches:
         \begin{itemize}
-            \item[--] AE-MERF
-            \item[--] RTSGAN
+            \item<2-> [--] AE-(dp)MERF
+            \item<2-> [--] AE-(dp)WGAN
         \end{itemize}
-        \item Train LSTM-AE for anomaly detection on synthetic data and test on real (TSTR).
-        \item Add DP noise and repeat:
-        \begin{itemize}
-            \item[--] AE-DPMERF
-            \item[--] DP-RTSGAN
-        \end{itemize}
-        \item Contaminate training data with anomalous heartbeats and repeat
+        \item<3->  Train LSTM-AE for \alert{anomaly detection on synthetic data} and \alert{test on real}.
+        \item<3-> Assess \alert{utility} by measuring performance for anomaly detection (Accuracy, precision, recall, F1). 
+        \item<4->  \alert{Contaminate} training data with anomalous heartbeats and repeat.
     \end{enumerate}
 \end{frame}
 

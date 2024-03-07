@@ -67,73 +67,82 @@
     \field{year}{2023}
   \endentry
 
-  \entry{giomi2022unified}{misc}{}
-    \name{author}{4}{}{%
-      {{hash=GM}{%
-         family={Giomi},
-         familyi={G\bibinitperiod},
-         given={Matteo},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=BF}{%
-         family={Boenisch},
-         familyi={B\bibinitperiod},
-         given={Franziska},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=WC}{%
-         family={Wehmeyer},
-         familyi={W\bibinitperiod},
-         given={Christoph},
+  \entry{dwork2014algorithmic}{article}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{2}{}{%
+      {{hash=DC}{%
+         family={Dwork},
+         familyi={D\bibinitperiod},
+         given={Cynthia},
          giveni={C\bibinitperiod},
       }}%
-      {{hash=TB}{%
-         family={Tasnádi},
-         familyi={T\bibinitperiod},
-         given={Borbála},
-         giveni={B\bibinitperiod},
+      {{hash=RA}{%
+         family={Roth},
+         familyi={R\bibinitperiod},
+         given={Aaron},
+         giveni={A\bibinitperiod},
       }}%
     }
-    \strng{namehash}{GM+1}
-    \strng{fullhash}{GMBFWCTB1}
+    \list{publisher}{1}{%
+      {Now Publishers, Inc.}%
+    }
+    \strng{namehash}{DCRA+1}
+    \strng{fullhash}{DCRA+1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2022}
+    \field{labelyear}{2014}
     \field{labeldatesource}{}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \verb{eprint}
-    \verb 2211.10459
-    \endverb
-    \field{title}{A Unified Framework for Quantifying Privacy Risk in Synthetic Data}
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs.CR}
-    \field{year}{2022}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{3--4}
+    \field{pages}{211\bibrangedash 407}
+    \field{title}{The algorithmic foundations of differential privacy}
+    \field{volume}{9}
+    \field{journaltitle}{Foundations and Trends{\textregistered} in Theoretical Computer Science}
+    \field{year}{2014}
   \endentry
 
-  \entry{greenwade93}{article}{}
-    \name{author}{1}{}{%
-      {{hash=GGD}{%
-         family={Greenwade},
-         familyi={G\bibinitperiod},
-         given={George\bibnamedelima D.},
-         giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod},
+  \entry{dpmerf}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HF}{%
+         family={Harder},
+         familyi={H\bibinitperiod},
+         given={Frederik},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=AK}{%
+         family={Adamczewski},
+         familyi={A\bibinitperiod},
+         given={Kamil},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Park},
+         familyi={P\bibinitperiod},
+         given={Mijung},
+         giveni={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{GGD1}
-    \strng{fullhash}{GGD1}
+    \strng{namehash}{HFAKPM1}
+    \strng{fullhash}{HFAKPM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1993}
+    \field{labelyear}{2020}
     \field{labeldatesource}{}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \field{number}{3}
-    \field{pages}{342\bibrangedash 351}
-    \field{title}{The {C}omprehensive {T}ex {A}rchive {N}etwork ({CTAN})}
-    \field{volume}{14}
-    \field{journaltitle}{TUGBoat}
-    \field{year}{1993}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{eprint}
+    \verb 2002.11603
+    \endverb
+    \field{title}{Differentially Private Mean Embeddings with Random Features {(DP-MERF)} for Simple {\&} Practical Synthetic Data Generation}
+    \verb{url}
+    \verb https://arxiv.org/abs/2002.11603
+    \endverb
+    \field{volume}{abs/2002.11603}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2020}
   \endentry
 
   \entry{hu2023sok}{misc}{}
@@ -216,150 +225,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{NEURIPS2022_39540967}{inproceedings}{}
-    \name{author}{4}{}{%
-      {{hash=KN}{%
-         family={Kotelevskii},
-         familyi={K\bibinitperiod},
-         given={Nikita},
-         giveni={N\bibinitperiod},
-      }}%
-      {{hash=VM}{%
-         family={Vono},
-         familyi={V\bibinitperiod},
-         given={Maxime},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=DA}{%
-         family={Durmus},
-         familyi={D\bibinitperiod},
-         given={Alain},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=ME}{%
-         family={Moulines},
-         familyi={M\bibinitperiod},
-         given={Eric},
-         giveni={E\bibinitperiod},
-      }}%
-    }
-    \name{editor}{6}{}{%
-      {{hash=KS}{%
-         family={Koyejo},
-         familyi={K\bibinitperiod},
-         given={S.},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=MS}{%
-         family={Mohamed},
-         familyi={M\bibinitperiod},
-         given={S.},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=AA}{%
-         family={Agarwal},
-         familyi={A\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=BD}{%
-         family={Belgrave},
-         familyi={B\bibinitperiod},
-         given={D.},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=CK}{%
-         family={Cho},
-         familyi={C\bibinitperiod},
-         given={K.},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=OA}{%
-         family={Oh},
-         familyi={O\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Curran Associates, Inc.}%
-    }
-    \strng{namehash}{KN+1}
-    \strng{fullhash}{KNVMDAME1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2022}
-    \field{labeldatesource}{}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \field{booktitle}{Advances in Neural Information Processing Systems}
-    \field{pages}{8687\bibrangedash 8701}
-    \field{title}{FedPop: A Bayesian Approach for Personalised Federated Learning}
-    \verb{url}
-    \verb https://proceedings.neurips.cc/paper_files/paper/2022/file/3954096792
-    \verb 70591fd2a70abc694cf5a1-Paper-Conference.pdf
-    \endverb
-    \field{volume}{35}
-    \field{year}{2022}
-  \endentry
-
-  \entry{Lin_2020}{inproceedings}{}
-    \name{author}{5}{}{%
-      {{hash=LZ}{%
-         family={Lin},
-         familyi={L\bibinitperiod},
-         given={Zinan},
-         giveni={Z\bibinitperiod},
-      }}%
-      {{hash=JA}{%
-         family={Jain},
-         familyi={J\bibinitperiod},
-         given={Alankar},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=WC}{%
-         family={Wang},
-         familyi={W\bibinitperiod},
-         given={Chen},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=FG}{%
-         family={Fanti},
-         familyi={F\bibinitperiod},
-         given={Giulia},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=SV}{%
-         family={Sekar},
-         familyi={S\bibinitperiod},
-         given={Vyas},
-         giveni={V\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {{ACM}}%
-    }
-    \strng{namehash}{LZ+1}
-    \strng{fullhash}{LZJAWCFGSV1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2020}
-    \field{labeldatesource}{}
-    \field{sortinit}{L}
-    \field{sortinithash}{L}
-    \field{booktitle}{Proceedings of the {ACM} Internet Measurement Conference}
-    \verb{doi}
-    \verb 10.1145/3419394.3423643
-    \endverb
-    \field{title}{Using {GANs} for Sharing Networked Time Series Data}
-    \verb{url}
-    \verb https://doi.org/10.1145%2F3419394.3423643
-    \endverb
-    \field{year}{2020}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{pei2021towards}{inproceedings}{}
+  \entry{pei2021towards}{article}{}
     \name{author}{7}{}{%
       {{hash=PH}{%
          family={Pei},
@@ -408,267 +274,9 @@
     \field{labeldatesource}{}
     \field{sortinit}{P}
     \field{sortinithash}{P}
-    \field{booktitle}{Proceedings of the 2021 IEEE International Conference on Data Mining (ICDM), Auckland, New Zealand}
     \field{title}{Towards Generating Real-World Time Series Data}
+    \field{journaltitle}{Proceedings of the 2021 IEEE International Conference on Data Mining (ICDM)}
     \field{year}{2021}
-  \endentry
-
-  \entry{prediger2023collaborative}{misc}{}
-    \name{author}{4}{}{%
-      {{hash=PL}{%
-         family={Prediger},
-         familyi={P\bibinitperiod},
-         given={Lukas},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=JJ}{%
-         family={Jälkö},
-         familyi={J\bibinitperiod},
-         given={Joonas},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=HA}{%
-         family={Honkela},
-         familyi={H\bibinitperiod},
-         given={Antti},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=KS}{%
-         family={Kaski},
-         familyi={K\bibinitperiod},
-         given={Samuel},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{PL+1}
-    \strng{fullhash}{PLJJHAKS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2023}
-    \field{labeldatesource}{}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-    \verb{eprint}
-    \verb 2308.04755
-    \endverb
-    \field{title}{Collaborative Learning From Distributed Data With Differentially Private Synthetic Twin Data}
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs.LG}
-    \field{year}{2023}
-  \endentry
-
-  \entry{shokri2017membership}{misc}{}
-    \name{author}{4}{}{%
-      {{hash=SR}{%
-         family={Shokri},
-         familyi={S\bibinitperiod},
-         given={Reza},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=SM}{%
-         family={Stronati},
-         familyi={S\bibinitperiod},
-         given={Marco},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=SC}{%
-         family={Song},
-         familyi={S\bibinitperiod},
-         given={Congzheng},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=SV}{%
-         family={Shmatikov},
-         familyi={S\bibinitperiod},
-         given={Vitaly},
-         giveni={V\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SR+1}
-    \strng{fullhash}{SRSMSCSV1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
-    \field{labeldatesource}{}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \verb{eprint}
-    \verb 1610.05820
-    \endverb
-    \field{title}{Membership Inference Attacks against Machine Learning Models}
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs.CR}
-    \field{year}{2017}
-  \endentry
-
-  \entry{groundhog}{article}{}
-    \name{author}{3}{}{%
-      {{hash=ST}{%
-         family={Stadler},
-         familyi={S\bibinitperiod},
-         given={Theresa},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=OB}{%
-         family={Oprisanu},
-         familyi={O\bibinitperiod},
-         given={Bristena},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=TC}{%
-         family={Troncoso},
-         familyi={T\bibinitperiod},
-         given={Carmela},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{STOBTC1}
-    \strng{fullhash}{STOBTC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2020}
-    \field{labeldatesource}{}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \verb{eprint}
-    \verb 2011.07018
-    \endverb
-    \field{title}{Synthetic Data - {A} Privacy Mirage}
-    \verb{url}
-    \verb https://arxiv.org/abs/2011.07018
-    \endverb
-    \field{volume}{abs/2011.07018}
-    \field{journaltitle}{CoRR}
-    \field{eprinttype}{arXiv}
-    \field{year}{2020}
-  \endentry
-
-  \entry{tan2022pfl}{article}{}
-    \name{author}{4}{}{%
-      {{hash=TAZ}{%
-         family={Tan},
-         familyi={T\bibinitperiod},
-         given={Alysa\bibnamedelima Ziying},
-         giveni={A\bibinitperiod\bibinitdelim Z\bibinitperiod},
-      }}%
-      {{hash=YH}{%
-         family={Yu},
-         familyi={Y\bibinitperiod},
-         given={Han},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=CL}{%
-         family={Cui},
-         familyi={C\bibinitperiod},
-         given={Lizhen},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=YQ}{%
-         family={Yang},
-         familyi={Y\bibinitperiod},
-         given={Qiang},
-         giveni={Q\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{TAZ+1}
-    \strng{fullhash}{TAZYHCLYQ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2022}
-    \field{labeldatesource}{}
-    \field{sortinit}{T}
-    \field{sortinithash}{T}
-    \verb{doi}
-    \verb 10.1109/TNNLS.2022.3160699
-    \endverb
-    \field{pages}{1\bibrangedash 17}
-    \field{title}{Towards Personalized Federated Learning}
-    \field{journaltitle}{IEEE Transactions on Neural Networks and Learning Systems}
-    \field{year}{2022}
-  \endentry
-
-  \entry{NEURIPS2019_c9efe5f2}{inproceedings}{}
-    \name{author}{3}{}{%
-      {{hash=YJ}{%
-         family={Yoon},
-         familyi={Y\bibinitperiod},
-         given={Jinsung},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=JD}{%
-         family={Jarrett},
-         familyi={J\bibinitperiod},
-         given={Daniel},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=vdSM}{%
-         prefix={van\bibnamedelima der},
-         prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
-         family={Schaar},
-         familyi={S\bibinitperiod},
-         given={Mihaela},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \name{editor}{6}{}{%
-      {{hash=WH}{%
-         family={Wallach},
-         familyi={W\bibinitperiod},
-         given={H.},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=LH}{%
-         family={Larochelle},
-         familyi={L\bibinitperiod},
-         given={H.},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=BA}{%
-         family={Beygelzimer},
-         familyi={B\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=dABF}{%
-         prefix={d\textquotesingle},
-         prefixi={d\bibinitperiod},
-         family={Alch\'{e}-Buc},
-         familyi={A\bibinithyphendelim B\bibinitperiod},
-         given={F.},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=FE}{%
-         family={Fox},
-         familyi={F\bibinitperiod},
-         given={E.},
-         giveni={E\bibinitperiod},
-      }}%
-      {{hash=GR}{%
-         family={Garnett},
-         familyi={G\bibinitperiod},
-         given={R.},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Curran Associates, Inc.}%
-    }
-    \strng{namehash}{YJJDvdSM1}
-    \strng{fullhash}{YJJDvdSM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2019}
-    \field{labeldatesource}{}
-    \field{sortinit}{Y}
-    \field{sortinithash}{Y}
-    \field{booktitle}{Advances in Neural Information Processing Systems}
-    \field{title}{Time-series Generative Adversarial Networks}
-    \verb{url}
-    \verb https://proceedings.neurips.cc/paper_files/paper/2019/file/c9efe5f26c
-    \verb d17ba6216bbe2a7d26d490-Paper.pdf
-    \endverb
-    \field{volume}{32}
-    \field{year}{2019}
   \endentry
 \enddatalist
 \endinput

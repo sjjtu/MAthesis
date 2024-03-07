@@ -4,7 +4,7 @@
 
 \begin{frame}
     \frametitle{Review: Differential Privacy}
-    \onslide<1,2>\textbf{Idea.} Hide the influence of one particular sample on the output of the model by adding randomness.
+    \onslide<1,2>\textbf{Idea.} \alert{Hide the influence} of one particular sample on the output of the model by \alert{adding randomness}.
     \onslide<2->\begin{definition}[Differential Privacy]
         A randomised algorithm $\mathcal{M}$ is $(\epsilon, \delta)$- differentially private if for all  set of outcomes $S \subset ran \mathcal{M}$ and for all databases $x,y $, such that they \textbf{only differ in one element}, we have
         \begin{align}
@@ -14,6 +14,29 @@
     \end{definition}
 
     \onslide<3>\textbf{Informally.} Replacing one record in the data will not change the outcome of algorithm $\mathcal{M}$ \textit{too much} (specified via privacy budget $\epsilon$). The lower $\epsilon$ the stricter the privacy guarantees.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Examples of DP mechanism}
+
+    \begin{itemize}
+        \item Gaussian mechanism
+        \begin{itemize}
+            \item Add \alert{Gaussian noise} to output of some function.
+            \item For a given function  $f:\mathbb{N}^{|\mathcal{X}|} \longrightarrow \mathbb{R}^d$, privacy parameters $\epsilon \in (0,1)$ and $\delta>0$ define the gaussian mechanism $F(x)$ as follows:
+            \begin{align}
+                F(x) = f(x) + \mathcal{N}(0, \sigma^2)
+            \end{align}
+            where the variance is calibrated to satisfy DP.
+        \end{itemize}
+        \item DP-SGD
+        \begin{itemize}
+            \item DP version for training neural networks
+            \item \alert{Add noise to gradients} while training
+        \end{itemize}
+    \end{itemize}
+    
 
 \end{frame}
 
@@ -27,7 +50,7 @@
     \onslide<4->{\textcolor{tomato}{AE-(dp)WGAN}}
     \begin{itemize}
         \item<5-> Model based on GAN network, which are commonly used in image generation.
-        \item<6-> Delivers state of the art performance for time series data.
+        \item<6-> Based on RTSGAN, which delivers state of the art performance for time series data.
         \item<7> No private counterpart, hence we will implement our own private version.
     \end{itemize}
     
