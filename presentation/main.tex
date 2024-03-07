@@ -3,6 +3,10 @@
 %----------------------------------------------------------------------------------------
 \documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pmboxdraw}
+\usepackage{appendixnumberbeamer}
+\usepackage{circuitikz}
 \usetheme{DarkConsoleFiraRemix}
 
 \usepackage{hyperref}
@@ -13,6 +17,15 @@
 \usepackage{multirow}
 \usepackage{ulem}
 \usepackage{caption} 
+\usepackage{fancyvrb,minted,tcolorbox, listings}
+
+\tcbuselibrary{skins,breakable,breakable}
+\tcbuselibrary{minted}
+
+\definecolor{terminalColor}{RGB}{38,50,56}
+\definecolor{Button1}{RGB}{254,94,86}
+\definecolor{Button2}{RGB}{254,188,45}
+\definecolor{Button3}{RGB}{38,202,59}
 
 \setbeamercovered{invisible}
 
@@ -33,8 +46,8 @@
 %----------------------------------------------------------------------------------------
 
 % The title
-\title[short title]{Privacy-preserving Data Generation:}
-\subtitle{Towards generating privacy-preserving, synthetic and useful time series ECG data for anomaly detection}
+\title[short title]{Privacy-Preserving Data Generation:}
+\subtitle{Towards Generating Privacy-Preserving, Synthetic and Useful Time Series ECG Data for Anomaly Detection}
 \author[SJTU]{Sijun John Tu}
 \institute{KTH x RISE}
 \date{\today} % Date, can be changed to a custom date
@@ -60,6 +73,7 @@
 
 \input{chapters/ref}
 
+\appendix
 \input{chapters/backup.tex}
 
 \end{document}
