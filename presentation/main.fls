@@ -1,7 +1,7 @@
-PWD /home/asd/Projekte/MAthesis/presentation
+PWD /home/user1-asd-arch/Projects/Thesis/presentation
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/asd/Projekte/MAthesis/presentation/main.tex
+INPUT /home/user1-asd-arch/Projects/Thesis/presentation/main.tex
 OUTPUT main.log
 INPUT /usr/share/texmf-dist/tex/latex/beamer/beamer.cls
 INPUT /usr/share/texmf-dist/tex/latex/beamer/beamer.cls
@@ -2120,10 +2120,6 @@ INPUT ./images/rec_anom.png
 INPUT images/rec_anom.png
 INPUT ./images/rec_anom.png
 INPUT ./images/rec_anom.png
-INPUT ../images//hist_threshold_baseline.png
-INPUT ../images//hist_threshold_baseline.png
-INPUT ../images//hist_threshold_baseline.png
-INPUT ../images//hist_threshold_baseline.png
 INPUT ./chapters/chapter3.tex
 INPUT ./chapters/chapter3.tex
 INPUT ./chapters/chapter3.tex
@@ -2198,6 +2194,12 @@ INPUT ../images//results_aedpmerf_contam.png
 INPUT ../images//results_aedpmerf_contam.png
 INPUT ../images//results_aedpmerf_contam.png
 INPUT ../images//results_aedpmerf_contam.png
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fira/FiraSans-Book-lf-t1.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fira/FiraMono-Medium-tlf-t1.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/public/fira/FiraMono-Medium-tlf-t1.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fira/FiraMono-Medium-tlf-t1--base.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/public/fira/FiraSans-Book-lf-t1.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fira/FiraSans-Book-lf-t1--base.tfm
 INPUT ../images//results_aedpmerf_contam_baseline.png
 INPUT ../images//results_aedpmerf_contam_baseline.png
 INPUT ../images//results_aedpmerf_contam_baseline.png
@@ -2283,6 +2285,10 @@ INPUT ../images//dp_illustr.png
 INPUT ../images//dp_illustr.png
 INPUT ../images//dp_illustr.png
 INPUT ../images//dp_illustr.png
+INPUT ../images//hist_threshold_baseline.png
+INPUT ../images//hist_threshold_baseline.png
+INPUT ../images//hist_threshold_baseline.png
+INPUT ../images//hist_threshold_baseline.png
 OUTPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb

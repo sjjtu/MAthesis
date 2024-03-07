@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.3.4)  7 MAR 2024 22:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.25)  8 MAR 2024 00:37
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/asd/Projekte/MAthesis/presentation/main.tex
-(/home/asd/Projekte/MAthesis/presentation/main.tex
+**/home/user1-asd-arch/Projects/Thesis/presentation/main.tex
+(/home/user1-asd-arch/Projects/Thesis/presentation/main.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2023/02/20 v3.69 A class for typesetting presentations
@@ -924,7 +924,7 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \bibhang=\skip72
 \blx@bcfin=\read3
 \blx@bcfout=\write5
-\blx@langwohyphens=\language26
+\blx@langwohyphens=\language3
 \c@mincomprange=\count396
 \c@maxcomprange=\count397
 \c@mincompwidth=\count398
@@ -1530,53 +1530,51 @@ Overfull \hbox (6.48259pt too wide) in paragraph at lines 15--15
 
  <../images//ml_pipeline.png>]
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/sl/n' in size <10> not available
-(Font)              Font shape `T1/FiraSans-LF/book/n' tried instead on input line 39.
+(Font)              Font shape `T1/FiraSans-LF/book/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/book/n' will be
-(Font)              scaled to size 10.0pt on input line 39.
+(Font)              scaled to size 10.0pt on input line 38.
 LaTeX Font Info:    Font shape `T1/FiraMono-TLF/sb/n' in size <10> not available
-(Font)              Font shape `T1/FiraMono-TLF/medium/n' tried instead on input line 39.
+(Font)              Font shape `T1/FiraMono-TLF/medium/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `T1/FiraMono-TLF/medium/n' will be
-(Font)              scaled to size 10.0pt on input line 39.
-LaTeX Font Info:    Trying to load font information for TS1+FiraMono-TLF on input line 39.
+(Font)              scaled to size 10.0pt on input line 38.
+LaTeX Font Info:    Trying to load font information for TS1+FiraMono-TLF on input line 38.
  (/usr/share/texmf-dist/tex/latex/fira/TS1FiraMono-TLF.fd
 File: TS1FiraMono-TLF.fd 2019/10/10 (autoinst) Font definitions for TS1/FiraMono-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/FiraMono-TLF/sb/n' in size <10> not available
-(Font)              Font shape `TS1/FiraMono-TLF/medium/n' tried instead on input line 39.
+(Font)              Font shape `TS1/FiraMono-TLF/medium/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `TS1/FiraMono-TLF/medium/n' will be
-(Font)              scaled to size 10.0pt on input line 39.
+(Font)              scaled to size 10.0pt on input line 38.
  [5
 
 {/usr/share/texmf-dist/fonts/enc/dvips/fira/fir_ikmdpu.enc}] [6
 
 ] [7
 
-] [8
-
 ]
-<../images//str.png, id=122, 1133.73563pt x 681.29532pt>
+<../images//str.png, id=116, 1133.73563pt x 681.29532pt>
 File: ../images//str.png Graphic file (type png)
 <use ../images//str.png>
-Package pdftex.def Info: ../images//str.png  used on input line 56.
+Package pdftex.def Info: ../images//str.png  used on input line 55.
 (pdftex.def)             Requested size: 317.44382pt x 190.76138pt.
 
-Overfull \vbox (9.9523pt too high) detected at line 56
+Overfull \vbox (9.9523pt too high) detected at line 55
  []
 
-[9
+[8
 
- <../images//str.png>] [10
+ <../images//str.png>] [9
+
+] [10
 
 ] [11
 
 ] [12
 
-] [13
-
-]) (./chapters/chapter2.tex (./main.toc) [14
+]) (./chapters/chapter2.tex (./main.toc) [13
 
 ]
-<images/heartbeat_arr.png, id=167, 718.685pt x 431.6125pt>
+<images/heartbeat_arr.png, id=161, 718.685pt x 431.6125pt>
 File: images/heartbeat_arr.png Graphic file (type png)
 <use images/heartbeat_arr.png>
 Package pdftex.def Info: images/heartbeat_arr.png  used on input line 9.
@@ -1589,9 +1587,11 @@ LaTeX Font Info:    Font shape `T1/FiraSans-LF/sl/n' in size <9> not available
 (Font)              Font shape `T1/FiraSans-LF/book/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/book/n' will be
 (Font)              scaled to size 9.0pt on input line 9.
- [15
+ [14
 
- <./images/heartbeat_arr.png>] [16
+ <./images/heartbeat_arr.png>] [15
+
+] [16
 
 ] [17
 
@@ -1599,10 +1599,8 @@ LaTeX Font Info:    Font shape `T1/FiraSans-LF/book/n' will be
 
 ] [19
 
-] [20
-
 ]
-<images/rec_normal.png, id=206, 401.8212pt x 298.4751pt>
+<images/rec_normal.png, id=200, 401.8212pt x 298.4751pt>
 File: images/rec_normal.png Graphic file (type png)
 <use images/rec_normal.png>
 Package pdftex.def Info: images/rec_normal.png  used on input line 41.
@@ -1613,7 +1611,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{fig:enter-labe
                    \relax 
 l.41 \end{frame}
                 
-<images/rec_anom.png, id=207, 401.8212pt x 314.3745pt>
+<images/rec_anom.png, id=201, 401.8212pt x 314.3745pt>
 File: images/rec_anom.png Graphic file (type png)
 <use images/rec_anom.png>
 Package pdftex.def Info: images/rec_anom.png  used on input line 41.
@@ -1623,17 +1621,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{fig:enter-labe
 <to be read again> 
                    \relax 
 l.41 \end{frame}
-                 [21
+                 [20
 
- <./images/rec_normal.png> <./images/rec_anom.png>]
-<../images//hist_threshold_baseline.png, id=216, 498.663pt x 328.8285pt>
-File: ../images//hist_threshold_baseline.png Graphic file (type png)
-<use ../images//hist_threshold_baseline.png>
-Package pdftex.def Info: ../images//hist_threshold_baseline.png  used on input line 59.
-(pdftex.def)             Requested size: 149.60005pt x 98.6493pt.
- [22
-
- <../images//hist_threshold_baseline.png>]) (./chapters/chapter3.tex (./main.toc) [23
+ <./images/rec_normal.png> <./images/rec_anom.png>]) (./chapters/chapter3.tex (./main.toc) [21
 
 ]
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/b/n' in size <10.95> not available
@@ -1644,7 +1634,11 @@ LaTeX Font Info:    Font shape `T1/FiraSans-LF/sl/it' in size <10.95> not availa
 (Font)              Font shape `T1/FiraSans-LF/book/it' tried instead on input line 18.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/book/it' will be
 (Font)              scaled to size 10.95pt on input line 18.
- [24
+ [22
+
+] [23
+
+] [24
 
 ] [25
 
@@ -1662,29 +1656,25 @@ LaTeX Font Info:    Font shape `T1/FiraSans-LF/book/it' will be
 
 ] [32
 
-] [33
-
-] [34
-
-]) (./chapters/chapter4.tex (./main.toc) [35
+]) (./chapters/chapter4.tex (./main.toc) [33
 
 ]
-<../images//gen_aemerf.png, id=325, 455.301pt x 343.2825pt>
+<../images//gen_aemerf.png, id=311, 455.301pt x 343.2825pt>
 File: ../images//gen_aemerf.png Graphic file (type png)
 <use ../images//gen_aemerf.png>
 Package pdftex.def Info: ../images//gen_aemerf.png  used on input line 32.
 (pdftex.def)             Requested size: 113.82497pt x 85.8204pt.
-<../images//gen_aedpmerf_eps05.png, id=326, 455.301pt x 343.2825pt>
+<../images//gen_aedpmerf_eps05.png, id=312, 455.301pt x 343.2825pt>
 File: ../images//gen_aedpmerf_eps05.png Graphic file (type png)
 <use ../images//gen_aedpmerf_eps05.png>
 Package pdftex.def Info: ../images//gen_aedpmerf_eps05.png  used on input line 32.
 (pdftex.def)             Requested size: 113.82497pt x 85.8204pt.
-<../images//gen_aedpmerf_eps1.png, id=327, 455.301pt x 343.2825pt>
+<../images//gen_aedpmerf_eps1.png, id=313, 455.301pt x 343.2825pt>
 File: ../images//gen_aedpmerf_eps1.png Graphic file (type png)
 <use ../images//gen_aedpmerf_eps1.png>
 Package pdftex.def Info: ../images//gen_aedpmerf_eps1.png  used on input line 32.
 (pdftex.def)             Requested size: 113.82497pt x 85.8204pt.
-<../images//gen_aedpmerf_eps001.png, id=328, 455.301pt x 343.2825pt>
+<../images//gen_aedpmerf_eps001.png, id=314, 455.301pt x 343.2825pt>
 File: ../images//gen_aedpmerf_eps001.png Graphic file (type png)
 <use ../images//gen_aedpmerf_eps001.png>
 Package pdftex.def Info: ../images//gen_aedpmerf_eps001.png  used on input line 32.
@@ -1693,10 +1683,10 @@ Package pdftex.def Info: ../images//gen_aedpmerf_eps001.png  used on input line 
 Overfull \vbox (10.66898pt too high) detected at line 32
  []
 
-[36
+[34
 
  <../images//gen_aemerf.png> <../images//gen_aedpmerf_eps05.png> <../images//gen_aedpmerf_eps1.png> <../images//gen_aedpmerf_eps001.png>]
-<../images//results_aedpmerf.png, id=339, 714.7503pt x 736.4313pt>
+<../images//results_aedpmerf.png, id=325, 714.7503pt x 736.4313pt>
 File: ../images//results_aedpmerf.png Graphic file (type png)
 <use ../images//results_aedpmerf.png>
 Package pdftex.def Info: ../images//results_aedpmerf.png  used on input line 41.
@@ -1707,28 +1697,28 @@ pdfTeX warning (ext4): destination with the same identifier (name{fig:enter-labe
                    \relax 
 l.41 \end{frame}
                 
-Overfull \vbox (12.16675pt too high) detected at line 41
+Overfull \vbox (12.88945pt too high) detected at line 41
  []
 
-[37
+[35
 
  <../images//results_aedpmerf.png>]
-<../images//gen_aewgan.png, id=348, 455.301pt x 343.2825pt>
+<../images//gen_aewgan.png, id=333, 455.301pt x 343.2825pt>
 File: ../images//gen_aewgan.png Graphic file (type png)
 <use ../images//gen_aewgan.png>
 Package pdftex.def Info: ../images//gen_aewgan.png  used on input line 72.
 (pdftex.def)             Requested size: 113.82497pt x 85.8204pt.
-<../images//gen_aedpwgan_eps35.png, id=349, 455.301pt x 343.2825pt>
+<../images//gen_aedpwgan_eps35.png, id=334, 455.301pt x 343.2825pt>
 File: ../images//gen_aedpwgan_eps35.png Graphic file (type png)
 <use ../images//gen_aedpwgan_eps35.png>
 Package pdftex.def Info: ../images//gen_aedpwgan_eps35.png  used on input line 72.
 (pdftex.def)             Requested size: 113.82497pt x 85.8204pt.
-<../images//gen_aedpwgan_eps25.png, id=350, 455.301pt x 343.2825pt>
+<../images//gen_aedpwgan_eps25.png, id=335, 455.301pt x 343.2825pt>
 File: ../images//gen_aedpwgan_eps25.png Graphic file (type png)
 <use ../images//gen_aedpwgan_eps25.png>
 Package pdftex.def Info: ../images//gen_aedpwgan_eps25.png  used on input line 72.
 (pdftex.def)             Requested size: 113.82497pt x 85.8204pt.
-<../images//gen_aedpwgan_eps5.png, id=351, 455.301pt x 343.2825pt>
+<../images//gen_aedpwgan_eps5.png, id=336, 455.301pt x 343.2825pt>
 File: ../images//gen_aedpwgan_eps5.png Graphic file (type png)
 <use ../images//gen_aedpwgan_eps5.png>
 Package pdftex.def Info: ../images//gen_aedpwgan_eps5.png  used on input line 72.
@@ -1737,10 +1727,10 @@ Package pdftex.def Info: ../images//gen_aedpwgan_eps5.png  used on input line 72
 Overfull \vbox (10.66898pt too high) detected at line 72
  []
 
-[38
+[36
 
  <../images//gen_aewgan.png> <../images//gen_aedpwgan_eps35.png> <../images//gen_aedpwgan_eps25.png> <../images//gen_aedpwgan_eps5.png>]
-<../images//restuls_dprtsgan.png, id=362, 714.7503pt x 736.4313pt>
+<../images//restuls_dprtsgan.png, id=347, 714.7503pt x 736.4313pt>
 File: ../images//restuls_dprtsgan.png Graphic file (type png)
 <use ../images//restuls_dprtsgan.png>
 Package pdftex.def Info: ../images//restuls_dprtsgan.png  used on input line 81.
@@ -1754,9 +1744,13 @@ l.81 \end{frame}
 Overfull \vbox (12.88945pt too high) detected at line 81
  []
 
-[39
+[37
 
- <../images//restuls_dprtsgan.png>] [40
+ <../images//restuls_dprtsgan.png>] [38
+
+] [39
+
+] [40
 
 ] [41
 
@@ -1764,12 +1758,8 @@ Overfull \vbox (12.88945pt too high) detected at line 81
 
 ] [43
 
-] [44
-
-] [45
-
 ]
-<../images//str_comtam.png, id=407, 1149.5447pt x 697.10437pt>
+<../images//str_comtam.png, id=393, 1149.5447pt x 697.10437pt>
 File: ../images//str_comtam.png Graphic file (type png)
 <use ../images//str_comtam.png>
 Package pdftex.def Info: ../images//str_comtam.png  used on input line 106.
@@ -1783,68 +1773,80 @@ l.106 \end{frame}
 Overfull \vbox (24.46288pt too high) detected at line 106
  []
 
-[46
+[44
 
  <../images//str_comtam.png>]
-<../images//results_aedpmerf_contam.png, id=415, 603.4545pt x 657.657pt>
+<../images//results_aedpmerf_contam.png, id=401, 603.4545pt x 657.657pt>
 File: ../images//results_aedpmerf_contam.png Graphic file (type png)
 <use ../images//results_aedpmerf_contam.png>
-Package pdftex.def Info: ../images//results_aedpmerf_contam.png  used on input line 121.
-(pdftex.def)             Requested size: 184.58891pt x 201.17213pt.
+Package pdftex.def Info: ../images//results_aedpmerf_contam.png  used on input line 135.
+(pdftex.def)             Requested size: 161.51398pt x 176.02437pt.
+LaTeX Font Info:    Font shape `T1/FiraSans-LF/sl/n' in size <8> not available
+(Font)              Font shape `T1/FiraSans-LF/book/n' tried instead on input line 135.
+LaTeX Font Info:    Font shape `T1/FiraSans-LF/book/n' will be
+(Font)              scaled to size 8.0pt on input line 135.
+LaTeX Font Info:    Font shape `T1/FiraMono-TLF/sb/n' in size <8> not available
+(Font)              Font shape `T1/FiraMono-TLF/medium/n' tried instead on input line 135.
+LaTeX Font Info:    Font shape `T1/FiraMono-TLF/medium/n' will be
+(Font)              scaled to size 8.0pt on input line 135.
 
-Overfull \vbox (31.96326pt too high) detected at line 121
+Overfull \vbox (8.81549pt too high) detected at line 135
+ []
+
+[45
+
+ <../images//results_aedpmerf_contam.png>]
+<../images//results_aedpmerf_contam_baseline.png, id=409, 603.4545pt x 657.657pt>
+File: ../images//results_aedpmerf_contam_baseline.png Graphic file (type png)
+<use ../images//results_aedpmerf_contam_baseline.png>
+Package pdftex.def Info: ../images//results_aedpmerf_contam_baseline.png  used on input line 135.
+(pdftex.def)             Requested size: 161.51398pt x 176.02437pt.
+
+Overfull \vbox (8.81549pt too high) detected at line 135
+ []
+
+[46
+
+ <../images//results_aedpmerf_contam_baseline.png>]
+<../images//results_aedpmerf_contam_aemerf.png, id=417, 603.4545pt x 657.657pt>
+File: ../images//results_aedpmerf_contam_aemerf.png Graphic file (type png)
+<use ../images//results_aedpmerf_contam_aemerf.png>
+Package pdftex.def Info: ../images//results_aedpmerf_contam_aemerf.png  used on input line 135.
+(pdftex.def)             Requested size: 161.51398pt x 176.02437pt.
+
+Overfull \vbox (8.81549pt too high) detected at line 135
  []
 
 [47
 
- <../images//results_aedpmerf_contam.png>]
-<../images//results_aedpmerf_contam_baseline.png, id=423, 603.4545pt x 657.657pt>
-File: ../images//results_aedpmerf_contam_baseline.png Graphic file (type png)
-<use ../images//results_aedpmerf_contam_baseline.png>
-Package pdftex.def Info: ../images//results_aedpmerf_contam_baseline.png  used on input line 121.
-(pdftex.def)             Requested size: 184.58891pt x 201.17213pt.
+ <../images//results_aedpmerf_contam_aemerf.png>]
+<../images//results_aedpmerf_contam_aedpmerf.png, id=425, 603.4545pt x 657.657pt>
+File: ../images//results_aedpmerf_contam_aedpmerf.png Graphic file (type png)
+<use ../images//results_aedpmerf_contam_aedpmerf.png>
+Package pdftex.def Info: ../images//results_aedpmerf_contam_aedpmerf.png  used on input line 135.
+(pdftex.def)             Requested size: 161.51398pt x 176.02437pt.
 
-Overfull \vbox (31.96326pt too high) detected at line 121
+Overfull \vbox (8.81549pt too high) detected at line 135
  []
 
 [48
 
- <../images//results_aedpmerf_contam_baseline.png>]
-<../images//results_aedpmerf_contam_aemerf.png, id=431, 603.4545pt x 657.657pt>
-File: ../images//results_aedpmerf_contam_aemerf.png Graphic file (type png)
-<use ../images//results_aedpmerf_contam_aemerf.png>
-Package pdftex.def Info: ../images//results_aedpmerf_contam_aemerf.png  used on input line 121.
-(pdftex.def)             Requested size: 184.58891pt x 201.17213pt.
+ <../images//results_aedpmerf_contam_aedpmerf.png>]
+File: ../images//results_aedpmerf_contam.png Graphic file (type png)
+<use ../images//results_aedpmerf_contam.png>
+Package pdftex.def Info: ../images//results_aedpmerf_contam.png  used on input line 135.
+(pdftex.def)             Requested size: 161.51398pt x 176.02437pt.
 
-Overfull \vbox (31.96326pt too high) detected at line 121
+Overfull \vbox (8.81549pt too high) detected at line 135
  []
 
 [49
 
- <../images//results_aedpmerf_contam_aemerf.png>]
-<../images//results_aedpmerf_contam_aedpmerf.png, id=440, 603.4545pt x 657.657pt>
-File: ../images//results_aedpmerf_contam_aedpmerf.png Graphic file (type png)
-<use ../images//results_aedpmerf_contam_aedpmerf.png>
-Package pdftex.def Info: ../images//results_aedpmerf_contam_aedpmerf.png  used on input line 121.
-(pdftex.def)             Requested size: 184.58891pt x 201.17213pt.
+] [50
 
-Overfull \vbox (31.96326pt too high) detected at line 121
- []
+]) (./chapters/chapter5.tex (./main.toc) [51
 
-[50
-
- <../images//results_aedpmerf_contam_aedpmerf.png>]
-File: ../images//results_aedpmerf_contam.png Graphic file (type png)
-<use ../images//results_aedpmerf_contam.png>
-Package pdftex.def Info: ../images//results_aedpmerf_contam.png  used on input line 121.
-(pdftex.def)             Requested size: 184.58891pt x 201.17213pt.
-
-Overfull \vbox (31.96326pt too high) detected at line 121
- []
-
-[51
-
-]) (./chapters/chapter5.tex (./main.toc) [52
+] [52
 
 ] [53
 
@@ -1864,16 +1866,14 @@ Overfull \vbox (31.96326pt too high) detected at line 121
 
 ] [61
 
-] [62
-
 ]
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/sl/n' in size <20.74> not available
 (Font)              Font shape `T1/FiraSans-LF/book/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/book/n' will be
 (Font)              scaled to size 20.74pt on input line 36.
- [63
+ [62
 
-]) (./chapters/ref.tex (./main.toc) [64
+]) (./chapters/ref.tex (./main.toc) [63
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+FiraSans-LF on input line 10.
@@ -1888,7 +1888,7 @@ LaTeX Font Info:    Font shape `T1/FiraSans-LF/sl/sc' in size <10.95> not availa
 (Font)              Font shape `T1/FiraSans-LF/book/sc' tried instead on input line 10.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/book/sc' will be
 (Font)              scaled to size 10.95pt on input line 10.
- [65
+ [64
 
 {/usr/share/texmf-dist/fonts/enc/dvips/fira/fir_d67aat.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fira/fir_uhzub2.enc} </usr/share/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>])
 
@@ -1966,7 +1966,7 @@ l.184 \end{frame}
                   [4
 
 ]
-<../images//dp_illustr.png, id=591, 1435.61343pt x 490.83376pt>
+<../images//dp_illustr.png, id=583, 1435.61343pt x 490.83376pt>
 File: ../images//dp_illustr.png Graphic file (type png)
 <use ../images//dp_illustr.png>
 Package pdftex.def Info: ../images//dp_illustr.png  used on input line 196.
@@ -1989,6 +1989,24 @@ l.196 \end{frame}
                   [5
 
  <../images//dp_illustr.png>]
+<../images//hist_threshold_baseline.png, id=589, 498.663pt x 328.8285pt>
+File: ../images//hist_threshold_baseline.png Graphic file (type png)
+<use ../images//hist_threshold_baseline.png>
+Package pdftex.def Info: ../images//hist_threshold_baseline.png  used on input line 214.
+(pdftex.def)             Requested size: 149.60005pt x 98.6493pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{Navigation6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.214 \end{frame}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.214 \end{frame}
+                  [6
+
+ <../images//hist_threshold_baseline.png>]
 \openout4 = `main.vrb'.
 
  (./main.vrb
@@ -2006,20 +2024,20 @@ File: ../images//str.png Graphic file (type png)
 Package pdftex.def Info: ../images//str.png  used on input line 11.
 (pdftex.def)             Requested size: 283.43321pt x 170.32341pt.
 )
-Overfull \vbox (22.06403pt too high) detected at line 211
+Overfull \vbox (22.06403pt too high) detected at line 229
  []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation6}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{Navigation7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.211 \end{frame}
+l.229 \end{frame}
                  
-pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.211 \end{frame}
-                  [6
+l.229 \end{frame}
+                  [7
 
 ]
 \openout4 = `main.vrb'.
@@ -2069,20 +2087,20 @@ Package textcomp Info: Symbol \textasciigrave not provided by
 (textcomp)             font family FiraMono-TLF in TS1 encoding.
 (textcomp)             Default family used instead on input line 3.
 )
-Overfull \vbox (171.31624pt too high) detected at line 219
+Overfull \vbox (171.31624pt too high) detected at line 237
  []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation7}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{Navigation8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.219 \end{frame}
+l.237 \end{frame}
                  
-pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.219 \end{frame}
-                  [7
+l.237 \end{frame}
+                  [8
 
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}])
 \tf@nav=\write10
@@ -2105,18 +2123,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 61515 strings out of 477473
- 1427057 string characters out of 5829993
- 2463156 words of memory out of 5000000
- 80756 multiletter control sequences out of 15000+600000
- 711546 words of font info for 131 fonts, out of 8000000 for 9000
- 264 hyphenation exceptions out of 8191
- 128i,12n,122p,1922b,1719s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 61521 strings out of 477985
+ 1427228 string characters out of 5840058
+ 2461758 words of memory out of 5000000
+ 80611 multiletter control sequences out of 15000+600000
+ 727174 words of font info for 135 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 128i,12n,122p,1931b,1719s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/fira/FiraMono-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraMono-Medium.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraMono-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraSans-Book.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraSans-BookItalic.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb>
-Output written on main.pdf (72 pages, 1917416 bytes).
+Output written on main.pdf (72 pages, 1918795 bytes).
 PDF statistics:
- 732 PDF objects out of 1000 (max. 8388607)
- 560 compressed objects within 6 object streams
- 147 named destinations out of 1000 (max. 500000)
+ 730 PDF objects out of 1000 (max. 8388607)
+ 558 compressed objects within 6 object streams
+ 145 named destinations out of 1000 (max. 500000)
  225 words of extra memory for PDF output out of 10000 (max. 10000000)
 

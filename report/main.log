@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.16)  29 FEB 2024 17:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.25)  7 MAR 2024 12:55
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/asd/Projekte/MAthesis/report/main.tex
-(/home/asd/Projekte/MAthesis/report/main.tex
+**/home/user1-asd-arch/Projects/Thesis/report/main.tex
+(/home/user1-asd-arch/Projects/Thesis/report/main.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -89,7 +89,7 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 Package: babel 2023/02/13 3.86 The Babel package
 \babel@savecnt=\count266
 \U@D=\dimen159
-\l@unhyphenated=\language26
+\l@unhyphenated=\language3
  (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count267
@@ -792,7 +792,7 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibhang=\skip79
 \blx@bcfin=\read4
 \blx@bcfout=\write4
-\blx@langwohyphens=\language27
+\blx@langwohyphens=\language4
 \c@mincomprange=\count389
 \c@maxcomprange=\count390
 \c@mincompwidth=\count391
@@ -1385,33 +1385,33 @@ File: ../images//gen_aedpwgan_eps5.png Graphic file (type png)
 Package pdftex.def Info: ../images//gen_aedpwgan_eps5.png  used on input line 369.
 (pdftex.def)             Requested size: 273.1827pt x 205.97107pt.
  [41] [42 <../images//gen_aedpwgan_eps35.png> <../images//gen_aedpwgan_eps25.png> <../images//gen_aedpwgan_eps5.png>]
-<../images//results_aedpmerf.png, id=850, 714.7503pt x 714.7503pt>
+<../images//results_aedpmerf.png, id=850, 714.7503pt x 736.4313pt>
 File: ../images//results_aedpmerf.png Graphic file (type png)
 <use ../images//results_aedpmerf.png>
 Package pdftex.def Info: ../images//results_aedpmerf.png  used on input line 413.
-(pdftex.def)             Requested size: 428.8535pt x 428.8535pt.
+(pdftex.def)             Requested size: 428.8535pt x 441.86218pt.
 
 Overfull \hbox (2.06216pt too wide) in paragraph at lines 413--414
  [][] 
  []
 
 [43]
-<../images//restuls_dprtsgan.png, id=856, 714.7503pt x 714.7503pt>
+<../images//restuls_dprtsgan.png, id=856, 714.7503pt x 736.4313pt>
 File: ../images//restuls_dprtsgan.png Graphic file (type png)
 <use ../images//restuls_dprtsgan.png>
 Package pdftex.def Info: ../images//restuls_dprtsgan.png  used on input line 420.
-(pdftex.def)             Requested size: 428.8535pt x 428.8535pt.
+(pdftex.def)             Requested size: 428.8535pt x 441.86218pt.
 
 Overfull \hbox (2.06216pt too wide) in paragraph at lines 420--421
  [][] 
  []
 
 [44 <../images//results_aedpmerf.png>] [45 <../images//restuls_dprtsgan.png>]
-<../images//results_aedpmerf_contam.png, id=869, 603.4545pt x 617.9085pt>
+<../images//results_aedpmerf_contam.png, id=869, 603.4545pt x 657.657pt>
 File: ../images//results_aedpmerf_contam.png Graphic file (type png)
 <use ../images//results_aedpmerf_contam.png>
 Package pdftex.def Info: ../images//results_aedpmerf_contam.png  used on input line 436.
-(pdftex.def)             Requested size: 422.41527pt x 432.53299pt.
+(pdftex.def)             Requested size: 422.41527pt x 460.35677pt.
  [46 <../images//results_aedpmerf_contam.png>]) (./chapters/chapter6-dis.tex [47] [48
 
 ]) (./chapters/chapter7-outro.tex [49]) [50
@@ -1468,13 +1468,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55573 strings out of 477473
- 1267135 string characters out of 5829992
- 2260041 words of memory out of 5000000
- 74947 multiletter control sequences out of 15000+600000
+ 55573 strings out of 477985
+ 1267162 string characters out of 5840058
+ 2258644 words of memory out of 5000000
+ 74796 multiletter control sequences out of 15000+600000
  525379 words of font info for 82 fonts, out of 8000000 for 9000
- 264 hyphenation exceptions out of 8191
- 84i,15n,89p,1525b,2972s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 14 hyphenation exceptions out of 8191
+ 84i,15n,89p,1534b,2972s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exist, replaced by a fixed one
 
@@ -1506,7 +1506,7 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (66 pages, 1475656 bytes).
+Output written on main.pdf (66 pages, 1466755 bytes).
 PDF statistics:
  1149 PDF objects out of 1200 (max. 8388607)
  970 compressed objects within 10 object streams

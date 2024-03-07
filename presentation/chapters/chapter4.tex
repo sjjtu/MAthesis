@@ -31,7 +31,7 @@
 
 \end{frame}
 
-\begin{frame}{AE-(DP)MERF}
+\begin{frame}{AE-(dp)MERF: Utility}
     \begin{figure}
         \centering
         \includegraphics[scale=0.23]{results_aedpmerf.png}
@@ -71,7 +71,7 @@
 
 \end{frame}
 
-\begin{frame}{AE-(dp)WGAN}
+\begin{frame}{AE-(dp)WGAN: Utility}
     \begin{figure}
         \centering
         \includegraphics[scale=0.23]{restuls_dprtsgan.png}
@@ -106,17 +106,38 @@
 \end{frame}
 
 \begin{frame}{Contamination: AE-(DP)MERF}
-    \begin{figure}
+    \begin{columns}
+        \begin{column}{0.65\textwidth}
+            \begin{figure}
 
-        \centering
-        \only<1>{\includegraphics[width=0.8\textheight]{results_aedpmerf_contam.png}}%
-        \only<2>{\includegraphics[width=0.8\textheight]{results_aedpmerf_contam_baseline.png}}%
-        \only<3>{\includegraphics[width=0.8\textheight]{results_aedpmerf_contam_aemerf.png}}%
-        \only<4>{\includegraphics[width=0.8\textheight]{results_aedpmerf_contam_aedpmerf.png}}%
-        \only<5>{\includegraphics[width=0.8\textheight]{results_aedpmerf_contam.png}}
+                \centering
+                \only<1>{\includegraphics[width=0.7\textheight]{results_aedpmerf_contam.png}}%
+                \only<2>{\includegraphics[width=0.7\textheight]{results_aedpmerf_contam_baseline.png}}%
+                \only<3>{\includegraphics[width=0.7\textheight]{results_aedpmerf_contam_aemerf.png}}%
+                \only<4>{\includegraphics[width=0.7\textheight]{results_aedpmerf_contam_aedpmerf.png}}%
+                \only<5>{\includegraphics[width=0.7\textheight]{results_aedpmerf_contam.png}}
+        
+                \caption{Contaminated training set: AE-(DP)MERF}
+        
+            \end{figure}
+        \end{column}
+        \begin{column}{0.34\textwidth}
+            \begin{itemize}
+                \scriptsize
+                \item<2-> \alert{Baseline model} performance degrades with increasing contamination percentage.
+                \item<3-> \alert{AE-MERF} generated samples retain stable utility.
+                \item<4-> Utility of \alert{AE-dpMERF} generated samples first increases and then decrease when contamination is too high.
+                \item<5-> Utility of synthetic data is higher than baseline model    
+            \end{itemize}
+        \end{column}
+    \end{columns}
+    
+\end{frame}
 
-        \caption{Contaminated training set: AE-(DP)MERF}
+\begin{frame}
+    \frametitle{Contamination: AE-(DP)MERF}
 
-    \end{figure}
+    \textcolor{gold}{Hypothesis: } Noise added during data generation and DP noise can have a \alert{regularising effect} on the synthetic data which counteracts the contamination.
+
 \end{frame}
 
