@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.25)  8 MAR 2024 00:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.25)  8 MAR 2024 08:56
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1759,21 +1759,17 @@ Overfull \vbox (12.88945pt too high) detected at line 81
 ] [43
 
 ]
-<../images//str_comtam.png, id=393, 1149.5447pt x 697.10437pt>
+<../images//str_comtam.png, id=393, 1334.73656pt x 532.99126pt>
 File: ../images//str_comtam.png Graphic file (type png)
 <use ../images//str_comtam.png>
 Package pdftex.def Info: ../images//str_comtam.png  used on input line 106.
-(pdftex.def)             Requested size: 321.87032pt x 195.18788pt.
+(pdftex.def)             Requested size: 373.7237pt x 149.23653pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:enter-label}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.106 \end{frame}
-                 
-Overfull \vbox (24.46288pt too high) detected at line 106
- []
-
-[44
+                  [44
 
  <../images//str_comtam.png>]
 <../images//results_aedpmerf_contam.png, id=401, 603.4545pt x 657.657pt>
@@ -2125,13 +2121,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  61521 strings out of 477985
  1427228 string characters out of 5840058
- 2461758 words of memory out of 5000000
+ 2461760 words of memory out of 5000000
  80611 multiletter control sequences out of 15000+600000
  727174 words of font info for 135 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  128i,12n,122p,1931b,1719s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/fira/FiraMono-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraMono-Medium.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraMono-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraSans-Book.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraSans-BookItalic.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb>
-Output written on main.pdf (72 pages, 1918795 bytes).
+Output written on main.pdf (72 pages, 1893881 bytes).
 PDF statistics:
  730 PDF objects out of 1000 (max. 8388607)
  558 compressed objects within 6 object streams
