@@ -34,7 +34,7 @@
 \begin{frame}{AE-(dp)MERF: Utility}
     \begin{figure}
         \centering
-        \includegraphics[scale=0.23]{results_aedpmerf.png}
+        \includegraphics[scale=0.3]{results_aedpmerf_acc.png}
         \caption{Results of AE-(DP)MERF with different privacy budgets (lower epsilon means higher privacy)}
         \label{fig:enter-label}
     \end{figure}
@@ -74,13 +74,13 @@
 \begin{frame}{AE-(dp)WGAN: Utility}
     \begin{figure}
         \centering
-        \includegraphics[scale=0.23]{restuls_dprtsgan.png}
+        \includegraphics[scale=0.3]{restuls_dprtsgan_acc.png}
         \caption{Results of AE-(dp)WGAN with different privacy budgets (lower epsilon means higher privacy)}
         \label{fig:enter-label}
     \end{figure}
 \end{frame}
 
-\begin{frame}{Conclusion}
+\begin{frame}{Preliminary Results}
     \begin{itemize}
         \item<1-> \alert{AE-(dp)MERF performs best} and is very efficient computationally.
         \item<2-> AE-(dp)MERF can work in \alert{lower epsilon ranges}, which translates to \alert{stronger privacy guarantees}.
@@ -111,11 +111,11 @@
             \begin{figure}
 
                 \centering
-                \only<1>{\includegraphics[width=0.7\textheight]{results_aedpmerf_contam.png}}%
-                \only<2>{\includegraphics[width=0.7\textheight]{results_aedpmerf_contam_baseline.png}}%
-                \only<3>{\includegraphics[width=0.7\textheight]{results_aedpmerf_contam_aemerf.png}}%
-                \only<4>{\includegraphics[width=0.7\textheight]{results_aedpmerf_contam_aedpmerf.png}}%
-                \only<5>{\includegraphics[width=0.7\textheight]{results_aedpmerf_contam.png}}
+                \only<1>{\includegraphics[width=0.7\textheight]{results_aedpmerf_contam_acc.png}}%
+                \only<2>{\includegraphics[width=0.7\textheight]{results_aedpmerf_contam_baseline_acc.png}}%
+                \only<3>{\includegraphics[width=0.7\textheight]{results_aedpmerf_contam_aemerf_acc.png}}%
+                \only<4>{\includegraphics[width=0.7\textheight]{results_aedpmerf_contam_aedpmerf_acc.png}}%
+                \only<5>{\includegraphics[width=0.7\textheight]{results_aedpmerf_contam_acc.png}}
         
                 \caption{Contaminated training set: AE-(DP)MERF}
         

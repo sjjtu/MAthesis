@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1709222482 "main.bcf" "main.bbl" "main" 1709812526 0
+["biber main"] 1710256662 "main.bcf" "main.bbl" "main" 1710257256 0
   "./references.bib" 1709762950 28947 857de47a146004623fc228f26d170bc3 ""
-  "main.bcf" 1709812526 114522 eb21508f4e4e1e9c674fad8f225dbe09 "pdflatex"
+  "main.bcf" 1710257256 114522 eb21508f4e4e1e9c674fad8f225dbe09 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1709812524 "/home/user1-asd-arch/Projects/Thesis/report/main.tex" "main.pdf" "main" 1709812526 0
+["pdflatex"] 1710257253 "/home/user1-asd-arch/Projects/Thesis/report/main.tex" "main.pdf" "main" 1710257256 0
   "../images//KTH_Royal_Institute_of_Technology_logo.svg.png" 1697440071 82662 5be601439497e03bff7ba13a23a68e47 ""
   "../images//SinusRhythmLabels.png" 1708379835 66104 3130397dd419c1285b0e90967f07ef06 ""
   "../images//anom_hb_samples.png" 1708523978 29599 0b9c94d6d6a747bb68f9778746f94970 ""
@@ -29,9 +29,9 @@
   "../images//rec_anom_samples_baseline.png" 1708422439 48123 90b55c1c824d8c4a814128edc90bad04 ""
   "../images//rec_reguarl_samples_baseline.png" 1708422430 51891 af094871f50b556903fc790bad047899 ""
   "../images//reg_hb_samples.png" 1708523882 28472 d50958bb166875a7f50ef9fbc271bccb ""
-  "../images//restuls_dprtsgan.png" 1709762950 58360 b61ec854ec51c033895aa50928994b24 ""
+  "../images//restuls_dprtsgan.png" 1709850616 58256 c404c0e54207cf4d9b232bd7d5890da1 ""
   "../images//results_aedpmerf.png" 1709762950 50768 2c0d5d26fa181d8f20f8eb4e5e614962 ""
-  "../images//results_aedpmerf_contam.png" 1709762950 120768 7c68e91fbe6155a187e9399db63ce821 ""
+  "../images//results_aedpmerf_contam.png" 1709850912 121053 3b64c02ca5b516309fb38174cd67435b ""
   "../images//thres_plot_aemerf.png" 1708444039 35223 a657ab23fbcc7b30324a3657433d7b84 ""
   "../images//thres_plot_aewgan.png" 1708449088 38527 57ff69653dc00730303ce69d519dc6ee ""
   "../images//thres_plot_baseline.png" 1708422728 34843 caa498c17623f3e6039c61e42a200bd5 ""
@@ -287,8 +287,8 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1706208144 4482925 a1a254cacf5c7108f7b28226c8f3b19f ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1706208116 6768056 408882882e57c9b0f921cd1e10e71d4e ""
   "chapters/9appendix.tex" 1705137200 20 e013df3c398b8335c44d8c0cc6dbb7a5 ""
-  "chapters/abstract.tex" 1705137200 50 213856d09abe922928aa763be50e9831 ""
-  "chapters/acknowledgement.tex" 1708759139 59 f9b1303ac93d1872e521a4a1e4e1a737 ""
+  "chapters/abstract.tex" 1710256274 2759 d69aff4a16161ba95493f10e076e62b2 ""
+  "chapters/acknowledgement.tex" 1710257253 448 1871b39ecb10b2e9fa0cf9be8bd4acac ""
   "chapters/chapter1-intro.tex" 1709762950 15862 6517d708f55cd1c032ce5f1c193c40bc ""
   "chapters/chapter2-thDP.tex" 1709762950 13594 745c6097c939ffd8e040ed86f4058075 ""
   "chapters/chapter3.tex" 1709762950 15695 a32ef184da8843736791b96c8b3430ac ""
@@ -299,13 +299,13 @@
   "chapters/eides_erkl.tex" 1703003100 360 57ebeb8056d86a4c0d0d1ae6a42b531f ""
   "chapters/notation.tex" 1708878684 888 976ec5fbc37b2432780a3c951864899d ""
   "chapters/titlepage.tex" 1708504895 552 b1f5e13c9e33f148c43d2417c8e35ae4 ""
-  "main.aux" 1709812526 29952 1c3925f5768e8b573925e8405e3f8d4f "pdflatex"
-  "main.bbl" 1709762950 129383 f56aae3a1159d220a0b65245fece6105 "biber main"
-  "main.lof" 1709812526 4139 ab3081f9764d7f8e0ce4116457afc231 "pdflatex"
-  "main.out" 1709812526 5900 319f628c2e16bfa1d9b88817399c3535 "pdflatex"
-  "main.run.xml" 1709812526 2311 be769915957fbf504b291cf0394a7670 "pdflatex"
+  "main.aux" 1710257256 29954 3057898baca2eb122aa6e8a9f314b363 "pdflatex"
+  "main.bbl" 1710256663 129383 f56aae3a1159d220a0b65245fece6105 "biber main"
+  "main.lof" 1710257256 4139 aa403d2162b20952f9a99c3b68cb6108 "pdflatex"
+  "main.out" 1710257256 5900 d5b118b307429f6f5e08a849e33495f7 "pdflatex"
+  "main.run.xml" 1710257256 2311 be769915957fbf504b291cf0394a7670 "pdflatex"
   "main.tex" 1709812524 3544 3a45c463a84f72daa8b0ec5cdaf72ad3 ""
-  "main.toc" 1709812526 3400 52d4595345eea9845a1fcc2458446511 "pdflatex"
+  "main.toc" 1710257256 3402 b33147afb9d5097419acd1f890461146 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

@@ -1,4 +1,16 @@
 \thispagestyle{empty}
 \subsubsection*{Abstract}
 
+Differential privacy has emerges as the de-facto standard for ensuring privacy of various data-related tasks, but commonly comes with a loss in data utility. This thesis challenges the privacy-utility-tradeoff for differential private synthetic ECG data by looking at one particular common machine learning problem --- anomaly detection. Therefore, two generators are designed with differential privacy guarantees. The utility of the synthetic data is further assessed by training a downstream anomaly detection model on this synthetic data. This method is verified on the MITBIH ECG data set. We found that for anomaly detection the privacy-utility-tradeoff for synthetic data is more nuanced: replacing the original data with (non-privacy-preserving) synthetic data degrades the utility for anomaly detection but there is only a slight decrease in utility when adding a differential private mechanism to the data generation process. Furthermore, we observed that both our adapted time series data generator and the differential private mechanism introduce robustness to the synthetic data.
 
+\subsubsection*{Keywords}
+Differential Privacy, Synthetic Data, Anomaly Detection, Heartbeat Arrythmia, Privacy-preserving Machine Learning, Privacy-Utility-tradeoff, Times Series Data Generation
+
+\newpage
+
+\subsubsection*{Sammfatning}
+Differentiell integritet har vuxit fram som de-facto-standard för att säkerställa integritet för olika datarelaterade uppgifter, men kommer ofta med en förlust av datanytta. Denna avhandling utmanar avvägningen mellan integritet och användbarhet för differentierade privata syntetiska EKG-data genom att titta på ett särskilt vanligt maskininlärningsproblem --- anomalidetektering. Därför utformas två generatorer med differentierade integritetsgarantier. Nyttan av de syntetiska data bedöms ytterligare genom att träna en nedströms anomalidetekteringsmodell på dessa syntetiska data. Denna metod verifieras på MITBIH ECG-datauppsättningen. Vi fann att för anomalidetektering är avvägningen mellan integritet och nytta för syntetiska data mer nyanserad: att ersätta originaldata med (icke integritetsbevarande) syntetiska data försämrar nyttan för anomalidetektering, men det sker endast en liten minskning av nyttan när en differentierad privat mekanism läggs till i datagenereringsprocessen. Dessutom observerade vi att både vår anpassade tidsseriedatagenerator och den differentiella privata mekanismen ger robusthet till de syntetiska data.
+
+
+\subsubsection*{Nyckelord}
+Differentiell integritet, syntetiska data, anomalidetektering, hjärtrytm, integritetsskyddande maskininlärning, integritets- och nyttoavvägning, generering av tidsseriedata
