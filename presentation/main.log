@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.3.4)  12 MAR 2024 22:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.25)  13 MAR 2024 09:30
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/asd/Projekte/MAthesis/presentation/main.tex
-(/home/asd/Projekte/MAthesis/presentation/main.tex
+**/home/user1-asd-arch/Projects/Thesis/presentation/main.tex
+(/home/user1-asd-arch/Projects/Thesis/presentation/main.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2023/02/20 v3.69 A class for typesetting presentations
@@ -924,7 +924,7 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \bibhang=\skip72
 \blx@bcfin=\read3
 \blx@bcfout=\write5
-\blx@langwohyphens=\language26
+\blx@langwohyphens=\language3
 \c@mincomprange=\count396
 \c@maxcomprange=\count397
 \c@mincompwidth=\count398
@@ -1340,6 +1340,9 @@ LaTeX Warning: Label `fig:enter-label' multiply defined.
 LaTeX Warning: Label `fig:enter-label' multiply defined.
 
 
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
 LaTeX Warning: Label `fig:enter-label' multiply defined.
 
 
@@ -1350,6 +1353,9 @@ LaTeX Warning: Label `fig:enter-label' multiply defined.
 
 
 LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
 
 
 LaTeX Warning: Label `fig:enter-label' multiply defined.
@@ -1680,25 +1686,36 @@ Overfull \vbox (12.50662pt too high) detected at line 224
 
 [31
 
-]) (./chapters/chapter4.tex (./main.toc) [32
+]
+pdfTeX warning (ext4): destination with the same identifier (name{fig:my_label}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.309 \end{frame}
+                 
+Overfull \vbox (12.50662pt too high) detected at line 309
+ []
+
+[32
+
+]) (./chapters/chapter4.tex (./main.toc) [33
 
 ]
-<../images//gen_aemerf.png, id=316, 455.301pt x 343.2825pt>
+<../images//gen_aemerf.png, id=322, 455.301pt x 343.2825pt>
 File: ../images//gen_aemerf.png Graphic file (type png)
 <use ../images//gen_aemerf.png>
 Package pdftex.def Info: ../images//gen_aemerf.png  used on input line 32.
 (pdftex.def)             Requested size: 113.82497pt x 85.8204pt.
-<../images//gen_aedpmerf_eps05.png, id=317, 455.301pt x 343.2825pt>
+<../images//gen_aedpmerf_eps05.png, id=323, 455.301pt x 343.2825pt>
 File: ../images//gen_aedpmerf_eps05.png Graphic file (type png)
 <use ../images//gen_aedpmerf_eps05.png>
 Package pdftex.def Info: ../images//gen_aedpmerf_eps05.png  used on input line 32.
 (pdftex.def)             Requested size: 113.82497pt x 85.8204pt.
-<../images//gen_aedpmerf_eps1.png, id=318, 455.301pt x 343.2825pt>
+<../images//gen_aedpmerf_eps1.png, id=324, 455.301pt x 343.2825pt>
 File: ../images//gen_aedpmerf_eps1.png Graphic file (type png)
 <use ../images//gen_aedpmerf_eps1.png>
 Package pdftex.def Info: ../images//gen_aedpmerf_eps1.png  used on input line 32.
 (pdftex.def)             Requested size: 113.82497pt x 85.8204pt.
-<../images//gen_aedpmerf_eps001.png, id=319, 455.301pt x 343.2825pt>
+<../images//gen_aedpmerf_eps001.png, id=325, 455.301pt x 343.2825pt>
 File: ../images//gen_aedpmerf_eps001.png Graphic file (type png)
 <use ../images//gen_aedpmerf_eps001.png>
 Package pdftex.def Info: ../images//gen_aedpmerf_eps001.png  used on input line 32.
@@ -1707,10 +1724,10 @@ Package pdftex.def Info: ../images//gen_aedpmerf_eps001.png  used on input line 
 Overfull \vbox (10.66898pt too high) detected at line 32
  []
 
-[33
+[34
 
  <../images//gen_aemerf.png> <../images//gen_aedpmerf_eps05.png> <../images//gen_aedpmerf_eps1.png> <../images//gen_aedpmerf_eps001.png>]
-<../images//results_aedpmerf_acc.png, id=330, 558.6471pt x 563.706pt>
+<../images//results_aedpmerf_acc.png, id=336, 558.6471pt x 563.706pt>
 File: ../images//results_aedpmerf_acc.png Graphic file (type png)
 <use ../images//results_aedpmerf_acc.png>
 Package pdftex.def Info: ../images//results_aedpmerf_acc.png  used on input line 41.
@@ -1724,10 +1741,10 @@ l.41 \end{frame}
 Overfull \vbox (12.62692pt too high) detected at line 41
  []
 
-[34
+[35
 
  <../images//results_aedpmerf_acc.png>]
-<../images//restuls_dprtsgan_acc.png, id=338, 558.6471pt x 563.706pt>
+<../images//restuls_dprtsgan_acc.png, id=344, 558.6471pt x 563.706pt>
 File: ../images//restuls_dprtsgan_acc.png Graphic file (type png)
 <use ../images//restuls_dprtsgan_acc.png>
 Package pdftex.def Info: ../images//restuls_dprtsgan_acc.png  used on input line 52.
@@ -1741,11 +1758,9 @@ l.52 \end{frame}
 Overfull \vbox (12.62692pt too high) detected at line 52
  []
 
-[35
+[36
 
- <../images//restuls_dprtsgan_acc.png>] [36
-
-] [37
+ <../images//restuls_dprtsgan_acc.png>] [37
 
 ] [38
 
@@ -1755,8 +1770,10 @@ Overfull \vbox (12.62692pt too high) detected at line 52
 
 ] [41
 
+] [42
+
 ]
-<../images//str_comtam.png, id=383, 1785.67125pt x 756.8275pt>
+<../images//str_comtam.png, id=389, 1785.67125pt x 756.8275pt>
 File: ../images//str_comtam.png Graphic file (type png)
 <use ../images//str_comtam.png>
 Package pdftex.def Info: ../images//str_comtam.png  used on input line 77.
@@ -1775,10 +1792,10 @@ l.77 \end{frame}
 Overfull \vbox (16.94167pt too high) detected at line 77
  []
 
-[42
+[43
 
  <../images//str_comtam.png>]
-<../images//results_aedpmerf_contam_acc.png, id=390, 425.6703pt x 440.847pt>
+<../images//results_aedpmerf_contam_acc.png, id=397, 425.6703pt x 440.847pt>
 File: ../images//results_aedpmerf_contam_acc.png Graphic file (type png)
 <use ../images//results_aedpmerf_contam_acc.png>
 Package pdftex.def Info: ../images//results_aedpmerf_contam_acc.png  used on input line 106.
@@ -1791,44 +1808,42 @@ LaTeX Font Info:    Font shape `T1/FiraMono-TLF/sb/n' in size <8> not available
 (Font)              Font shape `T1/FiraMono-TLF/medium/n' tried instead on input line 106.
 LaTeX Font Info:    Font shape `T1/FiraMono-TLF/medium/n' will be
 (Font)              scaled to size 8.0pt on input line 106.
- [43
+ [44
 
  <../images//results_aedpmerf_contam_acc.png>]
-<../images//results_aedpmerf_contam_baseline_acc.png, id=399, 425.6703pt x 440.847pt>
+<../images//results_aedpmerf_contam_baseline_acc.png, id=405, 425.6703pt x 440.847pt>
 File: ../images//results_aedpmerf_contam_baseline_acc.png Graphic file (type png)
 <use ../images//results_aedpmerf_contam_baseline_acc.png>
 Package pdftex.def Info: ../images//results_aedpmerf_contam_baseline_acc.png  used on input line 106.
 (pdftex.def)             Requested size: 161.51398pt x 167.2747pt.
- [44
+ [45
 
  <../images//results_aedpmerf_contam_baseline_acc.png>]
-<../images//results_aedpmerf_contam_aemerf_acc.png, id=407, 425.6703pt x 440.847pt>
+<../images//results_aedpmerf_contam_aemerf_acc.png, id=413, 425.6703pt x 440.847pt>
 File: ../images//results_aedpmerf_contam_aemerf_acc.png Graphic file (type png)
 <use ../images//results_aedpmerf_contam_aemerf_acc.png>
 Package pdftex.def Info: ../images//results_aedpmerf_contam_aemerf_acc.png  used on input line 106.
 (pdftex.def)             Requested size: 161.51398pt x 167.2747pt.
- [45
+ [46
 
  <../images//results_aedpmerf_contam_aemerf_acc.png>]
-<../images//results_aedpmerf_contam_aedpmerf_acc.png, id=415, 425.6703pt x 440.847pt>
+<../images//results_aedpmerf_contam_aedpmerf_acc.png, id=421, 425.6703pt x 440.847pt>
 File: ../images//results_aedpmerf_contam_aedpmerf_acc.png Graphic file (type png)
 <use ../images//results_aedpmerf_contam_aedpmerf_acc.png>
 Package pdftex.def Info: ../images//results_aedpmerf_contam_aedpmerf_acc.png  used on input line 106.
 (pdftex.def)             Requested size: 161.51398pt x 167.2747pt.
- [46
+ [47
 
  <../images//results_aedpmerf_contam_aedpmerf_acc.png>]
 File: ../images//results_aedpmerf_contam_acc.png Graphic file (type png)
 <use ../images//results_aedpmerf_contam_acc.png>
 Package pdftex.def Info: ../images//results_aedpmerf_contam_acc.png  used on input line 106.
 (pdftex.def)             Requested size: 161.51398pt x 167.2747pt.
- [47
+ [48
 
-] [48
+] [49
 
-]) (./chapters/chapter5.tex (./main.toc) [49
-
-] [50
+]) (./chapters/chapter5.tex (./main.toc) [50
 
 ] [51
 
@@ -1848,14 +1863,16 @@ Package pdftex.def Info: ../images//results_aedpmerf_contam_acc.png  used on inp
 
 ] [59
 
+] [60
+
 ]
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/sl/n' in size <20.74> not available
 (Font)              Font shape `T1/FiraSans-LF/book/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/book/n' will be
 (Font)              scaled to size 20.74pt on input line 36.
- [60
+ [61
 
-]) (./chapters/ref.tex (./main.toc) [61
+]) (./chapters/ref.tex (./main.toc) [62
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+FiraSans-LF on input line 10.
@@ -1870,7 +1887,7 @@ LaTeX Font Info:    Font shape `T1/FiraSans-LF/sl/sc' in size <10.95> not availa
 (Font)              Font shape `T1/FiraSans-LF/book/sc' tried instead on input line 10.
 LaTeX Font Info:    Font shape `T1/FiraSans-LF/book/sc' will be
 (Font)              scaled to size 10.95pt on input line 10.
- [62
+ [63
 
 {/usr/share/texmf-dist/fonts/enc/dvips/fira/fir_d67aat.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fira/fir_uhzub2.enc} </usr/share/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>])
 
@@ -1916,22 +1933,22 @@ l.147 \end{frame}
                   [2
 
 ]
-<../images//gen_aewgan.png, id=561, 455.301pt x 343.2825pt>
+<../images//gen_aewgan.png, id=567, 455.301pt x 343.2825pt>
 File: ../images//gen_aewgan.png Graphic file (type png)
 <use ../images//gen_aewgan.png>
 Package pdftex.def Info: ../images//gen_aewgan.png  used on input line 179.
 (pdftex.def)             Requested size: 113.82497pt x 85.8204pt.
-<../images//gen_aedpwgan_eps35.png, id=562, 455.301pt x 343.2825pt>
+<../images//gen_aedpwgan_eps35.png, id=568, 455.301pt x 343.2825pt>
 File: ../images//gen_aedpwgan_eps35.png Graphic file (type png)
 <use ../images//gen_aedpwgan_eps35.png>
 Package pdftex.def Info: ../images//gen_aedpwgan_eps35.png  used on input line 179.
 (pdftex.def)             Requested size: 113.82497pt x 85.8204pt.
-<../images//gen_aedpwgan_eps25.png, id=563, 455.301pt x 343.2825pt>
+<../images//gen_aedpwgan_eps25.png, id=569, 455.301pt x 343.2825pt>
 File: ../images//gen_aedpwgan_eps25.png Graphic file (type png)
 <use ../images//gen_aedpwgan_eps25.png>
 Package pdftex.def Info: ../images//gen_aedpwgan_eps25.png  used on input line 179.
 (pdftex.def)             Requested size: 113.82497pt x 85.8204pt.
-<../images//gen_aedpwgan_eps5.png, id=564, 455.301pt x 343.2825pt>
+<../images//gen_aedpwgan_eps5.png, id=570, 455.301pt x 343.2825pt>
 File: ../images//gen_aedpwgan_eps5.png Graphic file (type png)
 <use ../images//gen_aedpwgan_eps5.png>
 Package pdftex.def Info: ../images//gen_aedpwgan_eps5.png  used on input line 179.
@@ -1981,7 +1998,7 @@ l.215 \end{frame}
                   [5
 
 ]
-<../images//dp_illustr.png, id=582, 1435.61343pt x 490.83376pt>
+<../images//dp_illustr.png, id=588, 1435.61343pt x 490.83376pt>
 File: ../images//dp_illustr.png Graphic file (type png)
 <use ../images//dp_illustr.png>
 Package pdftex.def Info: ../images//dp_illustr.png  used on input line 227.
@@ -2004,7 +2021,7 @@ l.227 \end{frame}
                   [6
 
  <../images//dp_illustr.png>]
-<../images//hist_threshold_baseline.png, id=588, 498.663pt x 328.8285pt>
+<../images//hist_threshold_baseline.png, id=594, 498.663pt x 328.8285pt>
 File: ../images//hist_threshold_baseline.png Graphic file (type png)
 <use ../images//hist_threshold_baseline.png>
 Package pdftex.def Info: ../images//hist_threshold_baseline.png  used on input line 245.
@@ -2022,121 +2039,45 @@ l.245 \end{frame}
                   [7
 
  <../images//hist_threshold_baseline.png>]
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation8}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.262 \end{frame}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.262 \end{frame}
-                  [8
-
-]
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation9}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.262 \end{frame}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.262 \end{frame}
-                  [9
-
-]
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation10}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.262 \end{frame}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.262 \end{frame}
-                  [10
-
-]
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation11}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.262 \end{frame}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.262 \end{frame}
-                  [11
-
-]
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.262 \end{frame}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.262 \end{frame}
-                  [12
-
-]
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation13}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.262 \end{frame}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.262 \end{frame}
-                  [13
-
-]
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation14}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.262 \end{frame}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{page.14}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.262 \end{frame}
-                  [14
-
-]
-<../images//results_aedpmerf.png, id=623, 714.7503pt x 736.4313pt>
-File: ../images//results_aedpmerf.png Graphic file (type png)
-<use ../images//results_aedpmerf.png>
-Package pdftex.def Info: ../images//results_aedpmerf.png  used on input line 271.
-(pdftex.def)             Requested size: 164.38911pt x 169.37563pt.
+<../images//thres_plot_baseline.png, id=600, 430.0065pt x 328.8285pt>
+File: ../images//thres_plot_baseline.png Graphic file (type png)
+<use ../images//thres_plot_baseline.png>
+Package pdftex.def Info: ../images//thres_plot_baseline.png  used on input line 254.
+(pdftex.def)             Requested size: 215.00272pt x 164.41385pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:enter-label}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.271 \end{frame}
+l.254 \end{frame}
                  
-Overfull \vbox (12.88945pt too high) detected at line 271
- []
+pdfTeX warning (ext4): destination with the same identifier (name{Navigation8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.254 \end{frame}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.254 \end{frame}
+                  [8
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation15}) has been already used, duplicate ignored
+ <../images//thres_plot_baseline.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{Navigation9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.271 \end{frame}
                  
-pdfTeX warning (ext4): destination with the same identifier (name{page.15}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.271 \end{frame}
-                  [15
+                  [9
 
- <../images//results_aedpmerf.png>]
-<../images//restuls_dprtsgan.png, id=629, 714.7503pt x 736.4313pt>
-File: ../images//restuls_dprtsgan.png Graphic file (type png)
-<use ../images//restuls_dprtsgan.png>
-Package pdftex.def Info: ../images//restuls_dprtsgan.png  used on input line 280.
+]
+<../images//results_aedpmerf.png, id=610, 714.7503pt x 736.4313pt>
+File: ../images//results_aedpmerf.png Graphic file (type png)
+<use ../images//results_aedpmerf.png>
+Package pdftex.def Info: ../images//results_aedpmerf.png  used on input line 280.
 (pdftex.def)             Requested size: 164.38911pt x 169.37563pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:enter-label}) has been already used, duplicate ignored
@@ -2148,38 +2089,65 @@ Overfull \vbox (12.88945pt too high) detected at line 280
  []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{Navigation10}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.280 \end{frame}
                  
-pdfTeX warning (ext4): destination with the same identifier (name{page.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.280 \end{frame}
-                  [16
+                  [10
 
- <../images//restuls_dprtsgan.png>]
-<../images//results_aedpmerf_contam.png, id=635, 603.4545pt x 657.657pt>
-File: ../images//results_aedpmerf_contam.png Graphic file (type png)
-<use ../images//results_aedpmerf_contam.png>
-Package pdftex.def Info: ../images//results_aedpmerf_contam.png  used on input line 305.
-(pdftex.def)             Requested size: 161.51398pt x 176.02437pt.
+ <../images//results_aedpmerf.png>]
+<../images//restuls_dprtsgan.png, id=617, 714.7503pt x 736.4313pt>
+File: ../images//restuls_dprtsgan.png Graphic file (type png)
+<use ../images//restuls_dprtsgan.png>
+Package pdftex.def Info: ../images//restuls_dprtsgan.png  used on input line 289.
+(pdftex.def)             Requested size: 164.38911pt x 169.37563pt.
 
-Overfull \vbox (8.81549pt too high) detected at line 305
+pdfTeX warning (ext4): destination with the same identifier (name{fig:enter-label}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.289 \end{frame}
+                 
+Overfull \vbox (12.88945pt too high) detected at line 289
  []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation17}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{Navigation11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.305 \end{frame}
+l.289 \end{frame}
                  
-pdfTeX warning (ext4): destination with the same identifier (name{page.17}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.305 \end{frame}
-                  [17
+l.289 \end{frame}
+                  [11
+
+ <../images//restuls_dprtsgan.png>]
+<../images//results_aedpmerf_contam.png, id=623, 603.4545pt x 657.657pt>
+File: ../images//results_aedpmerf_contam.png Graphic file (type png)
+<use ../images//results_aedpmerf_contam.png>
+Package pdftex.def Info: ../images//results_aedpmerf_contam.png  used on input line 316.
+(pdftex.def)             Requested size: 161.51398pt x 176.02437pt.
+
+Overfull \vbox (8.81549pt too high) detected at line 316
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{Navigation12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.316 \end{frame}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.316 \end{frame}
+                  [12
 
  <../images//results_aedpmerf_contam.png>])
 \tf@nav=\write9
@@ -2202,18 +2170,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 61688 strings out of 477473
- 1435252 string characters out of 5829993
- 2413006 words of memory out of 5000000
- 80958 multiletter control sequences out of 15000+600000
+ 61850 strings out of 477985
+ 1440116 string characters out of 5840058
+ 2411610 words of memory out of 5000000
+ 80966 multiletter control sequences out of 15000+600000
  725064 words of font info for 128 fonts, out of 8000000 for 9000
- 264 hyphenation exceptions out of 8191
- 128i,12n,122p,1922b,1719s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 14 hyphenation exceptions out of 8191
+ 128i,12n,122p,1931b,1719s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/fira/FiraMono-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraMono-Medium.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraMono-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraSans-Book.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraSans-BookItalic.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (79 pages, 1906733 bytes).
+Output written on main.pdf (75 pages, 1928812 bytes).
 PDF statistics:
- 791 PDF objects out of 1000 (max. 8388607)
- 594 compressed objects within 6 object streams
- 141 named destinations out of 1000 (max. 500000)
- 240 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 778 PDF objects out of 1000 (max. 8388607)
+ 583 compressed objects within 6 object streams
+ 143 named destinations out of 1000 (max. 500000)
+ 245 words of extra memory for PDF output out of 10000 (max. 10000000)
 

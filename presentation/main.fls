@@ -1,7 +1,7 @@
-PWD /home/asd/Projekte/MAthesis/presentation
+PWD /home/user1-asd-arch/Projects/Thesis/presentation
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/asd/Projekte/MAthesis/presentation/main.tex
+INPUT /home/user1-asd-arch/Projects/Thesis/presentation/main.tex
 OUTPUT main.log
 INPUT /usr/share/texmf-dist/tex/latex/beamer/beamer.cls
 INPUT /usr/share/texmf-dist/tex/latex/beamer/beamer.cls
@@ -2289,6 +2289,10 @@ INPUT ../images//hist_threshold_baseline.png
 INPUT ../images//hist_threshold_baseline.png
 INPUT ../images//hist_threshold_baseline.png
 INPUT ../images//hist_threshold_baseline.png
+INPUT ../images//thres_plot_baseline.png
+INPUT ../images//thres_plot_baseline.png
+INPUT ../images//thres_plot_baseline.png
+INPUT ../images//thres_plot_baseline.png
 INPUT ../images//results_aedpmerf.png
 INPUT ../images//results_aedpmerf.png
 INPUT ../images//results_aedpmerf.png

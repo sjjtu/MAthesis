@@ -244,19 +244,28 @@
 
 \end{frame}
 
+\begin{frame}{Classification threshold}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.5]{thres_plot_baseline.png}
+        \caption{Adjusting the threshold according to classification accuracy}
+        \label{fig:enter-label}
+    \end{figure}
+\end{frame}
+
 
 \begin{frame}{Models}
     \onslide<1->{\textcolor{gold}{AE-(dp)MERF}}
     \begin{itemize}
-        \item<1-> AE-(dp)MERF is based on DP-MERF (best state of the art generator for tabular data).
-        \item<2-> Simple architecture with mathematically sophisticated loss function.
-        \item<3-> Does not work with time series data out of the box, but we will modify it so it works.
+        \item AE-(dp)MERF is based on DP-MERF (best state of the art generator for tabular data).
+        \item Simple architecture with mathematically sophisticated loss function.
+        \item Does not work with time series data out of the box, but we will modify it so it works.
     \end{itemize}
-    \onslide<4->{\textcolor{gold}{AE-(dp)WGAN}}
+    {\textcolor{gold}{AE-(dp)WGAN}}
     \begin{itemize}
-        \item<5-> Model based on GAN network, which are commonly used in image generation.
-        \item<6-> Based on RTSGAN, which delivers state of the art performance for time series data.
-        \item<7> No private counterpart, hence we will implement our own private version.
+        \item Model based on GAN network, which are commonly used in image generation.
+        \item Based on RTSGAN, which delivers state of the art performance for time series data.
+        \item No private counterpart, hence we will implement our own private version.
     \end{itemize}
     
 \end{frame}
@@ -278,6 +287,8 @@
         \label{fig:enter-label}
     \end{figure}
 \end{frame}
+
+
 
 \begin{frame}{Contamination: AE-(DP)MERF}
     \begin{columns}
