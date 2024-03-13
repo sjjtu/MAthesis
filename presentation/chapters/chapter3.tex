@@ -6,7 +6,7 @@
     \frametitle{Review: Differential Privacy}
     \onslide<1,2>\textbf{Idea.} \alert{Hide the influence} of one particular sample on the output of the model by \alert{adding randomness}.
     \onslide<2->\begin{definition}[Differential Privacy]
-        A randomised algorithm $\mathcal{M}$ is $(\epsilon, \delta)$- differentially private if for all  set of outcomes $S \subset ran \mathcal{M}$ and for all databases $x,y $, such that they \textbf{only differ in one element}, we have
+        A randomised algorithm $\mathcal{M}$ is $(\epsilon, \delta)$- differentially private if for all sets of outcomes $S \subset ran \mathcal{M}$ and for all databases $x,y $, such that they \textbf{only differ in one element}, we have
         \begin{align}
             \mathbb{P}(\mathcal{M}(x) \in S) \le e^\epsilon \cdot \mathbb{P}(\mathcal{M}(y) \in S) + \delta \mcomma
         \end{align}
@@ -113,7 +113,7 @@
                 \small
                 \item Encode dataset $X$: $X^{enc} = Enc(X)$
                 \item Generate encodings by sampling from Gaussian noise: $\widetilde{X}^{enc}=Gen(z)$
-                \item Train generator via loss maximum mean discrepancy (MMD) loss: $MMD(X^{enc},\widetilde{X}^{enc}) =|| \frac{1}{m} \sum_{i=1}^m \hat{\Phi}(x_i^{enc}) - \frac{1}{m} \sum_{j=1}^m \hat{\Phi}(\tilde{x}_j^{enc}) ||_\mathcal{H}^2 $ {\tiny where $\hat{\Phi}(x) \in \mathbb{R}^D$ and $\hat{\Phi}_j(x) = \sqrt{\frac{2}{D}} cos (\omega_j^T x)$.}
+                \item Train generator via loss maximum mean discrepancy (MMD) loss: {\small $MMD(X^{enc},\widetilde{X}^{enc}) =|| \frac{1}{m} \sum_{i=1}^m \hat{\Phi}(x_i^{enc}) - \frac{1}{m} \sum_{j=1}^m \hat{\Phi}(\tilde{x}_j^{enc}) ||_\mathcal{H}^2 $} {\tiny where $\hat{\Phi}(x) \in \mathbb{R}^D$ and $\hat{\Phi}_j(x) = \sqrt{\frac{2}{D}} cos (\omega_j^T x)$.}
                 \item Decode generated encodings: $\widetilde{X} = Dec(\widetilde{X}^{enc})$
             \end{enumerate}
         \end{column}
