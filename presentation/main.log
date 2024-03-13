@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.25)  13 MAR 2024 09:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.3.4)  13 MAR 2024 11:03
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/user1-asd-arch/Projects/Thesis/presentation/main.tex
-(/home/user1-asd-arch/Projects/Thesis/presentation/main.tex
+**/home/asd/Projekte/MAthesis/presentation/main.tex
+(/home/asd/Projekte/MAthesis/presentation/main.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2023/02/20 v3.69 A class for typesetting presentations
@@ -924,7 +924,7 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \bibhang=\skip72
 \blx@bcfin=\read3
 \blx@bcfout=\write5
-\blx@langwohyphens=\language3
+\blx@langwohyphens=\language26
 \c@mincomprange=\count396
 \c@maxcomprange=\count397
 \c@mincompwidth=\count398
@@ -2170,15 +2170,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 61850 strings out of 477985
- 1440116 string characters out of 5840058
- 2411610 words of memory out of 5000000
- 80966 multiletter control sequences out of 15000+600000
+ 61850 strings out of 477473
+ 1440089 string characters out of 5829993
+ 2413006 words of memory out of 5000000
+ 81117 multiletter control sequences out of 15000+600000
  725064 words of font info for 128 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 128i,12n,122p,1931b,1719s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 264 hyphenation exceptions out of 8191
+ 128i,12n,122p,1922b,1719s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/fira/FiraMono-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraMono-Medium.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraMono-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraSans-Book.pfb></usr/share/texmf-dist/fonts/type1/public/fira/FiraSans-BookItalic.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (75 pages, 1928812 bytes).
+Output written on main.pdf (75 pages, 1928807 bytes).
 PDF statistics:
  778 PDF objects out of 1000 (max. 8388607)
  583 compressed objects within 6 object streams
