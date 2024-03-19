@@ -30,7 +30,7 @@
 \contentsline {section}{\numberline {5}Experiment}{25}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Data Set and Experiment Setup}{25}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Baseline Model}{28}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Data Generation}{33}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.3}Data Generation}{34}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Privacy-preserving Data Generation}{38}{subsection.5.4}%
 \contentsline {subsection}{\numberline {5.5}Results}{43}{subsection.5.5}%
 \contentsline {subsection}{\numberline {5.6}Contaminated Data Set}{45}{subsection.5.6}%
@@ -40,5 +40,5 @@
 \contentsline {subsection}{\numberline {6.3}Privacy and Robustness}{48}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6.4}Future Works}{49}{subsection.6.4}%
 \contentsline {section}{\numberline {7}Conclusion}{50}{section.7}%
-\contentsline {section}{Appendix}{I}{section*.52}%
-\contentsline {section}{References}{II}{section*.53}%
+\contentsline {section}{Appendix}{VIII}{figure.caption.73}%
+\contentsline {section}{References}{IX}{section*.74}%

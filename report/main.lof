@@ -10,10 +10,10 @@
 \contentsline {figure}{\numberline {9}{\ignorespaces Loss over epoch for baseline model together with loss on validation set\relax }}{30}{figure.caption.27}%
 \contentsline {figure}{\numberline {10}{\ignorespaces Regular test sample vs. reconstructed sample\relax }}{30}{figure.caption.28}%
 \contentsline {figure}{\numberline {11}{\ignorespaces Anomalous test sample vs. reconstructed sample\relax }}{31}{figure.caption.29}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Distribution of reconstruction error for regular and anomalous samples in the validation set.\relax }}{31}{figure.caption.31}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Percentages of correctly classified samples based on different threshold values\relax }}{32}{figure.caption.32}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Distribution of reconstruction error for regular and anomalous samples in the validation set.\relax }}{32}{figure.caption.31}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Percentages of correctly classified samples based on different threshold values\relax }}{33}{figure.caption.32}%
 \contentsline {figure}{\numberline {14}{\ignorespaces Generated regular heartbeats by AE-MERF model\relax }}{35}{figure.caption.36}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Loss over epoch for baseline model together with loss on validation set\relax }}{35}{figure.caption.37}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Loss over epoch for baseline model together with loss on validation set\relax }}{36}{figure.caption.37}%
 \contentsline {figure}{\numberline {16}{\ignorespaces Distribution of reconstruction error on validation set with AE-MERF generated samples\relax }}{36}{figure.caption.38}%
 \contentsline {figure}{\numberline {17}{\ignorespaces Percentage of correctly classified regular and anomalous test samples for different threshold values with AE-MERF generated sampled\relax }}{36}{figure.caption.38}%
 \contentsline {figure}{\numberline {18}{\ignorespaces Generated regular heartbeats by AE-WGAN model\relax }}{37}{figure.caption.41}%
@@ -25,3 +25,21 @@
 \contentsline {figure}{\numberline {24}{\ignorespaces Utility loss over privacy budget $\epsilon $ for AE-(dp)MERF\relax }}{44}{figure.caption.49}%
 \contentsline {figure}{\numberline {25}{\ignorespaces Utility loss over privacy budget $\epsilon $ for AE-(dp)WGAN\relax }}{45}{figure.caption.50}%
 \contentsline {figure}{\numberline {26}{\ignorespaces AE-(dp)MERF on contaminated training data\relax }}{46}{figure.caption.51}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Loss over epoch for anomaly detection model trained on AE-dpMERF generated data with $\epsilon =1$ together with loss on validation set\relax }}{I}{figure.caption.55}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Distribution of reconstruction error on validation set with AE-dpMERF with $\epsilon =1$ generated samples\relax }}{I}{figure.caption.56}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Percentage of correctly classified regular and anomalous test samples for different threshold values with AE-dpMERF with $\epsilon =1$ generated sampled\relax }}{I}{figure.caption.56}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Loss over epoch for anomaly detection model trained on AE-dpMERF generated data with $\epsilon =0.5$ together with loss on validation set\relax }}{II}{figure.caption.58}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Distribution of reconstruction error on validation set with AE-dpMERF with $\epsilon =0.5$ generated samples\relax }}{II}{figure.caption.59}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Percentage of correctly classified regular and anomalous test samples for different threshold values with AE-dpMERF with $\epsilon =0.5$ generated sampled\relax }}{II}{figure.caption.59}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Loss over epoch for anomaly detection model trained on AE-dpMERF generated data with $\epsilon =0.1$ together with loss on validation set\relax }}{III}{figure.caption.61}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Distribution of reconstruction error on validation set with AE-dpMERF with $\epsilon =0.1$ generated samples\relax }}{III}{figure.caption.62}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Percentage of correctly classified regular and anomalous test samples for different threshold values with AE-dpMERF with $\epsilon =0.1$ generated sampled\relax }}{III}{figure.caption.62}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Loss over epoch for anomaly detection model trained on AE-dpMERF generated data with $\epsilon =0.01$ together with loss on validation set\relax }}{IV}{figure.caption.64}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Distribution of reconstruction error on validation set with AE-dpMERF with $\epsilon =0.01$ generated samples\relax }}{V}{figure.caption.65}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Percentage of correctly classified regular and anomalous test samples for different threshold values with AE-dpMERF with $\epsilon =0.01$ generated sampled\relax }}{V}{figure.caption.65}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Distribution of reconstruction error on validation set with AE-dpWGAN with $\epsilon =35$ generated samples\relax }}{VI}{figure.caption.68}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Percentage of correctly classified regular and anomalous test samples for different threshold values with AE-dpWGAN with $\epsilon =35$ generated sampled\relax }}{VI}{figure.caption.68}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Distribution of reconstruction error on validation set with AE-dpWGAN with $\epsilon =25$ generated samples\relax }}{VII}{figure.caption.70}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Percentage of correctly classified regular and anomalous test samples for different threshold values with AE-dpWGAN with $\epsilon =25$ generated sampled\relax }}{VII}{figure.caption.70}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Distribution of reconstruction error on validation set with AE-dpWGAN with $\epsilon =5$ generated samples\relax }}{VIII}{figure.caption.72}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Percentage of correctly classified regular and anomalous test samples for different threshold values with AE-dpWGAN with $\epsilon =5$ generated sampled\relax }}{VIII}{figure.caption.73}%
