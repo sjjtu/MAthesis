@@ -12,11 +12,9 @@ from sklearn.preprocessing import MinMaxScaler, OneHotEncoder, LabelBinarizer
 import random
 from torch import autograd
 import time
-from autodp import privacy_calibrator
 from opacus import PrivacyEngine
 
 
-from util.autoencoder import Autoencoder
 from util.gan import Generator, Discriminator
 from util.TrainRoutine import AutoEncTrainRoutine
 from util.ECGDataset import ECGDataset
@@ -166,13 +164,7 @@ class AeGAN:
                     sta = None
                     dyn = batch_x.to(self.device)
                     real_rep = self.ae.model.encoder(dyn).squeeze()
-                    # if eps!=None:
-                    #     privacy_param = privacy_calibrator.gaussian_mech(eps, delt)
-                    #     sensitivity = 2 / batch_size
-                    #     noise_std_for_privacy = privacy_param['sigma'] * sensitivity
-                    #     noise = noise_std_for_privacy * torch.randn(real_rep.shape).to(self.device)
-                    #     real_rep = real_rep + noise
-                        #del noise, privacy_param, noise_std_for_privacy, sensitivity
+                    
                     d_real = self.discriminator(real_rep)
                     dloss_real = -d_real.mean()
                     #y = d_real.new_full(size=d_real.size(), fill_value=1)

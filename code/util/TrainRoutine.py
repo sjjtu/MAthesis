@@ -1,5 +1,5 @@
 """
-Utiltiy class to train AE model for reconstructing some
+Utiltiy class to train AE model for reconstructing some times series data
 given some training, validation and test data
 """
 
